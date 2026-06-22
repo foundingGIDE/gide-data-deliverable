@@ -103,7 +103,7 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
@@ -113,6 +113,14 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007165"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -162,13 +170,8 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
-      ],
-      "hasCellLine": [
-        "H1 cell",
-        "EB3 cell",
-        "C57BL/6J-Chr 12A/J/NaJ AC464/GrsJ mES cells"
       ]
     },
     {
@@ -178,7 +181,7 @@
       "vernacularName": "mouse"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
@@ -194,6 +197,12 @@
       "name": "Signal transduction"
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 7409594368,
@@ -207,6 +216,17 @@
       "value": 93,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

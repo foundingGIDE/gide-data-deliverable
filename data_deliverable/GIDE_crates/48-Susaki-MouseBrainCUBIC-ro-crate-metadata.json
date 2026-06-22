@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/48-Susaki-MouseBrainCUBIC/"
+        "@id": "https://ssbd.riken.jp/v1/project/48-Susaki-MouseBrainCUBIC"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/48-Susaki-MouseBrainCUBIC/",
+      "@id": "https://ssbd.riken.jp/v1/project/48-Susaki-MouseBrainCUBIC",
       "@type": "Dataset",
       "identifier": "48-Susaki-MouseBrainCUBIC",
       "name": "48-Susaki-MouseBrainCUBIC",
-      "description": "48-Susaki-MouseBrainCUBIC",
+      "description": "See details in Susaki et al. (2014) Cell, 157(3): 726–739.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Brain/cytology",
-        "Callithrix",
-        "Indicators and Reagents/chemistry",
-        "Mice",
-        "Microscopy/methods",
-        "Neuroimaging/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -106,7 +97,7 @@
           "@id": "#auth-012"
         },
         {
-          "@id": "https://orcid.org/0000-0002-1509-8747"
+          "@id": "#auth-013"
         },
         {
           "@id": "#auth-014"
@@ -123,19 +114,27 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.cell.2014.03.042"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/24746791"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-106"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/106/render_thumbnail/"
       ],
       "size": [
         {
@@ -159,112 +158,202 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Etsuo A. Susaki"
+      "name": "Etsuo A. Susaki",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Kazuki Tainaka"
+      "name": "Kazuki Tainaka",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Dimitri Perrin"
+      "name": "Dimitri Perrin",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Fumiaki Kishino"
+      "name": "Fumiaki Kishino",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Takehiro Tawara"
+      "name": "Takehiro Tawara",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Tomonobu M. Watanabe"
+      "name": "Tomonobu M. Watanabe",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Chihiro Yokoyama"
+      "name": "Chihiro Yokoyama",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Hirotaka Onoe"
+      "name": "Hirotaka Onoe",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Megumi Eguchi"
+      "name": "Megumi Eguchi",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Shun Yamaguchi"
+      "name": "Shun Yamaguchi",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
       "name": "Takaya Abe",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Animal Resources and Genetic Engineering",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://orcid.org/0000-0002-1509-8747",
+      "@id": "#auth-013",
       "@type": "Person",
       "name": "Hiroshi Kiyonari",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Animal Resources and Genetic Engineering",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-014",
       "@type": "Person",
-      "name": "Yoshihiro Shimizu"
+      "name": "Yoshihiro Shimizu",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-015",
       "@type": "Person",
-      "name": "Atsushi Miyawaki"
+      "name": "Atsushi Miyawaki",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-016",
       "@type": "Person",
-      "name": "Hideo Yokota"
+      "name": "Hideo Yokota",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-017",
       "@type": "Person",
-      "name": "Hiroki R. Ueda"
+      "name": "Hiroki R. Ueda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1016/j.cell.2014.03.042",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/24746791",
       "@type": "ScholarlyArticle",
-      "name": "Whole-brain imaging with single-cell resolution using chemical cocktails and computational analysis.",
-      "datePublished": "2014"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/24746791"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -273,28 +362,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 125698131991,
-      "description": "125.7 GB",
+      "value": 217690847387,
+      "description": "217.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 11787,
+      "value": 11814,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

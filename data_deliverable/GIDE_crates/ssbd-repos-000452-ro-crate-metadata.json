@@ -79,7 +79,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         },
         {
           "@id": "#biosample-1"
@@ -157,12 +157,12 @@
       "description": "Dictyostelium discoideum, AX2",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
       "@type": "Taxon",
       "scientificName": "Dictyostelium discoideum",
       "vernacularName": "social amoeba"
@@ -196,7 +196,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
       "@type": "DefinedTerm",
-      "name": "spinning disk confocal microscopy"
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
     },
     {
       "@id": "#total-dataset-size",

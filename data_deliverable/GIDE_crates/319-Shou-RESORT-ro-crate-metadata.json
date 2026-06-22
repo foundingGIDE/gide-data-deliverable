@@ -45,24 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/319-Shou-RESORT/"
+        "@id": "https://ssbd.riken.jp/v2/project/319-Shou-RESORT"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/319-Shou-RESORT/",
+      "@id": "https://ssbd.riken.jp/v2/project/319-Shou-RESORT",
       "@type": "Dataset",
       "identifier": "319-Shou-RESORT",
       "name": "Super-resolution vibrational imaging based on photoswitchable Raman probe",
-      "description": "319-Shou-RESORT",
+      "description": "The authors first describe a bright photoswitchable Raman probe (DAE620) and validate its signal activation and depletion characteristics when exposed to low-power (microwatt level) continuous-wave laser light. By harnessing the SRS signal depletion of DAE620 through a donut-shaped beam, they demonstrate super-resolution vibrational imaging of mammalian cells with excellent chemical spe- cificity and spatial resolution beyond the optical diffraction limit. These results indicate RESORT microscopy to be an effective tool with high potential for multiplexed super-resolution imaging of live cells.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Vibration[major]",
-        "Microscopy/methods[major]",
-        "Spectrum Analysis, Raman/methods",
-        "Mammals"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -102,7 +95,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
@@ -111,13 +104,13 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005739"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ],
       "measurementMethod": [
@@ -126,16 +119,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1251"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1251/render_thumbnail/"
       ],
       "size": [
         {
@@ -154,72 +141,143 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Yasuyuki Ozeki",
+      "name": "Yasuyuki  Ozeki",
       "email": "ozeki@ee.t.u-tokyo.ac.jp",
       "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Mako Kamiya",
+      "name": "Mako  Kamiya",
       "email": "kamiya.m.ad@m.titech.ac.jp",
       "description": "Organization: The University of Tokyo; Department: Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Jingwen Shou"
+      "name": "Jingwen Shou",
+      "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Ayumi Komazawa"
+      "name": "Ayumi Komazawa",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Yuusaku Wachi"
+      "name": "Yuusaku Wachi",
+      "description": "Organization: The University of Tokyo; Department: Department of Electrical and Electronic Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Hiroyoshi Fujioka"
+      "name": "Hiroyoshi Fujioka",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Minoru Kawatani"
+      "name": "Minoru Kawatani",
+      "description": "Organization: The University of Tokyo; Department: Graduate School of Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Takaha Mizuguchi"
+      "name": "Takaha Mizuguchi",
+      "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Hikaru Akaboshi"
+      "name": "Hikaru Akaboshi",
+      "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1126/sciadv.ade9118",
       "@type": "ScholarlyArticle",
-      "name": "Super-resolution vibrational imaging based on photoswitchable Raman probe.",
-      "datePublished": "2023"
+      "name": "Shou J, Komazawa A, Wachi Y, Kawatani M, Fujioka H, Spratt SJ, Mizuguchi T, Oguchi K, Akaboshi H, Obata F, Tachibana R, Yasunaga S, Mita Y, Misawa Y, Kojima R, Urano Y, Kamiya M, Ozeki Y. Sci Adv. 2023 Jun 16;9(24):eade9118.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37327330/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion",
+      "identifier": "GO:0005739"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215",
+      "@type": "Taxon",
+      "scientificName": "Drosophila",
+      "name": "Drosophila",
+      "identifier": "NCBITaxon:7215"
     },
     {
       "@id": "#biosample-1",
@@ -228,7 +286,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -242,36 +300,21 @@
       "description": "Drosophila",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
-      "@type": "Taxon",
-      "scientificName": "drosophila"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
-      "@type": "DefinedTerm",
-      "name": "mitochondrion"
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -279,38 +322,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "reversible saturable optical Raman transitions (RESORT) microscopy",
-      "description": "reversible saturable optical Raman transitions (RESORT) microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
-      "@type": "DefinedTerm",
-      "name": "reversible saturable optical Raman transitions (RESORT) microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 12031437,
-      "description": "12.0 MB",
+      "value": 18616040,
+      "description": "18.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 27,
+      "value": 38,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

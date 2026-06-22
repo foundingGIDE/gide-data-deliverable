@@ -83,7 +83,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
@@ -94,7 +94,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -141,32 +141,15 @@
       "description": "Cell line sample",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": "Human induced pluripotent stem cells 585A1"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Lens-free imaging",
-      "description": "Lens-free imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000278",
-      "@type": "DefinedTerm",
-      "name": "Lens-free imaging"
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
     },
     {
       "@id": "#total-dataset-size",
@@ -182,6 +165,23 @@
       "value": 1040544,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

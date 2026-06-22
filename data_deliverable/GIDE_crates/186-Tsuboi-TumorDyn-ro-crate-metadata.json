@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/186-Tsuboi-TumorDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/186-Tsuboi-TumorDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/186-Tsuboi-TumorDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/186-Tsuboi-TumorDyn",
       "@type": "Dataset",
       "identifier": "186-Tsuboi-TumorDyn",
       "name": "Images of tumor-bearing mice or KPL-4 cells apoptosis treated with Kadcyla for different time.",
-      "description": "186-Tsuboi-TumorDyn",
+      "description": "See details in Tsuboi S, et. al. (2020) RSC Adv., 10(63):38244-38250.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -71,22 +71,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0097194"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -98,7 +95,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-751"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/751/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,20 +119,43 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Developmental Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1039/d0ra06495e",
       "@type": "ScholarlyArticle",
-      "name": "Dual-colour (near-infrared/visible) emitting annexin V for fluorescence imaging of tumour cell apoptosis in vitro and in vivo.",
-      "datePublished": "2020"
+      "name": "Tsuboi S, and Jin T (2020) Dual-colour (near-infrared/visible) emitting annexin V for fluorescence imaging of tumour cell apoptosis in vitro and in vivo. RSC Advances, Volume 10, Issue 63, pages 38244-38250.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35517522/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@type": "DefinedTerm",
+      "name": "apoptosis",
+      "identifier": "GO:0097194"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -144,49 +164,26 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Homo sapiens",
-      "description": "Homo sapiens",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ]
-    },
-    {
-      "@id": "#biosample-3",
-      "@type": "BioSample",
       "name": "Homo sapiens ~ KPL-4",
       "description": "Homo sapiens ~ KPL-4",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
-      ],
-      "hasCellLine": "KPL-4"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "apoptosis"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -200,22 +197,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 90566348,
-      "description": "90.6 MB",
+      "value": 177111620,
+      "description": "177.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 29,
+      "value": 58,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

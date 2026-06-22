@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/253-Shimauchi-CalciumIonDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/253-Shimauchi-CalciumIonDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/253-Shimauchi-CalciumIonDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/253-Shimauchi-CalciumIonDyn",
       "@type": "Dataset",
       "identifier": "253-Shimauchi-CalciumIonDyn",
       "name": "Time courses images of Ca2+ responses in the TRPC inhibitor-expressing HEK293 cells or HeLa cells.",
-      "description": "253-Shimauchi-CalciumIonDyn",
+      "description": "See details in Shimauchi T, et. al. (2022) Cells, Jun 27;11(13):2041.",
       "datePublished": "2022-11-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Arteries",
-        "Ischemia/drug therapy[major]",
-        "Mice",
-        "Muscle, Skeletal",
-        "Myocytes, Smooth Muscle[major]",
-        "TRPC Cation Channels/metabolism[major]",
-        "TRPC6 Cation Channel/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -81,22 +71,22 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/GO_0051592"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "#biosample-2"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0051592"
         }
       ],
       "measurementMethod": [
@@ -105,10 +95,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-801"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/801/render_thumbnail/"
       ],
       "size": [
         {
@@ -132,20 +128,48 @@
       "description": "Organization: Kyushu University; Department: Graduate School of Pharmaceutical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/00p4k0j84"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00p4k0j84",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyushu University"
     },
     {
       "@id": "https://doi.org/10.3390/cells11132041",
       "@type": "ScholarlyArticle",
-      "name": "A TRPC3/6 Channel Inhibitor Promotes Arteriogenesis after Hind-Limb Ischemia.",
-      "datePublished": "2022"
+      "name": "Shimauchi T, Numaga-Tomita T, Kato Y, Morimoto H, Sakata K, Matsukane R, Nishimura A, Nishiyama K, Shibuta A, Horiuchi Y, Kurose H, Kim SG, Urano Y, Ohshima T, Nishida M. A TRPC3/6 Channel Inhibitor Promotes Arteriogenesis after Hind-Limb Ischemia. Cells. 2022 Jun 27;11(13):2041.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35805125/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051592",
+      "@type": "DefinedTerm",
+      "name": "response to calcium ion",
+      "identifier": "GO:0051592"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293",
+      "identifier": "CLO:0001230"
     },
     {
       "@id": "#biosample-1",
@@ -154,7 +178,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -168,7 +192,7 @@
       "description": "Homo sapiens ~ HEK293",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -176,25 +200,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
-      "@type": "DefinedTerm",
-      "name": "HEK293"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051592",
-      "@type": "DefinedTerm",
-      "name": "response to calcium ion"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -208,24 +217,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 603453040,
-      "description": "603.5 MB",
+      "value": 983284315,
+      "description": "983.3 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 13,
+      "value": 26,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

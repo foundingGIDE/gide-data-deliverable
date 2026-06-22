@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/219-Konishi-CalciumIonDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/219-Konishi-CalciumIonDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/219-Konishi-CalciumIonDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/219-Konishi-CalciumIonDyn",
       "@type": "Dataset",
       "identifier": "219-Konishi-CalciumIonDyn",
       "name": "Live imaging of Ca2+ concentration dynamics in BrafV600E melanoma cells.",
-      "description": "219-Konishi-CalciumIonDyn",
+      "description": "See details in Konishi Y, et. al. (2021) Cancer Res, 2021 Aug 1;81(15):4124-4132.",
       "datePublished": "2023-02-21",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Dinoprostone/immunology[major]",
-        "Humans",
-        "Immune Evasion/immunology[major]",
-        "Intravital Microscopy/methods[major]",
-        "Mice",
-        "Mice, Nude",
-        "Vascular Endothelial Growth Factor A/immunology[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -81,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
@@ -90,13 +80,13 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0001664"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -105,16 +95,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-854"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/854/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,20 +122,49 @@
       "description": "Organization: kyoto University; Department: Graduate School of Medicine; Laboratory: Department of Pathology and Biology of Diseases",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "kyoto University"
     },
     {
       "@id": "https://doi.org/10.1158/0008-5472.CAN-20-4245",
       "@type": "ScholarlyArticle",
-      "name": "Intravital Imaging Identifies the VEGF-TXA2 Axis as a Critical Promoter of PGE2 Secretion from Tumor Cells and Immune Evasion.",
-      "datePublished": "2021"
+      "name": "Konishi Y, Ichise H, Watabe T, Oki C, Tsukiji S, Hamazaki Y, Murakawa Y, Takaori-Kondo A, Terai K, Matsuda M. Intravital Imaging Identifies the VEGF-TXA2 Axis as a Critical Promoter of PGE2 Secretion from Tumor Cells and Immune Evasion. Cancer Res. 2021 Aug 1;81(15):4124-4132.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34035084/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell",
+      "identifier": "CLO:0007646"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001664",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled receptor binding",
+      "identifier": "GO:0001664"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -160,7 +173,7 @@
       "description": "Canis lupus familiaris ~ MDCK cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         }
       ],
       "hasCellLine": {
@@ -174,31 +187,15 @@
       "description": "Mus musculus ~ BrafV600E cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "BrafV600E cell"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "MDCK cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001664",
-      "@type": "DefinedTerm",
-      "name": "G protein-coupled receptor binding"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -212,38 +209,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "bioluminescence imaging",
-      "description": "bioluminescence imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "bioluminescence imaging"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 87396749893,
-      "description": "87.4 GB",
+      "value": 137110328529,
+      "description": "137.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 54880,
+      "value": 55050,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

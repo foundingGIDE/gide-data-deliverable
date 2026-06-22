@@ -45,34 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/23-Shirai-ESCellTissue/"
+        "@id": "https://ssbd.riken.jp/v1/project/23-Shirai-ESCellTissue"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/23-Shirai-ESCellTissue/",
+      "@id": "https://ssbd.riken.jp/v1/project/23-Shirai-ESCellTissue",
       "@type": "Dataset",
       "identifier": "23-Shirai-ESCellTissue",
       "name": "23-Shirai-ESCellTissue",
-      "description": "23-Shirai-ESCellTissue",
+      "description": "See details in Shirai et al. (2016) PNAS, 113(1): E81-E90.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Differentiation",
-        "Cobalt/toxicity",
-        "Disease Models, Animal",
-        "Haplorhini",
-        "Human Embryonic Stem Cells/cytology[major]",
-        "Humans",
-        "Photoreceptor Cells/pathology",
-        "Primates",
-        "Rats",
-        "Retina/cytology[major]",
-        "Retina/transplantation[major]",
-        "Retinal Degeneration/chemically induced",
-        "Retinal Degeneration/pathology",
-        "Retinal Degeneration/surgery[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -122,22 +105,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1073/pnas.1512590113"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26699487"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-53"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/53/render_thumbnail/"
       ],
       "size": [
         {
@@ -161,122 +152,218 @@
       "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Hiroshi Shirai"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Michiko Mandaia"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Keizo Matsushitaa"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Atsushi Kuwaharac"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Shigenobu Yonemuraf"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Tokushige Nakanod"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Juthaporn Assawachananonta"
-    },
-    {
-      "@id": "#auth-009",
-      "@type": "Person",
-      "name": "Toru Kimurac"
-    },
-    {
-      "@id": "#auth-010",
-      "@type": "Person",
-      "name": "Koichi Saitoe"
-    },
-    {
-      "@id": "#auth-011",
-      "@type": "Person",
-      "name": "Hiroko Terasakib"
-    },
-    {
-      "@id": "#auth-012",
-      "@type": "Person",
-      "name": "Mototsugu Eirakug"
-    },
-    {
-      "@id": "#auth-013",
-      "@type": "Person",
-      "name": "Yoshiki Sasaid"
-    },
-    {
-      "@id": "#auth-014",
-      "@type": "Person",
-      "name": "Masayo Takahashi"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1073/pnas.1512590113",
-      "@type": "ScholarlyArticle",
-      "name": "Transplantation of human embryonic stem cell-derived retinal tissue in two primate models of retinal degeneration.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "ES",
-      "description": "ES",
-      "taxonomicRange": [
+      "name": "Hiroshi Shirai",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Michiko Mandaia",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Keizo Matsushitaa",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Atsushi Kuwaharac",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Shigenobu Yonemuraf",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tokushige Nakanod",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Juthaporn Assawachananonta",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Toru Kimurac",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Koichi Saitoe",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Hiroko Terasakib",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Mototsugu Eirakug",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Yoshiki Sasaid",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Masayo Takahashi",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26699487",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26699487"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005623",
       "@type": "DefinedTerm",
-      "name": "cell"
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2162290,
-      "description": "2.2 MB",
+      "value": 4182039,
+      "description": "4.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        }
+      ]
     }
   ]
 }

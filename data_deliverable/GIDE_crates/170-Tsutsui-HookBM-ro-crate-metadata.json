@@ -45,46 +45,37 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/170-Tsutsui-HookBM/"
+        "@id": "https://ssbd.riken.jp/v2/project/170-Tsutsui-HookBM"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/170-Tsutsui-HookBM/",
+      "@id": "https://ssbd.riken.jp/v2/project/170-Tsutsui-HookBM",
       "@type": "Dataset",
       "identifier": "170-Tsutsui-HookBM",
       "name": "High-resolution three-dimensional images of the hook basement membrane in mouse dorsal skin.",
-      "description": "170-Tsutsui-HookBM",
+      "description": "See details in Tsutsui K, et. al. (2021)  Nat Commun., 12(1):2577.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Basement Membrane/cytology[major]",
+        "Basement Membrane",
+        "Basement Membrane/cytology",
         "Basement Membrane/metabolism",
         "Basement Membrane/ultrastructure",
+        "Epithelial Cells",
         "Epithelial Cells/metabolism",
-        "Extracellular Matrix/genetics",
-        "Extracellular Matrix/metabolism[major]",
         "Female",
+        "Fibroblasts",
         "Fibroblasts/metabolism",
-        "Hair Follicle/metabolism[major]",
         "Immunohistochemistry",
-        "Laminin/metabolism[major]",
-        "Mice",
-        "Mice, Inbred C57BL",
-        "Mice, Knockout",
-        "Microscopy, Electron, Transmission",
-        "Multigene Family",
-        "Muscle Cells/metabolism",
-        "Neurons/metabolism",
-        "Single-Cell Analysis",
-        "Transcriptome/genetics[major]"
+        "Mice"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "https://orcid.org/0000-0003-0883-3384"
+          "@id": "#auth-001"
         }
       ],
       "seeAlso": [
@@ -94,13 +85,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005604"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -112,7 +103,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-703"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/703/render_thumbnail/"
       ],
       "size": [
         {
@@ -129,27 +120,43 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0883-3384",
+      "@id": "#auth-001",
       "@type": "Person",
       "name": "Hironobu Fujiwara",
       "email": "hironobu.fujiwara@riken.jp",
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Tissue Microenvironment",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-021-22881-y",
       "@type": "ScholarlyArticle",
-      "name": "Mapping the molecular and structural specialization of the skin basement membrane for inter-tissue interactions.",
-      "datePublished": "2021"
+      "name": "Tsutsui K, Machida H, Nakagawa A, Ahn K, Morita R, Sekiguchi K, Miner JH, and Fujiwara H (2021) Mapping the molecular and structural specialization of the skin basement membrane for inter-tissue interactions. nature communications, Volume 12, Issue 1, pages 2577.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/33972551"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005604",
+      "@type": "DefinedTerm",
+      "name": "basement membrane",
+      "identifier": "GO:0005604"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -158,20 +165,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005604",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "basement membrane"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -185,22 +187,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 248120230,
-      "description": "248.1 MB",
+      "value": 4972704862,
+      "description": "5.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 1,
+      "value": 182,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/305-Mochizuki-multilineRaman/"
+        "@id": "https://ssbd.riken.jp/v2/project/305-Mochizuki-multilineRaman"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/305-Mochizuki-multilineRaman/",
+      "@id": "https://ssbd.riken.jp/v2/project/305-Mochizuki-multilineRaman",
       "@type": "Dataset",
       "identifier": "305-Mochizuki-multilineRaman",
       "name": "Raman spectral data of mouse fixed tissues and live HeLa cells using multiline illumination.",
-      "description": "305-Mochizuki-multilineRaman",
+      "description": "Raman microscopy is an emerging tool for molecular imaging and analysis of living samples. Use of Raman microscopy in life sciences is, however, still limited because of its slow measurement speed for spectral imaging and analysis. We developed a multiline-illumination Raman microscope to achieve ultrafast Raman spectral imaging. A spectrophotometer equipped with a periodic array of confocal slits detects Raman spectra from a sample irradiated by multiple line illuminations. A comb-like Raman hyperspectral image is formed on a two-dimensional detector in the spectrophotometer, and a hyperspectral Raman image is acquired by scanning the sample with multiline illumination array. By irradiating a sample with 21 simultaneous illumination lines, we achieved high-throughput Raman hyperspectral imaging of mouse brain tissue, acquiring 1108800 spectra in 11.4 min. We also measured mouse kidney and liver tissue as well as conducted label-free live-cell molecular imaging.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -77,19 +77,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -122,30 +122,65 @@
       "description": "Organization: Osaka University; Department: Department of Applied Physics",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Kentaro Mochizuki"
+      "name": "Kentaro Mochizuki",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yasuaki Kumamoto"
+      "name": "Yasuaki Kumamoto",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1364/BOE.480611",
       "@type": "ScholarlyArticle",
-      "name": "High-throughput line-illumination Raman microscopy with multislit detection.",
-      "datePublished": "2023"
+      "name": "Mochizuki K, Kumamoto Y, Maeda S, Tanuma M, Kasai A, Takemura M, Harada Y, Hashimoto H, Tanaka H, Smith NI, Fujita K. High-throughput line-illumination Raman microscopy with multislit detection. Biomed Opt Express. 2023 Feb 7;14(3):1015-1026.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36950233/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa Cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -154,7 +189,7 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -165,7 +200,7 @@
       "description": "Homo sapiens ~ HeLa Cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -173,27 +208,16 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
       "@type": "DefinedTerm",
-      "name": "HeLa Cell"
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -201,22 +225,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1579987561,
-      "description": "1.6 GB",
+      "value": 3158644028,
+      "description": "3.2 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 16,
+      "value": 24,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

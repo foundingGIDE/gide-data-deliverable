@@ -45,31 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/116-Yamada-Glycogen/"
+        "@id": "https://ssbd.riken.jp/v1/project/116-Yamada-Glycogen"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/116-Yamada-Glycogen/",
+      "@id": "https://ssbd.riken.jp/v1/project/116-Yamada-Glycogen",
       "@type": "Dataset",
       "identifier": "116-Yamada-Glycogen",
       "name": "Immunostaining images of Glycogen in the fat body or body wall muscles in Drosophila",
-      "description": "116-Yamada-Glycogen",
+      "description": "See details in Yamada et al. (2018) Development, 145(6): dev158865.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Adaptation, Physiological",
-        "Animals",
-        "Drosophila/metabolism[major]",
-        "Drosophila Proteins/metabolism",
-        "Fat Body/metabolism[major]",
-        "Glycogen/metabolism[major]",
-        "Homeostasis/physiology",
-        "Immunohistochemistry",
-        "Larva/metabolism",
-        "Real-Time Polymerase Chain Reaction",
-        "Starvation/metabolism",
-        "Sugars/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -89,13 +75,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1242/dev.158865"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29467247"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -104,10 +87,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-265"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/265/render_thumbnail/"
       ],
       "size": [
         {
@@ -131,35 +125,71 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Growth Control Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Takayuki Yamada"
+      "name": "Takayuki Yamada",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Growth Control Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Okiko Habara"
+      "name": "Okiko Habara",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Growth Control Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Hitomi Kubo"
+      "name": "Hitomi Kubo",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Growth Control Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1242/dev.158865",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29467247",
       "@type": "ScholarlyArticle",
-      "name": "Fat body glycogen serves as a metabolic safeguard for the maintenance of sugar levels in Drosophila.",
-      "datePublished": "2018"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29467247"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005980",
+      "@type": "DefinedTerm",
+      "name": "glycogen breakdown",
+      "identifier": "GO:0005980"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005623",
+      "@type": "DefinedTerm",
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215",
+      "@type": "Taxon",
+      "scientificName": "Drosophila",
+      "name": "Drosophila",
+      "identifier": "NCBITaxon:7215"
     },
     {
       "@id": "#biosample-1",
@@ -168,39 +198,41 @@
       "description": "Drosophila",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
-      "@type": "Taxon",
-      "scientificName": "drosophila"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005980",
-      "@type": "DefinedTerm",
-      "name": "glycogen breakdown"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005623",
-      "@type": "DefinedTerm",
-      "name": "cell"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 70576910,
-      "description": "70.6 MB",
+      "value": 80944190,
+      "description": "80.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 12,
+      "value": 24,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

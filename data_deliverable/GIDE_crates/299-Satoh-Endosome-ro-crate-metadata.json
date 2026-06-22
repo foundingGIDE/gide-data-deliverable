@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/299-Satoh-Endosome/"
+        "@id": "https://ssbd.riken.jp/v2/project/299-Satoh-Endosome"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/299-Satoh-Endosome/",
+      "@id": "https://ssbd.riken.jp/v2/project/299-Satoh-Endosome",
       "@type": "Dataset",
       "identifier": "299-Satoh-Endosome",
       "name": "Endosome maturation promoted by interorganelle association between mitochondria and endosomes",
-      "description": "299-Satoh-Endosome",
+      "description": "Intracellular organelles of mammalian cells communicate with one another during various cellular processes. The functions and molecular mechanisms of such interorganelle association remain largely unclear, however. The authors identify voltage-dependent anion channel 2 (VDAC2), a mitochondrial outer membrane protein, as a binding partner of phosphoinositide 3-kinase (PI3K), a regulator of clathrin-independent endocytosis downstream of the small GTPase Ras. VDAC2 tethers endosomes positive for the Ras-PI3K complex to mitochondria in response to cell stimulation with epidermal growth factor and promotes clathrin-independent endocytosis, as well as endosome maturation at membrane association sites. With an optogenetics system to induce mitochondrion-endosome association, the authors find that, in addition to its structural role in such association, VDAC2 is functionally implicated in the promotion of endosome maturation.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -77,19 +77,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0001591"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007173"
+          "@id": "http://purl.obolibrary.org/obo/GO_0005769"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005769"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0070925"
@@ -98,13 +95,16 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0005739"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005770"
+          "@id": "http://purl.obolibrary.org/obo/GO_0005768"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0048388"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005768"
+          "@id": "http://purl.obolibrary.org/obo/GO_0005770"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007173"
         }
       ],
       "measurementMethod": [
@@ -128,7 +128,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1355"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1355/render_thumbnail/"
       ],
       "size": [
         {
@@ -152,30 +152,102 @@
       "description": "Organization: Hokkaido University; Department: Department of Cell Physiology",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e16g702"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Aya O. Satoh"
+      "name": "Aya O. Satoh",
+      "email": "ayao.sato@med.hokudai.ac.jp",
+      "description": "Organization: Hokkaido University; Department: Department of Cell Physiology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yoichiro Fujioka"
+      "name": "Yoichiro Fujioka",
+      "email": "y-fuji@med.hokudai.ac.jp",
+      "description": "Organization: Hokkaido University; Department: Department of Cell Physiology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02e16g702",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Hokkaido University"
     },
     {
       "@id": "https://doi.org/10.1016/j.celrep.2023.112229",
       "@type": "ScholarlyArticle",
-      "name": "Interaction between PI3K and the VDAC2 channel tethers Ras-PI3K-positive endosomes to mitochondria and promotes endosome maturation.",
-      "datePublished": "2023"
+      "name": "Satoh AO, Fujioka Y, Kashiwagi S, Yoshida A, Fujioka M, Sasajima H, Nanbo A, Amano M, Ohba Y. Interaction between PI3K and the VDAC2 channel tethers Ras-PI3K-positive endosomes to mitochondria and promotes endosome maturation. Cell Rep. 2023 Mar 28;42(3):112229.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36906852/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001591",
+      "@type": "DefinedTerm",
+      "name": "A431 cell",
+      "identifier": "CLO:0001591"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005769",
+      "@type": "DefinedTerm",
+      "name": "early endosome",
+      "identifier": "GO:0005769"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070925",
+      "@type": "DefinedTerm",
+      "name": "organelle assembly",
+      "identifier": "GO:0070925"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
+      "@type": "DefinedTerm",
+      "name": "mitochondrion",
+      "identifier": "GO:0005739"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005768",
+      "@type": "DefinedTerm",
+      "name": "endosome",
+      "identifier": "GO:0005768"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048388",
+      "@type": "DefinedTerm",
+      "name": "endosomal lumen acidification",
+      "identifier": "GO:0048388"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005770",
+      "@type": "DefinedTerm",
+      "name": "late endosome",
+      "identifier": "GO:0005770"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007173",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor signaling pathway",
+      "identifier": "GO:0007173"
     },
     {
       "@id": "#biosample-1",
@@ -184,7 +256,7 @@
       "description": "Homo sapiens ~ A431 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -192,50 +264,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0001591",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "A431 cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007173",
-      "@type": "DefinedTerm",
-      "name": "epidermal growth factor receptor signaling pathway"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005769",
-      "@type": "DefinedTerm",
-      "name": "early endosome"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0070925",
-      "@type": "DefinedTerm",
-      "name": "organelle assembly"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
-      "@type": "DefinedTerm",
-      "name": "mitochondrion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005770",
-      "@type": "DefinedTerm",
-      "name": "late endosome"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048388",
-      "@type": "DefinedTerm",
-      "name": "endosomal lumen acidification"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005768",
-      "@type": "DefinedTerm",
-      "name": "endosome"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -249,6 +281,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -258,6 +296,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -271,32 +315,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1201968482,
-      "description": "1.2 GB",
+      "value": 1581821101,
+      "description": "1.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 46,
+      "value": 60,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

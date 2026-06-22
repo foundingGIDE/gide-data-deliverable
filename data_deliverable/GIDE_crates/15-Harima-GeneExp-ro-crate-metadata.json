@@ -45,38 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/15-Harima-GeneExp/"
+        "@id": "https://ssbd.riken.jp/v1/project/15-Harima-GeneExp"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/15-Harima-GeneExp/",
+      "@id": "https://ssbd.riken.jp/v1/project/15-Harima-GeneExp",
       "@type": "Dataset",
       "identifier": "15-Harima-GeneExp",
       "name": "15-Harima-GeneExp",
-      "description": "15-Harima-GeneExp",
+      "description": "See details in Harima et al. (2013) Cell Reports, 3(1): 1-7",
       "datePublished": "2016-01-18",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Animals, Newborn",
-        "Basic Helix-Loop-Helix Transcription Factors/genetics[major]",
-        "Biological Clocks/genetics[major]",
-        "Body Patterning/genetics[major]",
-        "Bone and Bones/embryology",
-        "Bone and Bones/metabolism",
-        "Cartilage/embryology",
-        "Cartilage/metabolism",
-        "Cervical Vertebrae/metabolism",
-        "Embryo, Mammalian/metabolism",
-        "Enzyme Assays",
-        "Introns/genetics[major]",
-        "Luciferases/metabolism",
-        "Mice",
-        "Somites/embryology",
-        "Somites/metabolism",
-        "Thoracic Vertebrae/metabolism",
-        "Transgenes/genetics"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -102,19 +81,27 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.celrep.2012.11.012"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23219549"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-3"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/3/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,45 +125,82 @@
       "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yukiko Harima"
+      "name": "Yukiko Harima",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yoshiki Takashima"
+      "name": "Yoshiki Takashima",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Yuriko Ueda"
+      "name": "Yuriko Ueda",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Toshiyuki Ohtsuka"
+      "name": "Toshiyuki Ohtsuka",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "and Ryoichiro Kageyama"
+      "name": "and Ryoichiro Kageyama",
+      "description": "Organization: Kyoto University; Department: Institute for Virus Research; Laboratory: Kageyama Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
-      "@id": "https://doi.org/10.1016/j.celrep.2012.11.012",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23219549",
       "@type": "ScholarlyArticle",
-      "name": "Accelerating the tempo of the segmentation clock by reducing the number of introns in the Hes7 gene.",
-      "datePublished": "2013"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/23219549",
+      "datePublished": "1954"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -185,30 +209,41 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1072646,
-      "description": "1.1 MB",
+      "value": 1425435,
+      "description": "1.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

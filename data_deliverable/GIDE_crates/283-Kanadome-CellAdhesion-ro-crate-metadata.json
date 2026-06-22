@@ -45,22 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/283-Kanadome-CellAdhesion/"
+        "@id": "https://ssbd.riken.jp/v2/project/283-Kanadome-CellAdhesion"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/283-Kanadome-CellAdhesion/",
+      "@id": "https://ssbd.riken.jp/v2/project/283-Kanadome-CellAdhesion",
       "@type": "Dataset",
       "identifier": "283-Kanadome-CellAdhesion",
       "name": "Time-lapse imaging of reversible intercellular NCad interactions by INCIDER in HEK293T cells.",
-      "description": "283-Kanadome-CellAdhesion",
+      "description": "See details in Kanadome T, et. al. (2022) Commun Biol. Oct 7;5(1):1065.",
       "datePublished": "2023-07-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Cadherins/metabolism[major]",
-        "Cell Adhesion",
-        "Neurons/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -76,10 +71,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0098602"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0037372"
@@ -91,7 +86,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0098641"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0098602"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -100,10 +95,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1053"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1053/render_thumbnail/"
       ],
       "size": [
         {
@@ -127,20 +128,54 @@
       "description": "Organization: Osaka University; Department: SANKEN (The Institute of Scientific and Industrial Research); Laboratory: Department of Biomolecular Science and Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s42003-022-04023-2",
       "@type": "ScholarlyArticle",
-      "name": "Development of intensiometric indicators for visualizing N-cadherin interaction across cells.",
-      "datePublished": "2022"
+      "name": "Kanadome T, Hayashi K, Seto Y, Eiraku M, Nakajima K, Nagai T, Matsuda T. Development of intensiometric indicators for visualizing N-cadherin interaction across cells. Commun Biol. 2022 Oct 7;5(1):1065.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36207396/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098602",
+      "@type": "DefinedTerm",
+      "name": "cell adhesion",
+      "identifier": "GO:0098602"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0037372",
+      "@type": "DefinedTerm",
+      "name": "HEK293T cell",
+      "identifier": "CLO:0037372"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098632",
+      "@type": "DefinedTerm",
+      "name": "cell-cell adhesion mediator activity",
+      "identifier": "GO:0098632"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098641",
+      "@type": "DefinedTerm",
+      "name": "cadherin binding involved in cell-cell adhesion",
+      "identifier": "GO:0098641"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -149,7 +184,7 @@
       "description": "Homo sapiens ~ HEK293T cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -157,30 +192,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0037372",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HEK293T cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0098632",
-      "@type": "DefinedTerm",
-      "name": "cell-cell adhesion mediator activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0098641",
-      "@type": "DefinedTerm",
-      "name": "cadherin binding involved in cell-cell adhesion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0098602",
-      "@type": "DefinedTerm",
-      "name": "cell adhesion"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -194,24 +209,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 29970938,
-      "description": "30.0 MB",
+      "value": 40036553,
+      "description": "40.0 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 9,
+      "value": 11,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

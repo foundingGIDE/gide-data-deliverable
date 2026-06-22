@@ -84,10 +84,18 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -139,19 +147,31 @@
       "description": "Cell line sample",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
       ],
       "hasCellLine": [
-        "HCT116",
-        "Neuro2a"
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003665",
+          "name": "HCT 116 cell"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0008154",
+          "name": "Neuro-2a cell"
+        }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -167,6 +187,17 @@
       "value": 353,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

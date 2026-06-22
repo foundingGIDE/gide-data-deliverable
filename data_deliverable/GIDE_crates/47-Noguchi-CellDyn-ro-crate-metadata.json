@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/47-Noguchi-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/47-Noguchi-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/47-Noguchi-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/47-Noguchi-CellDyn",
       "@type": "Dataset",
       "identifier": "47-Noguchi-CellDyn",
       "name": "47-Noguchi-CellDyn",
-      "description": "47-Noguchi-CellDyn",
+      "description": "See details in Noguchi et al. (2015) Cell Rep, 13(12): 2679–2686.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Movement/physiology[major]",
-        "Immunohistochemistry",
-        "Lung/cytology[major]",
-        "Lung/metabolism",
-        "Mice",
-        "Neuroendocrine Cells/cytology[major]",
-        "Neuroendocrine Cells/metabolism[major]",
-        "Neuroepithelial Bodies/cytology[major]",
-        "Neuroepithelial Bodies/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -76,7 +64,7 @@
           "@id": "#auth-001"
         },
         {
-          "@id": "https://orcid.org/0000-0001-9132-4155"
+          "@id": "#auth-002"
         },
         {
           "@id": "#auth-003"
@@ -84,19 +72,27 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.celrep.2015.11.058"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26711336"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-171"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/171/render_thumbnail/"
       ],
       "size": [
         {
@@ -120,36 +116,48 @@
       "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Lung Development",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://orcid.org/0000-0001-9132-4155",
+      "@id": "#auth-002",
       "@type": "Person",
       "name": "Mitsuru Morimoto",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development and Regeneration",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Lung Development",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Kenta Sumiyama"
+      "name": "Kenta Sumiyama",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Lung Development",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1016/j.celrep.2015.11.058",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26711336",
       "@type": "ScholarlyArticle",
-      "name": "Directed Migration of Pulmonary Neuroendocrine Cells toward Airway Branches Organizes the Stereotypic Location of Neuroepithelial Bodies.",
-      "datePublished": "2015"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26711336"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -158,28 +166,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 96874937802,
-      "description": "96.9 GB",
+      "value": 162177548637,
+      "description": "162.2 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 40,
+      "value": 79,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

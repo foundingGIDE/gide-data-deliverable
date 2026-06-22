@@ -45,26 +45,34 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/451-Hitora-Neopetromin/"
+        "@id": "https://ssbd.riken.jp/v3/project/451-Hitora-Neopetromin"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/451-Hitora-Neopetromin/",
+      "@id": "https://ssbd.riken.jp/v3/project/451-Hitora-Neopetromin",
       "@type": "Dataset",
       "identifier": "451-Hitora-Neopetromin",
       "name": "The shape of vacuole and F-actin in tobacco BY-2 cells treated with neopetromin, a newly found peptide",
-      "description": "HPLC-MS analysis revealed the presence of an\r\nunreported peptide in the extract of the marine sponge Neopetrosia\r\nsp. Its structure was determined as a tripeptide, named\r\nneopetromin (1), composed of two tyrosine and one tryptophan\r\nresidues with a heteroaromatic C−N cross-link between side\r\nchains. The absolute configuration of amino acids was determined\r\nusing Marfey’s method after ozonolysis and hydrolysis of 1.\r\nCompound 1 promoted vacuole fragmentation in an actin-\r\nindependent manner in tobacco BY-2 cells.",
+      "description": "HPLC-MS analysis revealed the presence of an\nunreported peptide in the extract of the marine sponge Neopetrosia\nsp. Its structure was determined as a tripeptide, named\nneopetromin (1), composed of two tyrosine and one tryptophan\nresidues with a heteroaromatic C−N cross-link between side\nchains. The absolute configuration of amino acids was determined\nusing Marfey’s method after ozonolysis and hydrolysis of 1.\nCompound 1 promoted vacuole fragmentation in an actin-\nindependent manner in tobacco BY-2 cells.",
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Microscopy, Confocal",
+        "Vacuoles",
+        "Actin Cytoskeleton"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-7993-381X"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0003-4271-2543"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-1379-3930"
         }
       ],
       "seeAlso": [
@@ -72,21 +80,20 @@
           "@id": "https://doi.org/10.1021/acs.jnatprod.4c00158"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005773"
+          "@id": "http://purl.obolibrary.org/obo/BTO_0001972"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0030837"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097"
         }
       ],
       "measurementMethod": [
@@ -98,7 +105,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1802"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1802/render_thumbnail/"
       ],
       "size": [
         {
@@ -115,76 +122,88 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-7993-381X",
       "@type": "Person",
       "name": "Sachiko Tsukamoto",
       "email": "sachiko@kumamoto-u.ac.jp",
-      "description": "Organization: Kumamoto; Department: Department of Natural Medicines; Laboratory: Department of Natural Medicines",
+      "description": "Organization: Kumamoto\nUniversity; Department: Department of Natural Medicines,\nGraduate School of Pharmaceutical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/02cgss904"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0003-4271-2543",
       "@type": "Person",
       "name": "Yuki Hitora",
       "email": "hitora@kumamoto-u.ac.jp",
-      "description": "Organization: University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Graduate School of Pharmaceutical Sciences",
+      "description": "Organization: Kumamoto\nUniversity; Department: Department of Natural Medicines,\nGraduate School of Pharmaceutical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/04japw488"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02cgss904",
-      "@type": "Organization",
-      "name": "Kumamoto"
+      "@id": "https://orcid.org/0000-0002-1379-3930",
+      "@type": "Person",
+      "name": "Takumi Higaki",
+      "email": "thigaki@kumamoto-u.ac.jp",
+      "description": "Organization: Kumamoto\nUniversity; Department: Faculty of Science, \nKumamoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/04japw488",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "University"
+      "name": "Kumamoto\nUniversity"
     },
     {
       "@id": "https://doi.org/10.1021/acs.jnatprod.4c00158",
       "@type": "ScholarlyArticle",
-      "name": "Neopetromin, a Cyclic Tripeptide with a C-N Cross-Link, from the Marine Sponge Neopetrosia sp., That Causes Vacuole Fragmentation in Tobacco BY-2 Cells.",
-      "datePublished": "2024"
+      "name": "Hitora Y, El-Desoky AH, Sadahiro Y, Sejiyama A, Kinoshita A, Ise Y, Angkouw ED, Mangindaan REP, Higaki T, Tsukamoto S. Neopetromin, a Cyclic Tripeptide with a C-N Cross-Link, from the Marine Sponge Neopetrosia sp., That Causes Vacuole Fragmentation in Tobacco BY-2 Cells. J Nat Prod. 2024 Apr 26;87(4):1197-1202.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38503712/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JSPS KAKENHI Grant Number\n26305005 (S.T.) and the Sumitomo Foundation Grant\nNumber 2330082 (T.H.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana tabacum",
+      "name": "Nicotiana tabacum",
+      "identifier": "NCBITaxon:4097"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/BTO_0001972",
+      "@type": "DefinedTerm",
+      "name": "TBY-2 cell"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Nicotiana tabacum ~ TBY-2 cell",
-      "description": "Nicotiana tabacum ~ TBY-2 cell",
+      "name": "Nicotiana tabacum (NCBI:txid4097) ~ TBY-2 cell",
+      "description": "Tobacco BY-2 cells stably expressing green\nfluorescent protein (GFP)-AtVam3p that was treated with latrunculin B.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097"
         }
-      ],
-      "hasCellLine": "TBY-2 cell"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
-      "@type": "Taxon",
-      "scientificName": "Nicotiana tabacum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005773",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "vacuole"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030837",
-      "@type": "DefinedTerm",
-      "name": "negative regulation of actin filament polymerization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
-      "@type": "DefinedTerm",
-      "name": "actin cytoskeleton"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -198,22 +217,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 649319612,
-      "description": "649.3 MB",
+      "value": 755676459,
+      "description": "755.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 12,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

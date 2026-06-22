@@ -100,6 +100,14 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
       "size": [
         {
           "@id": "#total-dataset-size"
@@ -149,6 +157,12 @@
       "vernacularName": "mouse"
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 760350945280,
@@ -162,6 +176,17 @@
       "value": 508953,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

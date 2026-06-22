@@ -79,7 +79,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_562"
         }
       ],
       "measurementMethod": [
@@ -87,7 +87,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "size": [
@@ -139,26 +145,10 @@
       "datePublished": "2024"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_562",
       "@type": "Taxon",
       "scientificName": "Escherichia coli",
       "vernacularName": "e. coli"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Transmitted-light microscopy and epi-fluorescent microscopy",
-      "description": "Transmitted-light microscopy and epi-fluorescent microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
-      "@type": "DefinedTerm",
-      "name": "Transmitted-light microscopy and epi-fluorescent microscopy"
     },
     {
       "@id": "#total-dataset-size",
@@ -174,6 +164,40 @@
       "value": 59,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

@@ -45,54 +45,56 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/331-Shimojo-MouseBrainAnatomicalRegion/"
+        "@id": "https://ssbd.riken.jp/v2/project/331-Shimojo-MouseBrainAnatomicalRegion"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/331-Shimojo-MouseBrainAnatomicalRegion/",
+      "@id": "https://ssbd.riken.jp/v2/project/331-Shimojo-MouseBrainAnatomicalRegion",
       "@type": "Dataset",
       "identifier": "331-Shimojo-MouseBrainAnatomicalRegion",
       "name": "Semantic segmentation data of eight anatomical regions for mouse brain slices with neurogenic-tagged neurons from NeuroGT database",
-      "description": "331-Shimojo-MouseBrainAnatomicalRegion",
+      "description": "Semantic segmentation results of eight anatomical regions  (isocortex, olfactory area, hippocampal formation, cerebral nuclei, interbrain, midbrain, hindbrain, and cerebellum)  for 84 imaging data sets of mouse brain slices provided from NeuroGT database",
       "datePublished": "2023-12-24",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "neurons",
+        "axons",
+        "brain",
+        "mice transgenic",
+        "immunohistochemistry"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-8378-2383"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0009-0003-5881-0321"
         },
         {
           "@id": "#auth-003"
         },
         {
-          "@id": "#auth-004"
-        }
-      ],
-      "seeAlso": [
+          "@id": "https://orcid.org/0000-0001-5218-2959"
+        },
         {
-          "@id": "https://doi.org/10.2197/ipsjtbio.17.33"
+          "@id": "#auth-005"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "#biosample-4"
         },
         {
           "@id": "#biosample-3"
         },
         {
-          "@id": "#biosample-4"
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007399"
@@ -102,10 +104,39 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0043005"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-728"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/728/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,42 +153,105 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-8378-2383",
+      "@type": "Person",
+      "name": "Yukako  Tohsato",
+      "email": "yukako@fc.ritsumei.ac.jp",
+      "url": "http://www.cb.is.ritsumei.ac.jp",
+      "description": "Organization: Ritsumeikan University; Department: Faculty of Information Science and Engineering; Laboratory: Laboratory of compubational biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-5881-0321",
+      "@type": "Person",
+      "name": "Yuki Shimojo",
+      "email": "is0460vp@ed.ritsumei.ac.jp",
+      "description": "Organization: Ritsumeikan University; Department: Graduate School of Information Science and Engineering; Laboratory: Laboratory of compubational biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Kazuki Suehara",
+      "email": "kalo1004517@gmail.com",
+      "description": "Organization: Nara Institute of Science and Technology; Department: Graduate School of Science and Technology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5218-2959",
+      "@type": "Person",
+      "name": "Tatsumi Hirata",
+      "email": "tathirat@nig.ac.jp",
+      "description": "Organization: National Institute of Genetics; Laboratory: Brain Function Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
       "@type": "Person",
       "name": "Yukako Tohsato",
       "email": "yukako@fc.ritsumei.ac.jp",
       "description": "Organization: Ritsumeikan University; Department: Faculty of Information Science and Engineering; Laboratory: Laboratory of compubational biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/0197nmd03"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
-      "@type": "Person",
-      "name": "Yuki Shimojo"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Kazuki Suehara"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Tatsumi Hirata"
-    },
-    {
-      "@id": "https://ror.org/0197nmd03",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Ritsumeikan University"
     },
     {
-      "@id": "https://doi.org/10.2197/ipsjtbio.17.33",
-      "@type": "ScholarlyArticle",
-      "name": "Segmentation of Mouse Brain Slices with Unsupervised Domain Adaptation Considering Cross-sectional Locations",
-      "datePublished": "2024"
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Nara Institute of Science and Technology"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "National Institute of Genetics"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
+      "@type": "DefinedTerm",
+      "name": "nervous system development",
+      "identifier": "GO:0007399"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043005",
+      "@type": "DefinedTerm",
+      "name": "neuron projection",
+      "identifier": "GO:0043005"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -166,7 +260,7 @@
       "description": "C57BL/6 Neurod1^{CreER}(D1B); Tau^{mGFP-nLacZ}",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -177,7 +271,7 @@
       "description": "C57BL/6 Neurod4^{CreER}(D4A); Tau^{mGFP-nLacZ}",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -188,7 +282,7 @@
       "description": "C57BL/6 Neurog1^{CreER}(G1C); Tau^{mGFP-nLacZ}",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -199,43 +293,90 @@
       "description": "C57BL/6 neuroG2^{CreER}(G2A); Tau^{mGFP-nLacZ}",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
-      "@type": "DefinedTerm",
-      "name": "nervous system development"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000002",
       "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "chemically fixed tissue",
+      "identifier": "FBbi:00000002"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043005",
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "chemically fixed tissue",
+      "description": "chemically fixed tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000027",
       "@type": "DefinedTerm",
-      "name": "neuron projection"
+      "name": "cryostat-sectioned tissue",
+      "identifier": "FBbi:00000027"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "cryostat-sectioned tissue",
+      "description": "cryostat-sectioned tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000138",
+      "@type": "DefinedTerm",
+      "name": "horseradish peroxidase",
+      "identifier": "FBbi:00000138"
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "horseradish peroxidase",
+      "description": "horseradish peroxidase",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 56272008158,
-      "description": "56.3 GB",
+      "value": 3727371316432,
+      "description": "3.7 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 168,
+      "value": 1833,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

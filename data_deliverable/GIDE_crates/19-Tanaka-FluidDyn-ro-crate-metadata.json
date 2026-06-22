@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/19-Tanaka-FluidDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/19-Tanaka-FluidDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/19-Tanaka-FluidDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/19-Tanaka-FluidDyn",
       "@type": "Dataset",
       "identifier": "19-Tanaka-FluidDyn",
       "name": "19-Tanaka-FluidDyn",
-      "description": "19-Tanaka-FluidDyn",
+      "description": "See details in Tanaka (2014) Micromachines, 5(2): 289-299",
       "datePublished": "2016-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -69,13 +69,17 @@
           "@id": "https://doi.org/10.3390/mi5020289"
         }
       ],
-      "about": [
+      "about": [],
+      "measurementMethod": [
         {
-          "@id": "#biosample-1"
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-8"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/8/render_thumbnail/"
       ],
       "size": [
         {
@@ -99,39 +103,44 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Integrated Biodevice",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.3390/mi5020289",
-      "@type": "ScholarlyArticle",
-      "name": "A Peristaltic Pump Integrated on a 100% Glass Microchip Using Computer Controlled Piezoelectric Actuators",
-      "datePublished": "2014"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "NA",
-      "description": "NA"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1426153428,
-      "description": "1.4 GB",
+      "value": 1520051921,
+      "description": "1.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 341,
+      "value": 342,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

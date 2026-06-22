@@ -71,7 +71,15 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -112,10 +120,16 @@
       "datePublished": "2023"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -131,6 +145,17 @@
       "value": 103,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

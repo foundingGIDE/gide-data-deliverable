@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/239-Miyamoto-MitochondrialDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/239-Miyamoto-MitochondrialDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/239-Miyamoto-MitochondrialDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/239-Miyamoto-MitochondrialDyn",
       "@type": "Dataset",
       "identifier": "239-Miyamoto-MitochondrialDyn",
       "name": "Living-cell imaging of HeLa cells transfected with Tom20-CR.",
-      "description": "239-Miyamoto-MitochondrialDyn",
+      "description": "See details in Miyamoto T, et. al. (2021) STAR Protoc, Aug 5;2(3):100721.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Dimerization",
-        "Genetic Engineering/methods[major]",
-        "HeLa Cells",
-        "Humans",
-        "Mitochondria/metabolism",
-        "Mitochondria/physiology[major]",
-        "Organelle Shape/drug effects[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,9 +71,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -90,6 +78,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0000262"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -101,7 +92,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-760"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/760/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,20 +116,42 @@
       "description": "Organization: University of Tsukuba; Department: Faculty of Medicine; Laboratory: Department of Internal Medicine (Endocrinology and Metabolism)",
       "affiliation": [
         {
-          "@id": "https://ror.org/02956yf07"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02956yf07",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "University of Tsukuba"
     },
     {
       "@id": "https://doi.org/10.1016/j.xpro.2021.100721",
       "@type": "ScholarlyArticle",
-      "name": "Protocol for rapid manipulation of mitochondrial morphology in living cells using inducible counter mitochondrial morphology (iCMM).",
-      "datePublished": "2021"
+      "name": "Miyamoto T, Han SI, Shimano H. Protocol for rapid manipulation of mitochondrial morphology in living cells using inducible counter mitochondrial morphology (iCMM). STAR Protoc. 2021 Aug 5;2(3):100721.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34401787/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000262",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial chromosome",
+      "identifier": "GO:0000262"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -147,7 +160,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -155,20 +168,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000262",
-      "@type": "DefinedTerm",
-      "name": "mitochondrial chromosome"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -182,22 +185,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 168280241,
-      "description": "168.3 MB",
+      "value": 271634162,
+      "description": "271.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 3,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

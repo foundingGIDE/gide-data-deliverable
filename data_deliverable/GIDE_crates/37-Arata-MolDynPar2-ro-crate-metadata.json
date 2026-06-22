@@ -45,37 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/37-Arata-MolDynPar2/"
+        "@id": "https://ssbd.riken.jp/v1/project/37-Arata-MolDynPar2"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/37-Arata-MolDynPar2/",
+      "@id": "https://ssbd.riken.jp/v1/project/37-Arata-MolDynPar2",
       "@type": "Dataset",
       "identifier": "37-Arata-MolDynPar2",
       "name": "37-Arata-MolDynPar2",
       "description": "37-Arata-MolDynPar2",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Caenorhabditis elegans/cytology",
-        "Caenorhabditis elegans/genetics",
-        "Caenorhabditis elegans/metabolism[major]",
-        "Caenorhabditis elegans Proteins/genetics",
-        "Caenorhabditis elegans Proteins/metabolism[major]",
-        "Cell Compartmentation",
-        "Cell Polarity",
-        "Cytoplasm/metabolism[major]",
-        "Cytoplasm/ultrastructure",
-        "Embryo, Nonmammalian/cytology",
-        "Embryo, Nonmammalian/metabolism[major]",
-        "Gene Expression Regulation",
-        "Kinetics",
-        "Models, Statistical[major]",
-        "Phosphorylation",
-        "Protein Transport",
-        "Single Molecule Imaging"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -117,27 +97,35 @@
           "@id": "#auth-012"
         },
         {
-          "@id": "https://orcid.org/0000-0002-9294-9998"
+          "@id": "#auth-013"
         }
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.celrep.2016.07.047"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27524610"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-67"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/67/render_thumbnail/"
       ],
       "size": [
         {
@@ -161,7 +149,7 @@
       "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -169,79 +157,157 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Yasushi Sako",
-      "email": "sako@riken.jp"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Michio Hiroshima"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Chan-Gi Pack"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Ravikrishna Ramanujam"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Fumio Motegi"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Kenichi Nakazato"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Yuki Shindo"
-    },
-    {
-      "@id": "#auth-009",
-      "@type": "Person",
-      "name": "Paul W. Wiseman"
-    },
-    {
-      "@id": "#auth-010",
-      "@type": "Person",
-      "name": "Hitoshi Sawa"
-    },
-    {
-      "@id": "#auth-011",
-      "@type": "Person",
-      "name": "Tetsuya J. Kobayashi"
-    },
-    {
-      "@id": "#auth-012",
-      "@type": "Person",
-      "name": "Hugo B. Brandão"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9294-9998",
-      "@type": "Person",
-      "name": "Tatsuo Shibata",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Physical Biology",
+      "email": "sako@riken.jp",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Michio Hiroshima",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Chan-Gi Pack",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Ravikrishna Ramanujam",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Fumio Motegi",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kenichi Nakazato",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Yuki Shindo",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Paul W. Wiseman",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Hitoshi Sawa",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Tetsuya J. Kobayashi",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Hugo B. Brandão",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Tatsuo Shibata",
+      "description": "Organization: RIKEN; Department: Wako; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1016/j.celrep.2016.07.047",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27524610",
       "@type": "ScholarlyArticle",
-      "name": "Cortical Polarity of the RING Protein PAR-2 Is Maintained by Exchange Rate Kinetics at the Cortical-Cytoplasmic Boundary.",
-      "datePublished": "2016"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27524610"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
     },
     {
       "@id": "#biosample-1",
@@ -250,35 +316,41 @@
       "description": "Caenorhabditis elegans",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
-      "@type": "DefinedTerm",
-      "name": "cellular protein localization"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1620163287,
-      "description": "1.6 GB",
+      "value": 2808328480,
+      "description": "2.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 15,
+      "value": 24,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

@@ -45,24 +45,26 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/383-Hiromoto-PoralizeDiv/"
+        "@id": "https://ssbd.riken.jp/v3/project/383-Hiromoto-PoralizeDiv"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/383-Hiromoto-PoralizeDiv/",
+      "@id": "https://ssbd.riken.jp/v3/project/383-Hiromoto-PoralizeDiv",
       "@type": "Dataset",
       "identifier": "383-Hiromoto-PoralizeDiv",
       "name": "Time-lapse images of intracellular structure in elongating Arabidopsis zygotes",
-      "description": "383-Hiromoto-PoralizeDiv",
+      "description": "A comprehensive and quantitative evaluation of multiple intracellular structures or proteins is a promising approach to provide a deeper understanding of and new insights into cellular polarity. In this study, the authors developed an image analysis pipeline to obtain intensity profiles of fluorescent probes along the apical–basal axis in elongating Arabidopsis thaliana zygotes based on two-photon live-cell imaging data. This technique showed the intracellular distribution of actin filaments, mitochondria, microtubules, and vacuolar membranes along the apical–basal axis in elongating zygotes from the onset of cell elongation to just before asymmetric cell division. Hierarchical cluster analysis of the quantitative data on intracellular distribution revealed that the zygote may be compartmentalized into two parts, with a boundary located 43.6% from the cell tip, immediately after fertilization. To explore the biological significance of this compartmentalization, they examined the positions of the asymmetric cell divisions from the dataset used in this distribution analysis. They found that the cell division plane was reproducibly inserted 20.5% from the cell tip. This position corresponded well with the midpoint of the compartmentalized apical region, suggesting a potential relationship between the zygote compartmentalization, which begins with cell elongation, and the position of the asymmetric cell division.",
       "datePublished": "2025-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Arabidopsis[major]",
-        "Zygote/metabolism",
-        "Cell Division",
-        "Cell Cycle",
+        "Zygote",
+        "Microscopy, Confocal, Time-Lapse Imaging",
         "Asymmetric Cell Division",
-        "Cell Polarity"
+        "Actins",
+        "Cell Polarity",
+        "Microtubules",
+        "Mitochondria",
+        "Vacuoles"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -86,33 +88,20 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/s41598-023-50020-8"
+          "@id": "https://doi.org/1038/s41598-023-50020-8"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0010070"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016043"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0015630"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005773"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ],
       "measurementMethod": [
@@ -130,7 +119,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1752"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1752/render_thumbnail/"
       ],
       "size": [
         {
@@ -151,89 +140,108 @@
       "@type": "Person",
       "name": "Takumi Higaki",
       "email": "thigaki@kumamoto-u.ac.jp",
-      "description": "Organization: Kumamoto University; Department: Graduate School of Science and Technology; Laboratory: Graduate School of Science and Technology",
+      "description": "Organization: Kumamoto University; Department: Graduate School of Science and Technology",
       "affiliation": [
         {
-          "@id": "https://ror.org/02cgss904"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yusuke Kimata"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Hikari Matsumoto"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Sakumi Nakagawa"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Minako Ueda"
-    },
-    {
-      "@id": "https://ror.org/02cgss904",
-      "@type": "Organization",
-      "name": "Kumamoto University"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41598-023-50020-8",
-      "@type": "ScholarlyArticle",
-      "name": "Comprehensive and quantitative analysis of intracellular structure polarization at the apical-basal axis in elongating Arabidopsis zygotes.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Col-0",
-      "description": "Col-0",
-      "taxonomicRange": [
+      "name": "Yusuke Kimata",
+      "email": "yusuke.kimata.a3@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Hikari Matsumoto",
+      "email": "hikari.matsumoto.a6@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Sakumi Nakagawa",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Minako Ueda",
+      "email": "minako.ueda.e7@tohoku.ac.jp",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kumamoto University"
+    },
+    {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Tohoku University"
+    },
+    {
+      "@id": "https://doi.org/1038/s41598-023-50020-8",
+      "@type": "ScholarlyArticle",
+      "name": "Hiromoto Y, Minamino N, Kikuchi S, Kimata Y, Matsumoto H, Nakagawa S, Ueda M, Higaki T. Comprehensive and quantitative analysis of intracellular structure polarization at the apical-basal axis in elongating Arabidopsis zygotes. Sci Rep. 2023 Dec 18;13(1):22879.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38129559/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10739889/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the Japan Advanced Plant Science Network, the Japan Society for the Promotion of Science [a Grant-in-Aid for Research Activity Start-up (JP21K20650 to H.M.), a Grant-in-Aid for Early-Career Scientists (JP22K15135 to H.M., and JP23K14204 to Y.K.), a Grant-in-Aid for Scientific Research on Innovative Areas (JP19H05670 and JP19H05676 to M.U.; JP16H06280 (Advanced Bio- imaging Support)), a Grant-in-Aid for Scientific Research (B) (JP23H02494 to M.U.)], and the Japan Science and Technology Agency [CREST (JPMJCR2121 to T. H. and M.U.)]."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
       "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0010070",
-      "@type": "DefinedTerm",
-      "name": "zygote asymmetric cell division"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Col-0 ~ zygote",
+      "description": "Arabidopsis zygotes from temporal cell disorganization just after fertilization to after asymmetric cell division",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016043",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
       "@type": "DefinedTerm",
-      "name": "cellular component organization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
-      "@type": "DefinedTerm",
-      "name": "actin cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
-      "@type": "DefinedTerm",
-      "name": "mitochondrion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0015630",
-      "@type": "DefinedTerm",
-      "name": "microtubule cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005773",
-      "@type": "DefinedTerm",
-      "name": "vacuole"
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -247,6 +255,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -258,27 +272,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-      "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 9060177521,
-      "description": "9.1 GB",
+      "value": 11740404739,
+      "description": "11.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 132,
+      "value": 156,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

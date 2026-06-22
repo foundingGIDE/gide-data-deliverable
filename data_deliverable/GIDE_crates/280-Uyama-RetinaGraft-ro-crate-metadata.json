@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/280-Uyama-RetinaGraft/"
+        "@id": "https://ssbd.riken.jp/v2/project/280-Uyama-RetinaGraft"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/280-Uyama-RetinaGraft/",
+      "@id": "https://ssbd.riken.jp/v2/project/280-Uyama-RetinaGraft",
       "@type": "Dataset",
       "identifier": "280-Uyama-RetinaGraft",
       "name": "Images of OCT and FAG after transplantation of monkey iPSC-retina",
-      "description": "280-Uyama-RetinaGraft",
+      "description": "Transplantation of embryonic/induced pluripotent stem cell-derived retina (ESC/iPSC-retina) restores host retinal ganglion cell light re- sponses in end-stage retinal degeneration models with host-graft synapse formation. The authors studied the immunological features of iPSC- retina transplantation using major histocompatibility complex (MHC)-homozygote monkey iPSC-retinas in monkeys with laser-induced retinal degeneration in MHC-matched and -mismatched transplantation. MHC-mismatched transplantation without immune suppression showed no evident clinical signs of rejection and histologically showed graft maturation without lymphocytic infiltration, although immunological tests using peripheral blood monocytes suggested subclinical rejection in three of four MHC-mismatched monkeys.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -86,6 +86,9 @@
         },
         {
           "@id": "#auth-009"
+        },
+        {
+          "@id": "#auth-010"
         }
       ],
       "seeAlso": [
@@ -95,10 +98,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09541"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9541"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0001895"
@@ -109,17 +112,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000451"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000371"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1354"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1354/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,24 +135,24 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Hirofumi Uyama",
+      "name": "Hirofumi  Uyama",
       "email": "hirofumi_uyama@kcho.jp",
       "description": "Organization: Kobe City Eye Hospital; Department: Department of Ophthalmology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01spx4y35"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Michiko Mandai",
+      "name": "Michiko  Mandai",
       "email": "e_lab.mandai@kcho.jp",
       "description": "Organization: Kobe City Eye Hospital; Department: Department of Ophthalmology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01spx4y35"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -195,15 +192,36 @@
       "name": "Takehito Watanabe"
     },
     {
-      "@id": "https://ror.org/01spx4y35",
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Michiko Mandai"
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kobe City Eye Hospital"
     },
     {
       "@id": "https://doi.org/10.1016/j.stemcr.2022.09.014",
       "@type": "ScholarlyArticle",
-      "name": "Competency of iPSC-derived retinas in MHC-mismatched transplantation in non-human primates.",
-      "datePublished": "2022"
+      "name": "Uyama H, Tu HY, Sugita S, Yamasaki S, Kurimoto Y, Matsuyama T, Shiina T, Watanabe T, Takahashi M, Mandai M. Competency of iPSC-derived retinas in MHC-mismatched transplantation in non-human primates. Stem Cell Reports. 2022 Nov 8;17(11):2392-2408.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36306783/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9541",
+      "@type": "Taxon",
+      "scientificName": "Macaca fascicularis",
+      "name": "Macaca fascicularis",
+      "identifier": "NCBITaxon:9541"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001895",
+      "@type": "DefinedTerm",
+      "name": "retina homeostasis",
+      "identifier": "GO:0001895"
     },
     {
       "@id": "#biosample-1",
@@ -212,33 +230,18 @@
       "description": "Macaca fascicularis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09541"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9541"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09541",
-      "@type": "Taxon",
-      "scientificName": "Macaca fascicularis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001895",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000371",
       "@type": "DefinedTerm",
-      "name": "retina homeostasis"
+      "name": "OCT",
+      "identifier": "FBbi:00000371"
     },
     {
       "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "fluorescein leakage on fluorescein angiography",
-      "description": "fluorescein leakage on fluorescein angiography",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000451"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "OCT",
       "description": "OCT",
@@ -249,27 +252,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000451",
-      "@type": "DefinedTerm",
-      "name": "fluorescein leakage on fluorescein angiography"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000371",
-      "@type": "DefinedTerm",
-      "name": "OCT"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 134729627,
-      "description": "134.7 MB",
+      "value": 262870215,
+      "description": "262.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 62,
+      "value": 84,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

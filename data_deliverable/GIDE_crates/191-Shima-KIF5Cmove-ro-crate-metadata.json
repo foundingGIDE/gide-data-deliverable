@@ -45,36 +45,20 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/191-Shima-KIF5Cmove/"
+        "@id": "https://ssbd.riken.jp/v3/project/191-Shima-KIF5Cmove"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/191-Shima-KIF5Cmove/",
+      "@id": "https://ssbd.riken.jp/v3/project/191-Shima-KIF5Cmove",
       "@type": "Dataset",
       "identifier": "191-Shima-KIF5Cmove",
       "name": "KIF5C running on various states of microtubules",
-      "description": "191-Shima-KIF5Cmove",
+      "description": "Kinesin-1, the founding member of the kinesin superfamily of proteins, is known to use only a subset of microtubules for transport in living cells. This biased use of microtubules is proposed as the guidance cue for polarized transport in neurons, but the underlying mechanisms are still poorly understood. Here, we report that kinesin-1 binding changes the microtubule lattice and promotes further kinesin-1 binding. This high-affinity state requires the binding of kinesin-1 in the nucleotide- free state. Microtubules return to the initial low-affinity state by washing out the binding kinesin-1 or by the binding of non-hydrolyzable ATP analogue AMPPNP to kinesin-1. X-ray fiber diffraction, fluorescence speckle microscopy, and second- harmonic generation microscopy, as well as cryo-EM, collectively demonstrated that the binding of nucleotide-free kinesin-1 to GDP microtubules changes the conformation of the GDP microtubule to a conformation resembling the GTP microtubule.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Adenylyl Imidodiphosphate/chemistry",
-        "Adenylyl Imidodiphosphate/pharmacology",
-        "Animals",
-        "Biological Transport, Active",
-        "Chlorocebus aethiops",
-        "Dogs",
-        "Guanosine Diphosphate/chemistry",
-        "Guanosine Diphosphate/metabolism",
-        "Guanosine Triphosphate/chemistry",
-        "Guanosine Triphosphate/metabolism",
-        "HeLa Cells",
-        "Humans",
-        "Kinesins/chemistry[major]",
-        "Kinesins/metabolism[major]",
-        "Madin Darby Canine Kidney Cells",
-        "Microtubules/chemistry[major]",
-        "Microtubules/metabolism[major]",
-        "Vero Cells"
+        "Time-Lapse Imaging",
+        "Biological Transport, Active,"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -91,6 +75,9 @@
         },
         {
           "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
         }
       ],
       "seeAlso": [
@@ -98,21 +85,38 @@
           "@id": "https://doi.org/10.1083/jcb.201711178"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0003777"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0099111"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0062195"
+          "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007019"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0009524"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534"
         }
       ],
       "measurementMethod": [
@@ -130,7 +134,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1360"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1360/render_thumbnail/"
       ],
       "size": [
         {
@@ -151,10 +155,10 @@
       "@type": "Person",
       "name": "Yasushi Okada",
       "email": "y.okada@riken.jp",
-      "description": "Organization: RIKEN BDR; Department: Laboratory for Cell Polarity Regulation; Laboratory: Laboratory for Cell Polarity Regulation",
+      "description": "Organization: RIKEN BDR; Department: Laboratory for Cell Polarity Regulation",
       "affiliation": [
         {
-          "@id": "https://ror.org/04j1n1c04"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -163,18 +167,17 @@
       "@type": "Person",
       "name": "Nobutaka Hirokawa",
       "email": "hirokawa@m.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Department of Cell Biology and Anatomy; Laboratory: Department of Cell Biology and Anatomy",
+      "description": "Organization: The University of Tokyo; Department: Department of Cell Biology and Anatomy, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Tomohiro Shima",
-      "description": "Department: Graduate School of Medicine; Laboratory: Graduate School of Medicine"
+      "name": "Tomohiro Shima"
     },
     {
       "@id": "#auth-004",
@@ -182,46 +185,119 @@
       "name": "Sotaro Uemura"
     },
     {
-      "@id": "https://ror.org/04j1n1c04",
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yasushi Okada"
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN BDR"
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1083/jcb.201711178",
       "@type": "ScholarlyArticle",
-      "name": "Kinesin-binding-triggered conformation switching of microtubules contributes to polarized transport.",
-      "datePublished": "2018"
+      "name": "Shima T, Morikawa M, Kaneshiro J, Kambara T, Kamimura S, Yagi T, Iwamoto H, Uemura S, Shigematsu H, Shirouzu M, Ichimura T, Watanabe TM, Nitta R, Okada Y, Hirokawa N. Kinesin-binding-triggered conformation switching of microtubules contributes to polarized transport. J Cell Biol. 2018 Dec 3;217(12):4164-4183.",
+      "datePublished": "2018-10-08",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/30297389/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6279379/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the Ministry of Education, Cul- ture, Sports, Science and Technology through a Grant-in-Aid for Specially Promoted Research (grant 23000013 to N. Hi- rokawa) and Grant-in-Aid for Scientific Research (KAKENHI grant 16H06372 to N. Hirokawa; grants 16H05119, 15H01334, 26115721, 26650069, and 25293046 to Y. Okada; grants 15H01656 and 17H05897 to H. Shigematsu; and grant 15K08168 to R. Nitta), the Uehara Memorial Foundation (Y. Okada), the Takeda Science Foundation (Y. Okada and R. Nitta), the Mochida Memorial Foun- dation for Medical and Pharmaceutical Research (R. Nitta), the RIKEN Special Postdoctoral Researchers Program (T. Shima), the All RIKEN Research Project on Single Cell (Y. Okada), and the RIKEN Pioneering Project on Dynamic Structural Biology (Y. Okada, H. Shigematsu, and M. Shirouzu)."
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
+      "@type": "DefinedTerm",
+      "name": "evanescent wave microscopy",
+      "identifier": "FBbi:00000617"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell",
+      "identifier": "CLO:0007646"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "NA",
-      "description": "NA"
+      "name": "Canis lupus familiaris ~ MDCK cell",
+      "description": "Canis lupus familiaris ~ MDCK cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0003777",
-      "@type": "DefinedTerm",
-      "name": "microtubule motor activity"
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0099111",
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
       "@type": "DefinedTerm",
-      "name": "microtubule-based transport"
+      "name": "HeLa cell"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0062195",
-      "@type": "DefinedTerm",
-      "name": "microtubule bundle maintenance"
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa cell",
+      "description": "Homo sapiens (NCBI:txid9606) ~ HeLa cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007019",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534",
+      "@type": "Taxon",
+      "scientificName": "Chlorocebus aethiops",
+      "name": "Chlorocebus aethiops",
+      "identifier": "NCBITaxon:9534"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0009524",
       "@type": "DefinedTerm",
-      "name": "microtubule depolymerization"
+      "name": "Vero cell"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Chlorocebus aethiops (NCBI:txid9534) ~ Vero cell",
+      "description": "Chlorocebus aethiops (NCBI:txid9534) ~ Vero cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0009524"
+      }
     },
     {
       "@id": "#imaging-protocol-1",
@@ -235,6 +311,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -246,27 +328,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
-      "@type": "DefinedTerm",
-      "name": "evanescent wave microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1771243539,
-      "description": "1.8 GB",
+      "value": 2549363685,
+      "description": "2.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 75,
+      "value": 84,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

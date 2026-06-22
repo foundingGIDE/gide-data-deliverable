@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/344-Murata-InfectHeart/"
+        "@id": "https://ssbd.riken.jp/v3/project/344-Murata-InfectHeart"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/344-Murata-InfectHeart/",
+      "@id": "https://ssbd.riken.jp/v3/project/344-Murata-InfectHeart",
       "@type": "Dataset",
       "identifier": "344-Murata-InfectHeart",
       "name": "Influence of persistent SARS-CoV-2 infection on a three- dimensional cardiac model",
-      "description": "344-Murata-InfectHeart",
+      "description": "Patients with chronic cardiomyopathy may have persistent viral infections in their hearts, particularly with SARS-CoV-2, which targets the ACE2 receptor highly expressed in human hearts. This raises concerns about a potential global heart failure pandemic stemming from COVID-19, an SARS-CoV-2 pandemic in near future. Although faced with this healthcare caveat, there is limited research on persistent viral heart infections, and no models have been established. In this study, we created an SARS-CoV-2 persistent infection model using human iPS cell-derived cardiac microtissues (CMTs). Mild infections sustained viral presence without signif- icant dysfunction for a month, indicating persistent infection. However, when exposed to hypoxic conditions mimicking ischemic heart diseases, cardiac function deteriorated alongside intracellular SARS-CoV-2 reacti- vation in cardiomyocytes and disrupted vascular network formation. This study demonstrates that SARS- CoV-2 persistently infects the heart opportunistically causing cardiac dysfunction triggered by detrimental stimuli such as ischemia, potentially predicting a post COVID-19 era heart failure pandemic.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -75,18 +75,17 @@
           "@id": "https://doi.org/10.1016/j.isci.2023.108641"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0060048"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016032"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -94,17 +93,17 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1359"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1359/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,10 +124,10 @@
       "@type": "Person",
       "name": "Keizo Tomonaga",
       "email": "tomonaga@infront.kyoto-u.ac.jp",
-      "description": "Organization: Kyoto University; Department: LabLaboratory of RNA Viruses; Laboratory: LabLaboratory of RNA Viruses",
+      "description": "Organization: Kyoto University; Department: LabLaboratory of RNA Viruses, Department of Virus Research, Institute for Life and Medical Sciencesoratory for Developmental Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -137,77 +136,76 @@
       "@type": "Person",
       "name": "Hidetoshi Masumoto",
       "email": "hidetoshi.masumoto@riken.jp",
-      "description": "Organization: RIKEN Center for Biosystems Dynamics Research; Department: Department of Virus Research; Laboratory: Department of Virus Research",
+      "description": "Organization: RIKEN; Department: Clinical Translational Research Program, Center for Biosystems Dynamics Research",
       "affiliation": [
         {
-          "@id": "https://ror.org/023rffy11"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Kozue  Murata",
-      "description": "Department: Institute for Life and Medical Sciencesoratory for Developmental Dynamics; Laboratory: Institute for Life and Medical Sciencesoratory for Developmental Dynamics"
-    },
-    {
-      "@id": "https://ror.org/02kpeqv85",
-      "@type": "Organization",
-      "name": "Kyoto University"
-    },
-    {
-      "@id": "https://ror.org/023rffy11",
-      "@type": "Organization",
-      "name": "RIKEN Center for Biosystems Dynamics Research",
-      "url": "https://www.bdr.riken.jp/"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.isci.2023.108641",
-      "@type": "ScholarlyArticle",
-      "name": "Predicted risk of heart failure pandemic due to persistent SARS-CoV-2 infection using a three-dimensional cardiac model.",
-      "datePublished": "2024"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ differentiated iPS cells",
-      "description": "Homo sapiens ~ differentiated iPS cells",
-      "taxonomicRange": [
+      "name": "Kozue Murata",
+      "email": "kozue.murata@riken.jp",
+      "description": "Organization: RIKEN; Department: Clinical Translational Research Program, Center for Biosystems Dynamics Research",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": "differentiated iPS cells"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060048",
-      "@type": "DefinedTerm",
-      "name": "cardiac muscle contraction"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
-      "@type": "DefinedTerm",
-      "name": "viral process"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "time lapse microscopy",
-      "description": "time lapse microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.isci.2023.108641",
+      "@type": "ScholarlyArticle",
+      "name": "Murata K. et al. Predicted risk of heart failure pandemic due to persistent SARS-CoV-2 infection using a three-dimensional cardiac model. iScience. 2023 Dec 22;27(1):108641.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38299028/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10829886/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Clinical Translational Research Program"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ differentiated iPS cells",
+      "description": "Human iPS cell-derived cardiac microtissues. They are composed of cardiomyocytes and other cardiac component cells (vascular endothelial cells and vascular mural cells) differentiated from human iPS cells and yield a vascular network-like structure that morphologically and functionally mimics the human heart.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
       "description": "fluorescence microscopy",
@@ -220,25 +218,32 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 697660982,
-      "description": "697.7 MB",
+      "value": 1391593119,
+      "description": "1.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 30,
+      "value": 40,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

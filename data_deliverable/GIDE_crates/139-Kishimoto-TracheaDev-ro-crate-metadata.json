@@ -45,65 +45,53 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/139-Kishimoto-TracheaDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/139-Kishimoto-TracheaDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/139-Kishimoto-TracheaDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/139-Kishimoto-TracheaDev",
       "@type": "Dataset",
       "identifier": "139-Kishimoto-TracheaDev",
       "name": "Image data of trachea and esophagus formation in the mouse embryo",
-      "description": "139-Kishimoto-TracheaDev",
+      "description": "See details in Kishimoto et al. (2018) Nat. Commun., 9(1): 2816.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Actin Cytoskeleton/metabolism",
-        "Actin Cytoskeleton/ultrastructure",
         "Animals",
-        "Cartilage/cytology",
-        "Cartilage/growth & development",
-        "Cartilage/metabolism[major]",
+        "Mice",
+        "Morphogenesis",
+        "Cartilage",
+        "Cartilage/growth & development (Q000254)",
         "Cell Differentiation",
         "Cell Polarity",
-        "Embryo, Mammalian",
+        "Embryo",
+        "Mammalian",
+        "Gene Expression Regulation",
+        "Developmental",
+        "Trachea",
+        "Trachea/cytology",
+        "Trachea/growth & development",
+        "Esophagus",
         "Esophagus/cytology",
         "Esophagus/growth & development",
-        "Esophagus/metabolism[major]",
-        "Female",
-        "Forkhead Transcription Factors/genetics",
-        "Forkhead Transcription Factors/metabolism",
-        "Gene Expression Regulation, Developmental",
-        "Golgi Apparatus/metabolism",
-        "Golgi Apparatus/ultrastructure",
-        "Male",
-        "Mesenchymal Stem Cells/cytology",
-        "Mesenchymal Stem Cells/metabolism",
-        "Mice",
-        "Mice, Transgenic",
-        "Morphogenesis/genetics[major]",
-        "Muscle, Smooth/cytology",
-        "Muscle, Smooth/metabolism[major]",
-        "Myocytes, Smooth Muscle/cytology",
-        "Myocytes, Smooth Muscle/metabolism[major]",
-        "Nerve Tissue Proteins/genetics",
-        "Nerve Tissue Proteins/metabolism",
-        "Receptor Tyrosine Kinase-like Orphan Receptors/genetics",
-        "Receptor Tyrosine Kinase-like Orphan Receptors/metabolism",
+        "Wnt-5a Protein",
+        "Wnt-5a Protein/genetics",
+        "Wnt-5a Protein/metabolism",
+        "SOX9 Transcription Factor",
         "SOX9 Transcription Factor/genetics",
         "SOX9 Transcription Factor/metabolism",
         "Signal Transduction",
-        "Trachea/cytology",
-        "Trachea/growth & development",
-        "Trachea/metabolism[major]",
-        "Wnt-5a Protein/genetics",
-        "Wnt-5a Protein/metabolism"
+        "Actin Cytoskeleton",
+        "Actin Cytoskeleton/metabolism",
+        "Actin Cytoskeleton/ultrastructure",
+        "Esophagus/growth & development (MeSH Unique ID:Q000254),"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "https://orcid.org/0000-0001-9132-4155"
+          "@id": "#auth-001"
         }
       ],
       "seeAlso": [
@@ -113,13 +101,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0048754"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
@@ -155,7 +143,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1301"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1301/render_thumbnail/"
       ],
       "size": [
         {
@@ -172,27 +160,55 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9132-4155",
+      "@id": "#auth-001",
       "@type": "Person",
       "name": "Mitsuru Morimoto",
       "email": "mitsuru.morimoto@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development and Regeneration",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Lung Development",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-018-05189-2",
       "@type": "ScholarlyArticle",
-      "name": "Synchronized mesenchymal cell polarization and differentiation shape the formation of the murine trachea and esophagus.",
-      "datePublished": "2018"
+      "name": "Keishi Kishimoto, Masaru Tamura, Michiru Nishita, Yasuhiro Minami, Akira Yamaoka, Takaya Abe, Mayo Shigeta, Mitsuru Morimoto. Synchronized mesenchymal cell polarization and differentiation shape the formation of the murine trachea and esophagus. Nat Commun. 2018 Jul 19;9(1):2816.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30026494"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048754",
+      "@type": "DefinedTerm",
+      "name": "branching morphogenesis of an epithelial tube",
+      "identifier": "GO:0048754"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton",
+      "identifier": "GO:0005856"
     },
     {
       "@id": "#biosample-1",
@@ -201,30 +217,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048754",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "branching morphogenesis of an epithelial tube"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -238,6 +239,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000255",
+      "@type": "DefinedTerm",
+      "name": "multi-photon microscopy",
+      "identifier": "FBbi:00000255"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "multi-photon microscopy",
@@ -247,6 +254,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000255"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -260,10 +273,16 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
+      "@type": "DefinedTerm",
+      "name": "scanning electron microscopy (SEM)",
+      "identifier": "FBbi:00000257"
+    },
+    {
       "@id": "#imaging-protocol-4",
       "@type": "LabProtocol",
-      "name": "scanning electron microscopy",
-      "description": "scanning electron microscopy",
+      "name": "scanning electron microscopy (SEM)",
+      "description": "scanning electron microscopy (SEM)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
@@ -271,37 +290,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000255",
-      "@type": "DefinedTerm",
-      "name": "multi-photon microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
-      "@type": "DefinedTerm",
-      "name": "scanning electron microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 5698182075,
-      "description": "5.7 GB",
+      "value": 10258855026,
+      "description": "10.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2500,
+      "value": 2585,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

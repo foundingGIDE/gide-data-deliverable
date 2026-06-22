@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/90-Ishiwata-SpindleDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/90-Ishiwata-SpindleDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/90-Ishiwata-SpindleDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/90-Ishiwata-SpindleDyn",
       "@type": "Dataset",
       "identifier": "90-Ishiwata-SpindleDyn",
       "name": "Images of spindle dynamics in different situation",
-      "description": "90-Ishiwata-SpindleDyn",
+      "description": "See details in Ishiwata et al. (2017) Mol. Cryst. Liq. Cryst., 647(1): 127-150.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -94,33 +94,42 @@
           "@id": "#auth-011"
         }
       ],
-      "seeAlso": [
-        {
-          "@id": "https://doi.org/10.1080/15421406.2017.1289445"
-        }
-      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007059"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0030016"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8355"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-163"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/163/render_thumbnail/"
       ],
       "size": [
         {
@@ -144,7 +153,7 @@
       "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
       "affiliation": [
         {
-          "@id": "https://ror.org/00ntfnx83"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -153,122 +162,213 @@
       "@type": "Person",
       "name": "Takeshi Itabashi",
       "email": "t.itabashi@ruri.waseda.jp",
-      "description": "Department: Faculty of Science and Engineering"
+      "description": "Organization: Waseda University; Department: Faculty of Science and Engineering; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Makito Miyazaki"
+      "name": "Makito Miyazaki",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Katsuhiko Sato"
+      "name": "Katsuhiko Sato",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Koutaro Nakagome"
+      "name": "Koutaro Nakagome",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Seine A. Shintani"
+      "name": "Seine A. Shintani",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Fuyu Kobirumaki-Shimozawa"
+      "name": "Fuyu Kobirumaki-Shimozawa",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Norio Fukuda"
+      "name": "Norio Fukuda",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Kazuya Suzuki"
+      "name": "Kazuya Suzuki",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Jun Takagi"
+      "name": "Jun Takagi",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Yuta Shimamotoe"
+      "name": "Yuta Shimamotoe",
+      "description": "Organization: Waseda University; Department: Department of Physics; Laboratory: Ishiwata Lab.",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/00ntfnx83",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Waseda University"
     },
     {
-      "@id": "https://doi.org/10.1080/15421406.2017.1289445",
-      "@type": "ScholarlyArticle",
-      "name": "Dynamic properties of bio-motile systems with a liquid-crystalline structure",
-      "datePublished": "2017"
+      "@id": "http://purl.obolibrary.org/obo/GO_0007059",
+      "@type": "DefinedTerm",
+      "name": "chromosome segregation",
+      "identifier": "GO:0007059"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030016",
+      "@type": "DefinedTerm",
+      "name": "myofibril",
+      "identifier": "GO:0030016"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8355",
+      "@type": "Taxon",
+      "scientificName": "X. laevis",
+      "name": "X. laevis",
+      "identifier": "NCBITaxon:8355"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Xenopus laevis",
-      "description": "Xenopus laevis",
+      "name": "X. laevis",
+      "description": "X. laevis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8355"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Hela cell",
-      "description": "Hela cell",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
-      "@type": "Taxon",
-      "scientificName": "Xenopus laevis",
-      "vernacularName": "african clawed frog"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007059",
-      "@type": "DefinedTerm",
-      "name": "chromosome segregation"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030016",
-      "@type": "DefinedTerm",
-      "name": "myofibril"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 537345,
-      "description": "537.3 kB",
+      "value": 1071626,
+      "description": "1.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 26,
+      "value": 30,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

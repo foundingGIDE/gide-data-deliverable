@@ -76,7 +76,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239"
         },
         {
           "@id": "#biosample-1"
@@ -142,12 +142,12 @@
       "description": "N2, mig-17 (k174), mig-22 (k185), sqv-5 (k175), mig-17(k174) mig-22 (k185), mig-22 (k185) sqv-5 (k175)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239",
       "@type": "Taxon",
       "scientificName": "Caenorhabditis elegans",
       "vernacularName": "nematode"
@@ -160,8 +160,8 @@
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "Light microscopy",
-      "description": "Light microscopy",
+      "name": "light microscopy",
+      "description": "light microscopy",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
@@ -171,7 +171,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
       "@type": "DefinedTerm",
-      "name": "Light microscopy"
+      "name": "light microscopy",
+      "identifier": "FBbi:00000345"
     },
     {
       "@id": "#total-dataset-size",

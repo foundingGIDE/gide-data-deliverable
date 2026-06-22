@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/293-Kimata-PlantInhibit/"
+        "@id": "https://ssbd.riken.jp/v2/project/293-Kimata-PlantInhibit"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/293-Kimata-PlantInhibit/",
+      "@id": "https://ssbd.riken.jp/v2/project/293-Kimata-PlantInhibit",
       "@type": "Dataset",
       "identifier": "293-Kimata-PlantInhibit",
       "name": "Novel inhibitors of microtubule organization and phragmoplast formation in diverse plant species",
-      "description": "293-Kimata-PlantInhibit",
+      "description": "The autors screened cell division-affecting compounds in Arabidopsis thaliana zygotes, whose cell division is traceable without time-lapse observations. They then determined the target events of the identified compounds using live-cell imaging of tobacco BY-2 cells. Subsequently, they isolated two compounds, PD-180970 and PP2, neither of which caused lethal damage. PD-180970 disrupted microtubule (MT) organization and, thus, nuclear separation, and PP2 blocked phragmoplast formation and impaired cytokinesis. Phosphoproteomic analysis showed that these compounds reduced the phosphorylation of diverse proteins, including MT-associated proteins (MAP70) and class II Kinesin-12.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -80,22 +80,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03218"
-        },
-        {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0051301"
@@ -107,6 +98,9 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0005886"
         },
         {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0007010"
         },
         {
@@ -114,6 +108,12 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0009524"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3218"
         }
       ],
       "measurementMethod": [
@@ -137,7 +137,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1357"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1357/render_thumbnail/"
       ],
       "size": [
         {
@@ -161,35 +161,123 @@
       "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/01dq60k83"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yusuke Kimata"
+      "name": "Yusuke Kimata",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Moe Yamada"
+      "name": "Moe Yamada",
+      "description": "Organization: Nagoya University; Department: Department of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Takashi Murata"
+      "name": "Takashi Murata",
+      "description": "Organization: Kanagawa Institute of Technology; Department: Department of Applied Bioscience",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01dq60k83",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Tohoku University"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "Kanagawa Institute of Technology"
+    },
+    {
       "@id": "https://doi.org/10.26508/lsa.202201657",
       "@type": "ScholarlyArticle",
-      "name": "Novel inhibitors of microtubule organization and phragmoplast formation in diverse plant species.",
-      "datePublished": "2023"
+      "name": "Kimata Y, Yamada M, Murata T, Kuwata K, Sato A, Suzuki T, Kurihara D, Hasebe M, Higashiyama T, Ueda M.. Novel inhibitors of microtubule organization and phragmoplast formation in diverse plant species. Life Sci Alliance. 2023 Feb 27;6(5):e202201657.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36849250/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division",
+      "identifier": "GO:0051301"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007010",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton organization",
+      "identifier": "GO:0007010"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton",
+      "identifier": "GO:0005856"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009524",
+      "@type": "DefinedTerm",
+      "name": "phragmoplast",
+      "identifier": "GO:0009524"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097",
+      "@type": "Taxon",
+      "scientificName": "Nicotiana tabacum",
+      "name": "Nicotiana tabacum",
+      "identifier": "NCBITaxon:4097"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3218",
+      "@type": "Taxon",
+      "scientificName": "Physcomitrium patens",
+      "name": "Physcomitrium patens",
+      "identifier": "NCBITaxon:3218"
     },
     {
       "@id": "#biosample-1",
@@ -198,7 +286,7 @@
       "description": "Arabidopsis thaliana",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
@@ -209,7 +297,7 @@
       "description": "Nicotiana tabacum",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4097"
         }
       ]
     },
@@ -220,54 +308,15 @@
       "description": "Physcomitrium patens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03218"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3218"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
-      "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04097",
-      "@type": "Taxon",
-      "scientificName": "Nicotiana tabacum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03218",
-      "@type": "Taxon",
-      "scientificName": "Physcomitrium patens"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "cell division"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007010",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton organization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009524",
-      "@type": "DefinedTerm",
-      "name": "phragmoplast"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -281,6 +330,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -290,6 +345,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -303,32 +364,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-      "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 14437950310,
-      "description": "14.4 GB",
+      "value": 24331582525,
+      "description": "24.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 24,
+      "value": 48,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

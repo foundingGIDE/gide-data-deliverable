@@ -45,31 +45,40 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/189-Kobayashi-NSCsDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/189-Kobayashi-NSCsDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/189-Kobayashi-NSCsDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/189-Kobayashi-NSCsDyn",
       "@type": "Dataset",
       "identifier": "189-Kobayashi-NSCsDyn",
       "name": "Confocal microscopy images of lysosomes situation in NSCs in both the DG and SVZ of mice.",
-      "description": "189-Kobayashi-NSCsDyn",
+      "description": "See details in Kobayashi T, et. al. (2019)  Nat Commun., 10(1):5446.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
+        "Adult Stem Cells",
         "Adult Stem Cells/metabolism",
         "Animals",
+        "Basic Helix-Loop-Helix Leucine Zipper Transcription Factors",
         "Basic Helix-Loop-Helix Leucine Zipper Transcription Factors/genetics",
-        "Dentate Gyrus/metabolism[major]",
-        "Endosomes/metabolism[major]",
+        "Dentate Gyrus",
+        "Dentate Gyrus/metabolism",
+        "Endosomes",
+        "Endosomes/metabolism",
+        "ErbB Receptors",
         "ErbB Receptors/metabolism",
-        "Lysosomes/metabolism[major]",
+        "Lysosomes",
+        "Lysosomes/metabolism",
         "Mice",
-        "Mice, Knockout",
-        "Neural Stem Cells/metabolism[major]",
+        "Knockout",
+        "Neural Stem Cells",
+        "Neural Stem Cells/metabolism",
         "Proteolysis",
         "Proteostasis",
-        "Receptors, Notch/metabolism"
+        "Receptors",
+        "Notch",
+        "Notch/metabolism"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -89,9 +98,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -101,7 +107,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0005764"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -113,7 +119,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-721"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/721/render_thumbnail/"
       ],
       "size": [
         {
@@ -133,11 +139,11 @@
       "@id": "#auth-001",
       "@type": "Person",
       "name": "Taeko Kobayashi",
-      "email": "tkobayas@infront.kyoto-u.ac.jp",
+      "email": "tkobayas@infront.kyoto-u.ac.jp, kobayashi.taeko.7e@kyoto-u.ac.jp",
       "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -145,24 +151,46 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Ryoichiro Kageyama",
-      "email": "kobayashi.taeko.7e@kyoto-u.ac.jp",
+      "email": "rkageyam@infront.kyoto-u.ac.jp",
       "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-019-13203-4",
       "@type": "ScholarlyArticle",
-      "name": "Enhanced lysosomal degradation maintains the quiescent state of neural stem cells.",
-      "datePublished": "2019"
+      "name": "Kobayashi T, Piao W, Takamura T, Kori H, Miyachi H, Kitano S, Iwamoto Y, Yamada M, Imayoshi I, Shioda S, Ballabio A, and Kageyama R (2019) Enhanced lysosomal degradation maintains the quiescent state of neural stem cells. Nature Communications, Volume 10, Issue 1, pages 5446.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31784517"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1905166",
+      "@type": "DefinedTerm",
+      "name": "negative regulation of lysosomal protein catabolic process",
+      "identifier": "GO:1905166"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005764",
+      "@type": "DefinedTerm",
+      "name": "lysosome",
+      "identifier": "GO:0005764"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -171,30 +199,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1905166",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "negative regulation of lysosomal protein catabolic process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005764",
-      "@type": "DefinedTerm",
-      "name": "lysosome"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
-      "@type": "DefinedTerm",
-      "name": "cell division"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -208,22 +221,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 7294883061,
-      "description": "7.3 GB",
+      "value": 10545578254,
+      "description": "10.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 27,
+      "value": 44,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

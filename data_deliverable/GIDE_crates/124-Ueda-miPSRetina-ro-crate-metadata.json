@@ -45,34 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/124-Ueda-miPSRetina/"
+        "@id": "https://ssbd.riken.jp/v1/project/124-Ueda-miPSRetina"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/124-Ueda-miPSRetina/",
+      "@id": "https://ssbd.riken.jp/v1/project/124-Ueda-miPSRetina",
       "@type": "Dataset",
       "identifier": "124-Ueda-miPSRetina",
       "name": "Immunofluorescence images of photoreceptor-specific genes expressing in mouse iPS cells derived 3D retinal",
-      "description": "124-Ueda-miPSRetina",
+      "description": "See details in Ueda et al. (2018) Biochem Biophys Res Commun, 495(4): 2595-2601.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Bioartificial Organs[major]",
-        "Cell Differentiation/physiology",
-        "Cells, Cultured",
-        "Cone Opsins/metabolism[major]",
-        "Mice",
-        "Organogenesis/physiology",
-        "Printing, Three-Dimensional",
-        "Retina/cytology[major]",
-        "Retina/growth & development[major]",
-        "Retinal Cone Photoreceptor Cells/metabolism",
-        "Rhodopsin/metabolism[major]",
-        "Stem Cells/cytology[major]",
-        "Stem Cells/physiology",
-        "Tissue Engineering/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -95,13 +78,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.bbrc.2017.12.092"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29274337"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -113,10 +93,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0032391"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-268"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/268/render_thumbnail/"
       ],
       "size": [
         {
@@ -140,40 +131,88 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Kaori Ueda"
+      "name": "Kaori Ueda",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Shin-ichiro Ito"
+      "name": "Shin-ichiro Ito",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Makoto Nakamura"
+      "name": "Makoto Nakamura",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Masayo Takahashi"
+      "name": "Masayo Takahashi",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1016/j.bbrc.2017.12.092",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29274337",
       "@type": "ScholarlyArticle",
-      "name": "Generation of three-dimensional retinal organoids expressing rhodopsin and S- and M-cone opsins from mouse stem cells.",
-      "datePublished": "2018"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29274337"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060221",
+      "@type": "DefinedTerm",
+      "name": "retinal rod cell differentiation",
+      "identifier": "GO:0060221"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008594",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor development",
+      "identifier": "GO:0008594"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0032391",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor cilium",
+      "identifier": "GO:0032391"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -182,43 +221,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060221",
-      "@type": "DefinedTerm",
-      "name": "retinal rod cell differentiation"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008594",
-      "@type": "DefinedTerm",
-      "name": "photoreceptor development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0032391",
-      "@type": "DefinedTerm",
-      "name": "photoreceptor cilium"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 103846876,
-      "description": "103.8 MB",
+      "value": 155207824,
+      "description": "155.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 31,
+      "value": 62,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

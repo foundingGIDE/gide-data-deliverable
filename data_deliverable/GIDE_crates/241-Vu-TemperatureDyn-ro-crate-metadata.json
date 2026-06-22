@@ -45,28 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/241-Vu-TemperatureDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/241-Vu-TemperatureDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/241-Vu-TemperatureDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/241-Vu-TemperatureDyn",
       "@type": "Dataset",
       "identifier": "241-Vu-TemperatureDyn",
       "name": "Live cell imaging of temperature dynamics in HeLa cells.",
-      "description": "241-Vu-TemperatureDyn",
+      "description": "See details in Vu CQ, et. al. (2021) Sci Rep,  Aug 13;11(1):16519.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Elastin/chemistry[major]",
-        "Elastin/genetics",
-        "Fluorescence Resonance Energy Transfer",
-        "HeLa Cells",
-        "Humans",
-        "Peptides/chemistry[major]",
-        "Peptides/genetics",
-        "Temperature[major]",
-        "Thermometry/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -82,19 +71,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0031652"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_1902548"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_1904636"
@@ -108,17 +91,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000286"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-761"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/761/render_thumbnail/"
       ],
       "size": [
         {
@@ -139,23 +116,52 @@
       "@type": "Person",
       "name": "Takeharu Nagai",
       "email": "ng1@ sanken.osaka-u.ac.jp",
+      "url": "https://www.sanken.osaka-u.ac.jp/labs/bse/",
       "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Nagai Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-021-96049-5",
       "@type": "ScholarlyArticle",
-      "name": "A highly-sensitive genetically encoded temperature indicator exploiting a temperature-responsive elastin-like polypeptide.",
-      "datePublished": "2021"
+      "name": "Vu CQ, Fukushima SI, Wazawa T, Nagai T. A highly-sensitive genetically encoded temperature indicator exploiting a temperature-responsive elastin-like polypeptide. Sci Rep. 2021 Aug 13;11(1):16519.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34389773/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904636",
+      "@type": "DefinedTerm",
+      "name": "response to ionomycin",
+      "identifier": "GO:1904636"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904637",
+      "@type": "DefinedTerm",
+      "name": "cellular response to ionomycin",
+      "identifier": "GO:1904637"
     },
     {
       "@id": "#biosample-1",
@@ -164,7 +170,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -172,49 +178,13 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0031652",
-      "@type": "DefinedTerm",
-      "name": "heat transoport into cells from a micrometer-sized heat supply"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1902548",
-      "@type": "DefinedTerm",
-      "name": "cellular response to heating"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904636",
-      "@type": "DefinedTerm",
-      "name": "response to ionomycin"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904637",
-      "@type": "DefinedTerm",
-      "name": "cellular response to ionomycin"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Wide-field fluorescence microscopy with a dual view optics",
-      "description": "Wide-field fluorescence microscopy with a dual view optics",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000286"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
       "description": "confocal microscopy",
@@ -225,27 +195,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000286",
-      "@type": "DefinedTerm",
-      "name": "Wide-field fluorescence microscopy with a dual view optics"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 124351396,
-      "description": "124.4 MB",
+      "value": 209355675,
+      "description": "209.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 9,
+      "value": 14,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

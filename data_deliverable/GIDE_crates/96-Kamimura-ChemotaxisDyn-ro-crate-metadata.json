@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/96-Kamimura-ChemotaxisDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/96-Kamimura-ChemotaxisDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/96-Kamimura-ChemotaxisDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/96-Kamimura-ChemotaxisDyn",
       "@type": "Dataset",
       "identifier": "96-Kamimura-ChemotaxisDyn",
       "name": "96-Kamimura-ChemotaxisDyn",
-      "description": "96-Kamimura-ChemotaxisDyn",
+      "description": "See details in Kamimura et al. (2016) Proc Natl Acad Sci U S A, 113(16): 4356-4361.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Cell Membrane/genetics",
-        "Cell Membrane/metabolism[major]",
-        "Chemotaxis/physiology[major]",
-        "Dictyostelium/genetics",
-        "Dictyostelium/metabolism[major]",
-        "GTP-Binding Protein Regulators/genetics",
-        "GTP-Binding Protein Regulators/metabolism[major]",
-        "Heterotrimeric GTP-Binding Proteins/genetics",
-        "Heterotrimeric GTP-Binding Proteins/metabolism[major]",
-        "Signal Transduction/physiology[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -84,13 +72,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1073/pnas.1516767113"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27044073"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_366501"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -99,10 +84,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0008603"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/366501"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-167"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/167/render_thumbnail/"
       ],
       "size": [
         {
@@ -126,71 +122,103 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yoichiro Kamimura"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Yukihiro Miyanagaa"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1073/pnas.1516767113",
-      "@type": "ScholarlyArticle",
-      "name": "Heterotrimeric G-protein shuttling via Gip1 extends the dynamic range of eukaryotic chemotaxis.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "AX2",
-      "description": "AX2",
-      "taxonomicRange": [
+      "name": "Yoichiro Kamimuraa",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_366501"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_366501",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum ax2"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Yukihiro Miyanagaa",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27044073",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27044073"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0006935",
       "@type": "DefinedTerm",
-      "name": "chemotaxis"
+      "name": "chemotaxis",
+      "identifier": "GO:0006935"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0008603",
       "@type": "DefinedTerm",
-      "name": "cAMP dependent protein kinase regulator activity"
+      "name": "cAMP dependent protein kinase regulator activity",
+      "identifier": "GO:0008603"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/366501",
+      "@type": "Taxon",
+      "scientificName": "D. discoideum AX2",
+      "name": "D. discoideum AX2",
+      "identifier": "NCBITaxon:366501"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "D. discoideum AX2",
+      "description": "D. discoideum AX2",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/366501"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1110262964,
-      "description": "1.1 GB",
+      "value": 1661591478,
+      "description": "1.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 5,
+      "value": 11,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

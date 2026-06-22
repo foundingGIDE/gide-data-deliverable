@@ -45,24 +45,29 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/192-Hiroshima-SingleMolDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/192-Hiroshima-SingleMolDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/192-Hiroshima-SingleMolDyn",
       "@type": "Dataset",
       "identifier": "192-Hiroshima-SingleMolDyn",
-      "name": "Single-molecule images of living cells with epidermal growth factor (EGF) stimulation by automated in-cell single-molecule imaging system (AiSIS) ",
-      "description": "192-Hiroshima-SingleMolDyn",
+      "name": "Single-molecule images of living cells with epidermal growth factor (EGF) stimulation by automated in-cell single-molecule imaging system (AiSIS)",
+      "description": "See details in Hiroshima M, et. al. (2020)  Microscopy (Oxf), 69(2):69-78.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Artificial Intelligence[major]",
+        "Artificial Intelligence",
         "Automation",
-        "Drug Evaluation, Preclinical/methods",
+        "Drug Evaluation",
+        "Preclinical",
+        "Preclinical/methods",
+        "Flow Cytometry",
         "Flow Cytometry/methods",
+        "Pharmacology",
         "Pharmacology/methods",
-        "Single Molecule Imaging/methods[major]"
+        "Single Molecule Imaging",
+        "Single Molecule Imaging/methods"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -70,6 +75,9 @@
       "author": [
         {
           "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
         }
       ],
       "seeAlso": [
@@ -79,9 +87,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -89,6 +94,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005154"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ],
       "measurementMethod": [
@@ -100,7 +108,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-718"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/718/render_thumbnail/"
       ],
       "size": [
         {
@@ -124,20 +132,54 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Michio Hiroshima",
+      "email": "m_hiroshima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell Signaling Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1093/jmicro/dfz116",
       "@type": "ScholarlyArticle",
-      "name": "Large-scale single-molecule imaging aided by artificial intelligence.",
-      "datePublished": "2020"
+      "name": "Hiroshima M, Yasui M, and Ueda M (2013) Large-scale single-molecule imaging aided by artificial intelligence. Microscopy, Volume 69, Issue 2, pages 69-78.",
+      "datePublished": "2013",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32090254"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@type": "DefinedTerm",
+      "name": "CHO-K1",
+      "identifier": "CLO:0002462"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005154",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor binding",
+      "identifier": "GO:0005154"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "name": "Cricetulus griseus",
+      "identifier": "NCBITaxon:10029"
     },
     {
       "@id": "#biosample-1",
@@ -146,7 +188,7 @@
       "description": "Cricetulus griseus ~ CHO-K1",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ],
       "hasCellLine": {
@@ -154,19 +196,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
-      "@type": "Taxon",
-      "scientificName": "Cricetulus griseus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "CHO-K1"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005154",
-      "@type": "DefinedTerm",
-      "name": "epidermal growth factor receptor binding"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -180,22 +213,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1573262410,
-      "description": "1.6 GB",
+      "value": 2904342577,
+      "description": "2.9 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 60,
+      "value": 120,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

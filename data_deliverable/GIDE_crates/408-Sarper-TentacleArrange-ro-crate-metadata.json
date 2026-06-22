@@ -45,17 +45,21 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/408-Sarper-TentacleArrange/"
+        "@id": "https://ssbd.riken.jp/v3/project/408-Sarper-TentacleArrange"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/408-Sarper-TentacleArrange/",
+      "@id": "https://ssbd.riken.jp/v3/project/408-Sarper-TentacleArrange",
       "@type": "Dataset",
       "identifier": "408-Sarper-TentacleArrange",
       "name": "Z-series and time-lapse images showing phyllotaxis-like periodic and symmetric tentacle arrangements",
-      "description": "408-Sarper-TentacleArrange",
+      "description": "Periodic organ arrangements occur during growth and development and are widespread in both animals and plants. In bilaterian animals, repetitive organs are typically arranged periodically in a two-dimensional space defined by two body axes. In contrast, radially symmetrical animals and plants exhibit organ arrangements in three-dimensional space—around the body axis in animals and around the stem in plants. While the principles of periodic organ arrangement have been extensively studied in bilaterians, investigations in radially symmetrical animals remain limited.\n\nIn the present study, the authors combined live imaging, quantitative analysis, and mathematical modeling to elucidate periodic organ arrangement in a radially symmetrical animal, Coryne uchidai (Cnidaria, Hydrozoa). The polyps of C. uchidai simultaneously formed multiple tentacles in a regularly spaced, ring-like pattern exhibiting radial symmetry. Multiple such rings appeared periodically along the body and largely maintained symmetrical organization.\n\nAdditionally, the researchers observed polymorphisms in symmetry types—specifically tri-, tetra-, and pentaradial symmetries—occurring as individual variations. Notably, the type of radial symmetry was positively correlated with polyp diameter, with pentaradial polyps exhibiting a larger diameter than tetra- or triradial ones. Their mathematical model suggested that the selection of size-dependent radial symmetry is governed by activation-inhibition dynamics and positional information emanating from the mouth that guides tentacle initiation.",
       "datePublished": "2025-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Microscopy, Confocal",
+        "Growth"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -78,18 +82,17 @@
           "@id": "https://doi.org/10.3389/fcell.2023.1284904"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_662077"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0048646"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0040007"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/662077"
         }
       ],
       "measurementMethod": [
@@ -107,7 +110,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1756"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1756/render_thumbnail/"
       ],
       "size": [
         {
@@ -128,10 +131,10 @@
       "@type": "Person",
       "name": "Safiye E. Sarper",
       "email": "sesarper@live.com",
-      "description": "Organization: RIKEN; Department: Laboratory for Evolutionary Morphology; Laboratory: Laboratory for Evolutionary Morphology",
+      "description": "Organization: RIKEN; Department: Laboratory for Evolutionary Morphology, Center for Biosystems Dynamics Research",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -139,54 +142,88 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Miho S. Kitazawa",
-      "description": "Department: Center for Biosystems Dynamics Research; Laboratory: Center for Biosystems Dynamics Research"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Tamami Nakanishi"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Koichi Fujimoto"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.3389/fcell.2023.1284904",
-      "@type": "ScholarlyArticle",
-      "name": "Size-correlated polymorphisms in phyllotaxis-like periodic and symmetric tentacle arrangements in hydrozoan Coryne uchidai.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Coryne uchidai",
-      "description": "Coryne uchidai",
-      "taxonomicRange": [
+      "description": "Organization: Osaka University; Department: Center for Education in Liberal Arts and Sciences",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_662077"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_662077",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Tamami Nakanishi",
+      "description": "Organization: RIKEN; Department: Laboratory for Evolutionary Morphology, Center for Biosystems Dynamics Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Koichi Fujimoto",
+      "description": "Organization: Hiroshima University; Department: Program of Mathematical and Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Osaka University"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fcell.2023.1284904",
+      "@type": "ScholarlyArticle",
+      "name": "Sarper SE, Kitazawa MS, Nakanishi T, Fujimoto K.  Size-correlated polymorphisms in phyllotaxis-like periodic and symmetric tentacle arrangements in hydrozoan Coryne uchidai. Front Cell Dev Biol. 2023 Nov 22:11:1284904.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38078002/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10703359/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work\nwas supported by Grants-in-Aid for Scientific Research from the\nMinistry of Education, Culture, Sports, Science, and Technology of\nJapan for SS (22KJ3132) and KF (21K19297 and 22H04719)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/662077",
       "@type": "Taxon",
-      "scientificName": "Coryne uchidai"
+      "scientificName": "Coryne uchidai",
+      "name": "Coryne uchidai",
+      "identifier": "NCBITaxon:662077"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048646",
-      "@type": "DefinedTerm",
-      "name": "anatomical structure formation involved in morphogenesis"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Coryne uchidai (NCBI:txid662077)",
+      "description": "The DAPI-stained Coryne uchidai followed by clearing with CUBIC",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/662077"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0040007",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "growth"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -200,6 +237,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -211,27 +254,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 282411144540,
-      "description": "282.4 GB",
+      "value": 457364156797,
+      "description": "457.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 18,
+      "value": 29,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,17 +45,25 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/393-Fujimoto-CoV2Infect/"
+        "@id": "https://ssbd.riken.jp/v3/project/393-Fujimoto-CoV2Infect"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/393-Fujimoto-CoV2Infect/",
+      "@id": "https://ssbd.riken.jp/v3/project/393-Fujimoto-CoV2Infect",
       "@type": "Dataset",
       "identifier": "393-Fujimoto-CoV2Infect",
       "name": "SARS-CoV-2 infection to the co-culture of bronchial organoids and vascular beds in a microfluidic device",
-      "description": "393-Fujimoto-CoV2Infect",
+      "description": "Blood vessels show various COVID-19-related conditions including thrombosis and cytokine propagation. Existing in vitro blood vessel models cannot represent the consequent changes in the vascular structure or determine the initial infection site, making it difficult to evaluate how epithelial and endothelial tissues are damaged. Here, the authors developed a microphysiological system (MPS) that co-culture the bronchial organoids and the vascular bed to analyze infection site and interactions. In this system, virus-infected organoids caused damage in vascular structure. However, vasculature was not damaged or infected when the virus was directly introduced to vascular bed. The knockout of interferon-related genes and inhibition of the JAK/STAT pathway reduced the vascular damage, indicating the protective effect of interferon response suppression. The results demonstrate selective infection of bronchial epithelial cells and vascular damage by cytokines and also indicate the applicability of MPS to investigate how the infection influences vascular structure and functions.",
       "datePublished": "2025-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Human Umbilical Vein Endothelial Cells",
+        "Microscopy, Confocal",
+        "COVID-19",
+        "Epithelial Cells",
+        "Cell Nucleus",
+        "Actin Cytoskeleton"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -65,28 +73,33 @@
         },
         {
           "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
         }
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1039/d3lc00768e"
+          "@id": "https://doi.org/0.1039/d3lc00768e"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016032"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -104,7 +117,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1755"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1755/render_thumbnail/"
       ],
       "size": [
         {
@@ -128,7 +141,7 @@
       "description": "Organization: Kyoto University",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -140,52 +153,85 @@
       "description": "Organization: Kyoto University",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Kazuya Fujimoto",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Yoshikazu Kameda",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yuta Nagano",
+      "description": "Organization: Kyoto University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
-      "@id": "https://doi.org/10.1039/d3lc00768e",
+      "@id": "https://doi.org/0.1039/d3lc00768e",
       "@type": "ScholarlyArticle",
-      "name": "SARS-CoV-2-induced disruption of a vascular bed in a microphysiological system caused by type-I interferon from bronchial organoids.",
-      "datePublished": "2024"
+      "name": "Fujimoto K, Kameda Y, Nagano Y, Deguchi S, Yamamoto T, Krol RP, Gee P, Matsumura Y, Okamoto T, Nagao M, Takayama K, Yokokawa R. SARS-CoV-2-induced disruption of a vascular bed in a microphysiological system caused by type-I interferon from bronchial organoids. Lab Chip\n. 2024 Aug 6;24(16):3863-3879.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38252025/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "KAKENHI (Grant-in-Aid for Scientific Research) on Priority Areas ‘Systems Genomics’ [17017038]"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Homo sapiens",
-      "description": "Homo sapiens",
+      "name": "Homo sapiens (NCBI:txid9606) ~ endothelial cell of umbilical vein,\nbronchial epithelial cell",
+      "description": "Co-culture of bronchial organoids, which were derived from normal human bronchial epithelial\ncells, and vascular beds, which were composed from GFP-Expressing Human Umbilical Vein Endothelial Cells, in a special microfluidic device.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "viral process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
-      "@type": "DefinedTerm",
-      "name": "actin cytoskeleton"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -199,6 +245,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -210,27 +262,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2190441406,
-      "description": "2.2 GB",
+      "value": 15487825167,
+      "description": "15.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 44,
+      "value": 487,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

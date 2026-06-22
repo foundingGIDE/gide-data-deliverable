@@ -71,10 +71,10 @@
       ],
       "about": [
         {
-          "@id": "#biosample-2"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "#biosample-2"
         }
       ],
       "measurementMethod": [
@@ -82,7 +82,19 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00001005"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
         }
       ],
       "size": [
@@ -123,32 +135,16 @@
       "datePublished": "2023"
     },
     {
-      "@id": "#biosample-2",
+      "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "Organism",
       "description": "Striga hermonthica"
     },
     {
-      "@id": "#biosample-1",
+      "@id": "#biosample-2",
       "@type": "BioSample",
       "name": "Gad-2",
       "description": "Gad-2"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Time-lapse images of fluorescent (GFP filter) and bright-field were taken in dark at 20 min interval for 48 h with Leica DMi8 inverted microscope",
-      "description": "Time-lapse images of fluorescent (GFP filter) and bright-field were taken in dark at 20 min interval for 48 h with Leica DMi8 inverted microscope",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00001005"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00001005",
-      "@type": "DefinedTerm",
-      "name": "Time-lapse images of fluorescent (GFP filter) and bright-field were taken in dark at 20 min interval for 48 h with Leica DMi8 inverted microscope"
     },
     {
       "@id": "#total-dataset-size",
@@ -164,6 +160,57 @@
       "value": 1,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
     }
   ]
 }

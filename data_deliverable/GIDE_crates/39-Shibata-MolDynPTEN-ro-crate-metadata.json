@@ -45,43 +45,23 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/39-Shibata-MolDynPTEN/"
+        "@id": "https://ssbd.riken.jp/v1/project/39-Shibata-MolDynPTEN"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/39-Shibata-MolDynPTEN/",
+      "@id": "https://ssbd.riken.jp/v1/project/39-Shibata-MolDynPTEN",
       "@type": "Dataset",
       "identifier": "39-Shibata-MolDynPTEN",
       "name": "39-Shibata-MolDynPTEN",
-      "description": "39-Shibata-MolDynPTEN",
+      "description": "See details in Shibata et al. (2012) J. Cell Sci., 125: 5138-5150.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Algorithms",
-        "Caffeine/pharmacology",
-        "Cell Membrane Structures/drug effects",
-        "Cell Membrane Structures/metabolism",
-        "Cell Polarity",
-        "Chemotaxis",
-        "Computer Simulation",
-        "Dictyostelium/cytology[major]",
-        "Dictyostelium/drug effects",
-        "Dictyostelium/metabolism",
-        "Diffusion",
-        "Models, Biological[major]",
-        "Models, Statistical",
-        "PTEN Phosphohydrolase/metabolism",
-        "Phosphatidylinositol Phosphates/metabolism[major]",
-        "Phospholipids/metabolism",
-        "Second Messenger Systems[major]",
-        "Single-Cell Analysis"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "https://orcid.org/0000-0002-9294-9998"
+          "@id": "#auth-001"
         },
         {
           "@id": "#auth-002"
@@ -95,22 +75,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1242/jcs.108373"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22899720"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-69"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/69/render_thumbnail/"
       ],
       "size": [
         {
@@ -127,42 +115,72 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "https://orcid.org/0000-0002-9294-9998",
+      "@id": "#auth-001",
       "@type": "Person",
       "name": "Tatsuo Shibata",
       "email": "tatsuo.shibata@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Physical Biology",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratories for Physical Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Masatoshi Nishikawa"
+      "name": "Masatoshi Nishikawa",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratories for Physical Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Satomi Matsuoka"
+      "name": "Satomi Matsuoka",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratories for Physical Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Masahiro Ueda"
+      "name": "Masahiro Ueda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratories for Physical Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1242/jcs.108373",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22899720",
       "@type": "ScholarlyArticle",
-      "name": "Modeling the self-organized phosphatidylinositol lipid signaling system in chemotactic cells using quantitative image analysis.",
-      "datePublished": "2012"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/22899720"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "name": "Dictyostelium discoideum",
+      "identifier": "NCBITaxon:44689"
     },
     {
       "@id": "#biosample-1",
@@ -171,32 +189,39 @@
       "description": "Dictyostelium discoideum",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
-      "@type": "DefinedTerm",
-      "name": "cellular protein localization"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 795953218,
-      "description": "796.0 MB",
+      "value": 1172628878,
+      "description": "1.2 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

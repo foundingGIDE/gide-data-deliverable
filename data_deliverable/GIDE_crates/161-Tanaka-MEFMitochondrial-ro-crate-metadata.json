@@ -45,38 +45,25 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/161-Tanaka-MEFMitochondrial/"
+        "@id": "https://ssbd.riken.jp/v2/project/161-Tanaka-MEFMitochondrial"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/161-Tanaka-MEFMitochondrial/",
+      "@id": "https://ssbd.riken.jp/v2/project/161-Tanaka-MEFMitochondrial",
       "@type": "Dataset",
       "identifier": "161-Tanaka-MEFMitochondrial",
       "name": "Electron microimage of mitochondrial structure in control and Pre3 KO mice MEFs.",
-      "description": "161-Tanaka-MEFMitochondrial",
+      "description": "Electron microimage of mitochondrial structure in control and Pre3 KO mice MEFs.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Animals",
-        "Apoptosis/physiology[major]",
-        "Butylamines/pharmacology",
-        "Caspases/metabolism",
-        "Cell Line",
-        "Cytochromes c/metabolism",
-        "Dynamins/metabolism",
-        "Humans",
-        "Lipoproteins/genetics",
-        "Membrane Proteins/genetics",
         "Mice",
-        "Mice, Inbred C57BL",
-        "Mitochondria/metabolism[major]",
-        "Mitochondrial Dynamics/physiology[major]",
-        "Peroxins/genetics",
-        "Peroxisomal Disorders/pathology",
-        "Peroxisome-Targeting Signal 1 Receptor/genetics",
-        "Peroxisomes/metabolism[major]",
-        "RNA Interference",
-        "RNA, Small Interfering/genetics"
+        "Inbred C57BL",
+        "Cell Line",
+        "Mitochondria",
+        "Mitochondria/metabolism",
+        "Mitochondrial Dynamics",
+        "Mitochondrial Dynamics/physiology"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -93,22 +80,22 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0007665"
-        },
-        {
-          "@id": "#biosample-2"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0010467"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0030061"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007665"
         }
       ],
       "measurementMethod": [
@@ -120,7 +107,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-657"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/657/render_thumbnail/"
       ],
       "size": [
         {
@@ -144,29 +131,68 @@
       "description": "Organization: Hokkaido University; Department: Institute for Genetic Medicine; Laboratory: Laboratory of Molecular Cell Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e16g702"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02e16g702",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Hokkaido University"
     },
     {
       "@id": "https://doi.org/10.1242/jcs.224766",
       "@type": "ScholarlyArticle",
-      "name": "Peroxisomes control mitochondrial dynamics and the mitochondrion-dependent apoptosis pathway.",
-      "datePublished": "2019"
+      "name": "Tanaka H, Okazaki T, Aoyama S, Yokota M, Koike M, Okada Y, Fujiki Y, and Gotoh Y (2019) Peroxisomes control mitochondrial dynamics and the mitochondrion-dependent apoptosis pathway. Journal of Cell Science, Volume 132, Issue 11, pages jcs224766.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31076512"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
+      "@type": "DefinedTerm",
+      "name": "gene expression",
+      "identifier": "GO:0010467"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030061",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial crista",
+      "identifier": "GO:0030061"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007665",
+      "@type": "DefinedTerm",
+      "name": "MEF (C57BL/6) cell",
+      "identifier": "CLO:0007665"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Mus musculus ~ MEF",
-      "description": "Mus musculus ~ MEF",
+      "name": "Mus musculus ~ Pex3 KO MEF (C57BL/6) cell",
+      "description": "Mus musculus ~ Pex3 KO MEF (C57BL/6) cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ MEF (C57BL/6) cell",
+      "description": "Mus musculus ~ MEF (C57BL/6) cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "hasCellLine": {
@@ -174,37 +200,10 @@
       }
     },
     {
-      "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "Mus musculus ~ Pex3 KO MEF (C57BL/6) cell",
-      "description": "Mus musculus ~ Pex3 KO MEF (C57BL/6) cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ],
-      "hasCellLine": "Pex3 KO MEF (C57BL/6) cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007665",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
       "@type": "DefinedTerm",
-      "name": "MEF"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
-      "@type": "DefinedTerm",
-      "name": "gene expression"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030061",
-      "@type": "DefinedTerm",
-      "name": "mitochondrial crista"
+      "name": "electron microscopy",
+      "identifier": "FBbi:00000256"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -218,22 +217,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "electron microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 6682240,
-      "description": "6.7 MB",
+      "value": 13221991,
+      "description": "13.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 8,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

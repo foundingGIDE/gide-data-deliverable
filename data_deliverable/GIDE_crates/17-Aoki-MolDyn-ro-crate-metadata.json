@@ -45,42 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/17-Aoki-MolDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/17-Aoki-MolDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/17-Aoki-MolDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/17-Aoki-MolDyn",
       "@type": "Dataset",
       "identifier": "17-Aoki-MolDyn",
       "name": "17-Aoki-MolDyn",
-      "description": "17-Aoki-MolDyn",
+      "description": "See details in Aoki et al. (2013) Molecular Cell, 52(4): 529-540",
       "datePublished": "2016-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Algorithms",
-        "Animals",
-        "Benzamides/pharmacology",
-        "Cell Communication",
-        "Cell Count",
-        "Cell Line",
-        "Cell Proliferation[major]",
-        "Enzyme Activation",
-        "Extracellular Signal-Regulated MAP Kinases/antagonists & inhibitors",
-        "Extracellular Signal-Regulated MAP Kinases/metabolism[major]",
-        "Gene Expression Regulation",
-        "Humans",
-        "Imidazoles/pharmacology",
-        "Kinetics",
-        "MAP Kinase Signaling System[major]",
-        "Models, Biological",
-        "Promoter Regions, Genetic",
-        "Rats",
-        "Sequence Analysis, RNA",
-        "Stochastic Processes",
-        "Time-Lapse Imaging",
-        "raf Kinases/antagonists & inhibitors",
-        "raf Kinases/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -109,22 +84,42 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.molcel.2013.09.015"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/24140422"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-6"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/6/render_thumbnail/"
       ],
       "size": [
         {
@@ -148,87 +143,175 @@
       "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yuka Kumagai"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Atsuro Sakurai"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Naoki Komatsu"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Yoshihisa Fujita"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Clara Shionyu"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Michiyuki Matsuda"
-    },
-    {
-      "@id": "https://ror.org/02kpeqv85",
-      "@type": "Organization",
-      "name": "Kyoto University"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.molcel.2013.09.015",
-      "@type": "ScholarlyArticle",
-      "name": "Stochastic ERK activation induced by noise and cell-to-cell propagation regulates cell density-dependent proliferation.",
-      "datePublished": "2013"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "NRK-52E",
-      "description": "NRK-52E",
-      "taxonomicRange": [
+      "name": "Yuka Kumagai",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
-      "@type": "Taxon",
-      "scientificName": "Rattus norvegicus",
-      "vernacularName": "rat"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Atsuro Sakurai",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Naoki Komatsu",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yoshihisa Fujita",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Clara Shionyu",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Michiyuki Matsuda",
+      "description": "Organization: Kyoto University; Department: Graduate School of Medicine; Laboratory: Imaging Platform for Spatio-Temporal Information",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/24140422",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/24140422"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0034613",
       "@type": "DefinedTerm",
-      "name": "cellular protein localization"
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "name": "Rattus norvegicus",
+      "identifier": "NCBITaxon:10116"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Rattus norvegicus",
+      "description": "Rattus norvegicus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 164712089,
-      "description": "164.7 MB",
+      "value": 208244854,
+      "description": "208.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 6,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

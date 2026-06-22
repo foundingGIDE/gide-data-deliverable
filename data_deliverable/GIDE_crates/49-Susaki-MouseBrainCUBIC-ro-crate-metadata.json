@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/49-Susaki-MouseBrainCUBIC/"
+        "@id": "https://ssbd.riken.jp/v1/project/49-Susaki-MouseBrainCUBIC"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/49-Susaki-MouseBrainCUBIC/",
+      "@id": "https://ssbd.riken.jp/v1/project/49-Susaki-MouseBrainCUBIC",
       "@type": "Dataset",
       "identifier": "49-Susaki-MouseBrainCUBIC",
       "name": "49-Susaki-MouseBrainCUBIC",
-      "description": "49-Susaki-MouseBrainCUBIC",
+      "description": "See details in Susaki et al. (2015) Nature Protocols, 10: 1709–1727.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Brain/pathology",
-        "Image Processing, Computer-Assisted/methods[major]",
-        "Mice",
-        "Microscopy/methods[major]",
-        "Optical Imaging/methods[major]",
-        "Pathology/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -90,19 +81,27 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/nprot.2015.085"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26448360"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000364"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-105"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/105/render_thumbnail/"
       ],
       "size": [
         {
@@ -126,45 +125,81 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Etsuo A Susaki"
+      "name": "Etsuo A Susaki",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Kazuki Tainaka"
+      "name": "Kazuki Tainaka",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Dimitri Perrin"
+      "name": "Dimitri Perrin",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hiroko Yukinaga"
+      "name": "Hiroko Yukinaga",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Akihiro Kuno"
+      "name": "Akihiro Kuno",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1038/nprot.2015.085",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26448360",
       "@type": "ScholarlyArticle",
-      "name": "Advanced CUBIC protocols for whole-brain and whole-body clearing and imaging.",
-      "datePublished": "2015"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26448360"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -173,30 +208,41 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 5671359529,
-      "description": "5.7 GB",
+      "value": 9136899657,
+      "description": "9.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 512,
+      "value": 513,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000364",
+      "@type": "DefinedTerm",
+      "name": "light-sheet illumination",
+      "identifier": "FBbi:00000364"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "light-sheet illumination",
+      "description": "light-sheet illumination",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000364"
+        }
+      ]
     }
   ]
 }

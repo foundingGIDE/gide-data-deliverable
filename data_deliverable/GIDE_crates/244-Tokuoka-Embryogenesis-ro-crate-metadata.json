@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/244-Tokuoka-Embryogenesis/"
+        "@id": "https://ssbd.riken.jp/v2/project/244-Tokuoka-Embryogenesis"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/244-Tokuoka-Embryogenesis/",
+      "@id": "https://ssbd.riken.jp/v2/project/244-Tokuoka-Embryogenesis",
       "@type": "Dataset",
       "identifier": "244-Tokuoka-Embryogenesis",
-      "name": "Time-series 3D images and BDML file for quantitative information about early mouse embryos with labeled nuclei.",
-      "description": "244-Tokuoka-Embryogenesis",
+      "name": "Time-series 3D images and BDML file for quantiative information about early mouse embryos with labeled nuclei.",
+      "description": "See details in Tokuoka Y, et. al. (2020) NPJ Syst Biol Appl, 2020 Oct 20;6(1):32.",
       "datePublished": "2023-02-02",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Nucleus/metabolism[major]",
-        "Embryo, Mammalian/cytology[major]",
-        "Embryo, Mammalian/diagnostic imaging[major]",
-        "Embryo, Mammalian/embryology",
-        "Embryonic Development[major]",
-        "Imaging, Three-Dimensional/methods[major]",
-        "Mice",
-        "Microscopy, Fluorescence",
-        "Neural Networks, Computer[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -86,9 +74,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -96,6 +81,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -109,14 +97,11 @@
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
-        },
-        {
-          "@id": "#imaging-protocol-3"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-851"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/851/render_thumbnail/"
       ],
       "size": [
         {
@@ -140,25 +125,54 @@
       "description": "Organization: Keio University; Department: Department of Biosciencesand Informatics",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kn6nx58"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yuta Tokuoka"
+      "name": "Yuta Tokuoka",
+      "email": "tokuoka@fun.bio.keio.ac.jp",
+      "description": "Organization: Keio University; Department: Department of Biosciencesand Informatics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02kn6nx58",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Keio University"
     },
     {
       "@id": "https://doi.org/10.1038/s41540-020-00152-8",
       "@type": "ScholarlyArticle",
-      "name": "3D convolutional neural networks-based segmentation to acquire quantitative criteria of the nucleus during mouse embryogenesis.",
-      "datePublished": "2020"
+      "name": "Tokuoka Y, Yamada TG, Mashiko D, Ikeda Z, Hiroi NF, Kobayashi TJ, Yamagata K, Funahashi A. 3D convolutional neural networks-based segmentation to acquire quantitative criteria of the nucleus during mouse embryogenesis. NPJ Syst Biol Appl. 2020 Oct 20;6(1):32.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/33082352/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development",
+      "identifier": "GO:0009790"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -167,25 +181,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "embryo development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -199,51 +203,36 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "CV1000 microscope equipped with a 20x oil lens",
-      "description": "CV1000 microscope equipped with a 20x oil lens",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-3",
-      "@type": "LabProtocol",
-      "name": "IX71 microscope equipped with a 20x oil lens",
-      "description": "IX71 microscope equipped with a 20x oil lens",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000278"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000278",
-      "@type": "DefinedTerm",
-      "name": "CV1000 microscope equipped with a 20x oil lens"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 262984563,
-      "description": "263.0 MB",
+      "value": 397067779,
+      "description": "397.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 165,
+      "value": 167,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

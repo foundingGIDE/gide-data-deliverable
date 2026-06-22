@@ -45,25 +45,26 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/183-Iwasaki-SpineDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/183-Iwasaki-SpineDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/183-Iwasaki-SpineDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/183-Iwasaki-SpineDyn",
       "@type": "Dataset",
       "identifier": "183-Iwasaki-SpineDyn",
       "name": "Time-lapse images or SIM images of Actin organization and dynamics in mice during dendritic spine development.",
-      "description": "183-Iwasaki-SpineDyn",
+      "description": "See details in Iwasaki K, et. al. (2020)  Eur J Neurosci., 51(3):806-821.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Actins[major]",
+        "Actins",
         "Animals",
-        "Cell Adhesion Molecules[major]",
-        "Dendritic Spines[major]",
+        "Cell Adhesion Molecules",
+        "Dendritic Spines",
         "Mice",
-        "Microfilament Proteins[major]",
-        "Phosphoproteins/genetics[major]"
+        "Microfilament Proteins",
+        "Phosphoproteins",
+        "Phosphoproteins/genetics"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -80,9 +81,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -93,6 +91,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0043197"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -110,7 +111,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-719"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/719/render_thumbnail/"
       ],
       "size": [
         {
@@ -131,23 +132,51 @@
       "@type": "Person",
       "name": "Shigeo Okabe",
       "email": "okabe@m.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Department of Cellular Neurobiology",
+      "description": "Organization: The University of Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1111/ejn.14634",
       "@type": "ScholarlyArticle",
-      "name": "Vasodilator-stimulated phosphoprotein (VASP) is recruited into dendritic spines via G-actin-dependent mechanism and contributes to spine enlargement and stabilization.",
-      "datePublished": "2020"
+      "name": "Iwasak K, Obashi K, and Okabe S (2020) Vasodilator-stimulated phosphoprotein (VASP) is recruited into dendritic spines via G-actin-dependent mechanism and contributes to spine enlargement and stabilization.  European Journal of Neuroscience, Volume 51, Issue 3, pages 806-821.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31793065"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060996",
+      "@type": "DefinedTerm",
+      "name": "dendritic spine development",
+      "identifier": "GO:0060996"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0050808",
+      "@type": "DefinedTerm",
+      "name": "synapse organization",
+      "identifier": "GO:0050808"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
+      "@type": "DefinedTerm",
+      "name": "dendritic spine",
+      "identifier": "GO:0043197"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -156,30 +185,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060996",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "dendritic spine development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0050808",
-      "@type": "DefinedTerm",
-      "name": "synapse organization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
-      "@type": "DefinedTerm",
-      "name": "dendritic spine"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -193,10 +207,16 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
+      "@type": "DefinedTerm",
+      "name": "structured illumination microscopy (SIM)",
+      "identifier": "FBbi:00000332"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
-      "name": "structured illumination microscopy",
-      "description": "structured illumination microscopy",
+      "name": "structured illumination microscopy (SIM)",
+      "description": "structured illumination microscopy (SIM)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000332"
@@ -204,27 +224,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
-      "@type": "DefinedTerm",
-      "name": "structured illumination microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 4013296997,
-      "description": "4.0 GB",
+      "value": 7036842172,
+      "description": "7.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 34,
+      "value": 68,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

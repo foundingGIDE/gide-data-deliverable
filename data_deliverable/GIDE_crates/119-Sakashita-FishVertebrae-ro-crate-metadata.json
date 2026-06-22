@@ -45,25 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/119-Sakashita-FishVertebrae/"
+        "@id": "https://ssbd.riken.jp/v1/project/119-Sakashita-FishVertebrae"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/119-Sakashita-FishVertebrae/",
+      "@id": "https://ssbd.riken.jp/v1/project/119-Sakashita-FishVertebrae",
       "@type": "Dataset",
       "identifier": "119-Sakashita-FishVertebrae",
       "name": "A set of transverse sections of teleost fish vertebral bodies",
-      "description": "119-Sakashita-FishVertebrae",
+      "description": "See details in Sakashita et al. (2019) J Morphol, 280(6): 778-795.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-      "keywords": [
-        "Animals",
-        "Fishes/anatomy & histology[major]",
-        "Fishes/growth & development",
-        "Spine/anatomy & histology[major]",
-        "Spine/growth & development",
-        "X-Ray Microtomography"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,211 +72,219 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1002/jmor.20983"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30945336"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_390682"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_181417"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_450224"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_129043"
-        },
-        {
-          "@id": "#biosample-4"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143344"
-        },
-        {
-          "@id": "#biosample-5"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_235072"
-        },
-        {
-          "@id": "#biosample-6"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_270564"
-        },
-        {
-          "@id": "#biosample-7"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_365056"
-        },
-        {
-          "@id": "#biosample-8"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_292417"
-        },
-        {
-          "@id": "#biosample-9"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_30790"
-        },
-        {
-          "@id": "#biosample-10"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1913191"
-        },
-        {
-          "@id": "#biosample-11"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_384593"
-        },
-        {
-          "@id": "#biosample-12"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07946"
-        },
-        {
-          "@id": "#biosample-13"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143350"
-        },
-        {
-          "@id": "#biosample-14"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08255"
-        },
-        {
-          "@id": "#biosample-15"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_281464"
-        },
-        {
-          "@id": "#biosample-16"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_887134"
-        },
-        {
-          "@id": "#biosample-17"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_41697"
-        },
-        {
-          "@id": "#biosample-18"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_242802"
-        },
-        {
-          "@id": "#biosample-19"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_13676"
-        },
-        {
-          "@id": "#biosample-20"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_201705"
-        },
-        {
-          "@id": "#biosample-21"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_214489"
-        },
-        {
-          "@id": "#biosample-22"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_43258"
-        },
-        {
-          "@id": "#biosample-23"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_392540"
-        },
-        {
-          "@id": "#biosample-24"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_98921"
-        },
-        {
-          "@id": "#biosample-25"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_277993"
-        },
-        {
-          "@id": "#biosample-26"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_229060"
-        },
-        {
-          "@id": "#biosample-27"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08238"
-        },
-        {
-          "@id": "#biosample-28"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_48169"
-        },
-        {
-          "@id": "#biosample-29"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_83875"
-        },
-        {
-          "@id": "#biosample-30"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_94939"
+          "@id": "#biosample-32"
         },
         {
           "@id": "#biosample-31"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_64108"
+          "@id": "#biosample-30"
         },
         {
-          "@id": "#biosample-32"
+          "@id": "#biosample-29"
+        },
+        {
+          "@id": "#biosample-28"
+        },
+        {
+          "@id": "#biosample-27"
+        },
+        {
+          "@id": "#biosample-26"
+        },
+        {
+          "@id": "#biosample-25"
+        },
+        {
+          "@id": "#biosample-24"
+        },
+        {
+          "@id": "#biosample-23"
+        },
+        {
+          "@id": "#biosample-22"
+        },
+        {
+          "@id": "#biosample-21"
+        },
+        {
+          "@id": "#biosample-20"
+        },
+        {
+          "@id": "#biosample-19"
+        },
+        {
+          "@id": "#biosample-18"
+        },
+        {
+          "@id": "#biosample-17"
+        },
+        {
+          "@id": "#biosample-16"
+        },
+        {
+          "@id": "#biosample-15"
+        },
+        {
+          "@id": "#biosample-14"
+        },
+        {
+          "@id": "#biosample-13"
+        },
+        {
+          "@id": "#biosample-12"
+        },
+        {
+          "@id": "#biosample-11"
+        },
+        {
+          "@id": "#biosample-10"
+        },
+        {
+          "@id": "#biosample-9"
+        },
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0060343"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0061056"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/390682"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/181417"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/450224"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/129043"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143344"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/235072"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/270564"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/365056"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/292417"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/30790"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1913191"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/384593"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7946"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143350"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8255"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/281464"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/887134"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/41697"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/242802"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13676"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/201705"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/214489"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/43258"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/392540"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/98921"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/277993"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/229060"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8238"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/48169"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/83875"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/94939"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/64108"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-262"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/262/render_thumbnail/"
       ],
       "size": [
         {
@@ -308,7 +308,7 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory of Pattern Formation",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -316,558 +316,652 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Shigeru Kondo",
-      "email": "skondo@fbs.osaka-u.ac.jp"
+      "email": "skondo@fbs.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory of Pattern Formation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Mao Sato"
+      "name": "Mao Sato",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory of Pattern Formation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
-      "@id": "https://doi.org/10.1002/jmor.20983",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30945336",
       "@type": "ScholarlyArticle",
-      "name": "Comparative morphological examination of vertebral bodies of teleost fish using high-resolution micro-CT scans.",
-      "datePublished": "2019"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/30945336"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060343",
+      "@type": "DefinedTerm",
+      "name": "trabecula formation",
+      "identifier": "GO:0060343"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0061056",
+      "@type": "DefinedTerm",
+      "name": "sclerotome development",
+      "identifier": "GO:0061056"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/390682",
+      "@type": "Taxon",
+      "scientificName": "A. hanedai",
+      "name": "A. hanedai",
+      "identifier": "NCBITaxon:390682"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/181417",
+      "@type": "Taxon",
+      "scientificName": "C. abei",
+      "name": "C. abei",
+      "identifier": "NCBITaxon:181417"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/450224",
+      "@type": "Taxon",
+      "scientificName": "C. spinosus",
+      "name": "C. spinosus",
+      "identifier": "NCBITaxon:450224"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/129043",
+      "@type": "Taxon",
+      "scientificName": "C. saira",
+      "name": "C. saira",
+      "identifier": "NCBITaxon:129043"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143344",
+      "@type": "Taxon",
+      "scientificName": "H. hilgendorfii",
+      "name": "H. hilgendorfii",
+      "identifier": "NCBITaxon:143344"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/235072",
+      "@type": "Taxon",
+      "scientificName": "H. dubius",
+      "name": "H. dubius",
+      "identifier": "NCBITaxon:235072"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/270564",
+      "@type": "Taxon",
+      "scientificName": "H. typus",
+      "name": "H. typus",
+      "identifier": "NCBITaxon:270564"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/365056",
+      "@type": "Taxon",
+      "scientificName": "K. punctatus",
+      "name": "K. punctatus",
+      "identifier": "NCBITaxon:365056"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/292417",
+      "@type": "Taxon",
+      "scientificName": "L. setigerus",
+      "name": "L. setigerus",
+      "identifier": "NCBITaxon:292417"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/30790",
+      "@type": "Taxon",
+      "scientificName": "L. litulon",
+      "name": "L. litulon",
+      "identifier": "NCBITaxon:30790"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1913191",
+      "@type": "Taxon",
+      "scientificName": "M. sagifue",
+      "name": "M. sagifue",
+      "identifier": "NCBITaxon:1913191"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/384593",
+      "@type": "Taxon",
+      "scientificName": "M. uradoi",
+      "name": "M. uradoi",
+      "identifier": "NCBITaxon:384593"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7946",
+      "@type": "Taxon",
+      "scientificName": "M. cinereus",
+      "name": "M. cinereus",
+      "identifier": "NCBITaxon:7946"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143350",
+      "@type": "Taxon",
+      "scientificName": "P. major",
+      "name": "P. major",
+      "identifier": "NCBITaxon:143350"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8255",
+      "@type": "Taxon",
+      "scientificName": "P. olivaceus",
+      "name": "P. olivaceus",
+      "identifier": "NCBITaxon:8255"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/281464",
+      "@type": "Taxon",
+      "scientificName": "P. altivelis altivelis",
+      "name": "P. altivelis altivelis",
+      "identifier": "NCBITaxon:281464"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/887134",
+      "@type": "Taxon",
+      "scientificName": "R. prometheoides",
+      "name": "R. prometheoides",
+      "identifier": "NCBITaxon:887134"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/41697",
+      "@type": "Taxon",
+      "scientificName": "S. melanostictus",
+      "name": "S. melanostictus",
+      "identifier": "NCBITaxon:41697"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/242802",
+      "@type": "Taxon",
+      "scientificName": "S. forsteni",
+      "name": "S. forsteni",
+      "identifier": "NCBITaxon:242802"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13676",
+      "@type": "Taxon",
+      "scientificName": "S. japonicus",
+      "name": "S. japonicus",
+      "identifier": "NCBITaxon:13676"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/201705",
+      "@type": "Taxon",
+      "scientificName": "S. oblongus",
+      "name": "S. oblongus",
+      "identifier": "NCBITaxon:201705"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/214489",
+      "@type": "Taxon",
+      "scientificName": "S. zonatus",
+      "name": "S. zonatus",
+      "identifier": "NCBITaxon:214489"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/43258",
+      "@type": "Taxon",
+      "scientificName": "S. japonica",
+      "name": "S. japonica",
+      "identifier": "NCBITaxon:43258"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/392540",
+      "@type": "Taxon",
+      "scientificName": "S. pinguis",
+      "name": "S. pinguis",
+      "identifier": "NCBITaxon:392540"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/98921",
+      "@type": "Taxon",
+      "scientificName": "T. pardalis",
+      "name": "T. pardalis",
+      "identifier": "NCBITaxon:98921"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/277993",
+      "@type": "Taxon",
+      "scientificName": "T. snyderi",
+      "name": "T. snyderi",
+      "identifier": "NCBITaxon:277993"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/229060",
+      "@type": "Taxon",
+      "scientificName": "T. stictonotus",
+      "name": "T. stictonotus",
+      "identifier": "NCBITaxon:229060"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8238",
+      "@type": "Taxon",
+      "scientificName": "T. orientalis",
+      "name": "T. orientalis",
+      "identifier": "NCBITaxon:8238"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/48169",
+      "@type": "Taxon",
+      "scientificName": "T. tonggol",
+      "name": "T. tonggol",
+      "identifier": "NCBITaxon:48169"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/83875",
+      "@type": "Taxon",
+      "scientificName": "T. japonicus",
+      "name": "T. japonicus",
+      "identifier": "NCBITaxon:83875"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/94939",
+      "@type": "Taxon",
+      "scientificName": "Z. nebulosa",
+      "name": "Z. nebulosa",
+      "identifier": "NCBITaxon:94939"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/64108",
+      "@type": "Taxon",
+      "scientificName": "Z. faber",
+      "name": "Z. faber",
+      "identifier": "NCBITaxon:64108"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Acropoma hanedai",
-      "description": "Acropoma hanedai",
+      "name": "A. hanedai",
+      "description": "A. hanedai",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_390682"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/390682"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Chaunax abei",
-      "description": "Chaunax abei",
+      "name": "C. abei",
+      "description": "C. abei",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_181417"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/181417"
         }
       ]
     },
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "Chelidonichthys spinosus",
-      "description": "Chelidonichthys spinosus",
+      "name": "C. spinosus",
+      "description": "C. spinosus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_450224"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/450224"
         }
       ]
     },
     {
       "@id": "#biosample-4",
       "@type": "BioSample",
-      "name": "Cololabis saira",
-      "description": "Cololabis saira",
+      "name": "C. saira",
+      "description": "C. saira",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_129043"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/129043"
         }
       ]
     },
     {
       "@id": "#biosample-5",
       "@type": "BioSample",
-      "name": "Helicolenus hilgendorfi",
-      "description": "Helicolenus hilgendorfi",
+      "name": "H. hilgendorfii",
+      "description": "H. hilgendorfii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143344"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143344"
         }
       ]
     },
     {
       "@id": "#biosample-6",
       "@type": "BioSample",
-      "name": "Hippoglossoides dubius",
-      "description": "Hippoglossoides dubius",
+      "name": "H. dubius",
+      "description": "H. dubius",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_235072"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/235072"
         }
       ]
     },
     {
       "@id": "#biosample-7",
       "@type": "BioSample",
-      "name": "Histiopterus typus",
-      "description": "Histiopterus typus",
+      "name": "H. typus",
+      "description": "H. typus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_270564"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/270564"
         }
       ]
     },
     {
       "@id": "#biosample-8",
       "@type": "BioSample",
-      "name": "Konosirus punctatus",
-      "description": "Konosirus punctatus",
+      "name": "K. punctatus",
+      "description": "K. punctatus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_365056"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/365056"
         }
       ]
     },
     {
       "@id": "#biosample-9",
       "@type": "BioSample",
-      "name": "Lophiomus setigerus",
-      "description": "Lophiomus setigerus",
+      "name": "L. setigerus",
+      "description": "L. setigerus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_292417"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/292417"
         }
       ]
     },
     {
       "@id": "#biosample-10",
       "@type": "BioSample",
-      "name": "Lophius litulon",
-      "description": "Lophius litulon",
+      "name": "L. litulon",
+      "description": "L. litulon",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_30790"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/30790"
         }
       ]
     },
     {
       "@id": "#biosample-11",
       "@type": "BioSample",
-      "name": "Macroramphosus sagifue",
-      "description": "Macroramphosus sagifue",
+      "name": "M. sagifue",
+      "description": "M. sagifue",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1913191"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1913191"
         }
       ]
     },
     {
       "@id": "#biosample-12",
       "@type": "BioSample",
-      "name": "Macrorhamphosodes uradoi",
-      "description": "Macrorhamphosodes uradoi",
+      "name": "M. uradoi",
+      "description": "M. uradoi",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_384593"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/384593"
         }
       ]
     },
     {
       "@id": "#biosample-13",
       "@type": "BioSample",
-      "name": "Muraenesox cinereus",
-      "description": "Muraenesox cinereus",
+      "name": "M. cinereus",
+      "description": "M. cinereus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07946"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7946"
         }
       ]
     },
     {
       "@id": "#biosample-14",
       "@type": "BioSample",
-      "name": "Pagrus major",
-      "description": "Pagrus major",
+      "name": "P. major",
+      "description": "P. major",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143350"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/143350"
         }
       ]
     },
     {
       "@id": "#biosample-15",
       "@type": "BioSample",
-      "name": "Paralichthys olivaceus",
-      "description": "Paralichthys olivaceus",
+      "name": "P. olivaceus",
+      "description": "P. olivaceus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08255"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8255"
         }
       ]
     },
     {
       "@id": "#biosample-16",
       "@type": "BioSample",
-      "name": "Plecoglossus altivelis altivelis",
-      "description": "Plecoglossus altivelis altivelis",
+      "name": "P. altivelis altivelis",
+      "description": "P. altivelis altivelis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_281464"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/281464"
         }
       ]
     },
     {
       "@id": "#biosample-17",
       "@type": "BioSample",
-      "name": "Rexea prometheoides",
-      "description": "Rexea prometheoides",
+      "name": "R. prometheoides",
+      "description": "R. prometheoides",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_887134"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/887134"
         }
       ]
     },
     {
       "@id": "#biosample-18",
       "@type": "BioSample",
-      "name": "Sardinops melanosticta",
-      "description": "Sardinops melanosticta",
+      "name": "S. melanostictus",
+      "description": "S. melanostictus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_41697"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/41697"
         }
       ]
     },
     {
       "@id": "#biosample-19",
       "@type": "BioSample",
-      "name": "Scarus forsteni",
-      "description": "Scarus forsteni",
+      "name": "S. forsteni",
+      "description": "S. forsteni",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_242802"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/242802"
         }
       ]
     },
     {
       "@id": "#biosample-20",
       "@type": "BioSample",
-      "name": "Scomber japonicus",
-      "description": "Scomber japonicus",
+      "name": "S. japonicus",
+      "description": "S. japonicus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_13676"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/13676"
         }
       ]
     },
     {
       "@id": "#biosample-21",
       "@type": "BioSample",
-      "name": "Sebastes oblongus",
-      "description": "Sebastes oblongus",
+      "name": "S. oblongus",
+      "description": "S. oblongus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_201705"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/201705"
         }
       ]
     },
     {
       "@id": "#biosample-22",
       "@type": "BioSample",
-      "name": "Sebastes zonatus",
-      "description": "Sebastes zonatus",
+      "name": "S. zonatus",
+      "description": "S. zonatus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_214489"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/214489"
         }
       ]
     },
     {
       "@id": "#biosample-23",
       "@type": "BioSample",
-      "name": "Sillago japonica",
-      "description": "Sillago japonica",
+      "name": "S. japonica",
+      "description": "S. japonica",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_43258"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/43258"
         }
       ]
     },
     {
       "@id": "#biosample-24",
       "@type": "BioSample",
-      "name": "Sphyraena pinguis",
-      "description": "Sphyraena pinguis",
+      "name": "S. pinguis",
+      "description": "S. pinguis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_392540"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/392540"
         }
       ]
     },
     {
       "@id": "#biosample-25",
       "@type": "BioSample",
-      "name": "Takifugu pardalis",
-      "description": "Takifugu pardalis",
+      "name": "T. pardalis",
+      "description": "T. pardalis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_98921"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/98921"
         }
       ]
     },
     {
       "@id": "#biosample-26",
       "@type": "BioSample",
-      "name": "Takifugu snyderi",
-      "description": "Takifugu snyderi",
+      "name": "T. snyderi",
+      "description": "T. snyderi",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_277993"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/277993"
         }
       ]
     },
     {
       "@id": "#biosample-27",
       "@type": "BioSample",
-      "name": "Takifugu stictonotus",
-      "description": "Takifugu stictonotus",
+      "name": "T. stictonotus",
+      "description": "T. stictonotus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_229060"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/229060"
         }
       ]
     },
     {
       "@id": "#biosample-28",
       "@type": "BioSample",
-      "name": "Thunnus orientalis",
-      "description": "Thunnus orientalis",
+      "name": "T. orientalis",
+      "description": "T. orientalis",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08238"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8238"
         }
       ]
     },
     {
       "@id": "#biosample-29",
       "@type": "BioSample",
-      "name": "Thunnus tonggol",
-      "description": "Thunnus tonggol",
+      "name": "T. tonggol",
+      "description": "T. tonggol",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_48169"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/48169"
         }
       ]
     },
     {
       "@id": "#biosample-30",
       "@type": "BioSample",
-      "name": "Trachurus japonicus",
-      "description": "Trachurus japonicus",
+      "name": "T. japonicus",
+      "description": "T. japonicus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_83875"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/83875"
         }
       ]
     },
     {
       "@id": "#biosample-31",
       "@type": "BioSample",
-      "name": "Zenopsis nebulosus",
-      "description": "Zenopsis nebulosus",
+      "name": "Z. nebulosa",
+      "description": "Z. nebulosa",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_94939"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/94939"
         }
       ]
     },
     {
       "@id": "#biosample-32",
       "@type": "BioSample",
-      "name": "Zeus faber",
-      "description": "Zeus faber",
+      "name": "Z. faber",
+      "description": "Z. faber",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_64108"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/64108"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_390682",
-      "@type": "Taxon",
-      "scientificName": "Acropoma hanedai"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_181417",
-      "@type": "Taxon",
-      "scientificName": "Chaunax abei"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_450224",
-      "@type": "Taxon",
-      "scientificName": "Chelidonichthys spinosus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_129043",
-      "@type": "Taxon",
-      "scientificName": "Cololabis saira"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143344",
-      "@type": "Taxon",
-      "scientificName": "Helicolenus hilgendorfi"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_235072",
-      "@type": "Taxon",
-      "scientificName": "Hippoglossoides dubius"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_270564",
-      "@type": "Taxon",
-      "scientificName": "Histiopterus typus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_365056",
-      "@type": "Taxon",
-      "scientificName": "Konosirus punctatus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_292417",
-      "@type": "Taxon",
-      "scientificName": "Lophiomus setigerus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_30790",
-      "@type": "Taxon",
-      "scientificName": "Lophius litulon"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1913191",
-      "@type": "Taxon",
-      "scientificName": "Macroramphosus sagifue"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_384593",
-      "@type": "Taxon",
-      "scientificName": "Macrorhamphosodes uradoi"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07946",
-      "@type": "Taxon",
-      "scientificName": "Muraenesox cinereus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_143350",
-      "@type": "Taxon",
-      "scientificName": "Pagrus major"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08255",
-      "@type": "Taxon",
-      "scientificName": "Paralichthys olivaceus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_281464",
-      "@type": "Taxon",
-      "scientificName": "Plecoglossus altivelis altivelis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_887134",
-      "@type": "Taxon",
-      "scientificName": "Rexea prometheoides"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_41697",
-      "@type": "Taxon",
-      "scientificName": "Sardinops melanosticta"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_242802",
-      "@type": "Taxon",
-      "scientificName": "Scarus forsteni"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_13676",
-      "@type": "Taxon",
-      "scientificName": "Scomber japonicus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_201705",
-      "@type": "Taxon",
-      "scientificName": "Sebastes oblongus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_214489",
-      "@type": "Taxon",
-      "scientificName": "Sebastes zonatus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_43258",
-      "@type": "Taxon",
-      "scientificName": "Sillago japonica"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_392540",
-      "@type": "Taxon",
-      "scientificName": "Sphyraena pinguis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_98921",
-      "@type": "Taxon",
-      "scientificName": "Takifugu pardalis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_277993",
-      "@type": "Taxon",
-      "scientificName": "Takifugu snyderi"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_229060",
-      "@type": "Taxon",
-      "scientificName": "Takifugu stictonotus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08238",
-      "@type": "Taxon",
-      "scientificName": "Thunnus orientalis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_48169",
-      "@type": "Taxon",
-      "scientificName": "Thunnus tonggol"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_83875",
-      "@type": "Taxon",
-      "scientificName": "Trachurus japonicus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_94939",
-      "@type": "Taxon",
-      "scientificName": "Zenopsis nebulosus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_64108",
-      "@type": "Taxon",
-      "scientificName": "Zeus faber"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060343",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
       "@type": "DefinedTerm",
-      "name": "trabecula formation"
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0061056",
-      "@type": "DefinedTerm",
-      "name": "sclerotome development"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 150472056270,
-      "description": "150.5 GB",
+      "value": 214728017603,
+      "description": "214.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 57107,
+      "value": 57297,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

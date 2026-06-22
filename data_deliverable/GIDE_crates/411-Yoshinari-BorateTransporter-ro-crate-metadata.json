@@ -45,23 +45,42 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/411-Yoshinari-BorateTransporter/"
+        "@id": "https://ssbd.riken.jp/v3/project/411-Yoshinari-BorateTransporter"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/411-Yoshinari-BorateTransporter/",
+      "@id": "https://ssbd.riken.jp/v3/project/411-Yoshinari-BorateTransporter",
       "@type": "Dataset",
       "identifier": "411-Yoshinari-BorateTransporter",
       "name": "3D-time-lapse images of vacuolar sorting of BOR1",
       "description": "Plants maintain nutrient homeostasis by controlling the activities and abundance of nutrient transporters. In Arabidopsis thaliana, the borate (B) transporter BOR1 plays a role in the efficient translocation of B under low-B conditions. BOR1 undergoes polyubiquitination in the presence of sufficient B and is then transported to the vacuole via multivesicular bodies (MVBs) to prevent B accumulation in tissues at a toxic level. A previous study indicated that BOR1 physically interacts with mu subunits of adaptor protein complexes AP-3 and AP-4, both involved in vacuolar sorting pathways. In this study, we investigated the roles of AP-3 and AP-4 subunits in BOR1 trafficking in Arabidopsis. The lack of AP-3 subunits did not affect either vacuolar sorting or polar localization of BOR1-GFP, whereas the absence of AP-4 subunits resulted in a delay in high-B-induced vacuolar sorting without affecting polar localization. Super-resolution microscopy revealed a rapid sorting of BOR1-GFP into AP-4-positive spots in the trans-Golgi network (TGN) upon high-B supply. These results indicate that AP-4 is involved in sequestration of ubiquitinated BOR1 into a TGN-specific subdomain 'vacuolar-trafficking zone', and is required for efficient sorting of MVB and vacuole. Their findings have thus helped elucidate the rapid vacuolar sorting process facilitated by AP-4 in plant nutrient transporters.",
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Epidermal Cells",
+        "Microscopy, Confocal\nTime-Lapse Imaging",
+        "Plant Roots",
+        "Protein Transport",
+        "Intracellular Membranes",
+        "Biological Transport",
+        "Cell Membrane",
+        "Vacuoles"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-7474-3101"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-7083-5674"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-7221-1214"
+        },
+        {
+          "@id": "#auth-004"
         }
       ],
       "seeAlso": [
@@ -69,12 +88,17 @@
           "@id": "https://doi.org/10.1093/pcp/pcae096"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ],
       "measurementMethod": [
@@ -83,10 +107,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1803"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1803/render_thumbnail/"
       ],
       "size": [
         {
@@ -103,43 +133,104 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-7474-3101",
       "@type": "Person",
       "name": "Junpei Takano",
       "email": "jtakano@omu.ac.jp",
-      "description": "Organization: Osaka Prefecture University; Department: Graduate School of Life and Environmental Sciences; Laboratory: Graduate School of Life and Environmental Sciences",
+      "description": "Organization: Osaka Prefecture University; Department: Graduate School of Life and Environmental Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/04s6fbg51"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/04s6fbg51",
+      "@id": "https://orcid.org/0000-0002-7083-5674",
+      "@type": "Person",
+      "name": "Akira Yoshinari",
+      "email": "yoshinari.akira.t2@f.mail.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0009-0009-7221-1214",
+      "@type": "Person",
+      "name": "Yutaro Shimizu",
+      "email": "yutaro.shimizu@u-bordeaux.fr",
+      "description": "Organization: RIKEN; Department: Center for Advanced Photonics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Takuya Hosokawa",
+      "description": "Organization: Osaka Prefecture University; Department: Graduate School of Life and Environmental Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka Prefecture University"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
       "@id": "https://doi.org/10.1093/pcp/pcae096",
       "@type": "ScholarlyArticle",
-      "name": "Rapid Vacuolar Sorting of the Borate Transporter BOR1 Requires the Adaptor Protein Complex AP-4 in Arabidopsis.",
-      "datePublished": "2024"
+      "name": "Yoshinari A, Shimizu Y, Hosokawa T, Nakano A, Uemura T, Takano J. Rapid Vacuolar Sorting of the Borate Transporter BOR1 Requires the Adaptor Protein Complex AP-4 in Arabidopsis. Plant Cell Physiol. 2024 Dec 6;65(11):1801-1811.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/39215599/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "JSPS Grant-in-Aid for Scientific Research on Innovative Areas (19H05763 to J.T.), JSPS Grant-in-Aid for Scientific Research\n(A) (19H00934 to J.T.), JSPS Grant-in-Aid for Young Scientists\n(A) (26712007 to J.T.), Grant-in-Aid for Scientific Research(B)\n(22H02643 to T.U.), Grant-in-Aid for Challenging Research\n(Exploratory) (22K19327 to T.U.), JST CREST (JPMJCR20E5 to T.U.), JST PRESTO (JPMJPR22D9 to A.Y.) and Asahi Glass Foun-\ndation (to T.U.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Col-0",
-      "description": "Col-0",
+      "name": "Col-0 ~ epidermal cell",
+      "description": "The roots of Arabidopsis thaliana grown on MGRL medium contain-\ning 0.5 micromolar boric acid, 1.5% gellan gum and 1% sucrose for 4 or 5 days.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
-      "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -153,22 +244,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "confocal microscopy"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 416383169,
-      "description": "416.4 MB",
+      "value": 1388371241,
+      "description": "1.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 62,
+      "value": 163,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

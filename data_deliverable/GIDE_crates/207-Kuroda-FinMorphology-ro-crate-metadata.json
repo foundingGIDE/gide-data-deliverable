@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/207-Kuroda-FinMorphology/"
+        "@id": "https://ssbd.riken.jp/v2/project/207-Kuroda-FinMorphology"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/207-Kuroda-FinMorphology/",
+      "@id": "https://ssbd.riken.jp/v2/project/207-Kuroda-FinMorphology",
       "@type": "Dataset",
       "identifier": "207-Kuroda-FinMorphology",
       "name": "3D FIB-SEM images of a cross section of fin mesenchymal cells and actinotrichia in zebrafish.",
-      "description": "207-Kuroda-FinMorphology",
+      "description": "See details in Kuroda J, et. al. (2020) Front Cell Dev Biol., 8:580520.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -71,13 +71,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005604"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7955"
         }
       ],
       "measurementMethod": [
@@ -86,10 +86,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00050000"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-714"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/714/render_thumbnail/"
       ],
       "size": [
         {
@@ -113,20 +119,36 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Bioscience",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.3389/fcell.2020.580520",
       "@type": "ScholarlyArticle",
-      "name": "The Physical Role of Mesenchymal Cells Driven by the Actin Cytoskeleton Is Essential for the Orientation of Collagen Fibrils in Zebrafish Fins.",
-      "datePublished": "2020"
+      "name": "Kuroda J, Itabashi T, Iwane AH, Aramaki T, Kondo S (2020) The Physical Role of Mesenchymal Cells Driven by the Actin Cytoskeleton Is Essential for the Orientation of Collagen Fibrils in Zebrafish Fins. Frontiers in Cell and Developmental Biology, Volume 8, pages 580520.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/33154970"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005604",
+      "@type": "DefinedTerm",
+      "name": "basement membrane",
+      "identifier": "GO:0005604"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7955",
+      "@type": "Taxon",
+      "scientificName": "Danio rerio",
+      "name": "Danio rerio",
+      "identifier": "NCBITaxon:7955"
     },
     {
       "@id": "#biosample-1",
@@ -135,26 +157,21 @@
       "description": "Danio rerio",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7955"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07955",
-      "@type": "Taxon",
-      "scientificName": "Danio rerio",
-      "vernacularName": "zebrafish"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005604",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
       "@type": "DefinedTerm",
-      "name": "basement membrane"
+      "name": "scanning electron microscopy (SEM)",
+      "identifier": "FBbi:00000257"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "scanning electron microscopy",
-      "description": "scanning electron microscopy",
+      "name": "scanning electron microscopy (SEM)",
+      "description": "scanning electron microscopy (SEM)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
@@ -162,24 +179,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
-      "@type": "DefinedTerm",
-      "name": "scanning electron microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 260176064,
-      "description": "260.2 MB",
+      "value": 519565035,
+      "description": "519.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 431,
+      "value": 432,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00050000",
+      "@type": "DefinedTerm",
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)",
+      "identifier": "FBbi:00050000"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "focussed ion beam scanning electron microscopy (FIB-SEM)",
+      "description": "focussed ion beam scanning electron microscopy (FIB-SEM)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00050000"
+        }
+      ]
     }
   ]
 }

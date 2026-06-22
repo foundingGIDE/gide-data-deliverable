@@ -45,23 +45,42 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/454-Mizuta-PollenTubeGuidance/"
+        "@id": "https://ssbd.riken.jp/v3/project/454-Mizuta-PollenTubeGuidance"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/454-Mizuta-PollenTubeGuidance/",
+      "@id": "https://ssbd.riken.jp/v3/project/454-Mizuta-PollenTubeGuidance",
       "@type": "Dataset",
       "identifier": "454-Mizuta-PollenTubeGuidance",
       "name": "Dynamics of pollen tube in Arabidopsis thaliana",
       "description": "In the pistil of flowering plants, each ovule usually associates with a single pollen tube for fertilization. This one-to-one pollen tube guidance, which contributes to polyspermy blocking and efficient seed production, is largely different from animal chemotaxis of many sperms to one egg. However, the functional mechanisms underlying the directional cues and polytubey blocks in the depths of the pistil remain unknown. Here, the authors develop a two-photon live imaging method to directly observe pollen tube guidance in the pistil of Arabidopsis thaliana, clarifying signaling and cellular behaviors in the one-to-one guidance. Ovules are suggested to emit multiple signals for pollen tubes, including an integument- dependent directional signal that reaches the inner surface of the septum and adhesion signals for emerged pollen tubes on the septum. Not only FERONIA in the septum but ovular gametophytic FERONIA and LORELEI, as well as FERONIA- and LORELEI- independent repulsion signal, are involved in polytubey blocks on the ovular funiculus. However, these funicular blocks are not strictly maintained in the first 45 min, explaining previous reports of polyspermy in flowering plants.",
       "datePublished": "2026-01-21",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Ovary",
+        "Microscopy, Fluorescence, Multiphoton",
+        "Pollen Tube",
+        "Cytoplasm",
+        "Cell Nucleus"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-8086-2297"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
         }
       ],
       "seeAlso": [
@@ -69,15 +88,23 @@
           "@id": "https://doi.org/10.1038/s44319-024-00151-4"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ],
       "measurementMethod": [
@@ -86,10 +113,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1851"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1851/render_thumbnail/"
       ],
       "size": [
         {
@@ -106,48 +139,132 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-8086-2297",
       "@type": "Person",
       "name": "Yoko Mizuta",
       "email": "mizuta.yoko.u6@f.mail.nagoya-u.ac.jp",
-      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM); Laboratory: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "url": "https://researchmap.jp/ym72?lang=en",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM), Institute for Advanced Research (IAR)",
       "affiliation": [
         {
-          "@id": "https://ror.org/04chrp450"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/04chrp450",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Yoko Mizuta",
+      "email": "mizuta.yoko.u6@f.mail.nagoya-u.ac.jp",
+      "url": "https://researchmap.jp/ym72?lang=en",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM), Institute for Advanced Research (IAR)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Daigo Sakakibara",
+      "email": "sakakibara.daigo.j0@s.mail.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Division of Biological Sciences, Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Shiori Nagahara",
+      "email": "nagahara.shiori.3n@kyoto-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Ikuma Kaneshiro",
+      "email": "kaneshiro.ikuma.k2@f.mail.nagoya-u.ac.jp",
+      "description": "Organization: Nagoya University; Department: Institute of Transformative Bio-Molecules (WPI-ITbM)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Nagoya University"
     },
     {
       "@id": "https://doi.org/10.1038/s44319-024-00151-4",
       "@type": "ScholarlyArticle",
-      "name": "Deep imaging reveals dynamics and signaling in one-to-one pollen tube guidance.",
-      "datePublished": "2024"
+      "name": "Mizuta Y, Sakakibara D, Nagahara S, Kaneshiro I, Nagae TT, Kurihara D, Higashiyama T. Deep imaging reveals dynamics and signaling in one-to-one pollen tube guidance. EMBO Rep. 2024 Jun;25(6):2529-2549.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38773320/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11169409/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by grants from the Japan Science and Technology Agency (ERATO Grant no. JPMJER1004 to T.H., CREST Grant no. JPMJCR20E5 to T.H. and Y.M. and FOREST Program Grant no. JPMJFR204T to D.K.); the Japan Society for the Promotion of Science (nos. 18K14741, 20H05778 and 20H05779 to Y.M., no. 22H04668 to D.K., and nos. 16H06465 and 22H04980 to T.H.); the Program for Promoting the Enhancement of Research Universities (2022 to Y.M.); the Ohsumi Frontier Science Foundation (2023 to Y.M.); and the Sumitomo Basic Science Research Projects (2023 to Y.M.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Col-0",
-      "description": "Col-0",
+      "name": "Col-0 ~ ovary",
+      "description": "The dissected pistil of wild type Arabidopsis after hand pollination.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
-      "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Col-0 ~ ovary\nsynergid cell",
+      "description": "The dissected pistil of MYB98p::GFP Arabidopsis after hand pollination.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Col-0 ~ ovary\nepidermal cell",
+      "description": "The dissected pistil of HDG11p::NLS-YFP Arabidopsis after hand pollination.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
       "@type": "DefinedTerm",
-      "name": "cytoplasm"
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -161,22 +278,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 18925490759,
-      "description": "18.9 GB",
+      "value": 56443510172,
+      "description": "56.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 17,
+      "value": 77,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

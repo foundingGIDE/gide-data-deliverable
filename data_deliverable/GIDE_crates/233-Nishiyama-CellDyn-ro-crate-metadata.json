@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/233-Nishiyama-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/233-Nishiyama-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/233-Nishiyama-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/233-Nishiyama-CellDyn",
       "@type": "Dataset",
       "identifier": "233-Nishiyama-CellDyn",
       "name": "Live imaging of HEK293 cells expressing P2Y6 receptors or P2Y6R mutants.",
-      "description": "233-Nishiyama-CellDyn",
+      "description": "See details in Nishiyama K, et. al. (2022) Sci Signal, Jan 11;15(716):eabj0644.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Colitis/genetics[major]",
-        "Humans",
-        "Mice",
-        "Oxidation-Reduction",
-        "Receptors, Purinergic P2/metabolism[major]",
-        "beta-Arrestins/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,10 +71,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_1904020"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
@@ -92,7 +83,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0004703"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_1904020"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -110,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-758"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/758/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,20 +125,48 @@
       "description": "Organization: Kyushu University; Department: Graduate School of Pharmaceutical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/00p4k0j84"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00p4k0j84",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyushu University"
     },
     {
       "@id": "https://doi.org/10.1126/scisignal.abj0644",
       "@type": "ScholarlyArticle",
-      "name": "Redox-dependent internalization of the purinergic P2Y6 receptor limits colitis progression.",
-      "datePublished": "2022"
+      "name": "Nishiyama K, Nishimura A, Shimoda K, Tanaka T, Kato Y, Shibata T, Tanaka H, Kurose H, Azuma YT, Ihara H, Kumagai Y, Akaike T, Eaton P, Uchida K, Nishida M. Redox-dependent internalization of the purinergic P2Y6 receptor limits colitis progression. Sci Signal. 2022 Jan 11;15(716):eabj0644. doi: 10.1126/scisignal.abj0644. Epub 2022 Jan 11. PMID: 35015570.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35015570/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_1904020",
+      "@type": "DefinedTerm",
+      "name": "regulation of G protein-coupled receptor internalization",
+      "identifier": "GO:1904020"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293",
+      "identifier": "CLO:0001230"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004703",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled receptor kinase activity",
+      "identifier": "GO:0004703"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -156,7 +175,7 @@
       "description": "Homo sapiens ~ HEK293",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -164,25 +183,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "HEK293"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004703",
-      "@type": "DefinedTerm",
-      "name": "G protein-coupled receptor kinase activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904020",
-      "@type": "DefinedTerm",
-      "name": "regulation of G protein-coupled receptor internalization"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -196,6 +200,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -207,27 +217,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 95314510,
-      "description": "95.3 MB",
+      "value": 160758163,
+      "description": "160.8 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 68,
+      "value": 109,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

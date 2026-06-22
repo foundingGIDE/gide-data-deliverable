@@ -45,35 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/105-Ono-ToothDev/"
+        "@id": "https://ssbd.riken.jp/v1/project/105-Ono-ToothDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/105-Ono-ToothDev/",
+      "@id": "https://ssbd.riken.jp/v1/project/105-Ono-ToothDev",
       "@type": "Dataset",
       "identifier": "105-Ono-ToothDev",
       "name": "CT images of tooth movement of the natural erupted tooth and bioengineered tooth",
-      "description": "105-Ono-ToothDev",
+      "description": "See details in Ono et al. (2017) Sci Rep, 7: 44522.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Biomedical Engineering/trends",
-        "Dogs",
-        "Humans",
-        "Odontogenesis/physiology",
-        "Regeneration/physiology",
-        "Regenerative Medicine[major]",
-        "Stem Cells",
-        "Tissue Engineering[major]",
-        "Tooth/growth & development",
-        "Tooth/transplantation[major]",
-        "Tooth Eruption",
-        "Tooth Germ/physiology",
-        "Tooth Germ/transplantation[major]",
-        "Tooth Replantation",
-        "Transplantation, Autologous/methods"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -126,22 +108,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/srep44522"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28300208"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0042476"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00001005"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-256"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/256/render_thumbnail/"
       ],
       "size": [
         {
@@ -165,7 +155,7 @@
       "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/02pc6pc55"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -173,84 +163,178 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Mitsuaki Ono",
-      "description": "Department: Graduate School of Medicine"
+      "description": "Organization: Okayama University; Department: Graduate School of Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Masamitsu Oshima",
-      "description": "Department: Dentistry and Pharmaceutical Sciences"
+      "description": "Organization: Okayama University; Department: Dentistry and Pharmaceutical Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Miho Ogawa"
+      "name": "Miho Ogawa",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Wataru Sonoyama"
+      "name": "Wataru Sonoyama",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Emilio Satoshi Hara"
+      "name": "Emilio Satoshi Hara",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Yasutaka Oida"
+      "name": "Yasutaka Oida",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Shigehiko Shinkawa"
+      "name": "Shigehiko Shinkawa",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Ryu Nakajima"
+      "name": "Ryu Nakajima",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Atsushi Mine"
+      "name": "Atsushi Mine",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Satoru Hayano"
+      "name": "Satoru Hayano",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
-      "name": "Satoshi Fukumoto"
+      "name": "Satoshi Fukumoto",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-013",
       "@type": "Person",
-      "name": "Shohei Kasugai"
+      "name": "Shohei Kasugai",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-014",
       "@type": "Person",
-      "name": "Akira Yamaguchi"
+      "name": "Akira Yamaguchi",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-015",
       "@type": "Person",
-      "name": "Takashi Tsuji"
+      "name": "Takashi Tsuji",
+      "description": "Organization: Okayama University; Department: Department of Oral Rehabilitation and Regenerative Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02pc6pc55",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Okayama University"
     },
     {
-      "@id": "https://doi.org/10.1038/srep44522",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28300208",
       "@type": "ScholarlyArticle",
-      "name": "Practical whole-tooth restoration utilizing autologous bioengineered tooth germ transplantation in a postnatal canine model.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28300208"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0042476",
+      "@type": "DefinedTerm",
+      "name": "odontogenesis",
+      "identifier": "GO:0042476"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
     },
     {
       "@id": "#biosample-1",
@@ -259,34 +343,41 @@
       "description": "Canis lupus familiaris",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0042476",
-      "@type": "DefinedTerm",
-      "name": "odontogenesis"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 341430,
-      "description": "341.4 kB",
+      "value": 682860,
+      "description": "682.9 KB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 9,
+      "value": 18,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00001005",
+      "@type": "DefinedTerm",
+      "name": "computed tomography",
+      "identifier": "FBbi:00001005"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "computed tomography",
+      "description": "computed tomography",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00001005"
+        }
+      ]
     }
   ]
 }

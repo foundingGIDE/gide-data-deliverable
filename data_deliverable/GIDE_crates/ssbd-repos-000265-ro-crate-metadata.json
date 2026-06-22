@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
           "@id": "#biosample-1"
@@ -141,13 +141,16 @@
       "description": "Cell line sample",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         }
       ],
-      "hasCellLine": "MDCK cells: RIKEN BioResource Center (no. RCB0995)"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+        "name": "MDCK cell"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615",
       "@type": "Taxon",
       "scientificName": "Canis lupus familiaris",
       "vernacularName": "dog"
@@ -175,8 +178,8 @@
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "Fluorescence Microscopy",
-      "description": "Fluorescence Microscopy",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
@@ -186,7 +189,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "Fluorescence Microscopy"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#total-dataset-size",

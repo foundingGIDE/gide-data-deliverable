@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0006888"
@@ -94,7 +94,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "#imaging-technique-1"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "size": [
@@ -135,7 +135,7 @@
       "datePublished": "2025"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033",
       "@type": "Taxon",
       "scientificName": "Oryzias latipes",
       "vernacularName": "medaka"
@@ -166,22 +166,6 @@
       "name": "secretory granule organization"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Zeiss LSM880 Airyscan",
-      "description": "Zeiss LSM880 Airyscan",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-1"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-technique-1",
-      "@type": "DefinedTerm",
-      "name": "Zeiss LSM880 Airyscan"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 1285091328,
@@ -195,6 +179,23 @@
       "value": 12,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

@@ -45,28 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/284-Mashiko-EmbryoDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/284-Mashiko-EmbryoDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/284-Mashiko-EmbryoDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/284-Mashiko-EmbryoDyn",
       "@type": "Dataset",
       "identifier": "284-Mashiko-EmbryoDyn",
       "name": "Live-cell imaging and BDML file for quantitative information about nucleus dynamics in mouse embryo development.",
-      "description": "284-Mashiko-EmbryoDyn",
+      "description": "See details in Mashiko D, et. al. Sci Rep. 2022 Jun 7;12(1):9411.",
       "datePublished": "2025-03-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Blastocyst",
-        "Blastomeres",
-        "Embryo, Mammalian",
-        "Female",
-        "Live Birth",
-        "Mice",
-        "Pregnancy",
-        "Preimplantation Diagnosis[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -91,22 +80,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0009790"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0000278"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0008104"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -145,35 +128,78 @@
       "description": "Organization: Kindai University; Department: Graduate School of Biology-Oriented Science and Technology",
       "affiliation": [
         {
-          "@id": "https://ror.org/05kt9ap64"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Daisuke Mashiko"
+      "name": "Daisuke Mashiko",
+      "email": "mashikodaisuke@gmail.com",
+      "description": "Organization: Kindai University; Department: Graduate School of Biology-Oriented Science and Technology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Zenki Ikeda"
+      "name": "Zenki Ikeda",
+      "email": "ikeda0015z@gmail.com",
+      "description": "Organization: Kindai University; Department: Graduate School of Biology-Oriented Science and Technology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Mikiko Tokoro"
+      "name": "Mikiko Tokoro",
+      "email": "m_tokoro@ivf-asada.jp",
+      "description": "Organization: Kindai University; Department: Graduate School of Biology-Oriented Science and Technology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/05kt9ap64",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kindai University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-022-13646-8",
       "@type": "ScholarlyArticle",
-      "name": "Asynchronous division at 4-8-cell stage of preimplantation embryos affects live birth through ICM/TE differentiation.",
-      "datePublished": "2022"
+      "name": "Mashiko D, Ikeda Z, Tokoro M, Hatano Y, Yao T, Kobayashi TJ, Fukunaga N, Asada Y, Yamagata K. Asynchronous division at 4-8-cell stage of preimplantation embryos affects live birth through ICM/TE differentiation. Sci Rep. 2022 Jun 7;12(1):9411.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35672442/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development",
+      "identifier": "GO:0009790"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -182,35 +208,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "embryo development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000278",
-      "@type": "DefinedTerm",
-      "name": "mitotic cell cycle"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008104",
-      "@type": "DefinedTerm",
-      "name": "protein localisation"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -224,6 +230,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -235,27 +247,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2446063544326,
-      "description": "2.4 TB",
+      "value": 4088663209022,
+      "description": "4.1 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4627959,
+      "value": 4628133,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

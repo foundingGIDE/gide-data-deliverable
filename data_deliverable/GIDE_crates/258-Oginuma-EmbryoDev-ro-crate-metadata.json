@@ -45,25 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/258-Oginuma-EmbryoDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/258-Oginuma-EmbryoDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/258-Oginuma-EmbryoDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/258-Oginuma-EmbryoDev",
       "@type": "Dataset",
       "identifier": "258-Oginuma-EmbryoDev",
-      "name": "Time-lapse imaging of hba reporter expression in the GFP knock-in N. furzeri embryos. ",
-      "description": "258-Oginuma-EmbryoDev",
+      "name": "Time-lapse imaging of hba reporter expression in the GFP knock-in N. furzeri embryos.",
+      "description": "See details in Oginuma M, et. al. (2022) Sci Rep, Jul 8;12(1):11628.",
       "datePublished": "2023-05-11",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Aging/genetics",
-        "Animals",
-        "Animals, Genetically Modified",
-        "Cyprinodontiformes/genetics[major]",
-        "Gene Transfer Techniques",
-        "Reverse Genetics[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -79,13 +71,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_105023"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0099048"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/105023"
         }
       ],
       "measurementMethod": [
@@ -94,10 +86,22 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1001"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1001/render_thumbnail/"
       ],
       "size": [
         {
@@ -118,23 +122,39 @@
       "@type": "Person",
       "name": "Tohru Ishitani",
       "email": "ishitani@biken.osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Research Institute for Microbial Diseases; Laboratory: Division of Cellular and Molecular Biology",
+      "description": "Organization: Osaka University; Department: Research Institute for Microbial Diseases; Laboratory: Division of Cellular and Molecular Biology, Department of Homeostatic Regulation",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-022-15972-3",
       "@type": "ScholarlyArticle",
-      "name": "Rapid reverse genetics systems for Nothobranchius furzeri, a suitable model organism to study vertebrate aging.",
-      "datePublished": "2022"
+      "name": "Oginuma M, Nishida M, Ohmura-Adachi T, Abe K, Ogamino S, Mogi C, Matsui H, Ishitani T. Rapid reverse genetics systems for Nothobranchius furzeri, a suitable model organism to study vertebrate aging. Sci Rep. 2022 Jul 8;12(1):11628.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35804091/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0099048",
+      "@type": "DefinedTerm",
+      "name": "CRISPR-cas system",
+      "identifier": "GO:0099048"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/105023",
+      "@type": "Taxon",
+      "scientificName": "Nothobranchius furzeri",
+      "name": "Nothobranchius furzeri",
+      "identifier": "NCBITaxon:105023"
     },
     {
       "@id": "#biosample-1",
@@ -143,19 +163,15 @@
       "description": "Nothobranchius furzeri",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_105023"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/105023"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_105023",
-      "@type": "Taxon",
-      "scientificName": "Nothobranchius furzeri"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0099048",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "CRISPR-cas system"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -169,24 +185,53 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 52442033,
-      "description": "52.4 MB",
+      "value": 78867733,
+      "description": "78.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 3,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

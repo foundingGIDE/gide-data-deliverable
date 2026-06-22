@@ -45,28 +45,31 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/210-Takeo-HFregeneration/"
+        "@id": "https://ssbd.riken.jp/v2/project/210-Takeo-HFregeneration"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/210-Takeo-HFregeneration/",
+      "@id": "https://ssbd.riken.jp/v2/project/210-Takeo-HFregeneration",
       "@type": "Dataset",
       "identifier": "210-Takeo-HFregeneration",
       "name": "Images of hair follicle regneration from adult mouse cells.",
-      "description": "210-Takeo-HFregeneration",
+      "description": "See details in Takeo M, et. al. (2021)  Commun Biol., 11(1):1173.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Epithelial Cells/metabolism[major]",
-        "Hair Follicle/physiology[major]",
+        "Epithelial Cells",
+        "Epithelial Cells/metabolism",
+        "Hair Follicle",
+        "Hair Follicle/physiology",
         "Humans",
         "Mice",
-        "Mice, Inbred BALB C",
-        "Mice, Nude",
-        "Mice, Transgenic",
-        "Multipotent Stem Cells/metabolism[major]",
-        "Regeneration[major]"
+        "Inbred BALB C",
+        "Nude",
+        "Transgenic",
+        "Multipotent Stem Cells",
+        "Multipotent Stem Cells/metabolism",
+        "Regeneration"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -83,13 +86,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0001942"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -101,7 +104,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-755"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/755/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,20 +128,36 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organ Regeneration",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-020-80624-3",
       "@type": "ScholarlyArticle",
-      "name": "Expansion and characterization of epithelial stem cells with potential for cyclical hair regeneration.",
-      "datePublished": "2021"
+      "name": "Takeo M, Asakawa K, Toyoshima K, Ogawa M, Tong J, Irié T, Yanagisawa M, Sato A, Tsuji T (2021) Expansion and characterization of epithelial stem cells with potential for cyclical hair regeneration. Scientific reports, Volume 11, Issue 1, pages 1173.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/33568688"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001942",
+      "@type": "DefinedTerm",
+      "name": "hair follicle development",
+      "identifier": "GO:0001942"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -147,20 +166,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001942",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "hair follicle development"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -174,22 +188,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 395495319,
-      "description": "395.5 MB",
+      "value": 640035161,
+      "description": "640.0 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 48,
+      "value": 56,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

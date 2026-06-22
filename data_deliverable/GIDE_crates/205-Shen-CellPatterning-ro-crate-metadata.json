@@ -45,23 +45,25 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/205-Shen-CellPatterning/"
+        "@id": "https://ssbd.riken.jp/v2/project/205-Shen-CellPatterning"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/205-Shen-CellPatterning/",
+      "@id": "https://ssbd.riken.jp/v2/project/205-Shen-CellPatterning",
       "@type": "Dataset",
       "identifier": "205-Shen-CellPatterning",
-      "name": "Images and BDML file for quantitative information about mouse skeletal myoblasts C2C12 adhered on a surface with the native or cross-linked albumin structure for several days.",
-      "description": "205-Shen-CellPatterning",
+      "name": "Images and BDML file for quantiative information about mouse skeletal myoblasts C2C12 adhered on a surface with the native or cross-linked albumin structure for several days.",
+      "description": "See details in Shen Y, et. al. (2020)  PLoS One., 15(5):e0232518.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Albumins",
         "Animals",
-        "Cell Culture Techniques/methods[major]",
+        "Cell Culture Techniques",
+        "Cell Culture Techniques/methods",
         "Dimethylpolysiloxanes",
         "Mice",
+        "Microtechnology",
         "Microtechnology/methods",
         "Myoblasts",
         "Sepharose"
@@ -87,13 +89,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0050871"
+          "@id": "http://purl.obolibrary.org/obo/BTO_0000165"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -102,10 +104,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-716"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/716/render_thumbnail/"
       ],
       "size": [
         {
@@ -129,55 +137,77 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yigang Shen"
+      "name": "Yigang Shen",
+      "email": "dmushenyigang@163.com",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Nobuyuki Tanaka"
+      "name": "Nobuyuki Tanaka",
+      "email": "nobuyuki.tanaka@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0232518",
       "@type": "ScholarlyArticle",
-      "name": "Flow analysis on microcasting with degassed polydimethylsiloxane micro-channels for cell patterning with cross-linked albumin.",
-      "datePublished": "2020"
+      "name": "Shen Y, Tanaka N, Yamazoe H, Furutani S, Nagai H, Kawai T, Tanaka Y (2020) Flow analysis on microcasting with degassed polydimethylsiloxane micro-channels for cell patterning with cross-linked albumin. PLoS One, Volume 15, Issue 5, pages e0232518.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32433673"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/BTO_0000165",
+      "@type": "DefinedTerm",
+      "name": "C2C12 (CLO:0050871)",
+      "identifier": "BTO:0000165"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Mus musculus ~ C2C12",
-      "description": "Mus musculus ~ C2C12",
+      "name": "Mus musculus ~ C2C12 (CLO:0050871)",
+      "description": "Mus musculus ~ C2C12 (CLO:0050871)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0050871"
-      }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0050871",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "C2C12"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -191,24 +221,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1247475930,
-      "description": "1.2 GB",
+      "value": 2357396178,
+      "description": "2.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 32,
+      "value": 37,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

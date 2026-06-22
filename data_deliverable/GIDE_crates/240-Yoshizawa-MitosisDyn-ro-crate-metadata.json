@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/240-Yoshizawa-MitosisDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/240-Yoshizawa-MitosisDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/240-Yoshizawa-MitosisDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/240-Yoshizawa-MitosisDyn",
       "@type": "Dataset",
       "identifier": "240-Yoshizawa-MitosisDyn",
       "name": "Live images of SiR-tubulin-stained haploid or diploid HAP1 cells with or without thymidine treatment.",
-      "description": "240-Yoshizawa-MitosisDyn",
+      "description": "See details in Yoshizawa K, et. al. (2020) Front Cell Dev Biol, Jul 30;8:721.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -71,9 +71,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -84,6 +81,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -91,17 +91,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000353"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000234"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-766"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/766/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,20 +119,48 @@
       "description": "Organization: Hokkaido University; Department: Faculty of Advanced Life Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e16g702"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02e16g702",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Hokkaido University"
     },
     {
       "@id": "https://doi.org/10.3389/fcell.2020.00721",
       "@type": "ScholarlyArticle",
-      "name": "Uncoupling of DNA Replication and Centrosome Duplication Cycles Is a Primary Cause of Haploid Instability in Mammalian Somatic Cells.",
-      "datePublished": "2020"
+      "name": "Yoshizawa K, Yaguchi K, Uehara R. Uncoupling of DNA Replication and Centrosome Duplication Cycles Is a Primary Cause of Haploid Instability in Mammalian Somatic Cells. Front Cell Dev Biol. 2020 Jul 30;8:721.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/32850837/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000278",
+      "@type": "DefinedTerm",
+      "name": "mitotic cell cycle",
+      "identifier": "GO:0000278"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005813",
+      "@type": "DefinedTerm",
+      "name": "centrosome",
+      "identifier": "GO:0005813"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome",
+      "identifier": "GO:0005694"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -147,78 +169,41 @@
       "description": "Homo sapiens ~ HAP1 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": "HAP1 cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000278",
-      "@type": "DefinedTerm",
-      "name": "mitotic cell cycle"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005813",
-      "@type": "DefinedTerm",
-      "name": "centrosome"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-      "@type": "DefinedTerm",
-      "name": "chromosome"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Ti-2 microscope with a × 40 0.95 NA Plan-Apochromatic objective lens (Nikon)",
-      "description": "Ti-2 microscope with a × 40 0.95 NA Plan-Apochromatic objective lens (Nikon)",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000353"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "and Zyla4.2 sCMOS camera (Andor)",
-      "description": "and Zyla4.2 sCMOS camera (Andor)",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000234"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000353",
-      "@type": "DefinedTerm",
-      "name": "Ti-2 microscope with a × 40 0.95 NA Plan-Apochromatic objective lens (Nikon)"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000234",
-      "@type": "DefinedTerm",
-      "name": "and Zyla4.2 sCMOS camera (Andor)"
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 79725459078,
-      "description": "79.7 GB",
+      "value": 134671105864,
+      "description": "134.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 11,
+      "value": 14,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

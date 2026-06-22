@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/279-Suzuki-CaspaseActivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/279-Suzuki-CaspaseActivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/279-Suzuki-CaspaseActivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/279-Suzuki-CaspaseActivity",
       "@type": "Dataset",
       "identifier": "279-Suzuki-CaspaseActivity",
       "name": "Live imaging of caspase cascades activity in apoptosis-induced HeLa cells.",
-      "description": "279-Suzuki-CaspaseActivity",
+      "description": "See details in Suzuki M, et. al. Sci Rep. 2022 Dec 7;12(1):21160.",
       "datePublished": "2023-07-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -71,13 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/GO_0097194"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0008303"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0004197"
@@ -86,10 +89,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0097153"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0097194"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0008303"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -107,7 +107,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1057"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1057/render_thumbnail/"
       ],
       "size": [
         {
@@ -128,23 +128,63 @@
       "@type": "Person",
       "name": "Miho Suzuki",
       "email": "miho@fms.saitama-u.ac.jp",
-      "description": "Organization: Graduate School of Science and Engineering; Department: Department of Applied Chemistry",
+      "description": "Organization: Graduate School of Science and Engineering, Saitama University; Department: Department of Applied Chemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/0403qcr87"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/0403qcr87",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Graduate School of Science and Engineering"
+      "name": "Graduate School of Science and Engineering, Saitama University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-022-25286-z",
       "@type": "ScholarlyArticle",
-      "name": "Live imaging of apoptotic signaling flow using tunable combinatorial FRET-based bioprobes for cell population analysis of caspase cascades.",
-      "datePublished": "2022"
+      "name": "Suzuki M, Shindo Y, Yamanaka R, Oka K. Live imaging of apoptotic signaling flow using tunable combinatorial FRET-based bioprobes for cell population analysis of caspase cascades. Sci Rep. 2022 Dec 7;12(1):21160.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36476686/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
+      "@type": "DefinedTerm",
+      "name": "execution phase of apoptosis",
+      "identifier": "GO:0097194"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008303",
+      "@type": "DefinedTerm",
+      "name": "caspase complex",
+      "identifier": "GO:0008303"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004197",
+      "@type": "DefinedTerm",
+      "name": "cysteine-type endopeptidase activity",
+      "identifier": "GO:0004197"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097153",
+      "@type": "DefinedTerm",
+      "name": "cysteine-type endopeptidase activity involved in apoptotic process",
+      "identifier": "GO:0097153"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -153,7 +193,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -161,35 +201,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004197",
-      "@type": "DefinedTerm",
-      "name": "cysteine-type endopeptidase activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0097153",
-      "@type": "DefinedTerm",
-      "name": "cysteine-type endopeptidase activity involved in apoptotic process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0097194",
-      "@type": "DefinedTerm",
-      "name": "execution phase of apoptosis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008303",
-      "@type": "DefinedTerm",
-      "name": "caspase complex"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -203,6 +218,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -214,27 +235,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 6045986673,
-      "description": "6.0 GB",
+      "value": 9635306547,
+      "description": "9.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 14,
+      "value": 28,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

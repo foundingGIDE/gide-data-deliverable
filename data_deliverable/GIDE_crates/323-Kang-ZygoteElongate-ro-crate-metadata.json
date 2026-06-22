@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/323-Kang-ZygoteElongate/"
+        "@id": "https://ssbd.riken.jp/v2/project/323-Kang-ZygoteElongate"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/323-Kang-ZygoteElongate/",
+      "@id": "https://ssbd.riken.jp/v2/project/323-Kang-ZygoteElongate",
       "@type": "Dataset",
       "identifier": "323-Kang-ZygoteElongate",
       "name": "Coordinate normalization of Arabidopsis zygote growth.",
-      "description": "323-Kang-ZygoteElongate",
+      "description": "Polarization of the zygote defines the body axis during plant development. In Arabidopsis (Arabidopsis thaliana), the zygote becomes polarized and elongates in the longitudinal direction, ultimately forming the apical–basal axis of the mature plant. Despite its importance, the mechanism for this elongation remains poorly understood. Based on live-cell imaging of the zygote, the authors developed new image analysis methods, referred to as coordinate normalization, that appropriately fix and align positions in an image, preventing fluctuation across a temporal sequence of images. Using these methods, they discovered that the zygote elongates only at its apical tip region, similar to tip-growing cells such as pollen tubes and root hairs. We also investigated the spatiotemporal dynamics of the apical tip contour of the zygote and observed that the zygote tip retains its isotropic, hemispherical apical shape during cell elongation.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -68,6 +68,9 @@
         },
         {
           "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
         }
       ],
       "seeAlso": [
@@ -77,9 +80,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -87,6 +87,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
@@ -107,7 +110,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1261"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1261/render_thumbnail/"
       ],
       "size": [
         {
@@ -126,47 +129,92 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Satoru Tsugawa",
+      "name": "Satoru  Tsugawa",
       "email": "tsugawa@akita-pu.ac.jp",
       "description": "Organization: Akita Prefectural University; Department: Department of Mechanical Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/05b1kx621"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Minako Ueda",
+      "name": "Minako  Ueda",
       "email": "minako.ueda.e7@tohoku.ac.jp",
       "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/01dq60k83"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Hikari  Matsumoto Zichen  Kang"
+      "name": "Hikari  Matsumoto",
+      "description": "Organization: Tohoku University; Department: Graduate School of Life Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/05b1kx621",
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Zichen  Kang",
+      "description": "Organization: Akita Prefectural University; Department: Department of Mechanical Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Akita Prefectural University"
     },
     {
-      "@id": "https://ror.org/01dq60k83",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "Tohoku University"
     },
     {
       "@id": "https://doi.org/10.1093/pcp/pcad020",
       "@type": "ScholarlyArticle",
-      "name": "Coordinate Normalization of Live-Cell Imaging Data Reveals Growth Dynamics of the Arabidopsis Zygote.",
-      "datePublished": "2023"
+      "name": "Kang Z, Matsumoto H, Nonoyama T, Nakagawa S, Ishimoto Y, Tsugawa S, Ueda M. Coordinate Normalization of Live-Cell Imaging Data Reveals Growth Dynamics of the Arabidopsis Zygote. Plant Cell Physiol. 2023 Dec 6;64(11):1279-1288.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36943754/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0080159",
+      "@type": "DefinedTerm",
+      "name": "zygote elongation",
+      "identifier": "GO:0080159"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
     },
     {
       "@id": "#biosample-1",
@@ -175,29 +223,15 @@
       "description": "Arabidopsis thaliana",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
-      "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0080159",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
       "@type": "DefinedTerm",
-      "name": "zygote elongation"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -211,6 +245,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -222,27 +262,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-      "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3140972813,
-      "description": "3.1 GB",
+      "value": 4190660192,
+      "description": "4.2 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

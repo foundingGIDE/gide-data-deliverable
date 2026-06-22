@@ -81,7 +81,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
@@ -98,19 +98,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "#imaging-technique-2"
-        },
-        {
-          "@id": "#imaging-protocol-3"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
         }
       ],
       "size": [
@@ -157,16 +151,19 @@
       "description": "Mouse: B6N-Tyrc-Brd/BrdCrCrl-Tg(hyBRET-ERK-NES)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         }
       ],
-      "hasCellLine": "Madin-Darby canine kidney (MDCK) cells"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+        "name": "MDCK cell"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615",
       "@type": "Taxon",
       "scientificName": "Canis lupus familiaris",
       "vernacularName": "dog"
@@ -183,54 +180,6 @@
       "name": "Collective cell migration"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Wide-field",
-      "description": "Wide-field",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000277"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "confocal",
-      "description": "confocal",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-2"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-3",
-      "@type": "LabProtocol",
-      "name": "and two-photon microscopy",
-      "description": "and two-photon microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000277",
-      "@type": "DefinedTerm",
-      "name": "Wide-field"
-    },
-    {
-      "@id": "#imaging-technique-2",
-      "@type": "DefinedTerm",
-      "name": "confocal"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "and two-photon microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 87944065024,
@@ -244,6 +193,40 @@
       "value": 680,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00100013",
+      "@type": "DefinedTerm",
+      "name": "wide-field fluorescence microscopy",
+      "identifier": "FBbi:00100013"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "wide-field fluorescence microscopy",
+      "description": "wide-field fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+        }
+      ]
     }
   ]
 }

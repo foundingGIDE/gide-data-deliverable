@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
         },
         {
           "@id": "#biosample-1"
@@ -91,7 +91,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "size": [
@@ -138,12 +138,12 @@
       "description": "y[1] w[1118] (stock #6598, https://bdsc.indiana.edu).",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
       "@type": "Taxon",
       "scientificName": "Drosophila melanogaster",
       "vernacularName": "fly"
@@ -164,22 +164,6 @@
       "name": "membrane"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Laser scanning confocal microscopy",
-      "description": "Laser scanning confocal microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "Laser scanning confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 3269967872,
@@ -193,6 +177,23 @@
       "value": 34,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

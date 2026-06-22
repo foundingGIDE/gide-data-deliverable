@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/123-Yalikun-ZygoteDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/123-Yalikun-ZygoteDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/123-Yalikun-ZygoteDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/123-Yalikun-ZygoteDyn",
       "@type": "Dataset",
       "identifier": "123-Yalikun-ZygoteDyn",
       "name": "Living image of capturing the whole surface of a mouse zygote during rotation",
-      "description": "123-Yalikun-ZygoteDyn",
+      "description": "See details in Yalikun et al. (2018) Micro Nano Lett, 13(3): 306-311.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -76,24 +76,27 @@
           "@id": "#auth-005"
         }
       ],
-      "seeAlso": [
-        {
-          "@id": "https://doi.org/10.1049/mnl.2017.0731"
-        }
-      ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0009566"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-304"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/304/render_thumbnail/"
       ],
       "size": [
         {
@@ -117,7 +120,7 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -125,33 +128,64 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Yaxiaer Yalikun",
-      "email": "yaxiaer.yalikun@riken.jp"
+      "email": "yaxiaer.yalikun@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yusufu Aishan"
+      "name": "Yusufu Aishan",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Abulaiti Mosha"
+      "name": "Abulaiti Mosha",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Kenta Sumiyama"
+      "name": "Kenta Sumiyama",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Integrated Biodevice",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1049/mnl.2017.0731",
-      "@type": "ScholarlyArticle",
-      "name": "Oocyte all-surfaces’ imaging method using micro-scale rotational flow",
-      "datePublished": "2018"
+      "@id": "http://purl.obolibrary.org/obo/GO_0009566",
+      "@type": "DefinedTerm",
+      "name": "Fertilization",
+      "identifier": "GO:0009566"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -160,35 +194,41 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009566",
-      "@type": "DefinedTerm",
-      "name": "Fertilization"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 568612105,
-      "description": "568.6 MB",
+      "value": 679860010,
+      "description": "679.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
+      "@type": "DefinedTerm",
+      "name": "light microscopy",
+      "identifier": "FBbi:00000345"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "light microscopy",
+      "description": "light microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ]
     }
   ]
 }

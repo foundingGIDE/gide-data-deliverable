@@ -45,30 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/52-Suzuki-FrogTailDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/52-Suzuki-FrogTailDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/52-Suzuki-FrogTailDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/52-Suzuki-FrogTailDyn",
       "@type": "Dataset",
       "identifier": "52-Suzuki-FrogTailDyn",
       "name": "52-Suzuki-FrogTailDyn",
-      "description": "52-Suzuki-FrogTailDyn",
+      "description": "See details in Suzuki et al. (2015) Genes to Cells, 21(4): 358-369.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Acetylation",
-        "Animals",
-        "Animals, Genetically Modified",
-        "Embryonic Development",
-        "Histone Code",
-        "Histones/metabolism[major]",
-        "Reactive Oxygen Species/metabolism",
-        "Regeneration",
-        "Tail/physiology",
-        "Xenopus Proteins/metabolism[major]",
-        "Xenopus laevis"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -118,13 +105,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1111/gtc.12349"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26914410"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -133,10 +117,33 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-102"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/102/render_thumbnail/"
       ],
       "size": [
         {
@@ -160,127 +167,258 @@
       "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/03t78wx29"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Miyuki Suzuki"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Chiyo Takagi"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Shinichirou Miura"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Yuto Sakane"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Makoto Suzuki"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Tetsushi Sakuma"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Naoaki Sakamoto"
-    },
-    {
-      "@id": "#auth-009",
-      "@type": "Person",
-      "name": "Tetsuya Endo"
-    },
-    {
-      "@id": "#auth-010",
-      "@type": "Person",
-      "name": "Yasuhiro Kamei"
-    },
-    {
-      "@id": "#auth-011",
-      "@type": "Person",
-      "name": "Yuko Sato"
-    },
-    {
-      "@id": "#auth-012",
-      "@type": "Person",
-      "name": "Hiroshi Kimura"
-    },
-    {
-      "@id": "#auth-013",
-      "@type": "Person",
-      "name": "Takashi Yamamoto"
-    },
-    {
-      "@id": "#auth-014",
-      "@type": "Person",
-      "name": "Naoto Ueno"
-    },
-    {
-      "@id": "https://ror.org/03t78wx29",
-      "@type": "Organization",
-      "name": "Hiroshima University"
-    },
-    {
-      "@id": "https://doi.org/10.1111/gtc.12349",
-      "@type": "ScholarlyArticle",
-      "name": "In vivo tracking of histone H3 lysine 9 acetylation in Xenopus laevis during tail regeneration.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Xenopus laevis",
-      "description": "Xenopus laevis",
-      "taxonomicRange": [
+      "name": "Miyuki Suzuki",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
-      "@type": "Taxon",
-      "scientificName": "Xenopus laevis",
-      "vernacularName": "african clawed frog"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Chiyo Takagi",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Shinichirou Miura",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Yuto Sakane",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Makoto Suzuki",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tetsushi Sakuma",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Naoaki Sakamoto",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Tetsuya Endo",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-010",
+      "@type": "Person",
+      "name": "Yasuhiro Kamei",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-011",
+      "@type": "Person",
+      "name": "Yuko Sato",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-012",
+      "@type": "Person",
+      "name": "Hiroshi Kimura",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-013",
+      "@type": "Person",
+      "name": "Takashi Yamamoto",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-014",
+      "@type": "Person",
+      "name": "Naoto Ueno",
+      "description": "Organization: Hiroshima University; Department: Department of Mathematical and Life Sciences; Laboratory: Molecular Genetics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Hiroshima University"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26914410",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26914410"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0006338",
       "@type": "DefinedTerm",
-      "name": "chromatin remodeling"
+      "name": "chromatin remodeling",
+      "identifier": "GO:0006338"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005634",
       "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802",
+      "@type": "Taxon",
+      "scientificName": "X. laevis",
+      "name": "X. laevis",
+      "identifier": "NCBITaxon:1802"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "X. laevis",
+      "description": "X. laevis",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 17685347,
-      "description": "17.7 MB",
+      "value": 35261469,
+      "description": "35.3 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 16,
+      "value": 17,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

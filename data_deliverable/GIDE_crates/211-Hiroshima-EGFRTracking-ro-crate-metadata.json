@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/211-Hiroshima-EGFRTracking/"
+        "@id": "https://ssbd.riken.jp/v2/project/211-Hiroshima-EGFRTracking"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/211-Hiroshima-EGFRTracking/",
+      "@id": "https://ssbd.riken.jp/v2/project/211-Hiroshima-EGFRTracking",
       "@type": "Dataset",
       "identifier": "211-Hiroshima-EGFRTracking",
-      "name": "Single-molecule imaging and BDML file for quantitative information about trajectories of EGFR dynamics and activities in living CHO-K1 cells. ",
-      "description": "211-Hiroshima-EGFRTracking",
+      "name": "Single-molecule imaging and BDML file for quantitative information about trajectories of EGFR dynamics and activities in living CHO-K1 cells.",
+      "description": "See details in Hiroshima M, et. al. (2018)  J Mol Biol., 430(9):1386-1401.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
@@ -61,15 +61,19 @@
         "CHO Cells",
         "Cluster Analysis",
         "Cricetulus",
+        "Cytoplasm",
         "Cytoplasm/metabolism",
-        "Epidermal Growth Factor/metabolism[major]",
+        "Epidermal Growth Factor",
+        "Epidermal Growth Factor/metabolism",
+        "ErbB Receptors",
         "ErbB Receptors/chemistry",
         "ErbB Receptors/metabolism",
         "Fluorescent Antibody Technique",
-        "GRB2 Adaptor Protein/metabolism[major]",
-        "Humans",
+        "GRB2 Adaptor Protein",
+        "GRB2 Adaptor Protein/metabolism",
         "Signal Transduction",
-        "Single Molecule Imaging/methods[major]",
+        "Single Molecule Imaging",
+        "Single Molecule Imaging/methods",
         "Spatio-Temporal Analysis"
       ],
       "publisher": {
@@ -90,10 +94,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0007173"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
@@ -105,7 +109,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0005154"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007173"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0070436"
@@ -126,7 +130,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-722"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/722/render_thumbnail/"
       ],
       "size": [
         {
@@ -150,25 +154,72 @@
       "description": "Organization: RIKEN; Laboratory: Cellular Informatics Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Michio Hiroshima"
+      "name": "Michio Hiroshima",
+      "email": "m_hiroshima@riken.jp",
+      "description": "Organization: RIKEN; Laboratory: Cellular Informatics Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1016/j.jmb.2018.02.018",
       "@type": "ScholarlyArticle",
-      "name": "Transient Acceleration of Epidermal Growth Factor Receptor Dynamics Produces Higher-Order Signaling Clusters.",
-      "datePublished": "2018"
+      "name": "Hiroshima M, Pack C, Kaizu K, Takahashi K, Ueda M, and Sako Y (2018) Transient Acceleration of Epidermal Growth Factor Receptor Dynamics Produces Higher-Order Signaling Clusters. Journal of Molecular Biology, Volume 430, Issue 9, pages 1386-1401.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/29505756"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007173",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor signaling pathway",
+      "identifier": "GO:0007173"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@type": "DefinedTerm",
+      "name": "CHO-K1",
+      "identifier": "CLO:0002462"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005006",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor-activated receptor activity",
+      "identifier": "GO:0005006"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005154",
+      "@type": "DefinedTerm",
+      "name": "epidermal growth factor receptor binding",
+      "identifier": "GO:0005154"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "name": "Cricetulus griseus",
+      "identifier": "NCBITaxon:10029"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070436",
+      "@type": "DefinedTerm",
+      "name": "Grb2-EGFR complex",
+      "identifier": "GO:0070436"
     },
     {
       "@id": "#biosample-1",
@@ -177,7 +228,7 @@
       "description": "Cricetulus griseus ~ CHO-K1",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ],
       "hasCellLine": {
@@ -185,34 +236,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
-      "@type": "Taxon",
-      "scientificName": "Cricetulus griseus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
       "@type": "DefinedTerm",
-      "name": "CHO-K1"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005006",
-      "@type": "DefinedTerm",
-      "name": "epidermal growth factor-activated receptor activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005154",
-      "@type": "DefinedTerm",
-      "name": "epidermal growth factor receptor binding"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007173",
-      "@type": "DefinedTerm",
-      "name": "epidermal growth factor receptor signaling pathway"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0070436",
-      "@type": "DefinedTerm",
-      "name": "Grb2-EGFR complex"
+      "name": "evanescent wave microscopy",
+      "identifier": "FBbi:00000617"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -226,6 +253,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -237,27 +270,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
-      "@type": "DefinedTerm",
-      "name": "evanescent wave microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 33623649047,
-      "description": "33.6 GB",
+      "value": 57236027917,
+      "description": "57.2 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 159,
+      "value": 171,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

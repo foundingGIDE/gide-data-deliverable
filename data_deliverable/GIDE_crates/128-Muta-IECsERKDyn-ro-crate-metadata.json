@@ -45,33 +45,44 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/128-Muta-IECsERKDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/128-Muta-IECsERKDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/128-Muta-IECsERKDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/128-Muta-IECsERKDyn",
       "@type": "Dataset",
       "identifier": "128-Muta-IECsERKDyn",
       "name": "Fluorescence images and BDML file for quantitative information about mouse intestinal epithelial cells (IECs) extracellular signal-regulated kinase (ERK) activity dynamics",
-      "description": "128-Muta-IECsERKDyn",
+      "description": "See details in Muta Y, et. al. (2018) Nat. Commun., 9(1): 2174.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
         "Cell Culture Techniques",
-        "Cell Transformation, Neoplastic/genetics[major]",
-        "Epithelial Cells/metabolism[major]",
-        "Extracellular Signal-Regulated MAP Kinases/genetics[major]",
+        "Cell Transformation",
+        "Neoplastic",
+        "Neoplastic/genetics",
+        "Epithelial Cells (D004847)",
+        "Epithelial Cells/metabolism",
+        "Extracellular Signal-Regulated MAP Kinases",
+        "Extracellular Signal-Regulated MAP Kinases/genetics",
         "Extracellular Signal-Regulated MAP Kinases/metabolism",
-        "Gene Expression Profiling[major]",
-        "Intestines/cytology[major]",
+        "Gene Expression Profiling",
+        "Intestines",
+        "Intestines/cytology",
         "Kinetics",
+        "MAP Kinase Signaling System",
         "MAP Kinase Signaling System/genetics",
-        "Mice, Inbred C57BL",
-        "Mice, Transgenic",
-        "Microscopy, Fluorescence, Multiphoton",
+        "Mice",
+        "Inbred C57BL",
+        "Transgenic",
+        "Microscopy",
+        "Fluorescence",
+        "Multiphoton",
+        "Organoids",
         "Organoids/cytology",
         "Organoids/metabolism",
+        "Time-Lapse Imaging",
         "Time-Lapse Imaging/methods"
       ],
       "publisher": {
@@ -89,9 +100,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -105,6 +113,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0038134"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -128,7 +139,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-654"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/654/render_thumbnail/"
       ],
       "size": [
         {
@@ -152,57 +163,71 @@
       "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-018-04527-8",
       "@type": "ScholarlyArticle",
-      "name": "Composite regulation of ERK activity dynamics underlying tumour-specific traits in the intestine.",
-      "datePublished": "2018"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Mus musculus",
-      "description": "Mus musculus",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
+      "name": "Muta Y, Fujita Y, Sumiyama K, Sakurai A, Taketo M. M, Chiba T, Seno H, Aoki K, Matsuda M, and Imajo M (2018) Composite regulation of ERK activity dynamics underlying tumour-specific traits in the intestine.  nature communications, Volume 9, Issue 1, pages 2174.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/29872037"
       ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0000186",
       "@type": "DefinedTerm",
-      "name": "activation of MAPERK kinase"
+      "name": "activation of MAPERK kinase",
+      "identifier": "GO:0000186"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0007173",
       "@type": "DefinedTerm",
-      "name": "epidermal growth factor signaling pathway"
+      "name": "epidermal growth factor signaling pathway",
+      "identifier": "GO:0007173"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0038128",
       "@type": "DefinedTerm",
-      "name": "ERBB2 signaling pathway"
+      "name": "ERBB2 signaling pathway",
+      "identifier": "GO:0038128"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0038134",
       "@type": "DefinedTerm",
-      "name": "ERBB2-EGFR signaling pathway"
+      "name": "ERBB2-EGFR signaling pathway",
+      "identifier": "GO:0038134"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus muculus",
+      "name": "Mus muculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus muculus",
+      "description": "Mus muculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -216,6 +241,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -225,6 +256,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -238,32 +275,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "FRET"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 67140947931,
-      "description": "67.1 GB",
+      "value": 101418514460,
+      "description": "101.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 180678,
+      "value": 181148,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,17 +45,23 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/320-Spratt-dMetRaman/"
+        "@id": "https://ssbd.riken.jp/v3/project/320-Spratt-dMetRaman"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/320-Spratt-dMetRaman/",
+      "@id": "https://ssbd.riken.jp/v3/project/320-Spratt-dMetRaman",
       "@type": "Dataset",
       "identifier": "320-Spratt-dMetRaman",
       "name": "Stimulated Raman images of deuterated methionine incorporated into adult and larval Drosophila",
-      "description": "320-Spratt-dMetRaman",
+      "description": "Introduction: Visualizing small individual biomolecules at subcellular resolution in live cells and tissues can provide valuable insights into metabolic activity in heterogeneous cells, but is challenging. Methods: Here, the authors used stimulated Raman scattering (SRS) microscopy to image deuterated methionine (d-Met) incorporated into Drosophila tissues in vivo. Results: Their results demonstrate that SRS can detect a range of previously uncharacterized cell-to-cell differences in d-Met distribution within a tissue at the subcellular level. Discussion: These results demonstrate the potential of SRS microscopy for metabolic imaging of less abundant but important amino acids such as methionine in tissue.",
       "datePublished": "2025-04-10",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Imaginal Discs,\nWings, Animal",
+        "Brain",
+        "Fat Body",
+        "Lysosomes"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -74,6 +80,9 @@
         },
         {
           "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
         }
       ],
       "seeAlso": [
@@ -81,21 +90,23 @@
           "@id": "https://doi.org/10.3389/fchem.2023.1141920"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
-        },
-        {
-          "@id": "#biosample-1"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005764"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ],
       "measurementMethod": [
@@ -104,16 +115,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000370"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1654"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1654/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,10 +139,10 @@
       "@type": "Person",
       "name": "Yasuyuki Ozeki",
       "email": "ozeki@ee.t.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems; Laboratory: Department of Electrical Engineering and Information Systems",
+      "description": "Organization: The University of Tokyo; Department: Department of Electrical Engineering and Information Systems",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -162,24 +167,46 @@
       "name": "Hina Kosakamoto"
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Fumiaki Obata"
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.3389/fchem.2023.1141920",
       "@type": "ScholarlyArticle",
-      "name": "Imaging the uptake of deuterated methionine in Drosophila with stimulated Raman scattering.",
-      "datePublished": "2023"
+      "name": "Spratt SJ, Mizuguchi T, Akaboshi H, Kosakamoto H, Okada R, Obata F, Ozeki Y. Imaging the uptake of deuterated methionine in Drosophila with stimulated Raman scattering. Front Chem. 2023 Mar 29;11:1141920.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2023.1141920/full",
+        "https://pubmed.ncbi.nlm.nih.gov/37065821/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10090404/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported in part by Japan Society for the Promotion of Science KAKENHI under JP20H02650, JP20H05725, JP20H05726, and JP21J00452; in part by Japan Science and Technology Agency Core Research for Evolutional Science and Technology (CREST) under Grant JPMJCR 1872; in part by Nakatani Foundation Grant for Technology Development Research, and in part by Quantum Leap Flagship Program of the Ministry of Education, Culture, Sports, Science and Technology (MEXT) under Grant JPMXS0118067246."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215",
+      "@type": "Taxon",
+      "scientificName": "Drosophila",
+      "name": "Drosophila",
+      "identifier": "NCBITaxon:7215"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "Canton S",
-      "description": "Canton S",
+      "description": "The dissected wing from the third instar larvae of Drosophila which was incorporated deuterated methionine (dMet).",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
@@ -187,10 +214,10 @@
       "@id": "#biosample-2",
       "@type": "BioSample",
       "name": "esg-GAL4, UAS-GFP, tub- Gal80t",
-      "description": "esg-GAL4, UAS-GFP, tub- Gal80t",
+      "description": "The dissected gut from adult Drosophila which was feeded deuterated methionine (dMet) containing food for 24 hours. GFP was expressed under control of the escargot gene.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
@@ -198,28 +225,24 @@
       "@id": "#biosample-3",
       "@type": "BioSample",
       "name": "hsFLP, UAS-mCD8-GFP; act5C-FRTstopFRT-GAL4, UAS-GFP, UAS-TorTED",
-      "description": "hsFLP, UAS-mCD8-GFP; act5C-FRTstopFRT-GAL4, UAS-GFP, UAS-TorTED",
+      "description": "The dissected fat body from the third instar larvae of Drosophila which was incorporated deuterated methionine (dMet).",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
-      "@type": "Taxon",
-      "scientificName": "drosophila"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005764",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
       "@type": "DefinedTerm",
-      "name": "lysosome"
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -227,38 +250,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "stimulated Raman spectroscopy",
-      "description": "stimulated Raman spectroscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000370"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000370",
-      "@type": "DefinedTerm",
-      "name": "stimulated Raman spectroscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 32951107,
-      "description": "33.0 MB",
+      "value": 48712485,
+      "description": "48.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 90,
+      "value": 110,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/229-Yamada-GeneExpression/"
+        "@id": "https://ssbd.riken.jp/v2/project/229-Yamada-GeneExpression"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/229-Yamada-GeneExpression/",
+      "@id": "https://ssbd.riken.jp/v2/project/229-Yamada-GeneExpression",
       "@type": "Dataset",
       "identifier": "229-Yamada-GeneExpression",
       "name": "Time-lapse images of light inducible PA-Gal4cc activity in mouse brain or HEK293T cells",
-      "description": "229-Yamada-GeneExpression",
+      "description": "See details in Yamada M, et. al. (2020) iScience, 2020 Aug 27;23(9):101506.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by-nc/4.0/",
       "publisher": {
@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
@@ -80,13 +80,13 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0037271"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0008494"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -98,7 +98,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-763"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/763/render_thumbnail/"
       ],
       "size": [
         {
@@ -117,25 +117,54 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Itaru Imayoshi",
+      "name": "Itaru  Imayoshi",
       "email": "imayoshi.itaru.2n@kyoto-u. ac.jp",
       "description": "Organization: kyoto University; Department: Graduate School of Biostudies; Laboratory: Research Center for Dynamic Living Systems",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "kyoto University"
     },
     {
       "@id": "https://doi.org/10.1016/j.isci.2020.101506",
       "@type": "ScholarlyArticle",
-      "name": "Optimization of Light-Inducible Gal4/UAS Gene Expression System in Mammalian Cells.",
-      "datePublished": "2020"
+      "name": "Yamada M, Nagasaki SC, Suzuki Y, Hirano Y, Imayoshi I. Optimization of Light-Inducible Gal4/UAS Gene Expression System in Mammalian Cells. iScience. 2020 Aug 27;23(9):101506. doi: 10.1016/j.isci.2020.101506. Epub ahead of print. PMID: 32919371; PMCID: PMC7491154.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/32919371/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0037271",
+      "@type": "DefinedTerm",
+      "name": "HEK293T",
+      "identifier": "CLO:0037271"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008494",
+      "@type": "DefinedTerm",
+      "name": "translation activator activity",
+      "identifier": "GO:0008494"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -144,7 +173,7 @@
       "description": "Homo sapiens ~ HEK293T",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -158,31 +187,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0037271",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HEK293T"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008494",
-      "@type": "DefinedTerm",
-      "name": "translation activator activity"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -196,22 +209,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1939008087,
-      "description": "1.9 GB",
+      "value": 2111601462,
+      "description": "2.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 8,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

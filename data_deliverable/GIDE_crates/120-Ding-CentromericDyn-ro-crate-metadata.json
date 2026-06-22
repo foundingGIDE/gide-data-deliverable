@@ -45,26 +45,30 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/120-Ding-CentromericDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/120-Ding-CentromericDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/120-Ding-CentromericDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/120-Ding-CentromericDyn",
       "@type": "Dataset",
       "identifier": "120-Ding-CentromericDyn",
       "name": "Timelapse images and BDML file for quantitative information about the centromeric dynamics during mouse oocytes meiosis",
-      "description": "120-Ding-CentromericDyn",
+      "description": "See details in Ding Y, et. al. (2018) Current Biology, 28(10): 1661-1669.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Centromere/physiology[major]",
+        "Centromere",
+        "Centromere/physiology",
         "Female",
-        "Meiosis/physiology[major]",
+        "Meiosis",
+        "Meiosis/physiology",
         "Mice",
-        "Oocytes/physiology[major]",
-        "Signal Transduction[major]",
-        "Small Ubiquitin-Related Modifier Proteins/physiology[major]"
+        "Oocytes",
+        "Oocytes/physiology",
+        "Signal Transduction",
+        "Small Ubiquitin-Related Modifier Proteins",
+        "Small Ubiquitin-Related Modifier Proteins/physiology"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -81,9 +85,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -97,6 +98,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -114,7 +118,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-661"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/661/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,20 +142,54 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1016/j.cub.2018.04.019",
       "@type": "ScholarlyArticle",
-      "name": "The Post-anaphase SUMO Pathway Ensures the Maintenance of Centromeric Cohesion through Meiosis I-II Transition in Mammalian Oocytes.",
-      "datePublished": "2018"
+      "name": "Ding Y, Kaido M, Llano E, Pendas A M, and Kitajima Tomoya S (2018) The Post-anaphase SUMO Pathway Ensures the Maintenance of Centromeric Cohesion through Meiosis I-II Transition in Mammalian Oocytes. Current Biology, Volume 28, Issue 10, pages 1661-1669.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/29754905"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0070601",
+      "@type": "DefinedTerm",
+      "name": "centromeric sister chromatid cohesion",
+      "identifier": "GO:0070601"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051321",
+      "@type": "DefinedTerm",
+      "name": "meiotic cell cycle",
+      "identifier": "GO:0051321"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000776",
+      "@type": "DefinedTerm",
+      "name": "kinetochore",
+      "identifier": "GO:0000776"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome",
+      "identifier": "GO:0005694"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -160,35 +198,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0070601",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "centromeric sister chromatid cohesion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051321",
-      "@type": "DefinedTerm",
-      "name": "meiotic cell cycle"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000776",
-      "@type": "DefinedTerm",
-      "name": "kinetochore"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-      "@type": "DefinedTerm",
-      "name": "chromosome"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -202,6 +220,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -213,27 +237,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 773928837049,
-      "description": "773.9 GB",
+      "value": 1317507323870,
+      "description": "1.3 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 67632,
+      "value": 67983,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

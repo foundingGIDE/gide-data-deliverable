@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/232-Tany-SignalingDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/232-Tany-SignalingDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/232-Tany-SignalingDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/232-Tany-SignalingDyn",
       "@type": "Dataset",
       "identifier": "232-Tany-SignalingDyn",
       "name": "Live-cell imaging of G-protein-coupled receptors (GPCRs) downstream signaling dynamics in HeLa cells.",
-      "description": "232-Tany-SignalingDyn",
+      "description": "See details in Tany R, et. al. Biochem J. 2022 Apr 29;479(8):883-900.",
       "datePublished": "2025-02-17",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "GTP-Binding Proteins/genetics[major]",
-        "GTP-Binding Proteins/metabolism[major]",
-        "HeLa Cells",
-        "Humans",
-        "Receptors, G-Protein-Coupled/genetics[major]",
-        "Receptors, G-Protein-Coupled/metabolism[major]",
-        "Signal Transduction"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -83,13 +74,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019933"
@@ -98,7 +83,13 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0007165"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019722"
@@ -107,22 +98,22 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0007266"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007212"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0004952"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0001588"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007212"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0001591"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0004993"
+          "@id": "http://purl.obolibrary.org/obo/GO_0098664"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0098664"
+          "@id": "http://purl.obolibrary.org/obo/GO_0004993"
         }
       ],
       "measurementMethod": [
@@ -134,7 +125,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1601"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1601/render_thumbnail/"
       ],
       "size": [
         {
@@ -158,7 +149,7 @@
       "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
       "affiliation": [
         {
-          "@id": "https://ror.org/055n47h92"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -170,20 +161,102 @@
       "description": "Organization: National Institutes of Natural Sciences; Department: Exploratory Research Center on Life and Living Systems (ExCELLS); Laboratory: Quantitative Biology Research Group",
       "affiliation": [
         {
-          "@id": "https://ror.org/055n47h92"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/055n47h92",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "National Institutes of Natural Sciences"
     },
     {
       "@id": "https://doi.org/10.1042/BCJ20220021",
       "@type": "ScholarlyArticle",
-      "name": "Quantitative live-cell imaging of GPCR downstream signaling dynamics.",
-      "datePublished": "2022"
+      "name": "Tany R, Goto Y, Kondo Y, Aoki K. Quantitative live-cell imaging of GPCR downstream signaling dynamics. Biochem J. 2022 Apr 29;479(8):883-900.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35383830/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019933",
+      "@type": "DefinedTerm",
+      "name": "cAMP-mediated signaling",
+      "identifier": "GO:0019933"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007165",
+      "@type": "DefinedTerm",
+      "name": "signal transduction",
+      "identifier": "GO:0007165"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium-mediated signaling",
+      "identifier": "GO:0019722"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007266",
+      "@type": "DefinedTerm",
+      "name": "Rho protein signal transduction",
+      "identifier": "GO:0007266"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007212",
+      "@type": "DefinedTerm",
+      "name": "dopamine receptor signaling pathway",
+      "identifier": "GO:0007212"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004952",
+      "@type": "DefinedTerm",
+      "name": "dopamine neurotransmitter receptor activity",
+      "identifier": "GO:0004952"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001588",
+      "@type": "DefinedTerm",
+      "name": "coupled via Gs",
+      "identifier": "GO:0001588"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0001591",
+      "@type": "DefinedTerm",
+      "name": "coupled via Gi/Go",
+      "identifier": "GO:0001591"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098664",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled serotonin receptor signaling pathway",
+      "identifier": "GO:0098664"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004993",
+      "@type": "DefinedTerm",
+      "name": "G protein-coupled serotonin receptor activity",
+      "identifier": "GO:0004993"
     },
     {
       "@id": "#biosample-1",
@@ -192,7 +265,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -200,70 +273,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019933",
-      "@type": "DefinedTerm",
-      "name": "cAMP-mediated signaling"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007165",
-      "@type": "DefinedTerm",
-      "name": "signal transduction"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
-      "@type": "DefinedTerm",
-      "name": "calcium-mediated signaling"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007266",
-      "@type": "DefinedTerm",
-      "name": "Rho protein signal transduction"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004952",
-      "@type": "DefinedTerm",
-      "name": "dopamine neurotransmitter receptor activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001588",
-      "@type": "DefinedTerm",
-      "name": "coupled via Gs"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007212",
-      "@type": "DefinedTerm",
-      "name": "dopamine receptor signaling pathway"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001591",
-      "@type": "DefinedTerm",
-      "name": "coupled via Gi/Go"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004993",
-      "@type": "DefinedTerm",
-      "name": "G protein-coupled serotonin receptor activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0098664",
-      "@type": "DefinedTerm",
-      "name": "G protein-coupled serotonin receptor signaling pathway"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -277,22 +290,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 10520670033,
-      "description": "10.5 GB",
+      "value": 34392702653,
+      "description": "34.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 19820,
+      "value": 40832,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

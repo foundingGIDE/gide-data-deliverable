@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/317-Narita-Argonaute2Aggrigate/"
+        "@id": "https://ssbd.riken.jp/v2/project/317-Narita-Argonaute2Aggrigate"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/317-Narita-Argonaute2Aggrigate/",
+      "@id": "https://ssbd.riken.jp/v2/project/317-Narita-Argonaute2Aggrigate",
       "@type": "Dataset",
       "identifier": "317-Narita-Argonaute2Aggrigate",
       "name": "Aggregates formation of Drosophila melanogaster Argonaute2 N-terminal region",
-      "description": "317-Narita-Argonaute2Aggrigate",
+      "description": "Argonaute proteins play a central role in RNA silencing by forming protein-small RNA complexes responsible for the silencing process. While most Argonaute proteins have a short N-terminal region, Argonaute2\nin Drosophila melanogaster (DmAgo2) harbors a long and unique N-terminal region. The N-terminal region is highly rich in glutamine and glycine residues, which is a well-known property for prion-like domains, a subclass of amyloid-forming peptides. Therefore, the possibility of the N-terminal region func- tioning as an amyloid was tested.",
       "datePublished": "2024-12-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Drosophila melanogaster/metabolism[major]",
-        "Argonaute Proteins/genetics",
-        "Argonaute Proteins/metabolism",
-        "Peptides/metabolism",
-        "Amyloid/metabolism",
-        "Prions/chemistry[major]",
-        "Protein Aggregates"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -87,13 +77,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0065003"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ],
       "measurementMethod": [
@@ -111,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1402"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1402/render_thumbnail/"
       ],
       "size": [
         {
@@ -132,10 +122,10 @@
       "@type": "Person",
       "name": "Tomohiro Shima",
       "email": "tomohiro.shima@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: University of Tokyo; Department: Department of Biological Sciences",
+      "description": "Organization: University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -144,10 +134,10 @@
       "@type": "Person",
       "name": "Sotaro Uemura",
       "email": "uemura@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: University of Tokyo; Department: Graduate School of Science",
+      "description": "Organization: University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -155,18 +145,39 @@
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Haruka  Narita",
-      "description": "Department: Department of Biological Sciences"
+      "description": "Organization: University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1186/s12915-023-01569-3",
       "@type": "ScholarlyArticle",
-      "name": "N-terminal region of Drosophila melanogaster Argonaute2 forms amyloid-like aggregates.",
-      "datePublished": "2023"
+      "name": "Narita H, Shima T, Iizuka R, Uemura S. N-terminal region of Drosophila melanogaster Argonaute2 forms amyloid-like aggregates. BMC Biol. 2023 Apr 19;21(1):78.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37072852/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0065003",
+      "@type": "DefinedTerm",
+      "name": "protein-containing complex assembly",
+      "identifier": "GO:0065003"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215",
+      "@type": "Taxon",
+      "scientificName": "Drosophila",
+      "name": "Drosophila",
+      "identifier": "NCBITaxon:7215"
     },
     {
       "@id": "#biosample-1",
@@ -175,19 +186,15 @@
       "description": "Drosophila",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
-      "@type": "Taxon",
-      "scientificName": "drosophila"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0065003",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "protein-containing complex assembly"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -201,6 +208,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -212,27 +225,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 53759934035,
-      "description": "53.8 GB",
+      "value": 75491655132,
+      "description": "75.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4661,
+      "value": 4723,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

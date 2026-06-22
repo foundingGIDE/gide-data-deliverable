@@ -45,42 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/199-Ichimura-MulticellularDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/199-Ichimura-MulticellularDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/199-Ichimura-MulticellularDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/199-Ichimura-MulticellularDyn",
       "@type": "Dataset",
       "identifier": "199-Ichimura-MulticellularDyn",
       "name": "Imaging data of centimeter-scale dynamics of multicellular systems observed with sub-cellular resolution.",
-      "description": "199-Ichimura-MulticellularDyn",
+      "description": "See details in Ichimura T, et. al. (2021)  Sci Rep. 2021 Aug 16;11(1):16539.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "keywords": [
-        "Animals",
-        "Brain/cytology",
-        "Calcium/analysis",
-        "Cells/cytology[major]",
-        "Cyclic AMP/analysis",
-        "Dictyostelium/chemistry",
-        "Dictyostelium/ultrastructure",
-        "Dogs",
-        "Entosis",
-        "Epithelial Cells/ultrastructure",
-        "Equipment Design",
-        "Green Fluorescent Proteins",
-        "HeLa Cells/chemistry",
-        "HeLa Cells/ultrastructure",
-        "Humans",
-        "Interneurons/ultrastructure",
-        "Luminescent Proteins",
-        "Madin Darby Canine Kidney Cells",
-        "Mice",
-        "Microscopy, Fluorescence/instrumentation",
-        "Microscopy, Fluorescence/methods[major]",
-        "Neurons/ultrastructure",
-        "Semiconductors"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -91,51 +66,48 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1101/2020.06.29.179044"
-        },
-        {
           "@id": "https://doi.org/10.1038/s41598-021-95930-7"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-4"
         },
         {
           "@id": "#biosample-3"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+          "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-4"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
         },
         {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0019722"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0019933"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ],
       "measurementMethod": [
@@ -150,10 +122,22 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-770"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/770/render_thumbnail/"
       ],
       "size": [
         {
@@ -174,29 +158,84 @@
       "@type": "Person",
       "name": "Takeharu Nagai",
       "email": "ng1@sanken.osaka-u.ac.jp",
-      "description": "Organization: Osaka University",
+      "description": "Organization: Osaka University , SANKEN (The Institute of Scientific and Industrial Research)",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Osaka University"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.06.29.179044",
-      "@type": "ScholarlyArticle",
-      "name": "Exploring rare cellular activity in more than one million cells by a trans-scale-scope",
-      "datePublished": "2021"
+      "name": "Osaka University , SANKEN (The Institute of Scientific and Industrial Research)"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-021-95930-7",
       "@type": "ScholarlyArticle",
-      "name": "Exploring rare cellular activity in more than one million cells by a transscale scope.",
-      "datePublished": "2021"
+      "name": "Ichimura T, Kakizuka T, Horikawa K, Seiriki K, Kasai A, Hashimoto H, Fujita K, Watanabe TM, Nagai T. Exploring rare cellular activity in more than one million cells by a transscale scope. Sci Rep. 2021 Aug 16;11(1):16539. doi: 10.1038/s41598-021-95930-7. PMID: 34400683; PMCID: PMC8368064.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34400683/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell",
+      "identifier": "CLO:0007646"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium-mediated signaling",
+      "identifier": "GO:0019722"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019933",
+      "@type": "DefinedTerm",
+      "name": "cAMP-mediated signaling",
+      "identifier": "GO:0019933"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "name": "Dictyostelium discoideum",
+      "identifier": "NCBITaxon:44689"
     },
     {
       "@id": "#biosample-1",
@@ -205,7 +244,7 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -216,7 +255,7 @@
       "description": "Canis lupus familiaris ~ MDCK cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         }
       ],
       "hasCellLine": {
@@ -230,7 +269,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -244,56 +283,15 @@
       "description": "Dictyostelium discoideum",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "MDCK cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
-      "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
-      "@type": "DefinedTerm",
-      "name": "calcium-mediated signaling"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019933",
-      "@type": "DefinedTerm",
-      "name": "cAMP-mediated signaling"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -307,6 +305,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "FRET",
@@ -318,29 +322,53 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "FRET"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 566078103489,
-      "description": "566.1 GB",
+      "value": 1477706720892,
+      "description": "1.5 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4247,
+      "value": 8516,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

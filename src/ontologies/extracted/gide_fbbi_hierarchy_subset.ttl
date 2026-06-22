@@ -26,10 +26,6 @@ obo:FBbi_00000031 a owl:Class ;
     rdfs:label "visualization method" ;
     rdfs:subClassOf obo:FBbi_root_00000000 .
 
-obo:FBbi_00000056 a owl:Class ;
-    rdfs:label "4',6-diamidino-2-phenylindole (DAPI)" ;
-    rdfs:subClassOf obo:FBbi_00000422 .
-
 obo:FBbi_00000076 a owl:Class ;
     rdfs:label "genetically encoded enzyme" ;
     rdfs:subClassOf obo:FBbi_00000079 .
@@ -53,6 +49,10 @@ obo:FBbi_00000128 a owl:Class ;
 obo:FBbi_00000138 a owl:Class ;
     rdfs:label "horseradish peroxidase" ;
     rdfs:subClassOf obo:FBbi_00000456 .
+
+obo:FBbi_00000156 a owl:Class ;
+    rdfs:label "primary antibody plus labeled secondary antibody" ;
+    rdfs:subClassOf obo:FBbi_00000401 .
 
 obo:FBbi_00000222 a owl:Class ;
     rdfs:label "imaging method" ;
@@ -114,6 +114,10 @@ obo:FBbi_00000251 a owl:Class ;
     rdfs:label "confocal microscopy" ;
     rdfs:subClassOf obo:FBbi_00000246 .
 
+obo:FBbi_00000252 a owl:Class ;
+    rdfs:label "single-spot confocal microscopy" ;
+    rdfs:subClassOf obo:FBbi_00000251 .
+
 obo:FBbi_00000253 a owl:Class ;
     rdfs:label "spinning disk confocal microscopy" ;
     rdfs:subClassOf obo:FBbi_00000251 .
@@ -169,10 +173,6 @@ obo:FBbi_00000270 a owl:Class ;
 obo:FBbi_00000271 a owl:Class ;
     rdfs:label "contrast-enhancing method" ;
     rdfs:subClassOf obo:FBbi_root_00000000 .
-
-obo:FBbi_00000277 a owl:Class ;
-    rdfs:label "widefield illumination" ;
-    rdfs:subClassOf obo:FBbi_00000268 .
 
 obo:FBbi_00000278 a owl:Class ;
     rdfs:label "narrowfield illumination" ;
@@ -302,6 +302,14 @@ obo:FBbi_00000383 a owl:Class ;
     rdfs:label "specimen_modifying_illumination" ;
     rdfs:subClassOf obo:FBbi_00000268 .
 
+obo:FBbi_00000384 a owl:Class ;
+    rdfs:label "photo-bleaching illumination" ;
+    rdfs:subClassOf obo:FBbi_00000383 .
+
+obo:FBbi_00000387 a owl:Class ;
+    rdfs:label "photo-activation illumination" ;
+    rdfs:subClassOf obo:FBbi_00000383 .
+
 obo:FBbi_00000392 a owl:Class ;
     rdfs:label "slit-scan confocal microscopy" ;
     rdfs:subClassOf obo:FBbi_00000251 .
@@ -322,25 +330,9 @@ obo:FBbi_00000401 a owl:Class ;
     rdfs:label "antibody" ;
     rdfs:subClassOf obo:FBbi_00000410 .
 
-obo:FBbi_00000403 a owl:Class ;
-    rdfs:label "small-molecule probe" ;
-    rdfs:subClassOf obo:FBbi_00000397 .
-
-obo:FBbi_00000405 a owl:Class ;
-    rdfs:label "fluorescent protein tag" ;
-    rdfs:subClassOf obo:FBbi_00000079 .
-
-obo:FBbi_00000406 a owl:Class ;
-    rdfs:label "probes for nucleic acid" ;
-    rdfs:subClassOf obo:FBbi_00000403 .
-
 obo:FBbi_00000410 a owl:Class ;
     rdfs:label "macromolecular probe" ;
     rdfs:subClassOf obo:FBbi_00000397 .
-
-obo:FBbi_00000422 a owl:Class ;
-    rdfs:label "membrane impermeant probe" ;
-    rdfs:subClassOf obo:FBbi_00000406 .
 
 obo:FBbi_00000451 a owl:Class ;
     rdfs:label "Fluorescein (FITC)" ;

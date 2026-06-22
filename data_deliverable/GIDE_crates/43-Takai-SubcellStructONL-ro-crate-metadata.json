@@ -45,41 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/43-Takai-SubcellStructONL/"
+        "@id": "https://ssbd.riken.jp/v1/project/43-Takai-SubcellStructONL"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/43-Takai-SubcellStructONL/",
+      "@id": "https://ssbd.riken.jp/v1/project/43-Takai-SubcellStructONL",
       "@type": "Dataset",
       "identifier": "43-Takai-SubcellStructONL",
       "name": "43-Takai-SubcellStructONL",
-      "description": "43-Takai-SubcellStructONL",
+      "description": "See details in Takai et al. (2015) PNAS, 112(14): 4352-4356.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Calcium/metabolism",
-        "Cell Line",
-        "DNA/chemistry",
-        "Dogs",
-        "Embryonic Stem Cells/cytology",
-        "Endosomes/metabolism",
-        "Fluorescence Resonance Energy Transfer",
-        "Focal Adhesions",
-        "Gene Expression Regulation",
-        "Luciferases/chemistry[major]",
-        "Luciferases, Renilla/metabolism",
-        "Luminescence[major]",
-        "Luminescent Proteins/chemistry[major]",
-        "Mice",
-        "Molecular Sequence Data",
-        "Oligonucleotides/chemistry",
-        "Peroxisomes/metabolism",
-        "Promoter Regions, Genetic",
-        "Recombinant Fusion Proteins/chemistry[major]",
-        "Renilla",
-        "Vinculin/chemistry"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -114,22 +90,36 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1073/pnas.1418468112"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/25831507"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-71"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/71/render_thumbnail/"
       ],
       "size": [
         {
@@ -153,96 +143,180 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Akira Takai"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Masahiro Nakano"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Kenta Saito"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Remi Haruno"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Tomonobu M. Watanabe"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Tatsuya Ohyanagi"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Takashi Jin"
-    },
-    {
-      "@id": "#auth-009",
-      "@type": "Person",
-      "name": "Takeharu Nagai"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1073/pnas.1418468112",
-      "@type": "ScholarlyArticle",
-      "name": "Expanded palette of Nano-lanterns for real-time multicolor luminescence imaging.",
-      "datePublished": "2015"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "MDCK II",
-      "description": "MDCK II",
-      "taxonomicRange": [
+      "name": "Akira Takai",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Masahiro Nakano",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Kenta Saito",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Remi Haruno",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Tomonobu M. Watanabe",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tatsuya Ohyanagi",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Takashi Jin",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-009",
+      "@type": "Person",
+      "name": "Takeharu Nagai",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Cell Polarity Regulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/25831507",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/25831507"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0034613",
       "@type": "DefinedTerm",
-      "name": "cellular protein localization"
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Canis lupus familiaris",
+      "description": "Canis lupus familiaris",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 95014858,
-      "description": "95.0 MB",
+      "value": 123675432,
+      "description": "123.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

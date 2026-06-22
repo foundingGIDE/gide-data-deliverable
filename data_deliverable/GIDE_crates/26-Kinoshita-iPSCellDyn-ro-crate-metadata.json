@@ -45,32 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/26-Kinoshita-iPSCellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/26-Kinoshita-iPSCellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/26-Kinoshita-iPSCellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/26-Kinoshita-iPSCellDyn",
       "@type": "Dataset",
       "identifier": "26-Kinoshita-iPSCellDyn",
       "name": "26-Kinoshita-iPSCellDyn",
-      "description": "26-Kinoshita-iPSCellDyn",
+      "description": "See details in Kinoshita et al. (2016) Retinal Cell Biology, 57(1): 153-161.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Blotting, Western",
-        "Cell Differentiation",
-        "Cell Proliferation",
-        "Cells, Cultured",
-        "Ciliary Body/cytology[major]",
-        "Disease Models, Animal",
-        "Epithelial Cells/cytology[major]",
-        "Imaging, Three-Dimensional[major]",
-        "Immunohistochemistry",
-        "Induced Pluripotent Stem Cells/cytology[major]",
-        "Mice",
-        "Mice, Inbred C57BL"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -96,22 +81,36 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1167/iovs.15-17610"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26780319"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-56"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/56/render_thumbnail/"
       ],
       "size": [
         {
@@ -135,7 +134,7 @@
       "description": "Organization: Nagasaki University; Department: Department of Ophthalmology and Visual Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/058h74p94"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -143,75 +142,139 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Hirofumi Kinoshita",
-      "description": "Department: Graduate School of Biomedical Sciences"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Jun Kaneko"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Michiko Mandai"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Takashi Kitaoka"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Masayo Takahashi"
-    },
-    {
-      "@id": "https://ror.org/058h74p94",
-      "@type": "Organization",
-      "name": "Nagasaki University"
-    },
-    {
-      "@id": "https://doi.org/10.1167/iovs.15-17610",
-      "@type": "ScholarlyArticle",
-      "name": "Induction of Functional 3D Ciliary Epithelium-Like Structure From Mouse Induced Pluripotent Stem Cells.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "iPS",
-      "description": "iPS",
-      "taxonomicRange": [
+      "description": "Organization: Nagasaki University; Department: Graduate School of Biomedical Sciences",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Jun Kaneko",
+      "description": "Organization: Nagasaki University; Department: Department of Ophthalmology and Visual Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "description": "Organization: Nagasaki University; Department: Department of Ophthalmology and Visual Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Takashi Kitaoka",
+      "description": "Organization: Nagasaki University; Department: Department of Ophthalmology and Visual Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Masayo Takahashi",
+      "description": "Organization: Nagasaki University; Department: Department of Ophthalmology and Visual Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Nagasaki University"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26780319",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26780319"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005623",
       "@type": "DefinedTerm",
-      "name": "cell"
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 110390162,
-      "description": "110.4 MB",
+      "value": 144166396,
+      "description": "144.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

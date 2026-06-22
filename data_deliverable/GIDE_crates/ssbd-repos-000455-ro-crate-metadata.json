@@ -71,13 +71,21 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         },
         {
           "@id": "#biosample-1"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -124,28 +132,40 @@
       "description": "L972 (h-), YG181 (h+ ade6-M210 leu1-32 z::Padh1-mScarlet-I-HA-mNeonGreen<<nat), HS445 (h- 2L::Padh1-mCherry2-HA-mNeonGreen<<nat), HS565 (h- 2L::Padh1-spmNeonGreen<<nat 3R::Padh1-miRFP670<<kan 1L::synPCB2.1<<bsd), HS494 (h- 1L::Padh1-SynPCB2.1<<bsd cdc2-miRFP670<<hyg cdc13-spmNeonGreen<<kan), YG2004 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mEGFP-miRFP670<<nat), YG2005 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold-miRFP670<<nat), YG2006 (h- 1L::Padh1-SynPCB2.1<<bsd 2L::Padh1-mStayGold(Sp codon optimized)-miRFP670<<nat), YG2007-1 (h- 1L::Padh1-SynPCB2.1<<bsd cdc13-miRFP670<<kan cdc2-mNeonGreen<<hyg)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         }
       ],
       "hasCellLine": [
-        "HeLa/Blvra KO (JCRB1992)",
-        "HeLa/Blvra KO/rtTA/TRE-SynPCB2.1"
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+          "name": "HeLa cell"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+          "name": "HeLa cell"
+        }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853",
       "@type": "Taxon",
       "scientificName": "Schizosaccharomyces pombe",
       "vernacularName": "fission yeast"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -161,6 +181,17 @@
       "value": 3696,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

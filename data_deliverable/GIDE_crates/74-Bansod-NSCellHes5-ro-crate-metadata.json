@@ -45,43 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/74-Bansod-NSCellHes5/"
+        "@id": "https://ssbd.riken.jp/v1/project/74-Bansod-NSCellHes5"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/74-Bansod-NSCellHes5/",
+      "@id": "https://ssbd.riken.jp/v1/project/74-Bansod-NSCellHes5",
       "@type": "Dataset",
       "identifier": "74-Bansod-NSCellHes5",
       "name": "Neurogenesis and gliogenesis in WT and Hes5-overexpressing Tg brain",
-      "description": "74-Bansod-NSCellHes5",
+      "description": "See details in Bansod et al. (2017) Development, 144(17): 3156-3167.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Astrocytes/metabolism",
-        "Basic Helix-Loop-Helix Transcription Factors/genetics",
-        "Basic Helix-Loop-Helix Transcription Factors/metabolism[major]",
-        "Cell Differentiation",
-        "Cell Proliferation",
-        "Down-Regulation/genetics",
-        "Gene Expression Regulation, Developmental",
-        "Gene Knockdown Techniques",
-        "Genes, Reporter",
-        "Mammals/embryology[major]",
-        "Mammals/genetics",
-        "Mice, Transgenic",
-        "Neocortex/embryology[major]",
-        "Neocortex/metabolism[major]",
-        "Neural Stem Cells/metabolism",
-        "Neurogenesis/genetics[major]",
-        "Neuroglia/metabolism",
-        "Neurons/cytology",
-        "Neurons/metabolism",
-        "Promoter Regions, Genetic/genetics",
-        "Repressor Proteins/genetics",
-        "Repressor Proteins/metabolism[major]",
-        "Time Factors"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -98,13 +72,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1242/dev.147256"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28851724"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -113,10 +84,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0042063"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-153"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/153/render_thumbnail/"
       ],
       "size": [
         {
@@ -140,70 +122,101 @@
       "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Shama Bansod"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Ryoichiro Kageyama"
-    },
-    {
-      "@id": "https://ror.org/02kpeqv85",
-      "@type": "Organization",
-      "name": "Kyoto University"
-    },
-    {
-      "@id": "https://doi.org/10.1242/dev.147256",
-      "@type": "ScholarlyArticle",
-      "name": "Hes5 regulates the transition timing of neurogenesis and gliogenesis in mammalian neocortical development.",
-      "datePublished": "2017"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "NIH3T3",
-      "description": "NIH3T3",
-      "taxonomicRange": [
+      "name": "Shama Bansod",
+      "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Ryoichiro Kageyama",
+      "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28851724",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28851724"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0022008",
       "@type": "DefinedTerm",
-      "name": "neurogenesis"
+      "name": "neurogenesis",
+      "identifier": "GO:0022008"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0042063",
       "@type": "DefinedTerm",
-      "name": "gliogenesis"
+      "name": "gliogenesis",
+      "identifier": "GO:0042063"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 130770670,
-      "description": "130.8 MB",
+      "value": 252575708,
+      "description": "252.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 123,
+      "value": 196,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

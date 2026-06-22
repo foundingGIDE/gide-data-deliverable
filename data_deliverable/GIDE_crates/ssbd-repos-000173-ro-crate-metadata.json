@@ -78,7 +78,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         },
         {
           "@id": "#biosample-1"
@@ -92,13 +92,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "#imaging-technique-1"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "size": [
@@ -145,54 +145,10 @@
       "description": "Computer simulation"
     },
     {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Cell line sample",
-      "description": "Cell line sample",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
-        }
-      ],
-      "hasCellLine": "Ax2 (transformed with pDM304_Red-FL2 and pDM358_Red-FL2)"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
       "@type": "Taxon",
       "scientificName": "Dictyostelium discoideum",
       "vernacularName": "social amoeba"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Timelapse",
-      "description": "Timelapse",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-1"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "Trans-scale imaging",
-      "description": "Trans-scale imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-technique-1",
-      "@type": "DefinedTerm",
-      "name": "Timelapse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "Trans-scale imaging"
     },
     {
       "@id": "#total-dataset-size",
@@ -208,6 +164,40 @@
       "value": 0,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

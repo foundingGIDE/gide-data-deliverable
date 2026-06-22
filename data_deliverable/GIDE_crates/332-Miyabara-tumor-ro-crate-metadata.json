@@ -45,17 +45,24 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/332-Miyabara-tumor/"
+        "@id": "https://ssbd.riken.jp/v2/project/332-Miyabara-tumor"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/332-Miyabara-tumor/",
+      "@id": "https://ssbd.riken.jp/v2/project/332-Miyabara-tumor",
       "@type": "Dataset",
       "identifier": "332-Miyabara-tumor",
       "name": "In vivo optical imaging of tumor stromal cells with hypoxia-inducible factor activity",
-      "description": "332-Miyabara-tumor",
+      "description": "Tumors contain various stromal cells, such as immune cells, endothelial cells, and fibroblasts, which contribute to the development of a tumor-specific microenvironment characterized by hypoxia and inflammation, and are associated with malignant progression. The authors investigated the activity of intratumoral hypoxia-inducible factor (HIF), which functions as a master regulator of the cellular response to hypoxia and inflammation. They constructed the HIF activity-monitoring reporter gene hypoxia-response element-Venus-Akaluc (HVA) that expresses the green fluorescent protein Venus and modified firefly luciferase Akaluc in a HIF activity-dependent manner, and created transgenic mice harboring HVA transgene (HVA-Tg). By orthotopic transplantation of E0771, a mouse triple negative breast cancer cell line without a reporter gene, into HVA-Tg, they succeeded in noninvasively monitoring bioluminescence signals from HIF-active stromal cells as early as 8 days after transplantation. The HIF-active stromal cells initially clustered locally and then spread throughout the tumors with growth.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "keywords": [
+        "Tumor hypoxia",
+        "Neoplasms",
+        "Tumor Microenvironment",
+        "Tumor Hypoxia",
+        "Hypoxia-Inducible Factor 1 alpha Subunit"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -86,13 +93,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0070483"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -100,11 +107,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000392"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1351"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1351/render_thumbnail/"
       ],
       "size": [
         {
@@ -128,7 +135,7 @@
       "description": "Organization: Tokyo Institute of Technology; Department: School of Life Science and Technology",
       "affiliation": [
         {
-          "@id": "https://ror.org/0112mx960"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -158,67 +165,72 @@
       "name": "Takahiro Kuchimaru"
     },
     {
-      "@id": "https://ror.org/0112mx960",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Tokyo Institute of Technology"
     },
     {
       "@id": "https://doi.org/10.1111/cas.15907",
       "@type": "ScholarlyArticle",
-      "name": "In vivo optical imaging of tumor stromal cells with hypoxia-inducible factor activity.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "C57BL/6J, B6N-Tyr^{cBrd}/BrdCrCrl ~ E0771",
-      "description": "C57BL/6J, B6N-Tyr^{cBrd}/BrdCrCrl ~ E0771",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ],
-      "hasCellLine": "E0771"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "name": "Miyabara H, Hirano R, Watanabe S, Soriano JCC, Watanabe H, Kuchimaru T, Kitada N, Kadonosono T, Maki SA, Kondoh G, Kizaka-Kondoh S. In vivo optical imaging of tumor stromal cells with hypoxia-inducible factor activity. Cancer Sci. 2023 Oct;114(10):3935-3945.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37482942/"
+      ]
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0070483",
       "@type": "DefinedTerm",
-      "name": "detection of hypoxia"
+      "name": "detection of hypoxia",
+      "identifier": "GO:0070483"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "luminescence detection",
-      "description": "luminescence detection",
-      "measurementTechnique": [
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6J ~ E0771",
+      "description": "C57BL/6J ~ E0771",
+      "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000392"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000392",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
       "@type": "DefinedTerm",
-      "name": "luminescence detection"
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 19958784,
-      "description": "20.0 MB",
+      "value": 32784822,
+      "description": "32.8 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 20,
+      "value": 22,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

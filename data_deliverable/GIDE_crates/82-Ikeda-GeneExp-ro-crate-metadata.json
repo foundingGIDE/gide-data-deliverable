@@ -45,49 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/82-Ikeda-GeneExp/"
+        "@id": "https://ssbd.riken.jp/v1/project/82-Ikeda-GeneExp"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/82-Ikeda-GeneExp/",
+      "@id": "https://ssbd.riken.jp/v1/project/82-Ikeda-GeneExp",
       "@type": "Dataset",
       "identifier": "82-Ikeda-GeneExp",
       "name": "Immunofluorescence images of different type neural progenitor cells (NPCs)",
-      "description": "82-Ikeda-GeneExp",
+      "description": "See details in Ikeda et al. (2018) Nat Commun, 9(1): 605-614.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Actins/genetics",
-        "Actins/metabolism",
-        "Animals",
-        "Cell Differentiation",
-        "Cellular Reprogramming/genetics",
-        "Chromatin/chemistry[major]",
-        "Chromatin/metabolism",
-        "Colitis, Ulcerative/genetics[major]",
-        "Colitis, Ulcerative/metabolism",
-        "Colitis, Ulcerative/pathology",
-        "Disease Models, Animal",
-        "Female",
-        "Gene Expression Regulation",
-        "Induced Pluripotent Stem Cells/cytology",
-        "Induced Pluripotent Stem Cells/metabolism[major]",
-        "Male",
-        "Metaplasia/genetics[major]",
-        "Metaplasia/metabolism",
-        "Metaplasia/pathology",
-        "Mice",
-        "Mice, Transgenic",
-        "Neural Stem Cells/cytology",
-        "Neural Stem Cells/metabolism[major]",
-        "Pancreas/metabolism[major]",
-        "Pancreas/pathology",
-        "Serum Response Factor/genetics[major]",
-        "Serum Response Factor/metabolism",
-        "Signal Transduction",
-        "Trans-Activators/genetics",
-        "Trans-Activators/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -137,13 +105,13 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/s41467-018-03748-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29643333"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90034"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -152,10 +120,27 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-159"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/159/render_thumbnail/"
       ],
       "size": [
         {
@@ -179,7 +164,7 @@
       "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -188,79 +173,179 @@
       "@type": "Person",
       "name": "Keisuke Okita",
       "email": "okita@cira.kyoto-u.ac.jp",
-      "description": "Department: Center for iPS Cell Research and Application (CiRA)"
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application (CiRA); Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Shinji Masui",
-      "email": "smasui@koto.kpu-m.ac.jp"
+      "email": "smasui@koto.kpu-m.ac.jp",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Takafusa Hikichi"
+      "name": "Takafusa Hikichi",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hisashi Miura"
+      "name": "Hisashi Miura",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Hirofumi Shibata"
+      "name": "Hirofumi Shibata",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Kanae Mitsunaga"
+      "name": "Kanae Mitsunaga",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Yosuke Yamada"
+      "name": "Yosuke Yamada",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Knut Woltjen"
+      "name": "Knut Woltjen",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Kei Miyamoto"
+      "name": "Kei Miyamoto",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Ichiro Hiratani"
+      "name": "Ichiro Hiratani",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
-      "name": "Yasuhiro Yamada"
+      "name": "Yasuhiro Yamada",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-013",
       "@type": "Person",
-      "name": "Akitsu Hotta"
+      "name": "Akitsu Hotta",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-014",
       "@type": "Person",
-      "name": "Takuya Yamamoto"
+      "name": "Takuya Yamamoto",
+      "description": "Organization: Kyoto University; Department: Department of Life Science Frontiers; Laboratory: Okita Lab",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
-      "@id": "https://doi.org/10.1038/s41467-018-03748-1",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29643333",
       "@type": "ScholarlyArticle",
-      "name": "Srf destabilizes cellular identity by suppressing cell-type-specific gene expression programs.",
-      "datePublished": "2018"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29643333"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90034",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90034"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
+      "@type": "DefinedTerm",
+      "name": "gene expression",
+      "identifier": "GO:0010467"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -269,40 +354,58 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
-      "@type": "DefinedTerm",
-      "name": "gene expression"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 52850270,
-      "description": "52.9 MB",
+      "value": 73944282,
+      "description": "73.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 10,
+      "value": 20,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

@@ -45,17 +45,20 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/385-Yamakoshi-thiaMichael/"
+        "@id": "https://ssbd.riken.jp/v3/project/385-Yamakoshi-thiaMichael"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/385-Yamakoshi-thiaMichael/",
+      "@id": "https://ssbd.riken.jp/v3/project/385-Yamakoshi-thiaMichael",
       "@type": "Dataset",
       "identifier": "385-Yamakoshi-thiaMichael",
       "name": "Raman images showing thia-Michael reaction in HeLa cells",
-      "description": "385-Yamakoshi-thiaMichael",
+      "description": "Ratiometric Raman analysis of reversible thia-Michael reactions was achieved using alpha-cyanoacrylic acid derivatives. Among alpha-cyanoacrylic acid derivatives, the smallest derivative, ThioRas, and its glutathione adduct were simultaneously detected in various subcellular locations using Raman microscopy.",
       "datePublished": "2025-01-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "HeLa Cells"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -69,15 +72,20 @@
           "@id": "https://doi.org/10.1039/d3cc05015g"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -89,7 +97,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1503"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1503/render_thumbnail/"
       ],
       "size": [
         {
@@ -110,43 +118,38 @@
       "@type": "Person",
       "name": "Hiroyuki Yamakoshi",
       "email": "hiroyuki.yamakoshi.e1@tohoku.ac.jp",
-      "description": "Organization: Tohoku University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Graduate School of Pharmaceutical Sciences",
+      "description": "Organization: Tohoku University; Department: Graduate School of Pharmaceutical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/01dq60k83"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01dq60k83",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Tohoku University"
     },
     {
       "@id": "https://doi.org/10.1039/d3cc05015g",
       "@type": "ScholarlyArticle",
-      "name": "Ratiometric analysis of reversible thia-Michael reactions using nitrile-tagged molecules by Raman microscopy.",
-      "datePublished": "2023"
+      "name": "Yamakoshi H, Shibata D, Bando K, Kajimoto S, Kohyama A, Egoshi S, Dodo K, Iwabuchi Y, Sodeoka M, Fujita K, Nakabayashi T. Ratiometric analysis of reversible thia-Michael reactions using nitrile-tagged molecules by Raman microscopy. Chem Commun (Camb). 2023 Dec 7;59(98):14563-14566.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37986604/"
+      ]
     },
     {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ HeLa cell",
-      "description": "Homo sapiens ~ HeLa cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-      }
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was supported in part by a Grant-in-Aid for Scientific Research (C) (JSPS KAKENHI grant number 22K06495 to H. Y.), Drug Discovery and Life Science Research [Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)] (grant number JP22ama121040j0001 to Y. I.) from AMED, JST- CREST under Grant JPMJCR1925, JST-CREST under Grant JPMJCR2024, the Tokyo Biochemical Research Foundation, Kowa Life Science Foundation, and Photonics Center, Osaka University, Japan."
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
-      "vernacularName": "human"
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
@@ -154,10 +157,30 @@
       "name": "HeLa cell"
     },
     {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa cell",
+      "description": "HeLa cells treated with 600 micromolar alpha-cyanoacrylic acid 1a",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
+      "@type": "DefinedTerm",
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
+    },
+    {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -165,22 +188,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1066894,
-      "description": "1.1 MB",
+      "value": 1847251,
+      "description": "1.8 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 12,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

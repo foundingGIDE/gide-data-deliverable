@@ -45,26 +45,36 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/379-Okubo-bilaminoid/"
+        "@id": "https://ssbd.riken.jp/v3/project/379-Okubo-bilaminoid"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/379-Okubo-bilaminoid/",
+      "@id": "https://ssbd.riken.jp/v3/project/379-Okubo-bilaminoid",
       "@type": "Dataset",
       "identifier": "379-Okubo-bilaminoid",
       "name": "3D images of bilaminar organoid generated from co-culture of human pluripotent stem cells (hPSC) and hPSC-derived hypoblast-like cells",
-      "description": "Recently, several studies using cultures of human embryos together with single-cell RNA-seq analyses have revealed differences between humans and mice, necessitating the study of human embryos. Despite the importance of human embryology, ethical and legal restrictions have limited post-implantation-stage studies. Thus, recent efforts have focused on developing in vitro self-organizing models using human stem cells. In this paper, the authors report genetic and non-genetic approaches to generate authentic hypoblast cells (naive hPSC-derived hypoblast-like cells (nHyCs))-known to give rise to one of the two extraembryonic tissues essential for embryonic development-from naive human pluripotent stem cells (hPSCs). Their nHyCs spontaneously assemble with naive hPSCs to form a three-dimensional bilaminar structure (bilaminoids) with a pro-amniotic-like cavity. In the presence of additional naive hPSC-derived analogues of the second extraembryonic tissue, the trophectoderm, the efficiency of bilaminoid formation increases from 20% to 40%, and the epiblast within the bilaminoids continues to develop in response to trophectoderm-secreted IL-6. Furthermore, they show that bilaminoids robustly recapitulate the patterning of the anterior-posterior axis and the formation of cells reflecting the pregastrula stage, the emergence of which can be shaped by genetically manipulating the DKK1/OTX2 hypoblast-like domain. ",
+      "description": "Recently, several studies using cultures of human embryos together with single-cell RNA-seq analyses have revealed differences between humans and mice, necessitating the study of human embryos. Despite the importance of human embryology, ethical and legal restrictions have limited post-implantation-stage studies. Thus, recent efforts have focused on developing in vitro self-organizing models using human stem cells. In this paper, the authors report genetic and non-genetic approaches to generate authentic hypoblast cells (naive hPSC-derived hypoblast-like cells (nHyCs))-known to give rise to one of the two extraembryonic tissues essential for embryonic development-from naive human pluripotent stem cells (hPSCs). Their nHyCs spontaneously assemble with naive hPSCs to form a three-dimensional bilaminar structure (bilaminoids) with a pro-amniotic-like cavity. In the presence of additional naive hPSC-derived analogues of the second extraembryonic tissue, the trophectoderm, the efficiency of bilaminoid formation increases from 20% to 40%, and the epiblast within the bilaminoids continues to develop in response to trophectoderm-secreted IL-6. Furthermore, they show that bilaminoids robustly recapitulate the patterning of the anterior-posterior axis and the formation of cells reflecting the pregastrula stage, the emergence of which can be shaped by genetically manipulating the DKK1/OTX2 hypoblast-like domain.",
       "datePublished": "2025-04-21",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Pluripotent Stem Cells",
+        "Microscopy, Confocal",
+        "Embryonic Development",
+        "Induced Pluripotent Stem Cells",
+        "Germ Layers"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-0022-3947"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0003-0126-7260"
+        },
+        {
+          "@id": "https://orcid.org/0009-0009-6627-8383"
         }
       ],
       "seeAlso": [
@@ -72,15 +82,17 @@
           "@id": "https://doi.org/10.1038/s41586-023-06871-2"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0009790"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -89,10 +101,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1702"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1702/render_thumbnail/"
       ],
       "size": [
         {
@@ -109,61 +127,84 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-0022-3947",
       "@type": "Person",
       "name": "Takuya Yamamoto",
       "email": "takuya@cira.kyoto-u.ac.jp.",
-      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application; Laboratory: Center for iPS Cell Research and Application",
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application,",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0003-0126-7260",
       "@type": "Person",
       "name": "Yasuhiro Takashima",
       "email": "y.takashima@cira.kyoto-u.ac.jp.",
-      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application; Laboratory: Center for iPS Cell Research and Application",
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application,",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "https://orcid.org/0009-0009-6627-8383",
+      "@type": "Person",
+      "name": "Takumi Okubo",
+      "email": "takumi.okubo@cira.kyoto-u.ac.jp",
+      "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application,",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1038/s41586-023-06871-2",
       "@type": "ScholarlyArticle",
-      "name": "Hypoblast from human pluripotent stem cells regulates epiblast development.",
-      "datePublished": "2023"
+      "name": "Okubo T, Rivron N, Kabata M, Masaki H, Kishimoto K, Semi K, Nakajima-Koyama M, Kunitomi H, Kaswandy B, Sato H, Nakauchi H, Woltjen K, Saitou M, Sasaki E, Yamamoto T, Takashima Y. Hypoblast from human pluripotent stem cells regulates epiblast development. Nature. 2024 Feb;626(7998):357-366.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38052228/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10849967/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by MEXT KAKENHI (grant numbers: JP16H02465, JP15H02360, JP20H05361, JP20H05762, JP21K19189, JP23K18340) and AMED (grant numbers: JP21bm0704035, JP21bm0104001, JP21gm1310011, JP23bm1323001) to Y.T.; MEXT KAKENHI (grant number: JP19H03418) and the JST FOREST Program (grant number: JPMJFR206C), JST CREST (grant number: JPMJCR2023) and AMED (grant numbers: JP17gm1110004, JP19gm1310002, JP19bm0704032, JP21bm0104001, JP21gm1310011) to T.Y.; MEXT KAKENHI (grant numbers: JP15H02360, JP19H05759) to E.S.; AMED (grant number: JP22bm1004002) to H.N.; the Takeda Science Foundation to Y.T.; the Naito Foundation to Y.T.; the Mochida Memorial Foundation for Medical and Pharmaceutical Research to Y.T.; and the Astellas Foundation for Research on Metabolic Disorders to Y.T."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Homo sapiens",
-      "description": "Homo sapiens",
+      "name": "Homo sapiens (NCBI:txid9606) ~ pluripotent stem cell",
+      "description": "Bilaminar embryo-like aggregates (bilaminoids) generated by the mixture of naive hPSCs (human pluripotent stem cells) and nHyCs (naive hPSC-derived hypoblast-like cells).",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "embryo development"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -177,22 +218,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "confocal microscopy"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2014571887,
-      "description": "2.0 GB",
+      "value": 3538816140,
+      "description": "3.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 8,
+      "value": 16,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/225-Seiriki-WholeBrainDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/225-Seiriki-WholeBrainDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/225-Seiriki-WholeBrainDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/225-Seiriki-WholeBrainDev",
       "@type": "Dataset",
       "identifier": "225-Seiriki-WholeBrainDev",
       "name": "Whole-brain imaging of mouse using block-face serial microscopy tomography (FAST).",
-      "description": "225-Seiriki-WholeBrainDev",
+      "description": "See details in Seiriki K, et. al. (2019) Nat Protoc, May;14(5):1509-1529.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Brain/diagnostic imaging[major]",
-        "Brain Chemistry/physiology",
-        "Imaging, Three-Dimensional/methods[major]",
-        "Male",
-        "Mice",
-        "Mice, Inbred C57BL",
-        "Microscopy, Fluorescence/methods[major]",
-        "Molecular Imaging/methods[major]",
-        "Tomography/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -86,13 +74,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007420"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -101,22 +89,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        },
-        {
-          "@id": "#imaging-protocol-3"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-772"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/772/render_thumbnail/"
       ],
       "size": [
         {
@@ -140,32 +116,48 @@
       "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Laboratory of Molecular Neuropharmacology",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Hitoshi Hashimoto",
+      "name": "Hitoshi  Hashimoto",
       "email": "hasimoto@phs.osaka-u.ac.jp",
       "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Laboratory of Molecular Neuropharmacology",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41596-019-0148-4",
       "@type": "ScholarlyArticle",
-      "name": "Whole-brain block-face serial microscopy tomography at subcellular resolution using FAST.",
-      "datePublished": "2019"
+      "name": "Seiriki K, Kasai A, Nakazawa T, Niu M, Naka Y, Tanuma M, Igarashi H, Yamaura K, Hayata-Takano A, Ago Y, Hashimoto H. Whole-brain block-face serial microscopy tomography at subcellular resolution using FAST. Nat Protoc. 2019 May;14(5):1509-1529. doi: 10.1038/s41596-019-0148-4. Epub 2019 Apr 8. PMID: 30962606.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/30962606/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007420",
+      "@type": "DefinedTerm",
+      "name": "brain development",
+      "identifier": "GO:0007420"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -174,20 +166,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007420",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "brain development"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -201,54 +188,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "whole-brain imaging",
-      "description": "whole-brain imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-3",
-      "@type": "LabProtocol",
-      "name": "block-face serial microscopy tomography (FAST)",
-      "description": "block-face serial microscopy tomography (FAST)",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "whole-brain imaging"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "block-face serial microscopy tomography (FAST)"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3486943632788,
-      "description": "3.5 TB",
+      "value": 5442509634489,
+      "description": "5.4 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 37170,
+      "value": 37585,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,38 +45,45 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/171-Ochi-Hes1DynNPCs/"
+        "@id": "https://ssbd.riken.jp/v2/project/171-Ochi-Hes1DynNPCs"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/171-Ochi-Hes1DynNPCs/",
+      "@id": "https://ssbd.riken.jp/v2/project/171-Ochi-Hes1DynNPCs",
       "@type": "Dataset",
       "identifier": "171-Ochi-Hes1DynNPCs",
       "name": "Hes1 expression dynamics in the wild-type, Hes1 type-1 and Hes1 type-2 mutant NPCs of mice.",
-      "description": "171-Ochi-Hes1DynNPCs",
+      "description": "See details in Ochi S, et. al. (2020)  Development, 147(4):dev182204.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Brain/embryology[major]",
+        "Brain",
+        "Brain/embryology",
         "Cell Death",
         "Cell Differentiation",
         "Cell Proliferation",
         "Female",
         "Gene Expression Profiling",
-        "Gene Expression Regulation, Developmental",
+        "Gene Expression Regulation",
+        "Developmental",
         "Homozygote",
-        "Image Processing, Computer-Assisted",
+        "Image Processing",
+        "Computer-Assisted",
         "Introns",
         "Male",
         "Mice",
-        "Models, Theoretical",
+        "Models",
+        "Theoretical",
         "Mutation",
+        "Neural Stem Cells",
         "Neural Stem Cells/cytology",
         "Neurogenesis",
-        "Neurons/physiology[major]",
-        "Oscillometry[major]",
-        "Transcription Factor HES-1/physiology[major]"
+        "Neurons (D009474)",
+        "Neurons/physiology",
+        "Oscillometry",
+        "Transcription Factor HES-1",
+        "Transcription Factor HES-1/physiology"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -93,16 +100,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0010467"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0008494"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0010467"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -114,7 +121,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-660"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/660/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,20 +145,42 @@
       "description": "Organization: Kyoto University; Department: Institute for Frontier Life and Medical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1242/dev.182204",
       "@type": "ScholarlyArticle",
-      "name": "Oscillatory expression of Hes1 regulates cell proliferation and neuronal differentiation in the embryonic brain.",
-      "datePublished": "2020"
+      "name": "Ochi S, Imaizumi Y, Shimojo H, Miyachi H, and Kageyama R (2020) Oscillatory expression of Hes1 regulates cell proliferation and neuronal differentiation in the embryonic brain.  Development, Volume 147, Issue 4, pages dev182204.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32094111"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
+      "@type": "DefinedTerm",
+      "name": "gene expression",
+      "identifier": "GO:0010467"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008494",
+      "@type": "DefinedTerm",
+      "name": "translation activator activity",
+      "identifier": "GO:0008494"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -160,25 +189,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008494",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "translation activator activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0010467",
-      "@type": "DefinedTerm",
-      "name": "gene expression"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -192,22 +211,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 730186420,
-      "description": "730.2 MB",
+      "value": 755607942,
+      "description": "755.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 347,
+      "value": 350,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

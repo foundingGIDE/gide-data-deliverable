@@ -69,6 +69,14 @@
           "@id": "https://doi.org/10.1021/acsnano.3c12161"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
       "size": [
         {
           "@id": "#total-dataset-size"
@@ -107,6 +115,12 @@
       "datePublished": "2024"
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 215859200,
@@ -120,6 +134,17 @@
       "value": 43,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

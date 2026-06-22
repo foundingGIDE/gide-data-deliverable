@@ -82,7 +82,15 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -123,10 +131,16 @@
       "datePublished": "2026"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
       "@type": "Taxon",
       "scientificName": "Drosophila melanogaster",
       "vernacularName": "fly"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -142,6 +156,17 @@
       "value": 478,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

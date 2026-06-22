@@ -45,32 +45,30 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/150-Abe-SomiteDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/150-Abe-SomiteDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/150-Abe-SomiteDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/150-Abe-SomiteDev",
       "@type": "Dataset",
       "identifier": "150-Abe-SomiteDev",
       "name": "Immunostaining or timelapse images of observation of horizontal boundary cells (HBCs) at different somite stage in medaka embryo",
-      "description": "150-Abe-SomiteDev",
+      "description": "See details in Abe K, et. al. (2019) Cell Rep., 27(3):928-939.",
       "datePublished": "2020-12-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Animals, Genetically Modified/metabolism",
+        "Genetically Modified/metabolism",
+        "Body Patterning",
         "Body Patterning/genetics",
         "Cell Differentiation",
-        "Chromosomes, Artificial, Bacterial/genetics",
-        "Fish Proteins/genetics",
-        "Fish Proteins/metabolism[major]",
-        "Gene Expression Regulation, Developmental",
+        "Fish Proteins",
+        "Fish Proteins/metabolism",
+        "Oryzias",
         "Oryzias/metabolism",
+        "Somites",
         "Somites/cytology",
-        "Somites/metabolism[major]",
-        "Transcription Factors/genetics",
-        "Transcription Factors/metabolism[major]",
-        "Zebrafish/metabolism"
+        "Somites/metabolism"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -87,16 +85,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08089"
-        },
-        {
-          "@id": "#biosample-1"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0061053"
@@ -105,7 +100,13 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0019814"
         },
         {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8089"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0043198"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/eng2a_mCherry"
         }
       ],
       "measurementMethod": [
@@ -141,7 +142,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-603"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/603/render_thumbnail/"
       ],
       "size": [
         {
@@ -162,23 +163,57 @@
       "@type": "Person",
       "name": "Hiroyuki Takeda",
       "email": "htakeda@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: Graduate School of Science; Department: Department of Biological Sciences",
+      "description": "Organization: Graduate School of Science, University of Tokyo; Department: Department of Biological Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/04n835f38"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/04n835f38",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Graduate School of Science"
+      "name": "Graduate School of Science, University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1016/j.celrep.2019.03.068",
       "@type": "ScholarlyArticle",
-      "name": "Horizontal Boundary Cells, a Special Group of Somitic Cells, Play Crucial Roles in the Formation of Dorsoventral Compartments in Teleost Somite.",
-      "datePublished": "2019"
+      "name": "Kota Abe, Atsuko Shimada, Sayaka Tayama, Hotaka Nishikawa, Takuya Kaneko, Sachiko Tsuda, Akari Karaiwa, Takaaki Matsui, Tohru Ishitani, Hiroyuki Takeda (2019) Horizontal Boundary Cells, a Special Group of Somitic Cells, Play Crucial Roles in the Formation of Dorsoventral Compartments in Teleost Somite. Cell Reports, Volume 27, Issue Database issue 3, pages 928-939.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30995487"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0061053",
+      "@type": "DefinedTerm",
+      "name": "somite development",
+      "identifier": "GO:0061053"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019814",
+      "@type": "DefinedTerm",
+      "name": "antibody",
+      "identifier": "GO:0019814"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8089",
+      "@type": "Taxon",
+      "scientificName": "Oryzias",
+      "name": "Oryzias",
+      "identifier": "NCBITaxon:8089"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043198",
+      "@type": "DefinedTerm",
+      "name": "dendritic shaft",
+      "identifier": "GO:0043198"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/eng2a_mCherry",
+      "@type": "DefinedTerm",
+      "name": "Medaka: Tg",
+      "identifier": "eng2a:mCherry"
     },
     {
       "@id": "#biosample-1",
@@ -187,7 +222,7 @@
       "description": "Medaka:Tg(Zic1:GFP/Zic4:DsRed)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08089"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8089"
         }
       ]
     },
@@ -198,40 +233,26 @@
       "description": "Medaka: Tg(b-actin:DsRed",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08089"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8089"
         }
       ]
     },
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "Medaka: Tg(eng2a:mCherry)",
-      "description": "Medaka: Tg(eng2a:mCherry)",
+      "name": "Medaka: Tg",
+      "description": "Medaka: Tg",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08089"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8089"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08089",
-      "@type": "Taxon",
-      "scientificName": "oryzias"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0061053",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "somite development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019814",
-      "@type": "DefinedTerm",
-      "name": "antibody"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043198",
-      "@type": "DefinedTerm",
-      "name": "dendritic shaft"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -245,6 +266,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000401",
+      "@type": "DefinedTerm",
+      "name": "antibody",
+      "identifier": "FBbi:00000401"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "antibody",
@@ -254,6 +281,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000401"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -267,6 +300,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
       "@id": "#imaging-protocol-4",
       "@type": "LabProtocol",
       "name": "transmission electron microscopy",
@@ -276,6 +315,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-5",
@@ -289,42 +334,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000401",
-      "@type": "DefinedTerm",
-      "name": "antibody"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
-      "@type": "DefinedTerm",
-      "name": "transmission electron microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 152471450,
-      "description": "152.5 MB",
+      "value": 221397504,
+      "description": "221.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 18,
+      "value": 36,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

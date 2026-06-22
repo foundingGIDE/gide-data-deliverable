@@ -84,7 +84,15 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -125,10 +133,16 @@
       "datePublished": "2022"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239",
       "@type": "Taxon",
       "scientificName": "Caenorhabditis elegans",
       "vernacularName": "nematode"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -144,6 +158,17 @@
       "value": 2678,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

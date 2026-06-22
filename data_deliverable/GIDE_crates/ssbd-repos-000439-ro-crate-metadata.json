@@ -80,6 +80,14 @@
           "@id": "#biosample-1"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
       "size": [
         {
           "@id": "#total-dataset-size"
@@ -132,13 +140,22 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
         }
       ],
-      "hasCellLine": "CHO–K1"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+        "name": "CHO-K1 cell"
+      }
     },
     {
       "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
       "@type": "Taxon",
       "scientificName": "Cricetulus griseus",
       "vernacularName": "chinese hamster"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -154,6 +171,17 @@
       "value": 17,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

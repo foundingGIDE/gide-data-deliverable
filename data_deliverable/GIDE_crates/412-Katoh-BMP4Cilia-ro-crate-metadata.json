@@ -45,46 +45,55 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/412-Katoh-BMP4Cilia/"
+        "@id": "https://ssbd.riken.jp/v3/project/412-Katoh-BMP4Cilia"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/412-Katoh-BMP4Cilia/",
+      "@id": "https://ssbd.riken.jp/v3/project/412-Katoh-BMP4Cilia",
       "@type": "Dataset",
       "identifier": "412-Katoh-BMP4Cilia",
       "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left–right determination",
       "description": "Background: Mouse nodal immotile cilia mechanically sense the bending direction for left–right (L–R) determination and activate the left-side-specific signaling cascade, leading to increased Nodal activity. Asymmetric distribution of Pkd2, a crucial channel for L–R determination, on immotile cilia has been reported recently. However, the causal relationship between the asymmetric Pkd2 distribution and direction-dependent flow sensing is not well understood. Furthermore, the underlying molecular mechanism directing this asymmetric Pkd2 distribution remains unclear.\nResults: The effects of several recombinant proteins and inhibitors on the Pkd2 distribution were analyzed using super-resolution microscopy. Notably, bone morphogenetic protein 4 (BMP4) affected the Pkd2 distribution. Addi- tionally, three-dimensional manipulation of nodal immotile cilia using optical tweezers revealed that excess BMP4 caused defects in the mechanosensing abil- ity of the cilia.\nConclusions: Experimental data together with model calculations suggest that BMP4 regulates the asymmetric distribution of Pkd2 in nodal immotile cilia, thereby affecting the ability of these cilia to sense the bending direction for L– R determination. This study, for the first time, provides insight into the rela- tionship between the asymmetric protein distribution in cilia and their function.",
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Time-Lapse Imaging",
+        "Embryo, Mammalian",
+        "Calcium Signaling"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-9966-6798"
+        }
+      ],
       "seeAlso": [
         {
           "@id": "https://doi.org/10.1002/dvdy.727"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "#biosample-4"
         },
         {
           "@id": "#biosample-3"
         },
         {
-          "@id": "#biosample-4"
+          "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0097730"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0019722"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -108,7 +117,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1758"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1758/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,30 +134,61 @@
       "name": "SSBD:database"
     },
     {
+      "@id": "https://orcid.org/0000-0002-9966-6798",
+      "@type": "Person",
+      "name": "Takanobu A Katoh",
+      "email": "takanobu.a.katoh@gmail.com",
+      "description": "Organization: The University of Tokyo; Department: Department of Cell Biology, Graduate School of Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
       "@id": "https://doi.org/10.1002/dvdy.727",
       "@type": "ScholarlyArticle",
-      "name": "BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left-right determination.",
-      "datePublished": "2024"
+      "name": "Katoh TA, Lange T, Nakajima Y, Yashiro K, Okada Y, Hamada H. BMP4 regulates asymmetric Pkd2 distribution in mouse nodal immotile cilia and ciliary mechanosensing required for left-right determination. Dev Dyn. 2024 Jul 10.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38984461/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This study was supported by the FOREST Program (grant no. JPMJFR224N) of the Japan Science and Technology Agency (JST), Grant-in-Aid (grant no. 21K15096, 24K18107, and 24H01270) from the Japan Society for the Promotion of Science (JSPS), RIKEN Special Postdoctoral Researcher Pro- gram, The University of Tokyo Excellent Young Researcher Program, Ultrastructure Research Fund from The Japanese Society of Microscopy to T.A.K.; by a grant from the Japan Society for the Promotion of Science (no. 17H01435) to H.H.; by JSPS grants 19H05794, 19H05795 and 22H04926; JST grants JPMJMS2025-14, JPMJCR20E2 to Y.O. This work was supported in part by the University of Tokyo Research Internship Program (UTRIP) 2023 to Y.O."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "NCBITaxon:10090",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd",
-      "description": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd",
+      "description": "A cultured mouse embryo from the late bud stage, just before the beginning of node formation, to the 0-2 somite stages,",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd, B6(D2)-Smo<Rgsc2073>)",
-      "description": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd, B6(D2)-Smo<Rgsc2073>)",
+      "name": "B6;B6C3(129)-Tg(NDE-hsp-Pkd2/Venus)1Hmd,\nB6(D2)-Smo<Rgsc2073>)",
+      "description": "A cultured mouse embryo from the late bud stage, just before the beginning of node formation, to the 0-2 somite stages,",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -156,39 +196,29 @@
       "@id": "#biosample-3",
       "@type": "BioSample",
       "name": "FVB-Invs<inv>(CCM)",
-      "description": "FVB-Invs<inv>(CCM)",
+      "description": "A cultured Inversin mutant mouse embryo from the late bud stage, just before the beginning of node formation, to the 0-2 somite stages,",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-4",
       "@type": "BioSample",
-      "name": "Dnah11 tm1Bknr, B6-Tg(Nodal NDE-5HT6/GCaMP6,5HT6/mCherry)35Hmd,  STOCK Tg(Nodal NDE-GCaMP6)29AHmd",
-      "description": "Dnah11 tm1Bknr, B6-Tg(Nodal NDE-5HT6/GCaMP6,5HT6/mCherry)35Hmd,  STOCK Tg(Nodal NDE-GCaMP6)29AHmd",
+      "name": "Dnah11 tm1Bknr,\nB6-Tg(Nodal NDE-5HT6/GCaMP6,5HT6/mCherry)35Hmd,  STOCK Tg(Nodal NDE-GCaMP6)29AHmd ~ crown cell",
+      "description": "iv/iv mouse embryo harboring NDE4–hsp–\n5HT6–GCaMP6–2A–5HT6–mCherry and NDE4–hsp–\nGCaMP6",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0097730",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "non-motile cilium"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
-      "@type": "DefinedTerm",
-      "name": "calcium-mediated signaling"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -202,15 +232,27 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000334",
+      "@type": "DefinedTerm",
+      "name": "stimulated emission depletion (STED)",
+      "identifier": "FBbi:00000334"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
-      "name": "stimulated emission depletion",
-      "description": "stimulated emission depletion",
+      "name": "stimulated emission depletion (STED)",
+      "description": "stimulated emission depletion (STED)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000334"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -224,32 +266,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000334",
-      "@type": "DefinedTerm",
-      "name": "stimulated emission depletion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 52508657939,
-      "description": "52.5 GB",
+      "value": 151087411232,
+      "description": "151.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 24,
+      "value": 77,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

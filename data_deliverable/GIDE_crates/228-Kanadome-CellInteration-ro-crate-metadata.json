@@ -45,28 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/228-Kanadome-CellInteration/"
+        "@id": "https://ssbd.riken.jp/v2/project/228-Kanadome-CellInteration"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/228-Kanadome-CellInteration/",
+      "@id": "https://ssbd.riken.jp/v2/project/228-Kanadome-CellInteration",
       "@type": "Dataset",
       "identifier": "228-Kanadome-CellInteration",
       "name": "Time-lapse images of FRET‐based indicators dynamics in HEK293T cells or K562 cells.",
-      "description": "228-Kanadome-CellInteration",
+      "description": "See details in Kanadome T, et. al. (2021) Sci Rep, 2021 Nov 15;11(1):22237.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Cell Line",
-        "Fluorescence Resonance Energy Transfer/methods[major]",
-        "Humans",
-        "Molecular Imaging/methods[major]",
-        "Protein Binding",
-        "Protein Interaction Domains and Motifs",
-        "Protein Multimerization",
-        "Protein Transport",
-        "Protocadherins/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -85,19 +74,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/GO_0007156"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/CLO_0037271"
         },
         {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007156"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -115,7 +104,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-762"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/762/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,37 +123,59 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Tomoki Matsuda",
+      "name": "Tomoki  Matsuda",
       "email": "tmatsuda@sanken.osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Department of Biomolecular Science and Engineering; Laboratory: Laboratories for Integrated Biology",
+      "description": "Organization: Osaka University; Department: Department of Biomolecular Science and Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Takeshi Yagi",
+      "name": "Takeshi  Yagi",
       "email": "yagi@fbs.osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratories for Integrated Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-021-01481-2",
       "@type": "ScholarlyArticle",
-      "name": "Development of FRET-based indicators for visualizing homophilic trans interaction of a clustered protocadherin.",
-      "datePublished": "2021"
+      "name": "Kanadome T, Hoshino N, Nagai T, Matsuda T, Yagi T. Development of FRET-based indicators for visualizing homophilic trans interaction of a clustered protocadherin. Sci Rep. 2021 Nov 15;11(1):22237. doi: 10.1038/s41598-021-01481-2. PMID: 34782670; PMCID: PMC8593154.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34782670/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007156",
+      "@type": "DefinedTerm",
+      "name": "homophilic cell adhesion via plasma membrane adhesion molecules",
+      "identifier": "GO:0007156"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0037271",
+      "@type": "DefinedTerm",
+      "name": "HEK293T",
+      "identifier": "CLO:0037271"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -173,7 +184,7 @@
       "description": "Homo sapiens ~ HEK293T",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -187,26 +198,19 @@
       "description": "Homo sapiens ~ K562 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
-      "hasCellLine": "K562 cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007060",
+        "name": "K562 cl.6 cell"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0037271",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HEK293T"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007156",
-      "@type": "DefinedTerm",
-      "name": "homophilic cell adhesion via plasma membrane adhesion molecules"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -220,6 +224,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "FRET",
@@ -231,27 +241,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "FRET"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1227424767,
-      "description": "1.2 GB",
+      "value": 1798243121,
+      "description": "1.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 166,
+      "value": 174,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

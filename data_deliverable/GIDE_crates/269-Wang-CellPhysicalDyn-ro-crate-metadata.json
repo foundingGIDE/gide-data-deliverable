@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/269-Wang-CellPhysicalDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/269-Wang-CellPhysicalDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/269-Wang-CellPhysicalDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/269-Wang-CellPhysicalDyn",
       "@type": "Dataset",
       "identifier": "269-Wang-CellPhysicalDyn",
       "name": "HS-SICM images or time-lapse images of the cell surface of the cells of the indicated genotype and normal crypt cells.",
-      "description": "269-Wang-CellPhysicalDyn",
+      "description": "See details in Wang D, et. al. (2022) Biomaterials, Jan;280:121256.",
       "datePublished": "2023-07-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Intestinal Neoplasms/pathology[major]",
-        "Intestines/pathology",
-        "Ions",
-        "Mice",
-        "Microscopy/methods[major]",
-        "Mutation/genetics"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,19 +71,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0009986"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -100,17 +91,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1052"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1052/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,20 +119,43 @@
       "description": "Organization: Kanazawa University; Department: Cancer Research Institute; Laboratory: WPI Nano-Life Science Institute",
       "affiliation": [
         {
-          "@id": "https://ror.org/02hwp6a56"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02hwp6a56",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kanazawa University"
     },
     {
       "@id": "https://doi.org/10.1016/j.biomaterials.2021.121256",
       "@type": "ScholarlyArticle",
-      "name": "Nano-scale physical properties characteristic to metastatic intestinal cancer cells identified by high-speed scanning ion conductance microscope.",
-      "datePublished": "2022"
+      "name": "Wang D, Sun L, Okuda S, Yamamoto D, Nakayama M, Oshima H, Saito H, Kouyama Y, Mimori K, Ando T, Watanabe S, Oshima M. Nano-scale physical properties characteristic to metastatic intestinal cancer cells identified by high-speed scanning ion conductance microscope. Biomaterials. 2022 Jan;280:121256.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34794825/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009986",
+      "@type": "DefinedTerm",
+      "name": "cell surface",
+      "identifier": "GO:0009986"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -156,7 +164,7 @@
       "description": "C57BL/6",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -167,40 +175,18 @@
       "description": "C57BL/6",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009986",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "cell surface"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "high-speed (HS)-scanning ion conductance microscopy",
-      "description": "high-speed (HS)-scanning ion conductance microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
       "description": "time lapse microscopy",
@@ -211,27 +197,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "high-speed (HS)-scanning ion conductance microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 238108058,
-      "description": "238.1 MB",
+      "value": 274331974,
+      "description": "274.3 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 490,
+      "value": 523,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

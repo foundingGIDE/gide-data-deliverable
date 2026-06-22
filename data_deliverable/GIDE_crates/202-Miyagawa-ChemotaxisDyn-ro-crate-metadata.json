@@ -45,36 +45,45 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/202-Miyagawa-ChemotaxisDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/202-Miyagawa-ChemotaxisDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/202-Miyagawa-ChemotaxisDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/202-Miyagawa-ChemotaxisDyn",
       "@type": "Dataset",
       "identifier": "202-Miyagawa-ChemotaxisDyn",
       "name": "Time-lapse images of chemotaxis trajectories of gip1Δ cells harbouring vecotr, Gip1(wild-type), Gip1(D208A), or Gip1(ΔC-tail)",
-      "description": "202-Miyagawa-ChemotaxisDyn",
+      "description": "See details in Miyagawa T, et. al. (2018)  Nat Commun., 9(1):4635.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
+        "Chemotactic Factors",
         "Chemotactic Factors/chemistry",
-        "Chemotaxis/physiology[major]",
-        "Crystallography, X-Ray",
-        "Cytosol/metabolism[major]",
+        "Chemotaxis",
+        "Chemotaxis/physiology",
+        "Crystallography",
+        "X-Ray",
+        "Cytosol",
+        "Cytosol/metabolism",
         "Dictyostelium",
         "Eukaryota",
-        "GTP-Binding Proteins/chemistry[major]",
+        "GTP-Binding Proteins",
+        "GTP-Binding Proteins/chemistry",
         "GTP-Binding Proteins/genetics",
-        "Heterotrimeric GTP-Binding Proteins/chemistry[major]",
+        "Heterotrimeric GTP-Binding Proteins",
+        "Heterotrimeric GTP-Binding Proteins/chemistry",
         "Hydrogen Bonding",
-        "Models, Molecular",
+        "Models",
+        "Molecular",
         "Mutagenesis",
         "Mutation",
         "Protein Binding",
         "Protein Conformation",
         "Protein Interaction Domains and Motifs",
         "Protein Phosphatase 1",
-        "Receptors, G-Protein-Coupled/chemistry[major]",
+        "Receptors",
+        "G-Protein-Coupled",
+        "G-Protein-Coupled/chemistry",
         "Saccharomyces cerevisiae Proteins",
         "Signal Transduction"
       ],
@@ -93,13 +102,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0006935"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ],
       "measurementMethod": [
@@ -111,7 +120,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-711"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/711/render_thumbnail/"
       ],
       "size": [
         {
@@ -135,20 +144,36 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory for Cell Signaling Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-018-07035-x",
       "@type": "ScholarlyArticle",
-      "name": "Structural basis of Gip1 for cytosolic sequestration of G protein in wide-range chemotaxis.",
-      "datePublished": "2018"
+      "name": "Miyagawa T, Koteishi H, Kamimura Y, Miyanaga Y, Takeshita K, Nakagawa A, and Ueda M (2018) Structural basis of Gip1 for cytosolic sequestration of G protein in wide-range chemotaxis. Nature communications, Volume 9, Issue 1, pages 4635.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30401901"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006935",
+      "@type": "DefinedTerm",
+      "name": "chemotaxis",
+      "identifier": "GO:0006935"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "name": "Dictyostelium discoideum",
+      "identifier": "NCBITaxon:44689"
     },
     {
       "@id": "#biosample-1",
@@ -157,19 +182,15 @@
       "description": "gip1Δ cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006935",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "chemotaxis"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -183,22 +204,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 4211720546,
-      "description": "4.2 GB",
+      "value": 6559029210,
+      "description": "6.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 8,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

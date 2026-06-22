@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/129-Komatsu-ERKBiosensorActivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/129-Komatsu-ERKBiosensorActivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/129-Komatsu-ERKBiosensorActivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/129-Komatsu-ERKBiosensorActivity",
       "@type": "Dataset",
       "identifier": "129-Komatsu-ERKBiosensorActivity",
-      "name": "Timelapse images and BDML file for quantitative information about the extracellular signal-regulated kinase (ERK) biosensor activity in HeLa cells, or 4T1 cancer cells or the transgenic mice ",
-      "description": "129-Komatsu-ERKBiosensorActivity",
+      "name": "Timelapse images and BDML file for quantitative information about the extracellular signal-regulated kinase (ERK) biosensor activity in HeLa cells, or 4T1 cancer cells or the transgenic mice",
+      "description": "See details in Komatsu N, et. al. (2018) Scientific Reports, 8(1): 8984.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
@@ -70,8 +70,7 @@
         "Gene Expression Profiling",
         "Intestines",
         "Intestines/cytology",
-        "Kinetics",
-        "MAP Kinase Signaling System",
+        "Kinetics (MeSH Unique ID:D007700),MAP Kinase Signaling System",
         "MAP Kinase Signaling System/genetics",
         "Mice",
         "Inbred C57BL (MeSH UniqMeSH Unique ID:ue ID:D008810)",
@@ -100,28 +99,28 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0001401"
-        },
-        {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0000186"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001401"
         }
       ],
       "measurementMethod": [
@@ -130,10 +129,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-655"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/655/render_thumbnail/"
       ],
       "size": [
         {
@@ -157,29 +162,63 @@
       "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-018-27174-x",
       "@type": "ScholarlyArticle",
-      "name": "A platform of BRET-FRET hybrid biosensors for optogenetics, chemical screening, and in vivo imaging.",
-      "datePublished": "2018"
+      "name": "Komatsu N, Terai K, Imanishi A, Kamioka Y, Sumiyama K, Jin T, Okada Y, Nagai T, and Matsuda M (2018) A platform of BRET-FRET hybrid biosensors for optogenetics, chemical screening, and in vivo imaging. scientific reports, Volume 8, Issue 1, pages 8984.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/29895862"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000186",
+      "@type": "DefinedTerm",
+      "name": "activation of MAPERK kinase",
+      "identifier": "GO:0000186"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus muculus",
+      "name": "Mus muculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001401",
+      "@type": "DefinedTerm",
+      "name": "4T1 cell",
+      "identifier": "CLO:0001401"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Mus musculus ~ HeLa cell",
-      "description": "Mus musculus ~ HeLa cell",
+      "name": "Mus muculus ~ HeLa cell",
+      "description": "Mus muculus ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "hasCellLine": {
@@ -189,11 +228,11 @@
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Mus musculus ~ 4T1 cell",
-      "description": "Mus musculus ~ 4T1 cell",
+      "name": "Mus muculus ~ 4T1 cell",
+      "description": "Mus muculus ~ 4T1 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "hasCellLine": {
@@ -203,39 +242,19 @@
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "Mus musculus",
-      "description": "Mus musculus",
+      "name": "Mus muculus",
+      "description": "Mus muculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0001401",
-      "@type": "DefinedTerm",
-      "name": "4T1 cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000186",
-      "@type": "DefinedTerm",
-      "name": "activation of MAPERK kinase"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -249,24 +268,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 6918044530,
-      "description": "6.9 GB",
+      "value": 12628946844,
+      "description": "12.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6556,
+      "value": 6569,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
     }
   ]
 }

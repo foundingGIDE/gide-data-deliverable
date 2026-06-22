@@ -108,7 +108,7 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
@@ -152,7 +152,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "size": [
@@ -217,7 +217,7 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
       ]
     },
@@ -228,7 +228,7 @@
       "vernacularName": "mouse"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
@@ -289,22 +289,6 @@
       "name": "synapse"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Fluorescence Microscopy",
-      "description": "Fluorescence Microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "Fluorescence Microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 6970064896,
@@ -318,6 +302,23 @@
       "value": 151,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

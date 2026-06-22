@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
           "@id": "#biosample-1"
@@ -82,7 +82,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
         }
       ],
       "size": [
@@ -129,32 +129,19 @@
       "description": "Cell line sample",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         }
       ],
-      "hasCellLine": "Madin-Darby canine kidney cells"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+        "name": "MDCK cell"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615",
       "@type": "Taxon",
       "scientificName": "Canis lupus familiaris",
       "vernacularName": "dog"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Widefield fluorescence microscope",
-      "description": "Widefield fluorescence microscope",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000288"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000288",
-      "@type": "DefinedTerm",
-      "name": "Widefield fluorescence microscope"
     },
     {
       "@id": "#total-dataset-size",
@@ -170,6 +157,23 @@
       "value": 5544,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00100013",
+      "@type": "DefinedTerm",
+      "name": "wide-field fluorescence microscopy",
+      "identifier": "FBbi:00100013"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "wide-field fluorescence microscopy",
+      "description": "wide-field fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
+        }
+      ]
     }
   ]
 }

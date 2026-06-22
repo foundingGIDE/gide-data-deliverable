@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/316-Ando-CellCycle/"
+        "@id": "https://ssbd.riken.jp/v2/project/316-Ando-CellCycle"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/316-Ando-CellCycle/",
+      "@id": "https://ssbd.riken.jp/v2/project/316-Ando-CellCycle",
       "@type": "Dataset",
       "identifier": "316-Ando-CellCycle",
       "name": "Sharp visualization of cell-cycle progression using Fucci(SA)5 and Fucci(CA)5 fluorescent proteins",
-      "description": "316-Ando-CellCycle",
+      "description": "In the present study, we developed practically useful GFP and RFP named h2-3 and AzaleaB5, respectively, from corals, and substituted this GFP/RFP pair for the mVenus/mCherry pair in both Fucci(SA)2 and Fucci(CA)2 probes. The resultant probes: Fucci(SA)5 and Fucci(CA)5, respectively, could monitor cell-cycle progression in HeLa cells.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -74,16 +74,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-2"
+          "@id": "http://purl.obolibrary.org/obo/GO_0044770"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0044770"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -101,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1257"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1257/render_thumbnail/"
       ],
       "size": [
         {
@@ -120,37 +120,53 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Asako Sakaue-Sawano",
+      "name": "Asako  Sakaue-Sawano",
       "email": "asako.sakaue-sawano@riken.jp",
       "description": "Organization: RIKEN; Department: Center for Brain Science; Laboratory: Laboratory for Cell Function Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Atsushi Miyawaki",
+      "name": "Atsushi  Miyawaki",
       "email": "atsushi.miyawaki@riken.jp",
       "description": "Organization: RIKEN; Department: Center for Brain Science; Laboratory: Laboratory for Cell Function Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1247/csf.23028",
       "@type": "ScholarlyArticle",
-      "name": "Two coral fluorescent proteins of distinct colors for sharp visualization of cell-cycle progression.",
-      "datePublished": "2023"
+      "name": "Ando R, Sakaue-Sawano A, Shoda K, and Miyawaki A. Two coral fluorescent proteins of distinct colors for sharp visualization of cell-cycle progression. Cell Struct Funct. 2023 Jul 29;48(2):135-144.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37394513/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0044770",
+      "@type": "DefinedTerm",
+      "name": "cell cycle phase transition",
+      "identifier": "GO:0044770"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -159,10 +175,13 @@
       "description": "Homo sapiens ~ HeLa/Fucci(SA)5 (clone #16) (RCB 4917)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
-      "hasCellLine": "HeLa/Fucci(SA)5 (clone #16) (RCB 4917)"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+        "name": "HeLa cell"
+      }
     },
     {
       "@id": "#biosample-2",
@@ -171,21 +190,19 @@
       "description": "Homo sapiens ~ HeLa/Fucci(CA)5 (clone #16) (RCB 4919)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
-      "hasCellLine": "HeLa/Fucci(CA)5 (clone #16) (RCB 4919)"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+        "name": "HeLa cell"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0044770",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "cell cycle phase transition"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -199,6 +216,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -210,27 +233,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 530436232,
-      "description": "530.4 MB",
+      "value": 891208057,
+      "description": "891.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 8,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

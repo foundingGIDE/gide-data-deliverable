@@ -1,0 +1,189 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000488/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000488/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000488",
+      "name": "Fluorescence images of myocytes in rat hearts cryo-fixed at different contractile state",
+      "description": "The dataset provides fluorescence images of myocytes in subepicardial myocardium of Langendorff-perfused rat hearts, which were rapidly-frozen (RF) during different contractile state including systole, diastole, and ventricular fibrillation (VF). The RF hearts were subsequently fixed with acetone and paraformaldehyde (PFA) by freeze-substitution procedure, then α-actinin in myocytes of them was immuno-stained with fluorescence labels. As control, hearts rapidly-frozen under mechanical relaxation induced by 2,3-butanedione monoxime (BDM), hearts fixed with PFA solely, hearts rapidly-frozen after PFA-fixation were also prepared.",
+      "datePublished": "2026-02-28",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41598-026-41756-0"
+        },
+        {
+          "@id": "https://doi.org/10.1101/2025.11.15.688585"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Kentaro Mochizuki",
+      "email": "k-mochi@koto.kpu-m.ac.jp",
+      "description": "Organization: Kyoto Prefectural University of Medicine; Department: Department of Pathology and Cell Regulation",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/028vxwa22"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hideo Tanaka",
+      "description": "Department: Graduate School of Medical Science"
+    },
+    {
+      "@id": "https://ror.org/028vxwa22",
+      "@type": "Organization",
+      "name": "Kyoto Prefectural University of Medicine"
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Core Research for Evolutionary Science and Technology (CREST) fund from the Japan Science and Technology Agency (JST): JPMJCR1925, Grant-in-Aid for Early-Career Scientists from the Japan Society for the Promotion of Science: 22K18174"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-026-41756-0",
+      "@type": "ScholarlyArticle",
+      "name": "Phase-targeting rapid cryofixation of the beating heart and histological analysis unveil contractile state-dependent sarcomere dynamics.",
+      "datePublished": "2026"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.11.15.688585",
+      "@type": "ScholarlyArticle",
+      "name": "Phase-targeting rapid cryofixation of the beating heart and histological analysis unveil contractile state-dependent sarcomere dynamics",
+      "datePublished": "2025"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "vernacularName": "rat"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 292569088,
+      "description": "292.6 MB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 38,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    }
+  ]
+}

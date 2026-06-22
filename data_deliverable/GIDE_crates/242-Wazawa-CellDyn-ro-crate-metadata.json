@@ -45,22 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/242-Wazawa-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/242-Wazawa-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/242-Wazawa-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/242-Wazawa-CellDyn",
       "@type": "Dataset",
       "identifier": "242-Wazawa-CellDyn",
       "name": "Time-lapse super resolution imaging of Kohinoor2.0 or Kohinoor in live cells.",
-      "description": "242-Wazawa-CellDyn",
+      "description": "See details in Wazawa T, et. al. (2021) Microscopy (Oxf), Aug 9;70(4):340-352.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Luminescent Proteins/chemistry[major]",
-        "Microscopy",
-        "Time-Lapse Imaging/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -76,25 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09527"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_1903144"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005884"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9527"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0008053"
@@ -106,10 +92,13 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0005759"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_1904446"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0045098"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -118,16 +107,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-764"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/764/render_thumbnail/"
       ],
       "size": [
         {
@@ -148,23 +131,77 @@
       "@type": "Person",
       "name": "Takeharu Nagai",
       "email": "ng1@sanken.osaka-u.ac.jp",
+      "url": "https://www.sanken.osaka-u.ac.jp/labs/bse/",
       "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Nagai Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1093/jmicro/dfab001",
       "@type": "ScholarlyArticle",
-      "name": "A photoswitchable fluorescent protein for hours-time-lapse and sub-second-resolved super-resolution imaging.",
-      "datePublished": "2021"
+      "name": "Wazawa T, Noma R, Uto S, Sugiura K, Washio T, Nagai T. A photoswitchable fluorescent protein for hours-time-lapse and sub-second-resolved super-resolution imaging. Microscopy (Oxf). 2021 Aug 9;70(4):340-352.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/33481018/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005884",
+      "@type": "DefinedTerm",
+      "name": "actin filament",
+      "identifier": "GO:0005884"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9527",
+      "@type": "Taxon",
+      "scientificName": "Cercopithecidae",
+      "name": "Cercopithecidae",
+      "identifier": "NCBITaxon:9527"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008053",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial fusion",
+      "identifier": "GO:0008053"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000266",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial fission",
+      "identifier": "GO:0000266"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005759",
+      "@type": "DefinedTerm",
+      "name": "mitochondrial matrix",
+      "identifier": "GO:0005759"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0045098",
+      "@type": "DefinedTerm",
+      "name": "Vimentin intermediate filament",
+      "identifier": "GO:0045098"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -173,10 +210,13 @@
       "description": "Cercopithecidae ~ COS7 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09527"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9527"
         }
       ],
-      "hasCellLine": "COS7 cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002597",
+        "name": "COS-7 cell"
+      }
     },
     {
       "@id": "#biosample-2",
@@ -185,7 +225,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -193,55 +233,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09527",
-      "@type": "Taxon",
-      "scientificName": "cercopithecidae"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1903144",
-      "@type": "DefinedTerm",
-      "name": "Actin filament dynamics"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005884",
-      "@type": "DefinedTerm",
-      "name": "actin filament"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008053",
-      "@type": "DefinedTerm",
-      "name": "mitochondrial fusion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000266",
-      "@type": "DefinedTerm",
-      "name": "mitochondrial fission"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005759",
-      "@type": "DefinedTerm",
-      "name": "mitochondrial matrix"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904446",
-      "@type": "DefinedTerm",
-      "name": "Photoswitching of Kohinoor 2.0"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0045098",
-      "@type": "DefinedTerm",
-      "name": "Vimentin intermediate filament"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -255,38 +250,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "time lapse super-resolution microscopy",
-      "description": "time lapse super-resolution microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "time lapse super-resolution microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2991581261,
-      "description": "3.0 GB",
+      "value": 4613202364,
+      "description": "4.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 16,
+      "value": 32,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

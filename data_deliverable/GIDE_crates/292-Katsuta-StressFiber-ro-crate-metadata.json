@@ -45,17 +45,21 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/292-Katsuta-StressFiber/"
+        "@id": "https://ssbd.riken.jp/v3/project/292-Katsuta-StressFiber"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/292-Katsuta-StressFiber/",
+      "@id": "https://ssbd.riken.jp/v3/project/292-Katsuta-StressFiber",
       "@type": "Dataset",
       "identifier": "292-Katsuta-StressFiber",
-      "name": "Time-lapse images showing the pivotal role of alpha-actinin which generates mechanical force in stress fibers",
-      "description": "292-Katsuta-StressFiber",
+      "name": "292-Katsuta-StressFiber",
+      "description": "Contractile force generated in actomyosin stress fibers (SFs) is transmitted along SFs to the extracellular matrix (ECM), which contributes to cell migration and sensing of ECM rigidity. In this study, the authors show that efficient force transmission along SFs relies on actin crosslinking by alpha-actinin. Upon reduction of alpha-actinin-mediated crosslinks, the myosin II activity induced flows of actin filaments and myosin II along SFs, leading to a decrease in traction force exertion to ECM. The fluidized SFs maintained their cable integrity probably through enhanced actin polymerization throughout SFs. A computational modeling analysis suggested that lowering the density of actin crosslinks caused viscous slippage of actin filaments in SFs and, thereby, dissipated myosin-generated force transmitting along SFs. As a cellular scale outcome, alpha-actinin depletion attenuated the ECM-rigidity-dependent difference in cell migration speed, which suggested that alpha-actinin-modulated SF mechanics is involved in the cellular response to ECM rigidity.",
       "datePublished": "2025-04-10",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Microscopy, Confocal, Time-Lapse Imaging",
+        "Stress Fibers"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -74,6 +78,12 @@
         },
         {
           "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
         }
       ],
       "seeAlso": [
@@ -81,33 +91,20 @@
           "@id": "https://doi.org/10.1016/j.isci.2023.106090"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0051015"
+          "@id": "http://purl.obolibrary.org/obo/BTO_0000165"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0051492"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005856"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0001725"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0009986"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0045010"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -127,17 +124,17 @@
           "@id": "#imaging-protocol-3"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
         },
         {
           "@id": "#imaging-protocol-4"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1652"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1652/render_thumbnail/"
       ],
       "size": [
         {
@@ -161,93 +158,150 @@
       "description": "Organization: Kanazawwa Institute of Technology",
       "affiliation": [
         {
-          "@id": "https://ror.org/02ws33e43"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Hiroki Katsuta"
+      "name": "Hiroki Katsuta",
+      "email": "katsuta@s.okayama-u.ac.jp",
+      "description": "Organization: Okayama University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Satoru Okuda"
+      "name": "Satoru Okuda",
+      "email": "satokuda@staff.kanazawa-u.ac.jp",
+      "description": "Organization: Kanazawa University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Kazuaki Nagayama"
+      "name": "Kazuaki Nagayama",
+      "email": "kazuaki.nagayama.bio@vc.ibaraki.ac.jp",
+      "description": "Organization: Ibaraki University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-004"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hiroaki Machiyama"
+      "name": "Hiroaki Machiyama",
+      "email": "machi18@tokyo-med.ac.jp",
+      "description": "Organization: Tokyo Medical University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-005"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02ws33e43",
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Hiroaki Hirata",
+      "email": "hirata@neptune.kanazawa-it.ac.jp",
+      "description": "Organization: Kanazawwa Institute of Technology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Hiroki Katsuta",
+      "email": "katsuta@s.okayama-u.ac.jp",
+      "description": "Organization: Okayama University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kanazawwa Institute of Technology"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Okayama University"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "Kanazawa University"
+    },
+    {
+      "@id": "#affiliation-004",
+      "@type": "Organization",
+      "name": "Ibaraki University"
+    },
+    {
+      "@id": "#affiliation-005",
+      "@type": "Organization",
+      "name": "Tokyo Medical University"
+    },
+    {
       "@id": "https://doi.org/10.1016/j.isci.2023.106090",
       "@type": "ScholarlyArticle",
-      "name": "Actin crosslinking by alpha-actinin averts viscous dissipation of myosin force transmission in stress fibers.",
-      "datePublished": "2023"
+      "name": "Katsuta H, Okuda S, Nagayama K, Machiyama H, Kidoaki S, Kato M, Sokabe M, Miyata T, Hirata H. Actin crosslinking by alpha-actinin averts viscous dissipation of myosin force transmission in stress fibers. iScience. 2023 Feb1;26(3):106090.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36852278/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9958379/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This study was supported by the grant for collaborative research between Nagoya University and R-Pharm (2614Dj-02b to M.S.), JSPS KAKENHI (20K12596 to H.H., 21H05127 to H.H., 22H05170 to S.O., 21H03804 to K.N., 22K19890 to K.N., 19H01147 to M.K., 22KK0145 to M.K., and 21K18326 to S.K.), JST CREST (JPMJCR1921 to S.O.), AMED (21bm0704065h0002 to S.O.), and Nagoya University Kyosaidan."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/BTO_0000165",
+      "@type": "DefinedTerm",
+      "name": "C2C12 cell"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Mus musculus ~ C2C12 cell",
-      "description": "Mus musculus ~ C2C12 cell",
+      "name": "Mus musculus (NCBI:txid10090) ~ C2C12 cell",
+      "description": "C2C12 cells expressing myosin IIA-GFP and LifeAct-mCherry with non-target shRNA",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "C2C12 cell"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051015",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "actin filament binding"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051492",
-      "@type": "DefinedTerm",
-      "name": "regulation of stress fiber assembly"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001725",
-      "@type": "DefinedTerm",
-      "name": "stress fiber"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009986",
-      "@type": "DefinedTerm",
-      "name": "cell surface"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0045010",
-      "@type": "DefinedTerm",
-      "name": "actin nucleation"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
-      "@type": "DefinedTerm",
-      "name": "cell migration"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -261,6 +315,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -272,18 +332,13 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-3",
-      "@type": "LabProtocol",
-      "name": "atomic force microscopy",
-      "description": "atomic force microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
-        }
-      ]
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
+      "@type": "DefinedTerm",
+      "name": "FRAP",
+      "identifier": "FBbi:00000366"
     },
     {
-      "@id": "#imaging-protocol-4",
+      "@id": "#imaging-protocol-3",
       "@type": "LabProtocol",
       "name": "FRAP",
       "description": "FRAP",
@@ -294,37 +349,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000259",
       "@type": "DefinedTerm",
-      "name": "atomic force microscopy"
+      "name": "atomic force microscopy",
+      "identifier": "FBbi:00000259"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
-      "@type": "DefinedTerm",
-      "name": "FRAP"
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "atomic force microscopy",
+      "description": "atomic force microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000259"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 22472524357,
-      "description": "22.5 GB",
+      "value": 37067413686,
+      "description": "37.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2231,
+      "value": 2356,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/334-Hashimoto-SARSorganoid/"
+        "@id": "https://ssbd.riken.jp/v2/project/334-Hashimoto-SARSorganoid"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/334-Hashimoto-SARSorganoid/",
+      "@id": "https://ssbd.riken.jp/v2/project/334-Hashimoto-SARSorganoid",
       "@type": "Dataset",
       "identifier": "334-Hashimoto-SARSorganoid",
       "name": "Inhibition of SARS-CoV-2 virus infection to human airway organoids by autophagy-related compounds.",
-      "description": "334-Hashimoto-SARSorganoid",
+      "description": "To deal with the broad spectrum of coronaviruses, including severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), that threaten human health, it is essential to not only drugs develop that target viral proteins but also consider drugs that target host proteins/cellular processes to protect them from being hijacked for viral infection and replication. To this end, it has been reported that autophagy is deeply involved in coronavirus infection. In this study, they used airway organoids to screen a chemical library of autophagic modulators to identify compounds that could potentially be used to fight against infections by a broad range of coronaviruses. Among the 80 autophagy-related compounds tested, cycloheximide and thapsigargin reduced SARS-CoV-2 infection efficiency in a dose-dependent manner.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -74,16 +74,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0016032"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005737"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016032"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0010506"
@@ -98,7 +98,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1253"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1253/render_thumbnail/"
       ],
       "size": [
         {
@@ -117,42 +117,70 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Takasuke Fukuhara",
+      "name": "Takasuke  Fukuhara",
       "email": "fukut@pop.med.hokudai.ac.jp",
       "description": "Organization: Hokkaido University; Department: Department of Microbiology and Immunology",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e16g702"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Kazuo Takayama",
+      "name": "Kazuo  Takayama",
       "email": "kazuo.takayama@cira.kyoto-u.ac.jp",
       "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application (CiRA)",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02e16g702",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Hokkaido University"
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1021/acs.molpharmaceut.3c00114",
       "@type": "ScholarlyArticle",
-      "name": "Evaluation of Broad Anti-Coronavirus Activity of Autophagy-Related Compounds Using Human Airway Organoids.",
-      "datePublished": "2023"
+      "name": "Hashimoto R, Tamura T, Watanabe Y, Sakamoto A, Yasuhara N, Ito H, Nakano M, Fuse H, Ohta A, Noda T, Matsumura Y, Nagao M, Yamamoto T, Fukuhara T, Takayama K. Evaluation of Broad Anti-Coronavirus Activity of Autophagy-Related Compounds Using Human Airway Organoids. Mol Pharm. 2023 Apr 3;20(4):2276-2287.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36946991/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
+      "@type": "DefinedTerm",
+      "name": "viral process",
+      "identifier": "GO:0016032"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm",
+      "identifier": "GO:0005737"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0010506",
+      "@type": "DefinedTerm",
+      "name": "regulation of autophagy",
+      "identifier": "GO:0010506"
     },
     {
       "@id": "#biosample-1",
@@ -161,30 +189,15 @@
       "description": "Homo sapiens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "cytoplasm"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
-      "@type": "DefinedTerm",
-      "name": "viral process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0010506",
-      "@type": "DefinedTerm",
-      "name": "regulation of autophagy"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -198,22 +211,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 38765273,
-      "description": "38.8 MB",
+      "value": 73157983,
+      "description": "73.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 24,
+      "value": 32,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

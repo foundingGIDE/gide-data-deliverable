@@ -45,23 +45,36 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/371-Liao-RamanSpectra/"
+        "@id": "https://ssbd.riken.jp/v3/project/371-Liao-RamanSpectra"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/371-Liao-RamanSpectra/",
+      "@id": "https://ssbd.riken.jp/v3/project/371-Liao-RamanSpectra",
       "@type": "Dataset",
       "identifier": "371-Liao-RamanSpectra",
       "name": "Raman spectra data of cell spheroids on a multi-well plate treated with various concentrations of reagents",
-      "description": "371-Liao-RamanSpectra",
+      "description": "Cell spheroids offer alternative in vitro cell models to\nmonolayer cultured cells because they express complexities similar to thoseof in vivo tissues, such as cellular responses to drugs and chemicals. Raman spectroscopy emerged as a powerful analytical tool for detecting chemical changes in living cells because it nondestructively provides vibrational information regarding a target. Although multiple iterations are required in drug screening to determine drugs to treat cell spheroids and assess the interspheroid heterogeneity, current Raman applications used in spheroidsanalysis allow the observation of only a few spheroids owing to the lowthroughput of Raman spectroscopy. In this study, the authors developed a multifocal Raman spectrophotometer that enables simultaneous analysis of multiple spheroids in separate wells of a regular 96-well plate. By utilizing 96 focal spots excitation and parallel signal collection, their system can improve the throughput by approximately 2 orders of magnitude compared to a conventional single-focus Raman microscope. The Raman spectra of HeLa cell spheroids treated with anticancer drugs and HepG2 cell spheroids treated with free fatty acids were measured simultaneously, and concentration-dependent cellular responses were observed in both studies. Using the multifocal Raman spectrophotometer, they rapidly observed chemical changes in spheroids, and thus, this system can facilitate the application of Raman spectroscopy in analyzing the cellular responses of spheroids.",
       "datePublished": "2025-01-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Hep G2 Cells",
+        "Spectrum Analysis, Raman"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-2284-375X"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
         }
       ],
       "seeAlso": [
@@ -69,9 +82,17 @@
           "@id": "https://doi.org/10.1021/acs.analchem.3c02129"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003704"
         },
         {
           "@id": "#biosample-1"
@@ -80,7 +101,7 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "#biosample-2"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -92,7 +113,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1502"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1502/render_thumbnail/"
       ],
       "size": [
         {
@@ -109,36 +130,94 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-2284-375X",
       "@type": "Person",
       "name": "Katsumasa Fujita",
       "email": "fujita@ap.eng.osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Department of Applied Physics; Laboratory: Department of Applied Physics",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Hao-Xiang Liao",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Kazuki Bando",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Menglu Li",
+      "description": "Organization: Osaka University; Department: Department of Applied Physics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1021/acs.analchem.3c02129",
       "@type": "ScholarlyArticle",
-      "name": "Multifocal Raman Spectrophotometer for Examining Drug-Induced and Chemical-Induced Cellular Changes in 3D Cell Spheroids.",
-      "datePublished": "2023"
+      "name": "Liao HX, Bando K, Li M, Fujita K. Multifocal Raman Spectrophotometer for Examining Drug-Induced and Chemical-Induced Cellular Changes in 3D Cell Spheroids.\nAnal Chem. 2023 Oct 3;95(39):14616-14623.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37725051/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was supported by Osaka University Innovation Bridge Grant and JST COI-NEXT under grant number JPMJPF2009."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa Cell"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003704",
+      "@type": "DefinedTerm",
+      "name": "Hep G2 cell"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Homo sapiens ~ HeLa Cell",
-      "description": "Homo sapiens ~ HeLa Cell",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa Cell",
+      "description": "HeLa spheroids of 250−300 micrometer diameters",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -148,31 +227,28 @@
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Homo sapiens ~ Hep G2 cell",
-      "description": "Homo sapiens ~ Hep G2 cell",
+      "name": "Homo sapiens (NCBI:txid9606) ~ Hep G2 cell",
+      "description": "HepG2 spheroids",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
-      "hasCellLine": "Hep G2 cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003704"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
       "@type": "DefinedTerm",
-      "name": "HeLa Cell"
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -180,22 +256,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1385471,
-      "description": "1.4 MB",
+      "value": 2766341,
+      "description": "2.8 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

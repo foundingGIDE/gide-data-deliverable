@@ -45,11 +45,11 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/333-Tsugawa-gravitropism/"
+        "@id": "https://ssbd.riken.jp/v3/project/333-Tsugawa-gravitropism"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/333-Tsugawa-gravitropism/",
+      "@id": "https://ssbd.riken.jp/v3/project/333-Tsugawa-gravitropism",
       "@type": "Dataset",
       "identifier": "333-Tsugawa-gravitropism",
       "name": "Shoot gravitropism of wild type and myosin xif xik mutant Arabidopsis",
@@ -62,6 +62,9 @@
       "author": [
         {
           "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
         }
       ],
       "seeAlso": [
@@ -69,18 +72,20 @@
           "@id": "https://doi.org/10.1038/s41598-023-38069-x"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0009630"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ],
       "measurementMethod": [
@@ -92,7 +97,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1701"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1701/render_thumbnail/"
       ],
       "size": [
         {
@@ -111,57 +116,86 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Satoru  Tsugawa",
+      "name": "Satoru Tsugawa",
       "email": "tsugawa@akita-pu.ac.jp",
-      "description": "Organization: Akita Prefectural University; Department: Department of Mechanical Engineering; Laboratory: Department of Mechanical Engineering",
+      "description": "Organization: Akita Prefectural University; Department: Department of Mechanical Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/05b1kx621"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/05b1kx621",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Haruko Ueda",
+      "email": "hueda@konan-u.ac.jp",
+      "description": "Organization: Konan University; Department: Graduate School of Natural Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Akita Prefectural University"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Konan University"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41598-023-38069-x",
       "@type": "ScholarlyArticle",
-      "name": "Shoot gravitropism and organ straightening cooperate to arrive at a mechanically favorable shape in Arabidopsis.",
-      "datePublished": "2023"
+      "name": "Tsugawa S, Miyake Y, Okamoto K, Toyota M, Yagi H, Terao Morita M, Hara-Nishimura I, Demura T, Ueda H.  \nShoot gravitropism and organ straightening cooperate to arrive at a mechanically favorable shape in Arabidopsis. Sci Rep. 2023 Jul 17;13(1):11165.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37460700/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10352312/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by MEXT KAKENHI (nos. JP18H05484, JP18H05489 to TD and JP18H05496 to HU), by the Japan Society for the Promotion of Science [Grants-in-Aid for Scientific Research (no. JP20K15832 to ST, no. JP19K06732 to HU, and no. JP15H05776 to IH-N)] and by the Hirao Taro Foundation of KONAN GAKUEN for Academic Research (to HU and IH-N), by the Japan Science and Technology Agency [CREST (JPMJCR2121)]."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702",
+      "@type": "Taxon",
+      "scientificName": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana",
+      "identifier": "NCBITaxon:3702"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "Col-0",
-      "description": "Col-0",
+      "description": "Wild type Arabidopsis thaliana (accession Columbia-0 [CS60000])",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Arabidopsis thaliana",
-      "description": "Arabidopsis thaliana",
+      "name": "Arabidopsis thaliana (NCBI:txid3702)",
+      "description": "Arabidopsis thaliana mutants that are defective in two myosin XI members (myosin XIf and myosin XIk)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3702"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03702",
-      "@type": "Taxon",
-      "scientificName": "Arabidopsis thaliana"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009630",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
       "@type": "DefinedTerm",
-      "name": "gravitropism"
+      "name": "macroscopy",
+      "identifier": "FBbi:00000240"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -175,22 +209,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
-      "@type": "DefinedTerm",
-      "name": "macroscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1144501517,
-      "description": "1.1 GB",
+      "value": 1596550877,
+      "description": "1.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 22,
+      "value": 44,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,26 +45,47 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/439-Takayama-dynamicsEGFR/"
+        "@id": "https://ssbd.riken.jp/v3/project/439-Takayama-dynamicsEGFR"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/439-Takayama-dynamicsEGFR/",
+      "@id": "https://ssbd.riken.jp/v3/project/439-Takayama-dynamicsEGFR",
       "@type": "Dataset",
       "identifier": "439-Takayama-dynamicsEGFR",
       "name": "EGFR dynamics on CHO–K1 cells with depletion and supplementation of cholesterol",
       "description": "Epidermal growth factor receptor (EGFR)-mediated signal transduction controls cell growth and proliferation. The signaling pathway is regulated so that it is activated only by external EGF stimuli, but the mechanisms that prevent EGF-independent spontaneous activation of EGFR-mediated signaling are unknown. Here the authors report cholesterol depletion activates EGFR-mediated signaling without EGF. They applied automated single-molecule imaging to EGFR and characterized the lateral diffusion and cluster formation on cholesterol-depleted and cholesterol-supplemented membranes. In cells in which cholesterol was depleted by methyl-beta-cyclodextrin treatment, EGFR exhibited a reduction in lateral diffusion, an acceleration of cluster formation, and autophosphorylation without EGF. Concurrently, extracellular signal-regulated kinase (ERK), which is regulated by EGFR-mediated signaling, exhibited phosphorylation and nuclear translocation without EGF. These cholesterol depletion-induced changes were similar, albeit less efficient, to those that occurred with EGF stimulation in normal cells without methyl-beta-cyclodextrin, indicating the spontaneous activation of EGFR signaling. The exogenous supplementation of cholesterol suppressed the methyl-beta-cyclodextrin-induced spontaneous activation of EGFR and ERK nuclear translocation. Single-molecule imaging of EGFR in a large number of cells revealed cell-to-cell heterogeneity, with a sub-population showing a high ability for spontaneous activation. These results provide evidence that EGFR-mediated signaling is properly regulated by cholesterol metabolism to prevent uncontrolled spontaneous activation.",
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "CHO Cells",
+        "Cells",
+        "Cell Membrane",
+        "Signal Transduction"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0009-0000-0613-6724"
         },
         {
           "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
         }
       ],
       "seeAlso": [
@@ -72,18 +93,20 @@
           "@id": "https://doi.org/10.1016/j.bbrc.2024.149673"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0035556"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ],
       "measurementMethod": [
@@ -95,7 +118,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1801"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1801/render_thumbnail/"
       ],
       "size": [
         {
@@ -112,14 +135,14 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0009-0000-0613-6724",
       "@type": "Person",
       "name": "Michio Hiroshima",
       "email": "m_hiroshima.fbs@osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences; Laboratory: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -128,50 +151,118 @@
       "@type": "Person",
       "name": "Masahiro Ueda",
       "email": "ueda.masahiro.fbs@osaka-u.ac.jp",
-      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences; Laboratory: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Miri Takayama",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Daisuke Watanabe",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Sakura Maeda",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Daisuke Watanabe",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Kazutoshi Takebayashi",
+      "description": "Organization: Osaka University; Department: Graduate School of Science and Graduate School of Frontier Biosciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1016/j.bbrc.2024.149673",
       "@type": "ScholarlyArticle",
-      "name": "Cholesterol suppresses spontaneous activation of EGFR-mediated signal transduction.",
-      "datePublished": "2024"
+      "name": "Takayama M, Maeda S, Watanabe D, Takebayashi K, Hiroshima M, Ueda M. Cholesterol suppresses spontaneous activation of EGFR-mediated signal transduction. Biochem Biophys Res Commun\n. 2024 Apr 16:704:149673.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38401305/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "AMED Grant Number JP22ym0126815, Japan; JST CREST Grant Number JPMJCR21E1, Japan; MEXT Grants-in-Aid for Scientific Research(B) (18H01839, 22H02593), Japan; JSPS Grant-in-Aid for Challenging Research (Pioneering) (22K18363DSLM), Japan."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
+      "@type": "Taxon",
+      "scientificName": "Cricetulus griseus",
+      "name": "Cricetulus griseus",
+      "identifier": "NCBITaxon:10029"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002462",
+      "@type": "DefinedTerm",
+      "name": "CHO-K1 cell"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Cricetulus griseus ~ CHO-K1 cell",
-      "description": "Cricetulus griseus ~ CHO-K1 cell",
+      "name": "Cricetulus griseus (NCBI:txid10029) ~ CHO-K1 cell",
+      "description": "CHO-K1 cells treated with EGF.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ],
-      "hasCellLine": "CHO-K1 cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002462"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
-      "@type": "Taxon",
-      "scientificName": "Cricetulus griseus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0035556",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
       "@type": "DefinedTerm",
-      "name": "intracellular signal transduction"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "evanescent wave microscopy",
+      "identifier": "FBbi:00000617"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -185,22 +276,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000617",
-      "@type": "DefinedTerm",
-      "name": "evanescent wave microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 530898482,
-      "description": "530.9 MB",
+      "value": 1497617706,
+      "description": "1.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 8,
+      "value": 36,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

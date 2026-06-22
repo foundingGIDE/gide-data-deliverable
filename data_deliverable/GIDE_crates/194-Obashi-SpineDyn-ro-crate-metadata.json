@@ -45,34 +45,41 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/194-Obashi-SpineDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/194-Obashi-SpineDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/194-Obashi-SpineDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/194-Obashi-SpineDyn",
       "@type": "Dataset",
       "identifier": "194-Obashi-SpineDyn",
-      "name": "Microscopy images or BDML file for quantitative information about actin polymers mobility in mouse dendritic spines. ",
-      "description": "194-Obashi-SpineDyn",
+      "name": "Microscopy images or BDML file for quantiative information about actin polymers mobility in mouse dendritic spines.",
+      "description": "See details in Obashi K, et. al. (2019)  Cell Rep., 27(5):1503-1515.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Actin Cytoskeleton/metabolism[major]",
-        "Actins/metabolism[major]",
+        "Actin Cytoskeleton",
+        "Actin Cytoskeleton/metabolism",
+        "Actins",
+        "Actins/metabolism",
         "Animals",
         "Biological Transport",
+        "Calcium-Calmodulin-Dependent Protein Kinase Type 2",
         "Calcium-Calmodulin-Dependent Protein Kinase Type 2/metabolism",
-        "Cells, Cultured",
-        "Dendritic Spines/metabolism[major]",
+        "Cells",
+        "Cultured",
+        "Dendritic Spines",
+        "Dendritic Spines/metabolism",
         "Dendritic Spines/ultrastructure",
         "Diffusion",
         "Female",
         "Male",
         "Mice",
-        "Mice, Inbred ICR",
-        "Neuronal Plasticity[major]",
+        "Inbred ICR",
+        "Neuronal Plasticity",
         "Signal Transduction",
-        "T-Lymphoma Invasion and Metastasis-inducing Protein 1/metabolism"
+        "T-Lymphoma Invasion and Metastasis-inducing Protein 1",
+        "T-Lymphoma Invasion and Metastasis-inducing Protein",
+        "1/metabolism"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -92,13 +99,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0048018"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0030041"
@@ -108,6 +109,12 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0043197"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/GO_0048018"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -115,7 +122,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000254"
         },
         {
           "@id": "#imaging-protocol-2"
@@ -131,7 +138,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-710"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/710/render_thumbnail/"
       ],
       "size": [
         {
@@ -152,10 +159,10 @@
       "@type": "Person",
       "name": "Shigeo Okabe",
       "email": "okabe@m.u-tokyo.ac.jp",
-      "description": "Organization: the University of Tokyo; Department: Department of Cellular Neurobiology",
+      "description": "Organization: the University of Tokyo, Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -163,23 +170,58 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Kazuki Obashi",
-      "description": "Organization: Tokyo; Department: Graduate School of Medicine",
+      "email": "kazuki.obashi@gmail.com",
+      "description": "Organization: the University of Tokyo, Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "the University of Tokyo"
+      "name": "the University of Tokyo, Tokyo"
     },
     {
       "@id": "https://doi.org/10.1016/j.celrep.2019.04.006",
       "@type": "ScholarlyArticle",
-      "name": "Precise Temporal Regulation of Molecular Diffusion within Dendritic Spines by Actin Polymers during Structural Plasticity.",
-      "datePublished": "2019"
+      "name": "Obashi K, Matsuda A, Inoue Y, and Okabe S (2019) Precise Temporal Regulation of Molecular Diffusion within Dendritic Spines by Actin Polymers during Structural Plasticity. Cell Reports, Volume 27, Issue 5, pages 1503-1515.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31042476"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030041",
+      "@type": "DefinedTerm",
+      "name": "actin polymerization",
+      "identifier": "GO:0030041"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051835",
+      "@type": "DefinedTerm",
+      "name": "stimulation of synapse structural plasticity",
+      "identifier": "GO:0051835"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
+      "@type": "DefinedTerm",
+      "name": "dendritic spine",
+      "identifier": "GO:0043197"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048018",
+      "@type": "DefinedTerm",
+      "name": "signaling molecule",
+      "identifier": "GO:0048018"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -188,35 +230,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048018",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000254",
       "@type": "DefinedTerm",
-      "name": "signaling molecule"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030041",
-      "@type": "DefinedTerm",
-      "name": "actin polymerization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051835",
-      "@type": "DefinedTerm",
-      "name": "stimulation of synapse structural plasticity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
-      "@type": "DefinedTerm",
-      "name": "dendritic spine"
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi: 00000254"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -225,9 +247,15 @@
       "description": "two-photon laser scanning microscopy",
       "measurementTechnique": [
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000254"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-2",
@@ -241,10 +269,16 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
+      "@type": "DefinedTerm",
+      "name": "structured illumination microscopy (SIM)",
+      "identifier": "FBbi:00000332"
+    },
+    {
       "@id": "#imaging-protocol-3",
       "@type": "LabProtocol",
-      "name": "structured illumination microscopy",
-      "description": "structured illumination microscopy",
+      "name": "structured illumination microscopy (SIM)",
+      "description": "structured illumination microscopy (SIM)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000332"
@@ -252,32 +286,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-      "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
-      "@type": "DefinedTerm",
-      "name": "structured illumination microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 9899082,
-      "description": "9.9 MB",
+      "value": 16076437,
+      "description": "16.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 21,
+      "value": 42,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

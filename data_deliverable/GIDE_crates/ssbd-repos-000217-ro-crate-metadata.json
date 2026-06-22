@@ -78,13 +78,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
@@ -104,7 +104,7 @@
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "size": [
@@ -151,13 +151,13 @@
       "description": "See details in Sakai, et al. (2021), Journal of Cell Science for Schizosaccharomyces pombe strains and Saccharomyces cerevisiae strains",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
       ],
       "hasCellLine": {
@@ -165,19 +165,19 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853",
       "@type": "Taxon",
       "scientificName": "Schizosaccharomyces pombe",
       "vernacularName": "fission yeast"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04932",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4932",
       "@type": "Taxon",
       "scientificName": "Saccharomyces cerevisiae",
       "vernacularName": "baker's yeast"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
@@ -186,38 +186,6 @@
       "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
       "@type": "DefinedTerm",
       "name": "HeLa cell"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "spinning disk confocal microscopy",
-      "description": "spinning disk confocal microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "laser scanning confocal microscopy",
-      "description": "laser scanning confocal microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
-      "@type": "DefinedTerm",
-      "name": "spinning disk confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "laser scanning confocal microscopy"
     },
     {
       "@id": "#total-dataset-size",
@@ -233,6 +201,40 @@
       "value": 2401,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

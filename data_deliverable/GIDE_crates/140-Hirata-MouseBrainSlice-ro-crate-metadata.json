@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/140-Hirata-MouseBrainSlice/"
+        "@id": "https://ssbd.riken.jp/v2/project/140-Hirata-MouseBrainSlice"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/140-Hirata-MouseBrainSlice/",
+      "@id": "https://ssbd.riken.jp/v2/project/140-Hirata-MouseBrainSlice",
       "@type": "Dataset",
       "identifier": "140-Hirata-MouseBrainSlice",
       "name": "Atlas of neuronal birthdate tagging mouse lines",
-      "description": "140-Hirata-MouseBrainSlice",
+      "description": "See details in Hirata et al., NeuroGT: A brain atlas of neurogenic tagging CreER drivers for birthdate-based classification and manipulation of mouse neurons, Cell Reports Methods 100012, 2021",
       "datePublished": "2022-04-15",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
@@ -69,10 +69,10 @@
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-5218-2959"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0001-5200-4634"
         }
       ],
       "seeAlso": [
@@ -82,19 +82,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "#biosample-4"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007399"
@@ -104,6 +92,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0043005"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
@@ -118,10 +109,28 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-728"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/728/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,107 +147,101 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-5218-2959",
       "@type": "Person",
       "name": "Tatsumi Hirata",
       "email": "tathirat@nig.ac.jp",
       "description": "Organization: National Institute of Genetics; Laboratory: Brain Function Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/02xg1m795"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0001-5200-4634",
       "@type": "Person",
-      "name": "Toshihiko Fujimori"
+      "name": "Toshihiko Fujimori",
+      "email": "fujimori@nibb.ac.jp",
+      "description": "Organization: National Institute for Basic Biology; Laboratory: Division of Embryology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02xg1m795",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "National Institute of Genetics"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "National Institute for Basic Biology"
+    },
+    {
       "@id": "https://doi.org/10.1016/j.crmeth.2021.100012",
       "@type": "ScholarlyArticle",
-      "name": "NeuroGT: A brain atlas of neurogenic tagging CreER drivers for birthdate-based classification and manipulation of mouse neurons.",
-      "datePublished": "2021"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "C57BL/6\nNeurod1CreER(D1B); TaumGFP-nLacZ",
-      "description": "C57BL/6\nNeurod1CreER(D1B); TaumGFP-nLacZ",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
+      "name": "Tatsumi Hirata, Yukako Tohsato, Hiroya Itoga, Go Shioi, Hiroshi Kiyonari, Sanae Oka, Toshihiko Fujimori, Shuichi Onami, NeuroGT: A brain atlas of neurogenic tagging CreER drivers for birthdate-based classification and manipulation of mouse neurons, Cell Reports Methods, 2021, 100012, ISSN 2667-2375, https://doi.org/10.1016/j.crmeth.2021.100012. (https://www.sciencedirect.com/science/article/pii/S2667237521000126)",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(21)00012-6"
       ]
-    },
-    {
-      "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "C57BL/6\nNeurod4CreER(D4A); TaumGFP-nLacZ",
-      "description": "C57BL/6\nNeurod4CreER(D4A); TaumGFP-nLacZ",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ]
-    },
-    {
-      "@id": "#biosample-3",
-      "@type": "BioSample",
-      "name": "C57BL/6\nNeurog1CreER(G1C); TaumGFP-nLacZ",
-      "description": "C57BL/6\nNeurog1CreER(G1C); TaumGFP-nLacZ",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ]
-    },
-    {
-      "@id": "#biosample-4",
-      "@type": "BioSample",
-      "name": "C57BL/6\nNeurog2CreER(G2A); TaumGFP-nLacZ",
-      "description": "C57BL/6\nNeurog2CreER(G2A); TaumGFP-nLacZ",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0007399",
       "@type": "DefinedTerm",
-      "name": "nervous system development"
+      "name": "nervous system development",
+      "identifier": "GO:0007399"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005886",
       "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0043005",
       "@type": "DefinedTerm",
-      "name": "neuron projection"
+      "name": "neuron projection",
+      "identifier": "GO:0043005"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005634",
       "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "nucleus",
+      "identifier": "GO:0005634"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0044297",
       "@type": "DefinedTerm",
-      "name": "cell body"
+      "name": "cell body",
+      "identifier": "GO:0044297"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C57BL/6",
+      "description": "C57BL/6",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -252,22 +255,68 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000002",
       "@type": "DefinedTerm",
-      "name": "bright-field microscopy"
+      "name": "chemically fixed tissue",
+      "identifier": "FBbi:00000002"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "chemically fixed tissue",
+      "description": "chemically fixed tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000002"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000027",
+      "@type": "DefinedTerm",
+      "name": "cryostat-sectioned tissue",
+      "identifier": "FBbi:00000027"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "cryostat-sectioned tissue",
+      "description": "cryostat-sectioned tissue",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000027"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000138",
+      "@type": "DefinedTerm",
+      "name": "horseradish peroxidase",
+      "identifier": "FBbi:00000138"
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "horseradish peroxidase",
+      "description": "horseradish peroxidase",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000138"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1805474357486,
-      "description": "1.8 TB",
+      "value": 9030673335392,
+      "description": "9.0 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 0,
+      "value": 4294,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

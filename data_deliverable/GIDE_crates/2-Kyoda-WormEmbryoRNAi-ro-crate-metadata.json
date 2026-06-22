@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/2-Kyoda-WormEmbryoRNAi/"
+        "@id": "https://ssbd.riken.jp/v1/project/2-Kyoda-WormEmbryoRNAi"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/2-Kyoda-WormEmbryoRNAi/",
+      "@id": "https://ssbd.riken.jp/v1/project/2-Kyoda-WormEmbryoRNAi",
       "@type": "Dataset",
       "identifier": "2-Kyoda-WormEmbryoRNAi",
       "name": "2-Kyoda-WormEmbryoRNAi",
-      "description": "2-Kyoda-WormEmbryoRNAi",
+      "description": "See details in Kyoda et al. (2013) Nucleic Acids Res 41, D732-D737",
       "datePublished": "2013-09-02",
       "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Caenorhabditis elegans/embryology[major]",
-        "Caenorhabditis elegans/genetics[major]",
-        "Cell Division/genetics",
-        "Databases, Genetic[major]",
-        "Genes, Helminth",
-        "Internet",
-        "RNA Interference"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -94,13 +84,13 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1093/nar/gks1107"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23172286"
+        },
+        {
+          "@id": "http://so.qbic.riken.jp/wddd/"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -109,10 +99,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1/render_thumbnail/"
       ],
       "size": [
         {
@@ -133,53 +134,112 @@
       "@type": "Person",
       "name": "Shuichi Onami",
       "email": "sonami@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Developmental Dynamics",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Eru Adachi"
+      "name": "Eru Adachi",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Eriko Masuda"
+      "name": "Eriko Masuda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Yoko Nagai"
+      "name": "Yoko Nagai",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Yoko Suzuki"
+      "name": "Yoko Suzuki",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Taeko Oguro"
+      "name": "Taeko Oguro",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Koji Kyoda"
+      "name": "Koji Kyoda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gks1107",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23172286",
       "@type": "ScholarlyArticle",
-      "name": "WDDD: Worm Developmental Dynamics Database.",
-      "datePublished": "2013"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/23172286"
+    },
+    {
+      "@id": "http://so.qbic.riken.jp/wddd/",
+      "@type": "ScholarlyArticle",
+      "name": "http://so.qbic.riken.jp/wddd/"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development",
+      "identifier": "GO:0009790"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
     },
     {
       "@id": "#biosample-1",
@@ -188,38 +248,39 @@
       "description": "Caenorhabditis elegans",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
-      "@type": "DefinedTerm",
-      "name": "embryo development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1745825250273,
-      "description": "1.7 TB",
+      "value": 3418649885427,
+      "description": "3.4 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 34032,
+      "value": 34544,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

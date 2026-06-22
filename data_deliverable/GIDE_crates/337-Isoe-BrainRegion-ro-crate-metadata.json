@@ -45,17 +45,20 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/337-Isoe-BrainRegion/"
+        "@id": "https://ssbd.riken.jp/v3/project/337-Isoe-BrainRegion"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/337-Isoe-BrainRegion/",
+      "@id": "https://ssbd.riken.jp/v3/project/337-Isoe-BrainRegion",
       "@type": "Dataset",
       "identifier": "337-Isoe-BrainRegion",
       "name": "3D medaka brain visualized clonally related units in the pallium",
-      "description": "337-Isoe-BrainRegion",
+      "description": "The dorsal telencephalon (i.e. the pallium) exhibits high anatomical diversity across vertebrate classes. The non-mammalian dorsal pallium accommodates various compartmentalized structures among species. The developmental, functional, and evolutional diversity of the dorsal pallium remain unillustrated. Here, the authors analyzed the structure and epigenetic landscapes of cell lineages in the telencephalon of medaka fish (Oryzias latipes) that possesses a clearly delineated dorsal pallium (Dd2). They found that pallial anatomical regions, including Dd2, are formed by mutually exclusive clonal units, and that each pallium compartment exhibits a distinct epigenetic landscape.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Neurogenesis"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -72,24 +75,20 @@
           "@id": "https://doi.org/10.7554/eLife.85093"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0022008"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0001764"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8090"
         }
       ],
       "measurementMethod": [
@@ -97,11 +96,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000369"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1362"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1362/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,99 +121,108 @@
       "@type": "Person",
       "name": "Yasuko Isoe",
       "email": "yasuko_isoe@fas.harvard.edu",
-      "description": "Organization: Harvard University; Department: Department of Molecular and Cellular Biology; Laboratory: Department of Molecular and Cellular Biology",
+      "description": "Organization: Harvard University; Department: Department of Molecular and Cellular Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/03vek6s52"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Ryohei Nakamura"
+      "name": "Ryohei Nakamura",
+      "email": "rynakamura@bs.s.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/03vek6s52",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Harvard University"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "The University of Tokyo"
+    },
+    {
       "@id": "https://doi.org/10.7554/eLife.85093",
       "@type": "ScholarlyArticle",
-      "name": "Epigenetically distinct synaptic architecture in clonal compartments in the teleostean dorsal pallium.",
-      "datePublished": "2023"
+      "name": "Isoe Y, Nakamura R, Nonaka S, Kamei Y, Okuyama T, Yamamoto N, Takeuchi H, Takeda H. Epigenetically distinct synaptic architecture in clonal compartments in the teleostean dorsal pallium. Elife. 2023 Jul 25;12:e85093. doi: 10.7554/eLife.85093.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37489039/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10368422/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "NIBB Collaborative Research Program 16-522 (HT), KAKENHI 16H06987 (YI), KAKENHI 16KT0072 (HT), KAKENHI 20K20303 (YK), JP21K06013 (RN), Grant-in-Aid for Scientific Research on Innovative Areas JP21H00245 (RN), 18-513 (HT), 17-513 (HT)"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8090",
+      "@type": "Taxon",
+      "scientificName": "Oryzias latipes",
+      "name": "Oryzias latipes",
+      "identifier": "NCBITaxon:8090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Oryzias latipes",
-      "description": "Oryzias latipes",
+      "name": "HuC:loxp-DsRed-loxp-GFP, HSP-Cre ~ neuron",
+      "description": "The medaka brain deriverd from two transgenic lines. One is the transgenic line (Tg (HuC:loxp-DsRed-loxp-GFP)) that visualized neural progenitors by the HuC promoter. The second is a line (Tg (HSP-Cre)) that expresses Cre recombinase under the heat shock protein promoter. In the absence of the recombination, DsRed is expressed in the neural progenitor cells. When Cre-loxp recombination is induced the neural progenitors express GFP instead of DsRed.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8090"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "HuC:loxp-DsRed-loxp-GFP, HSP-Cre",
-      "description": "HuC:loxp-DsRed-loxp-GFP, HSP-Cre",
+      "name": "Oryzias latipes (NCBI:txid8090) ~ neuron",
+      "description": "The wild type medaka brain.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/8090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08090",
-      "@type": "Taxon",
-      "scientificName": "Oryzias latipes"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08091",
-      "@type": "Taxon",
-      "scientificName": "Oryzias latipes"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000369",
       "@type": "DefinedTerm",
-      "name": "neurogenesis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0001764",
-      "@type": "DefinedTerm",
-      "name": "neuron migration"
+      "name": "selective plane illumination fluorescence microscopy",
+      "identifier": "FBbi:00000369"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "light-sheet microscopy",
-      "description": "light-sheet microscopy",
+      "name": "selective plane illumination fluorescence microscopy",
+      "description": "selective plane illumination fluorescence microscopy",
       "measurementTechnique": [
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000369"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
-      "@type": "DefinedTerm",
-      "name": "light-sheet microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 13264393672,
-      "description": "13.3 GB",
+      "value": 17295035273,
+      "description": "17.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 93,
+      "value": 182,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

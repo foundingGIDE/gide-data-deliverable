@@ -45,34 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/132-Goto-CellMor/"
+        "@id": "https://ssbd.riken.jp/v1/project/132-Goto-CellMor"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/132-Goto-CellMor/",
+      "@id": "https://ssbd.riken.jp/v1/project/132-Goto-CellMor",
       "@type": "Dataset",
       "identifier": "132-Goto-CellMor",
       "name": "Electon micrographs of the dorsal or ventral areas of choroidal vessels from adult (8-week-old) WT and Aldh1a KO mouse",
-      "description": "132-Goto-CellMor",
+      "description": "See details in Goto et al. (2018) eLife, 7: e32358.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Aldehyde Dehydrogenase/genetics",
-        "Aldehyde Dehydrogenase/metabolism[major]",
-        "Aldehyde Dehydrogenase 1 Family",
-        "Animals",
-        "Choroid/physiology[major]",
-        "Epithelial Cells/physiology",
-        "Gene Expression Regulation[major]",
-        "Mice, Inbred C57BL",
-        "Mice, Knockout",
-        "Neovascularization, Physiologic[major]",
-        "Retinal Dehydrogenase",
-        "Retinal Pigment Epithelium/physiology[major]",
-        "SOX9 Transcription Factor/metabolism[major]",
-        "Tretinoin/metabolism",
-        "Vascular Endothelial Growth Factor A/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -113,13 +96,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.7554/eLife.32358"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29609731"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -128,10 +108,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0097733"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-270"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/270/render_thumbnail/"
       ],
       "size": [
         {
@@ -155,70 +146,148 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "So Goto"
+      "name": "So Goto",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Kazuyo Misaki"
+      "name": "Kazuyo Misaki",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Shigenobu Yonemura"
+      "name": "Shigenobu Yonemura",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Sunao Sugita"
+      "name": "Sunao Sugita",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Hiromi Ito"
+      "name": "Hiromi Ito",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Yoko Ohigashi"
+      "name": "Yoko Ohigashi",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Masatsugu Ema"
+      "name": "Masatsugu Ema",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Hirokazu Sakaguchi"
+      "name": "Hirokazu Sakaguchi",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Kohji Nishida"
+      "name": "Kohji Nishida",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Masayo Takahashi"
+      "name": "Masayo Takahashi",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.7554/eLife.32358",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29609731",
       "@type": "ScholarlyArticle",
-      "name": "Neural retina-specific Aldh1a1 controls dorsal choroidal vascular development via Sox9 expression in retinal pigment epithelial cells.",
-      "datePublished": "2018"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29609731"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0003406",
+      "@type": "DefinedTerm",
+      "name": "retinal pigment epithelium development",
+      "identifier": "GO:0003406"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0097733",
+      "@type": "DefinedTerm",
+      "name": "photoreceptor cell cilium",
+      "identifier": "GO:0097733"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -227,40 +296,41 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0003406",
-      "@type": "DefinedTerm",
-      "name": "retinal pigment epithelium development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0097733",
-      "@type": "DefinedTerm",
-      "name": "photoreceptor cell cilium"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 12950438,
-      "description": "13.0 MB",
+      "value": 24373374,
+      "description": "24.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 12,
+      "value": 24,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        }
+      ]
     }
   ]
 }

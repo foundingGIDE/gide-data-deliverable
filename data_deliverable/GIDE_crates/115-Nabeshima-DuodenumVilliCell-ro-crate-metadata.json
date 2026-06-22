@@ -45,34 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/115-Nabeshima-DuodenumVilliCell/"
+        "@id": "https://ssbd.riken.jp/v1/project/115-Nabeshima-DuodenumVilliCell"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/115-Nabeshima-DuodenumVilliCell/",
+      "@id": "https://ssbd.riken.jp/v1/project/115-Nabeshima-DuodenumVilliCell",
       "@type": "Dataset",
       "identifier": "115-Nabeshima-DuodenumVilliCell",
       "name": "Lineage trace images of LacZ cells in intestinal villi of the duodenum at different days",
-      "description": "115-Nabeshima-DuodenumVilliCell",
+      "description": "See details in Nabeshima et al. (2018) eLife, 7: e36435.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "DNA Methylation/genetics[major]",
-        "DNA-Binding Proteins/chemistry",
-        "DNA-Binding Proteins/genetics[major]",
-        "Embryonic Development/genetics[major]",
-        "Gene Expression Regulation, Developmental",
-        "Genome",
-        "Histone Deacetylases/chemistry",
-        "Histone Deacetylases/genetics",
-        "Mice",
-        "Mice, Knockout",
-        "Promoter Regions, Genetic",
-        "Repressor Proteins/chemistry",
-        "Repressor Proteins/genetics",
-        "Sin3 Histone Deacetylase and Corepressor Complex"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -116,13 +99,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.7554/eLife.36435"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30070635"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -131,10 +111,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0006306"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-264"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/264/render_thumbnail/"
       ],
       "size": [
         {
@@ -158,75 +149,159 @@
       "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Ryo Nabeshima"
+      "name": "Ryo Nabeshima",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Osamu Nishimura"
+      "name": "Osamu Nishimura",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Takako Maeda"
+      "name": "Takako Maeda",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Natsumi Shimizu"
+      "name": "Natsumi Shimizu",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Takahiro Ide"
+      "name": "Takahiro Ide",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Kenta Yashiro"
+      "name": "Kenta Yashiro",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Yasuo Sakai"
+      "name": "Yasuo Sakai",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Chikara Meno"
+      "name": "Chikara Meno",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Mitsutaka Kadota"
+      "name": "Mitsutaka Kadota",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Hidetaka Shiratori"
+      "name": "Hidetaka Shiratori",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
-      "name": "Shigehiro Kuraku"
+      "name": "Shigehiro Kuraku",
+      "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Organismal Patterning",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.7554/eLife.36435",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30070635",
       "@type": "ScholarlyArticle",
-      "name": "Loss of Fam60a, a Sin3a subunit, results in embryonic lethality and is associated with aberrant methylation at a subset of gene promoters.",
-      "datePublished": "2018"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/30070635"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryogenesis",
+      "identifier": "GO:0009790"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006306",
+      "@type": "DefinedTerm",
+      "name": "DNA methylation",
+      "identifier": "GO:0006306"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -235,40 +310,41 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
-      "@type": "DefinedTerm",
-      "name": "embryogenesis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006306",
-      "@type": "DefinedTerm",
-      "name": "DNA methylation"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 697313,
-      "description": "697.3 kB",
+      "value": 1389857,
+      "description": "1.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 3,
+      "value": 6,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

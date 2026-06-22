@@ -45,51 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/32-Matsuda-SigDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/32-Matsuda-SigDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/32-Matsuda-SigDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/32-Matsuda-SigDyn",
       "@type": "Dataset",
       "identifier": "32-Matsuda-SigDyn",
       "name": "32-Matsuda-SigDyn",
-      "description": "32-Matsuda-SigDyn",
+      "description": "See details in Matsuda et al. (2015) Nat. Commun., 6, 6195",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "CHO Cells",
-        "Cell Communication/genetics[major]",
-        "Cell Differentiation/genetics[major]",
-        "Cell Engineering",
-        "Cricetulus",
-        "Feedback, Physiological",
-        "Gene Expression Regulation",
-        "Genes, Reporter",
-        "Genetic Vectors",
-        "Glycosyltransferases/genetics",
-        "Glycosyltransferases/metabolism[major]",
-        "Green Fluorescent Proteins/genetics",
-        "Green Fluorescent Proteins/metabolism",
-        "Intracellular Signaling Peptides and Proteins/genetics",
-        "Intracellular Signaling Peptides and Proteins/metabolism[major]",
-        "Lentivirus/genetics",
-        "Lentivirus/metabolism",
-        "Luciferases/genetics",
-        "Luciferases/metabolism",
-        "Luminescent Proteins/genetics",
-        "Luminescent Proteins/metabolism",
-        "Membrane Proteins/genetics",
-        "Membrane Proteins/metabolism[major]",
-        "Mice",
-        "Neural Stem Cells/cytology",
-        "Neural Stem Cells/metabolism[major]",
-        "Receptors, Notch/genetics",
-        "Receptors, Notch/metabolism[major]",
-        "Signal Transduction",
-        "Time Factors",
-        "Transcription, Genetic"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -112,19 +78,27 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/ncomms7195"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/25652697"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-62"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/62/render_thumbnail/"
       ],
       "size": [
         {
@@ -148,69 +122,111 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Mitsuhiro Matsuda"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Makito Koga"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Knut Woltjen"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Eisuke Nishida"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1038/ncomms7195",
-      "@type": "ScholarlyArticle",
-      "name": "Synthetic lateral inhibition governs cell-type bifurcation with robust ratios.",
-      "datePublished": "2015"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "CHO",
-      "description": "CHO",
-      "taxonomicRange": [
+      "name": "Mitsuhiro Matsuda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Makito Koga",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Knut Woltjen",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Eisuke Nishida",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/25652697",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/25652697"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
       "@type": "Taxon",
-      "scientificName": "Cricetulus griseus"
+      "scientificName": "C. griseus",
+      "name": "C. griseus",
+      "identifier": "NCBITaxon:10029"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "C. griseus",
+      "description": "C. griseus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 172606757,
-      "description": "172.6 MB",
+      "value": 276725420,
+      "description": "276.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 3,
+      "value": 5,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

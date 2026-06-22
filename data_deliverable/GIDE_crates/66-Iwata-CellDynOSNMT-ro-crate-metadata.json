@@ -45,55 +45,37 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/66-Iwata-CellDynOSNMT/"
+        "@id": "https://ssbd.riken.jp/v1/project/66-Iwata-CellDynOSNMT"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/66-Iwata-CellDynOSNMT/",
+      "@id": "https://ssbd.riken.jp/v1/project/66-Iwata-CellDynOSNMT",
       "@type": "Dataset",
       "identifier": "66-Iwata-CellDynOSNMT",
       "name": "A set of calcium imaging data in the olfactory system of M. musculus adult",
-      "description": "66-Iwata-CellDynOSNMT",
+      "description": "See details in Iwata et al. (2017) Neuron, 96(5): 1139-1152.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Absorptiometry, Photon",
-        "Animals",
-        "Behavior, Animal/physiology",
-        "Immunohistochemistry",
-        "Mechanotransduction, Cellular/physiology[major]",
-        "Mice",
-        "Neuroimaging",
-        "Odorants",
-        "Olfactory Bulb/physiology[major]",
-        "Olfactory Pathways/physiology",
-        "Olfactory Receptor Neurons/physiology",
-        "Smell/physiology[major]",
-        "Tracheotomy"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "https://orcid.org/0000-0002-8449-0080"
+          "@id": "#auth-001"
         },
         {
           "@id": "#auth-002"
         },
         {
-          "@id": "https://orcid.org/0000-0002-1509-8747"
+          "@id": "#auth-003"
         }
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.neuron.2017.11.008"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29216451"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -105,10 +87,21 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0030425"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-305"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/305/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,48 +118,73 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8449-0080",
+      "@id": "#auth-001",
       "@type": "Person",
       "name": "Takeshi Imai",
       "email": "t-imai@med.kyushu-u.ac.jp",
-      "description": "Organization: Kyushu University; Department: Department of Developmental Neurophysiology, Graduate School of Medical Sciences; Laboratory: Department of Developmental Neurophysiology",
+      "description": "Organization: Kyushu University; Department: Graduate School of Medical Sciences; Laboratory: Department of Developmental Neurophysiology",
       "affiliation": [
         {
-          "@id": "https://ror.org/00p4k0j84"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Ryo Iwata"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1509-8747",
-      "@type": "Person",
-      "name": "Hiroshi Kiyonari",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Animal Resources and Genetic Engineering",
+      "name": "Ryo Iwata",
+      "description": "Organization: Kyushu University; Department: Graduate School of Medical Sciences; Laboratory: Department of Developmental Neurophysiology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00p4k0j84",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Hiroshi Kiyonari",
+      "description": "Organization: Kyushu University; Department: Graduate School of Medical Sciences; Laboratory: Department of Developmental Neurophysiology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyushu University"
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29216451",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29216451"
     },
     {
-      "@id": "https://doi.org/10.1016/j.neuron.2017.11.008",
-      "@type": "ScholarlyArticle",
-      "name": "Mechanosensory-Based Phase Coding of Odor Identity in the Olfactory Bulb.",
-      "datePublished": "2017"
+      "@id": "http://purl.obolibrary.org/obo/GO_0007158",
+      "@type": "DefinedTerm",
+      "name": "neuron cell to cell adhesion",
+      "identifier": "GO:0007158"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030424",
+      "@type": "DefinedTerm",
+      "name": "axon",
+      "identifier": "GO:0030424"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030425",
+      "@type": "DefinedTerm",
+      "name": "dendrite",
+      "identifier": "GO:0030425"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -175,43 +193,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007158",
-      "@type": "DefinedTerm",
-      "name": "neuron cell to cell adhesion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030424",
-      "@type": "DefinedTerm",
-      "name": "axon"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030425",
-      "@type": "DefinedTerm",
-      "name": "dendrite"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 105485181521,
-      "description": "105.5 GB",
+      "value": 171862013546,
+      "description": "171.9 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2403,
+      "value": 4924,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,32 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/30-Inomata-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/30-Inomata-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/30-Inomata-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/30-Inomata-CellDyn",
       "@type": "Dataset",
       "identifier": "30-Inomata-CellDyn",
       "name": "30-Inomata-CellDyn",
-      "description": "30-Inomata-CellDyn",
+      "description": "See details in Inomata et al. (2013) Cell, 153(6): 1296-1311.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Body Patterning[major]",
-        "Body Size",
-        "Embryo, Nonmammalian/metabolism[major]",
-        "Gene Knockdown Techniques",
-        "Glycoproteins/genetics",
-        "Glycoproteins/metabolism[major]",
-        "Intercellular Signaling Peptides and Proteins/genetics",
-        "Intercellular Signaling Peptides and Proteins/metabolism[major]",
-        "Organizers, Embryonic/metabolism",
-        "Xenopus Proteins/genetics",
-        "Xenopus Proteins/metabolism[major]",
-        "Xenopus laevis/embryology[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -79,7 +64,7 @@
           "@id": "#auth-001"
         },
         {
-          "@id": "https://orcid.org/0000-0002-9294-9998"
+          "@id": "#auth-002"
         },
         {
           "@id": "#auth-003"
@@ -90,22 +75,33 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.cell.2013.05.004"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23746842"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0043887"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-60"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/60/render_thumbnail/"
       ],
       "size": [
         {
@@ -129,78 +125,119 @@
       "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Physical Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://orcid.org/0000-0002-9294-9998",
+      "@id": "#auth-002",
       "@type": "Person",
       "name": "Tatsuo Shibata",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Physical Biology",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Physical Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Tomoko Haraguchi"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Yoshiki Sasai"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.cell.2013.05.004",
-      "@type": "ScholarlyArticle",
-      "name": "Scaling of dorsal-ventral patterning by embryo size-dependent degradation of Spemann's organizer signals.",
-      "datePublished": "2013"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Xenopus laevis",
-      "description": "Xenopus laevis",
-      "taxonomicRange": [
+      "name": "Tomoko Haraguchi",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Physical Biology",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08355",
-      "@type": "Taxon",
-      "scientificName": "Xenopus laevis",
-      "vernacularName": "african clawed frog"
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Yoshiki Sasai",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Physical Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043887",
-      "@type": "DefinedTerm",
-      "name": "NA (protein diffusion)"
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23746842",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/23746842"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802",
+      "@type": "Taxon",
+      "scientificName": "X. laevis",
+      "name": "X. laevis",
+      "identifier": "NCBITaxon:1802"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "X. laevis",
+      "description": "X. laevis",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1802"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1286811718,
-      "description": "1.3 GB",
+      "value": 2555416312,
+      "description": "2.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 5,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000366",
+      "@type": "DefinedTerm",
+      "name": "FRAP",
+      "identifier": "FBbi:00000366"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "FRAP",
+      "description": "FRAP",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000366"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

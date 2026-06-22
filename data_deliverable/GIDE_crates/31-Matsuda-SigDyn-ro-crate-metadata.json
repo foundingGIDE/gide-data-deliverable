@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/31-Matsuda-SigDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/31-Matsuda-SigDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/31-Matsuda-SigDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/31-Matsuda-SigDyn",
       "@type": "Dataset",
       "identifier": "31-Matsuda-SigDyn",
       "name": "31-Matsuda-SigDyn",
-      "description": "31-Matsuda-SigDyn",
+      "description": "See details in Matsuda et al. (2012) Sci. Signal., 5, ra31.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Communication[major]",
-        "Cells, Cultured",
-        "Humans",
-        "Intracellular Signaling Peptides and Proteins",
-        "Mammals",
-        "Receptors, Notch",
-        "Signal Transduction[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -85,25 +75,36 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1126/scisignal.2002764"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22510469"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         },
         {
-          "@id": "#biosample-2"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-61"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/61/render_thumbnail/"
       ],
       "size": [
         {
@@ -127,82 +128,126 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Mitsuhiro Matsuda"
+      "name": "Mitsuhiro Matsuda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Makito Koga"
+      "name": "Makito Koga",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Eisuke Nishida"
+      "name": "Eisuke Nishida",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Reconstitutive Developmental Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1126/scisignal.2002764",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/22510469",
       "@type": "ScholarlyArticle",
-      "name": "Synthetic signal propagation through direct cell-cell interaction.",
-      "datePublished": "2012"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/22510469"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029",
+      "@type": "Taxon",
+      "scientificName": "C. griseus",
+      "name": "C. griseus",
+      "identifier": "NCBITaxon:10029"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "MDCK",
-      "description": "MDCK",
+      "name": "C. griseus",
+      "description": "C. griseus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10029"
         }
       ]
-    },
-    {
-      "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "MDCK",
-      "description": "MDCK",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10029",
-      "@type": "Taxon",
-      "scientificName": "Cricetulus griseus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 264249634,
-      "description": "264.2 MB",
+      "value": 419336944,
+      "description": "419.3 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 9,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

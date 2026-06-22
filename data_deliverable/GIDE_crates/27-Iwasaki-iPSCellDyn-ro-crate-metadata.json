@@ -45,36 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/27-Iwasaki-iPSCellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/27-Iwasaki-iPSCellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/27-Iwasaki-iPSCellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/27-Iwasaki-iPSCellDyn",
       "@type": "Dataset",
       "identifier": "27-Iwasaki-iPSCellDyn",
       "name": "27-Iwasaki-iPSCellDyn",
-      "description": "27-Iwasaki-iPSCellDyn",
+      "description": "See details in Iwasaki et al. (2016) PLoS ONE, 11(7): e0158282.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Communication",
-        "Cell Culture Techniques[major]",
-        "Cell Differentiation[major]",
-        "Cell Proliferation",
-        "Cells, Cultured",
-        "Collagenases/chemistry",
-        "Embryonic Stem Cells/cytology",
-        "Induced Pluripotent Stem Cells/cytology[major]",
-        "Lymphocytes/cytology",
-        "Mice",
-        "Peptide Hydrolases/chemistry",
-        "Phagocytosis",
-        "Retinal Pigment Epithelium/metabolism[major]",
-        "Rod Cell Outer Segment/metabolism",
-        "Signal Transduction",
-        "rho-Associated Kinases/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -106,22 +87,54 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1371/journal.pone.0158282"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27385038"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        },
+        {
+          "@id": "#imaging-protocol-4"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000247"
+        },
+        {
+          "@id": "#imaging-protocol-5"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-57"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/57/render_thumbnail/"
       ],
       "size": [
         {
@@ -145,92 +158,220 @@
       "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yuko Iwasaki"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Sunao Sugita"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Michiko Mandai"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Shigenobu Yonemura"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Akishi Onishi"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Shin-ichiro Ito"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Manabu Mochizuki Kyoko Ohno-Matsui"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0158282",
-      "@type": "ScholarlyArticle",
-      "name": "Differentiation/Purification Protocol for Retinal Pigment Epithelium from Mouse Induced Pluripotent Stem Cells as a Research Tool.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "iPS",
-      "description": "iPS",
-      "taxonomicRange": [
+      "name": "Yuko Iwasaki",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Sunao Sugita",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Michiko Mandai",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Shigenobu Yonemura",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Akishi Onishi",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Shin-ichiro Ito",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Manabu Mochizuki Kyoko Ohno-Matsui",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Retinal Regeneration",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27385038",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27385038"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005623",
       "@type": "DefinedTerm",
-      "name": "cell"
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 342924004,
-      "description": "342.9 MB",
+      "value": 607984339,
+      "description": "608.0 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 13,
+      "value": 26,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000345",
+      "@type": "DefinedTerm",
+      "name": "light microscopy",
+      "identifier": "FBbi:00000345"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "light microscopy",
+      "description": "light microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000345"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000247",
+      "@type": "DefinedTerm",
+      "name": "phase contrast microscopy",
+      "identifier": "FBbi:00000247"
+    },
+    {
+      "@id": "#imaging-protocol-4",
+      "@type": "LabProtocol",
+      "name": "phase contrast microscopy",
+      "description": "phase contrast microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000247"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
+      "@id": "#imaging-protocol-5",
+      "@type": "LabProtocol",
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        }
+      ]
     }
   ]
 }

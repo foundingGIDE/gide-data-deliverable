@@ -45,38 +45,40 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/179-Kobachi-BLVRAactivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/179-Kobachi-BLVRAactivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/179-Kobachi-BLVRAactivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/179-Kobachi-BLVRAactivity",
       "@type": "Dataset",
       "identifier": "179-Kobachi-BLVRAactivity",
       "name": "Fluorescence images of biliverdin reductase-A (BLVRA) activity in WT or BLVRA KO mice or HeLa cells.",
-      "description": "179-Kobachi-BLVRAactivity",
+      "description": "See details in Kobachi K, et. al. (2020)  Cell Struct Funct., 45(2):131-141.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Biliverdine/genetics",
-        "Biliverdine/metabolism[major]",
-        "Embryo, Mammalian/metabolism[major]",
-        "Fibroblasts/metabolism[major]",
+        "Biliverdine",
+        "Biliverdine/genetics (MeSH Unique ID:Q000235),Biliverdine/metabolism",
+        "Embryo",
+        "Mammalian",
+        "Mammalian/metabolism",
+        "Fibroblasts",
+        "Fibroblasts/metabolism",
+        "Green Fluorescent Proteins",
         "Green Fluorescent Proteins/genetics",
-        "Green Fluorescent Proteins/metabolism[major]",
+        "Green Fluorescent Proteins/metabolism",
         "HeLa Cells",
         "Humans",
         "Mice",
-        "Mice, Knockout",
-        "Oxidoreductases Acting on CH-CH Group Donors/deficiency[major]",
-        "Oxidoreductases Acting on CH-CH Group Donors/metabolism"
+        "Knockout"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-7638-3720"
         }
       ],
       "seeAlso": [
@@ -86,25 +88,22 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0004074"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005737"
@@ -125,7 +124,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-705"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/705/render_thumbnail/"
       ],
       "size": [
         {
@@ -142,27 +141,55 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-7638-3720",
       "@type": "Person",
       "name": "Kenta Terai",
       "email": "terai.kenta.5m@kyoto-u.ac.jp",
-      "description": "Organization: Graduate School of Medicine; Department: Department of Pathology and Biology of Diseases",
+      "description": "Organization: Graduate School of Medicine, Kyoto University; Department: Department of Pathology and Biology of Diseases",
       "affiliation": [
         {
-          "@id": "https://ror.org/02ets8c94"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02ets8c94",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Graduate School of Medicine"
+      "name": "Graduate School of Medicine, Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1247/csf.20010",
       "@type": "ScholarlyArticle",
-      "name": "Biliverdin Reductase-A Deficiency Brighten and Sensitize Biliverdin-binding Chromoproteins.",
-      "datePublished": "2020"
+      "name": "Kobachi K, Kuno S, Sato S, Sumiyama K, Matsuda M, and Terai K (2020) Biliverdin Reductase-A Deficiency Brighten and Sensitize Biliverdin-binding Chromoproteins. Cell Structure and Function, Volume 45, Issue 2, pages 131-141.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/32581154"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004074",
+      "@type": "DefinedTerm",
+      "name": "biliverdin reductase (NAD(P)+) activity",
+      "identifier": "GO:0004074"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
+      "@type": "DefinedTerm",
+      "name": "cytoplasm",
+      "identifier": "GO:0005737"
     },
     {
       "@id": "#biosample-1",
@@ -171,7 +198,7 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
@@ -182,50 +209,24 @@
       "description": "MEFs",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "Homo sapiens ~ HeLa cell",
-      "description": "Homo sapiens ~ HeLa cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
+      "name": "Homo sapiens (NCBI:txid9606 ) ~ HeLa cell",
+      "description": "Homo sapiens (NCBI:txid9606 ) ~ HeLa cell",
       "hasCellLine": {
         "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004074",
-      "@type": "DefinedTerm",
-      "name": "biliverdin reductase"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
-      "@type": "DefinedTerm",
-      "name": "cytoplasm"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -239,6 +240,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -250,27 +257,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2166462076,
-      "description": "2.2 GB",
+      "value": 3585314876,
+      "description": "3.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 89,
+      "value": 178,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

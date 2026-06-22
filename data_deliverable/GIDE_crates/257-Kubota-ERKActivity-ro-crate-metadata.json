@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/257-Kubota-ERKActivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/257-Kubota-ERKActivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/257-Kubota-ERKActivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/257-Kubota-ERKActivity",
       "@type": "Dataset",
       "identifier": "257-Kubota-ERKActivity",
       "name": "Time-lapse confocal images of ERK1-EGFP for MEK1-WT or MEK1-mutations after EGF stimulation.",
-      "description": "257-Kubota-ERKActivity",
+      "description": "See details in Kubota Y, et. al. (2022) Nat Commun. 2022 Jul 13;13(1):4063.",
       "datePublished": "2023-03-22",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Humans",
-        "MAP Kinase Kinase 1/genetics",
-        "MAP Kinase Signaling System/genetics",
-        "Mitogen-Activated Protein Kinase Kinases/metabolism",
-        "Neoplasms/metabolism[major]",
-        "Protein Kinase Inhibitors/pharmacology",
-        "Protein Kinase Inhibitors/therapeutic use",
-        "Proto-Oncogene Proteins c-akt/genetics[major]",
-        "Proto-Oncogene Proteins c-akt/metabolism[major]",
-        "Signal Transduction/genetics"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -83,10 +71,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0000165"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
@@ -95,7 +83,7 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0004707"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0000165"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -107,7 +95,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-903"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/903/render_thumbnail/"
       ],
       "size": [
         {
@@ -131,20 +119,48 @@
       "description": "Organization: The University of Tokyo; Department: Institute of Medical Science; Laboratory: Division of Cell Signaling and Molecular Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-022-31690-w",
       "@type": "ScholarlyArticle",
-      "name": "Qualitative differences in disease-associated MEK mutants reveal molecular signatures and aberrant signaling-crosstalk in cancer.",
-      "datePublished": "2022"
+      "name": "Kubota Y, Fujioka Y, Patil A, Takagi Y, Matsubara D, Iijima M, Momose I, Naka R, Nakai K, Noda NN, Takekawa M. Qualitative differences in disease-associated MEK mutants reveal molecular signatures and aberrant signaling-crosstalk in cancer. Nat Commun. 2022 Jul 13;13(1):4063.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35831322/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000165",
+      "@type": "DefinedTerm",
+      "name": "MAPK cascade",
+      "identifier": "GO:0000165"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@type": "DefinedTerm",
+      "name": "HEK293",
+      "identifier": "CLO:0001230"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@type": "DefinedTerm",
+      "name": "MAP kinase activity",
+      "identifier": "GO:0004707"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -153,7 +169,7 @@
       "description": "Homo sapiens ~ HEK293",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -161,25 +177,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HEK293"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
-      "@type": "DefinedTerm",
-      "name": "MAP kinase activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000165",
-      "@type": "DefinedTerm",
-      "name": "MAPK cascade"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -193,22 +194,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 148429843,
-      "description": "148.4 MB",
+      "value": 215498875,
+      "description": "215.5 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 63,
+      "value": 66,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

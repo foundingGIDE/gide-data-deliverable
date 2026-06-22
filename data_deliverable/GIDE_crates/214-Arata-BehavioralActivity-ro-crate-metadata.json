@@ -45,30 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/214-Arata-BehavioralActivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/214-Arata-BehavioralActivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/214-Arata-BehavioralActivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/214-Arata-BehavioralActivity",
       "@type": "Dataset",
       "identifier": "214-Arata-BehavioralActivity",
       "name": "Time-series images of behavioral activity of wild-type or mutant C. elegans in fed or starved situation.",
-      "description": "214-Arata-BehavioralActivity",
+      "description": "See details in Arata Y, et. al. (2022) Sci Rep. 2022 Jun 21;12(1):10481.",
       "datePublished": "2023-05-11",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Caenorhabditis elegans[major]",
-        "Caenorhabditis elegans Proteins/genetics[major]",
-        "Forkhead Transcription Factors/genetics",
-        "Fractals",
-        "Humans",
-        "Insulin",
-        "Longevity",
-        "Mice",
-        "Mutation",
-        "Receptor, Insulin/genetics"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -84,19 +71,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
-        {
-          "@id": "#biosample-1"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007610"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ],
       "measurementMethod": [
@@ -105,10 +92,13 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
-      ],
-      "thumbnailUrl": [
-        "https://ssbd.riken.jp/data/214-Arata-BehavioralActivity/treeview_preview.html"
       ],
       "size": [
         {
@@ -132,40 +122,56 @@
       "description": "Organization: RIKEN; Department: Cluster for Pioneering Research (CPR); Laboratory: Cellular Informatics Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-022-13022-6",
       "@type": "ScholarlyArticle",
-      "name": "Insulin signaling shapes fractal scaling of C. elegans behavior.",
-      "datePublished": "2022"
+      "name": "Arata Y, Shiga I, Ikeda Y, Jurica P, Kimura H, Kiyono K, Sako Y. Insulin signaling shapes fractal scaling of C. elegans behavior. Sci Rep. 2022 Jun 21;12(1):10481.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35729173/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007610",
+      "@type": "DefinedTerm",
+      "name": "behavior",
+      "identifier": "GO:0007610"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "CB1370 daf-2",
-      "description": "CB1370 daf-2",
+      "name": "CF1038 daf-16",
+      "description": "CF1038 daf-16",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "CF1038 daf-16",
-      "description": "CF1038 daf-16",
+      "name": "CB1370 daf-2",
+      "description": "CB1370 daf-2",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
@@ -176,20 +182,15 @@
       "description": "Bristol N2",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007610",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
       "@type": "DefinedTerm",
-      "name": "behavior"
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -203,24 +204,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
-      "@type": "DefinedTerm",
-      "name": "bright-field microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 37489392293,
-      "description": "37.5 GB",
+      "value": 164027208949,
+      "description": "164.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2157,
+      "value": 4845,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

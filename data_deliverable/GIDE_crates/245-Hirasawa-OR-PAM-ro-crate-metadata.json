@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/245-Hirasawa-OR-PAM/"
+        "@id": "https://ssbd.riken.jp/v2/project/245-Hirasawa-OR-PAM"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/245-Hirasawa-OR-PAM/",
+      "@id": "https://ssbd.riken.jp/v2/project/245-Hirasawa-OR-PAM",
       "@type": "Dataset",
       "identifier": "245-Hirasawa-OR-PAM",
       "name": "Spectroscopic OR-PAM images of HeLa cells in the planar-culture or dispersed in Matrigel.",
-      "description": "245-Hirasawa-OR-PAM",
+      "description": "See details in Hirasawa T, et. al. (2022) Photoacoustics, May 7;26:100364.",
       "datePublished": "2022-12-13",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -74,13 +74,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -88,17 +88,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-803"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/803/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,7 +116,7 @@
       "description": "Organization: National Defense Medical College; Department: Department of Medical Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e4qbj88"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -134,20 +128,36 @@
       "description": "Organization: National Defense Medical College; Department: Department of Medical Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/02e4qbj88"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02e4qbj88",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "National Defense Medical College"
     },
     {
       "@id": "https://doi.org/10.1016/j.pacs.2022.100364",
       "@type": "ScholarlyArticle",
-      "name": "Spectroscopic photoacoustic microscopic imaging during single spatial scan using broadband excitation light pulses with wavelength-dependent time delay.",
-      "datePublished": "2022"
+      "name": "Hirasawa T, Tachi K, Miyashita M, Okawa S, Kushibiki T, Ishihara M. Spectroscopic photoacoustic microscopic imaging during single spatial scan using broadband excitation light pulses with wavelength-dependent time delay. Photoacoustics. 2022 May 7;26:100364.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35574189/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -156,7 +166,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -164,29 +174,13 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "photoacoustic microscopy",
-      "description": "photoacoustic microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
       "description": "fluorescence microscopy",
@@ -197,27 +191,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "photoacoustic microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 15563668,
-      "description": "15.6 MB",
+      "value": 22184508,
+      "description": "22.2 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 9,
+      "value": 14,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

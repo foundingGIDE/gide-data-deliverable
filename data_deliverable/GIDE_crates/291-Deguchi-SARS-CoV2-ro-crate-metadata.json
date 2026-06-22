@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/291-Deguchi-SARS-CoV2/"
+        "@id": "https://ssbd.riken.jp/v2/project/291-Deguchi-SARS-CoV2"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/291-Deguchi-SARS-CoV2/",
+      "@id": "https://ssbd.riken.jp/v2/project/291-Deguchi-SARS-CoV2",
       "@type": "Dataset",
       "identifier": "291-Deguchi-SARS-CoV2",
-      "name": "Fluorescence images of immunostaining analysis of SARS-CoV-2 NP in hepatocytes of bile duct (ibd-LoC) or blood vessel (bv-LoC) at 2 or 6 days post-infection (dpi). ",
-      "description": "291-Deguchi-SARS-CoV2",
+      "name": "Fluorescence images of immunostaining analysis of SARS-CoV-2 NP in hepatocytes of bile duct (ibd-LoC) or blood vessel (bv-LoC) at 2 or 6 days post-infection (dpi).",
+      "description": "See details in Deguchi S, et. al. (2023) PNAS Nexus, Mar 7;2(3):pgad029.",
       "datePublished": "2023-07-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -71,16 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0000182"
+          "@id": "http://purl.obolibrary.org/obo/CL_0000182"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019080"
@@ -98,7 +98,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1054"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1054/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,20 +122,54 @@
       "description": "Organization: Kyoto University; Department: Center for iPS Cell Research and Application (CiRA)",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1093/pnasnexus/pgad029",
       "@type": "ScholarlyArticle",
-      "name": "Elucidation of the liver pathophysiology of COVID-19 patients using liver-on-a-chips.",
-      "datePublished": "2023"
+      "name": "Deguchi S, Kosugi K, Hashimoto R, Sakamoto A, Yamamoto M, Krol RP, Gee P, Negoro R, Noda T, Yamamoto T, Torisawa YS, Nagao M, Takayama K. Elucidation of the liver pathophysiology of COVID-19 patients using liver-on-a-chips. PNAS Nexus. 2023 Mar 7;2(3):pgad029.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36896132/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CL_0000182",
+      "@type": "DefinedTerm",
+      "name": "hepatocyte",
+      "identifier": "CL:0000182"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019080",
+      "@type": "DefinedTerm",
+      "name": "viral gene expression",
+      "identifier": "GO:0019080"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0098586",
+      "@type": "DefinedTerm",
+      "name": "cellular response to virus",
+      "identifier": "GO:0098586"
     },
     {
       "@id": "#biosample-1",
@@ -144,38 +178,15 @@
       "description": "Homo sapiens ~ hepatocyte",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0000182"
-      }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0000182",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "hepatocyte"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019080",
-      "@type": "DefinedTerm",
-      "name": "viral gene expression"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0098586",
-      "@type": "DefinedTerm",
-      "name": "cellular response to virus"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -189,22 +200,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 6157048,
-      "description": "6.2 MB",
+      "value": 10986710,
+      "description": "11.0 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 10,
+      "value": 18,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

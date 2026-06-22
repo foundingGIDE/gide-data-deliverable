@@ -45,39 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/95-Nojima-CellMorphology/"
+        "@id": "https://ssbd.riken.jp/v1/project/95-Nojima-CellMorphology"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/95-Nojima-CellMorphology/",
+      "@id": "https://ssbd.riken.jp/v1/project/95-Nojima-CellMorphology",
       "@type": "Dataset",
       "identifier": "95-Nojima-CellMorphology",
       "name": "HE staining images of human and mouse organs with CUBIC",
-      "description": "95-Nojima-CellMorphology",
+      "description": "See details in Nojima et al. (2017) Sci Rep, 7(1): 9269.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Biopsy",
-        "Carcinoma/diagnostic imaging",
-        "Carcinoma/pathology",
-        "Disease Models, Animal",
-        "Female",
-        "Fluorescent Antibody Technique",
-        "Humans",
-        "Image Processing, Computer-Assisted",
-        "Imaging, Three-Dimensional/methods[major]",
-        "Immunohistochemistry",
-        "Lung/diagnostic imaging[major]",
-        "Lung/metabolism",
-        "Lung/pathology",
-        "Lymph Nodes/diagnostic imaging[major]",
-        "Lymph Nodes/metabolism",
-        "Lymph Nodes/pathology",
-        "Lymphatic Metastasis",
-        "Mice",
-        "Molecular Imaging/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -136,31 +114,39 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/s41598-017-09117-0"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28839164"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-2"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0060437"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0048535"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-166"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/166/render_thumbnail/"
       ],
       "size": [
         {
@@ -184,100 +170,221 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Satoshi Nojima"
+      "name": "Satoshi Nojima",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Etsuo A. Susaki"
+      "name": "Etsuo A. Susaki",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Kyotaro Yoshida"
+      "name": "Kyotaro Yoshida",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hiroyoshi Takemoto"
+      "name": "Hiroyoshi Takemoto",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Naoto Tsujimura"
+      "name": "Naoto Tsujimura",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Shohei Iijima"
+      "name": "Shohei Iijima",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Ko Takachi"
+      "name": "Ko Takachi",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Yujiro Nakahara"
+      "name": "Yujiro Nakahara",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Shinichiro Tahara"
+      "name": "Shinichiro Tahara",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Kenji Ohshima"
+      "name": "Kenji Ohshima",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
-      "name": "Masako Kurashige"
+      "name": "Masako Kurashige",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-013",
       "@type": "Person",
-      "name": "Yumiko Hori"
+      "name": "Yumiko Hori",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-014",
       "@type": "Person",
-      "name": "Naoki Wada"
+      "name": "Naoki Wada",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-015",
       "@type": "Person",
-      "name": "Jun-ichiro Ikeda"
+      "name": "Jun-ichiro Ikeda",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-016",
       "@type": "Person",
-      "name": "Atsushi Kumanogoh"
+      "name": "Atsushi Kumanogoh",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-017",
       "@type": "Person",
-      "name": "Eiichi Morii"
+      "name": "Eiichi Morii",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Synthetic Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1038/s41598-017-09117-0",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28839164",
       "@type": "ScholarlyArticle",
-      "name": "CUBIC pathology: three-dimensional imaging for pathological diagnosis.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28839164"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060437",
+      "@type": "DefinedTerm",
+      "name": "lung growth",
+      "identifier": "GO:0060437"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048535",
+      "@type": "DefinedTerm",
+      "name": "lymph node development",
+      "identifier": "GO:0048535"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -286,7 +393,7 @@
       "description": "Homo sapiens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
@@ -297,44 +404,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060437",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
       "@type": "DefinedTerm",
-      "name": "lung growth"
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048535",
-      "@type": "DefinedTerm",
-      "name": "lymph node development"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 637701774,
-      "description": "637.7 MB",
+      "value": 1075041968,
+      "description": "1.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 114,
+      "value": 229,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

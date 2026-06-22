@@ -45,23 +45,56 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/387-Ando-StayGold/"
+        "@id": "https://ssbd.riken.jp/v3/project/387-Ando-StayGold"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/387-Ando-StayGold/",
+      "@id": "https://ssbd.riken.jp/v3/project/387-Ando-StayGold",
       "@type": "Dataset",
       "identifier": "387-Ando-StayGold",
       "name": "Super resolution cellular images using fluorescent-tags of StayGold variants",
-      "description": "387-Ando-StayGold",
+      "description": "Although StayGold is a bright and highly photostable fluorescent protein, its propensity for obligate dimer formation may hinder applications in molecular fusion and membrane targeting. To attain monovalent as well as bright and photostable labeling, the authors engineered tandem dimers of StayGold to promote dispersibility. On the basis of the crystal structure of this fluorescent protein, they disrupted the dimerization to generate a monomeric variant that offers improved photostability and brightness compared to StayGold. The authors applied the new monovalent StayGold tools to live-cell imaging experiments using spinning-disk laser-scanning confocal microscopy or structured illumination microscopy. They achieved cell-wide, high-spatiotemporal resolution and sustained imaging of dynamic subcellular events, including the targeting of endogenous condensin I\nto mitotic chromosomes, the movement of the Golgi apparatus and its membranous derivatives along microtubule networks, the distribution of cortical filamentous actin and the remolding of cristae membranes within mobile mitochondria.",
       "datePublished": "2025-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "HeLa Cells",
+        "Microscopy, Confocal",
+        "Cell Nucleus",
+        "Chromosomes",
+        "Golgi Apparatus",
+        "Actin Cytoskeleton",
+        "Mitochondria"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-0671-4376"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6803-5961"
+        },
+        {
+          "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
+        },
+        {
+          "@id": "#auth-006"
+        },
+        {
+          "@id": "#auth-007"
+        },
+        {
+          "@id": "#auth-008"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2601-3689"
         }
       ],
       "seeAlso": [
@@ -69,12 +102,17 @@
           "@id": "https://doi.org/10.1038/s41592-023-02085-6"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-3"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
         },
         {
           "@id": "#biosample-2"
@@ -83,34 +121,16 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-3"
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003665"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007030"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0015629"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0030837"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_1904637"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534"
         }
       ],
       "measurementMethod": [
@@ -124,29 +144,17 @@
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "#imaging-technique-2"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000252"
         },
         {
           "@id": "#imaging-protocol-3"
         },
         {
-          "@id": "#imaging-technique-3"
-        },
-        {
-          "@id": "#imaging-protocol-4"
-        },
-        {
-          "@id": "#imaging-technique-4"
-        },
-        {
-          "@id": "#imaging-protocol-5"
-        },
-        {
-          "@id": "#imaging-technique-5"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000332"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1753"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1753/render_thumbnail/"
       ],
       "size": [
         {
@@ -163,78 +171,148 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-0671-4376",
       "@type": "Person",
       "name": "Atsushi Miyawaki",
       "email": "atsushi.miyawaki@riken.jp",
-      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics; Laboratory: Laboratory for Cell Function Dynamics",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics, RIKEN Center for Brain Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Ryoko Ando",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics, RIKEN Center for Brain Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6803-5961",
+      "@type": "Person",
+      "name": "Satoshi Shimozono",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics, RIKEN Center for Brain Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Masatoshi Takagi",
+      "description": "Organization: RIKEN; Department: Cellular Dynamics Laboratory, RIKEN Cluster for Pioneering Research (CPR)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Mayu Sugiyama",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics, RIKEN Center for Brain Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Hiroshi Kurokawa",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Function Dynamics, RIKEN Center for Brain Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Fumiyoshi Ishidate",
+      "description": "Organization: Kyoto University; Department: Institute for Integrated Cell-Material Sciences (WPI-iCeMS)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-008",
+      "@type": "Person",
+      "name": "Takahiro Fujiwara",
+      "description": "Organization: Kyoto University; Department: Institute for Integrated Cell-Material Sciences (WPI-iCeMS)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2601-3689",
+      "@type": "Person",
+      "name": "Yasushi Okada",
+      "description": "Organization: RIKEN; Department: Laboratory for Cell Polarity Regulation, RIKEN Center for Biosystems Dynamics Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "Kyoto University"
+    },
+    {
       "@id": "https://doi.org/10.1038/s41592-023-02085-6",
       "@type": "ScholarlyArticle",
-      "name": "StayGold variants for molecular fusion and membrane-targeting applications.",
-      "datePublished": "2023"
+      "name": "Ando R, Shimozono S, Ago H, Takagi M, Sugiyama M, Kurokawa H, Hirano M, Niino Y, Ueno G, Ishidate F, Fujiwara T, Okada Y, Yamamoto M, Miyawaki A. StayGold variants for molecular fusion and membrane-targeting applications. Nat Methods. 2024 Apr;21(4):648-656.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38036853/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11009113/"
+      ]
     },
     {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ HCT 116 cell",
-      "description": "Homo sapiens ~ HCT 116 cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": "HCT 116 cell"
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported in part by Grant-in-Aid for Scientific Research (S) (21H05041 to A.M.), Grant-in-Aid for Innovative Areas: Resonance Bio (15H05948 to A.M.) and Information Physics of\nLiving Matters (19H05794 and 19H05795 to Y.O.), Japan Science and Technology Agency Core Research for Evolutionary Science and Technology program, ‘Spatiotemporal dynamics of intracellular components’ (JPM JCR20E2 to Y.O.) and Moonshot R&D program ‘Realization of ultra-early disease prediction and intervention by\n2050’ (JPM JMS2025-14 to Y.O.), Marine Biomass Innovation Project (NFRFT-2020-00452 to A.M.), the Brain Mapping by Integrated Neurotechnologies for Disease Studies from AMED (Brain/MINDS, JP15dm0207001 to A.M.), RIKEN Collaboration Seed Fund (to M.T. and R.A.) and Platform Project for Supporting Drug Discovery and Life Science Research (Basis for Supporting Innovative Drug Discovery and Life Science Research (BINDS)) from AMED (JP21am0101070 to M.Y.)."
     },
     {
-      "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ HeLa cell",
-      "description": "Homo sapiens ~ HeLa cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-      }
-    },
-    {
-      "@id": "#biosample-3",
-      "@type": "BioSample",
-      "name": "Chlorocebus pygerythrus ~ COS-7 cell",
-      "description": "Chlorocebus pygerythrus ~ COS-7 cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
-      }
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
-      "vernacularName": "human"
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_60710",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534",
       "@type": "Taxon",
-      "scientificName": "Chlorocebus pygerythrus"
+      "scientificName": "Chlorocebus aethiops",
+      "name": "Chlorocebus aethiops",
+      "identifier": "NCBITaxon:9534"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003665",
+      "@type": "DefinedTerm",
+      "name": "HCT 116 cell"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
@@ -247,39 +325,52 @@
       "name": "COS-7 cell"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HCT 116 cell",
+      "description": "Genome-edited HCT116 cells in which a subunit of condensin I (CAP-H) was endogenously tagged at the C terminus with td5oxStayGold",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003665"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-      "@type": "DefinedTerm",
-      "name": "chromosome"
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa cell",
+      "description": "Fixed HeLa cells expressing td5StayGold(c4)=GianCreg",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007030",
-      "@type": "DefinedTerm",
-      "name": "Golgi organization"
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Chlorocebus aethiops (NCBI:txid9534) ~ COS-7 cell",
+      "description": "COS-7 cells expressing F-tractin=mStayGold",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9534"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002597"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0015629",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
       "@type": "DefinedTerm",
-      "name": "actin cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030837",
-      "@type": "DefinedTerm",
-      "name": "negative regulation of actin filament polymerization"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
-      "@type": "DefinedTerm",
-      "name": "mitochondrion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904637",
-      "@type": "DefinedTerm",
-      "name": "cellular response to ionomycin"
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -293,86 +384,51 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000252",
+      "@type": "DefinedTerm",
+      "name": "single-spot confocal microscopy",
+      "identifier": "FBbi:00000252"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
-      "name": "single-beam laser-scanning confocal microscopy (LSCM)",
-      "description": "single-beam laser-scanning confocal microscopy (LSCM)",
+      "name": "single-spot confocal microscopy",
+      "description": "single-spot confocal microscopy",
       "measurementTechnique": [
         {
-          "@id": "#imaging-technique-2"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000252"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
+      "@type": "DefinedTerm",
+      "name": "structured illumination microscopy (SIM)",
+      "identifier": "FBbi:00000332"
     },
     {
       "@id": "#imaging-protocol-3",
       "@type": "LabProtocol",
-      "name": "structured illumination microscopy (SIM) (Fbbi:",
-      "description": "structured illumination microscopy (SIM) (Fbbi:",
+      "name": "structured illumination microscopy (SIM)",
+      "description": "structured illumination microscopy (SIM)",
       "measurementTechnique": [
         {
-          "@id": "#imaging-technique-3"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000332"
         }
       ]
-    },
-    {
-      "@id": "#imaging-protocol-4",
-      "@type": "LabProtocol",
-      "name": "00000332)",
-      "description": "00000332)",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-4"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-5",
-      "@type": "LabProtocol",
-      "name": "lattice SIM",
-      "description": "lattice SIM",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-5"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
-      "@type": "DefinedTerm",
-      "name": "spinning disk confocal microscopy"
-    },
-    {
-      "@id": "#imaging-technique-2",
-      "@type": "DefinedTerm",
-      "name": "single-beam laser-scanning confocal microscopy (LSCM)"
-    },
-    {
-      "@id": "#imaging-technique-3",
-      "@type": "DefinedTerm",
-      "name": "structured illumination microscopy (SIM) (Fbbi:"
-    },
-    {
-      "@id": "#imaging-technique-4",
-      "@type": "DefinedTerm",
-      "name": "00000332)"
-    },
-    {
-      "@id": "#imaging-technique-5",
-      "@type": "DefinedTerm",
-      "name": "lattice SIM"
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 164910731729,
-      "description": "164.9 GB",
+      "value": 762400018404,
+      "description": "762.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 265,
+      "value": 1432,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

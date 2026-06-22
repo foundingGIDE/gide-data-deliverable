@@ -45,24 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/218-Tanaka-CellSignallingDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/218-Tanaka-CellSignallingDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/218-Tanaka-CellSignallingDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/218-Tanaka-CellSignallingDyn",
       "@type": "Dataset",
       "identifier": "218-Tanaka-CellSignallingDyn",
       "name": "Live imaging of different cells response to IFN-γ both in vivo and in vitro and BDML file for quantitative information of tumor size in B6 albino mice implanted with different cells.",
-      "description": "218-Tanaka-CellSignallingDyn",
+      "description": "See details in Tanaka T, et. al. (2021) Cell Struct Funct, Dec 22;46(2):103-111.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Interferon-gamma/genetics[major]",
-        "Promoter Regions, Genetic/genetics",
-        "RNA, Messenger",
-        "Signal Transduction",
-        "Transcription, Genetic[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -72,6 +65,9 @@
         },
         {
           "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
         }
       ],
       "seeAlso": [
@@ -81,25 +77,25 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "#biosample-4"
         },
         {
           "@id": "#biosample-3"
         },
         {
-          "@id": "#biosample-4"
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019961"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019964"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -119,11 +115,11 @@
           "@id": "#imaging-protocol-3"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-769"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/769/render_thumbnail/"
       ],
       "size": [
         {
@@ -147,25 +143,65 @@
       "description": "Organization: kyoto University; Department: Graduate School of Medicine; Laboratory: Department of Pathology and Biology of Diseases",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Taisei Tanaka"
+      "name": "Kenta Terai",
+      "email": "terai.kenta.5m@kyoto-u.ac.jp",
+      "description": "Organization: kyoto University; Department: Graduate School of Medicine; Laboratory: Department of Pathology and Biology of Diseases",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Taisei Tanaka",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Research Center for Dynamic Living Systems, Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "kyoto University"
     },
     {
       "@id": "https://doi.org/10.1247/csf.21052",
       "@type": "ScholarlyArticle",
-      "name": "A Dual Promoter System to Monitor IFN-gamma Signaling in vivo at Single-cell Resolution.",
-      "datePublished": "2021"
+      "name": "Tanaka T, Konishi Y, Ichise H, Tsukiji S, Matsuda M, Terai K. A Dual Promoter System to Monitor IFN-γ Signaling in vivo at Single-cell Resolution. Cell Struct Funct. 2021 Dec 22;46(2):103-111.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34744115/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019961",
+      "@type": "DefinedTerm",
+      "name": "IFN binding",
+      "identifier": "GO:0019961"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019964",
+      "@type": "DefinedTerm",
+      "name": "interferon-gamma binding",
+      "identifier": "GO:0019964"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -174,10 +210,13 @@
       "description": "C57BL/6 (mouse) ~ B16F10 melanoma cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
-      "hasCellLine": "B16F10 melanoma cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001794",
+        "name": "B16-F10 cell"
+      }
     },
     {
       "@id": "#biosample-2",
@@ -186,10 +225,9 @@
       "description": "C57BL/6 (mouse) ~ BrafV600E cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "BrafV600E cell"
+      ]
     },
     {
       "@id": "#biosample-3",
@@ -198,10 +236,9 @@
       "description": "C57BL/6 (mouse) ~ MC-38 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "MC-38 cell"
+      ]
     },
     {
       "@id": "#biosample-4",
@@ -210,26 +247,15 @@
       "description": "C57BL/6 (mouse) ~ Panc02 cel",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "Panc02 cel"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019961",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "IFN binding"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019964",
-      "@type": "DefinedTerm",
-      "name": "interferon-gamma binding"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -243,6 +269,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -254,43 +286,34 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
+      "@type": "DefinedTerm",
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
+    },
+    {
       "@id": "#imaging-protocol-3",
       "@type": "LabProtocol",
-      "name": "two-photon excitation microscopy",
-      "description": "two-photon excitation microscopy",
+      "name": "two-photon laser scanning microscopy",
+      "description": "two-photon laser scanning microscopy",
       "measurementTechnique": [
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000254"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "two-photon excitation microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 5962228768,
-      "description": "6.0 GB",
+      "value": 10002079858,
+      "description": "10.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 10086,
+      "value": 10118,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

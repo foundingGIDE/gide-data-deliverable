@@ -103,7 +103,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
         }
       ],
       "size": [
@@ -176,22 +176,6 @@
       "name": "Histology"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "optical microscope",
-      "description": "optical microscope",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000322"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000322",
-      "@type": "DefinedTerm",
-      "name": "optical microscope"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 73454084096,
@@ -205,6 +189,23 @@
       "value": 2303,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
     }
   ]
 }

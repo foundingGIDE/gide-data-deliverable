@@ -45,11 +45,11 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/421-Takenouchi-AgedYoungOocyte/"
+        "@id": "https://ssbd.riken.jp/v3/project/421-Takenouchi-AgedYoungOocyte"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/421-Takenouchi-AgedYoungOocyte/",
+      "@id": "https://ssbd.riken.jp/v3/project/421-Takenouchi-AgedYoungOocyte",
       "@type": "Dataset",
       "identifier": "421-Takenouchi-AgedYoungOocyte",
       "name": "Live chromosome identifying and tracking in mouse oocytes",
@@ -57,28 +57,24 @@
       "datePublished": "2025-12-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Animals",
-        "Female",
-        "Mice",
-        "Aneuploidy[major]",
-        "Chromosome Segregation[major]",
-        "Chromosomes, Mammalian/genetics",
-        "Meiosis[major]",
-        "Metaphase",
-        "Microtubules/metabolism[major]",
-        "Oocytes/cytology[major]",
-        "Oocytes/metabolism[major]",
-        "Datasets as Topic"
+        "Oocytes",
+        "Microscopy, Confocal",
+        "Chromosomes",
+        "Meiosis",
+        "Chromosome Segregation"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0009-0009-5075-7216"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0002-6486-7143"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-5515-3002"
         }
       ],
       "seeAlso": [
@@ -86,15 +82,17 @@
           "@id": "https://doi.org/10.1126/science.adn5529"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -103,6 +101,12 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "size": [
@@ -120,61 +124,82 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0009-0009-5075-7216",
       "@type": "Person",
-      "name": "Osamu  Takenouchi",
+      "name": "Osamu Takenouchi",
       "email": "osamu.takenouchi@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR); Laboratory: Center for Biosystems Dynamics Research (BDR)",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR)",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0002-6486-7143",
       "@type": "Person",
       "name": "Tomoya S Kitajima",
       "email": "tomoya.kitajima@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR); Laboratory: Center for Biosystems Dynamics Research (BDR)",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR)",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "https://orcid.org/0000-0001-5515-3002",
+      "@type": "Person",
+      "name": "Yogo Sakakibara",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research (BDR)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1126/science.adn5529",
       "@type": "ScholarlyArticle",
-      "name": "Live chromosome identifying and tracking reveals size-based spatial pathway of meiotic errors in oocytes.",
-      "datePublished": "2024"
+      "name": "Takenouchi O, Sakakibara Y, Kitajima TS. Live chromosome identifying and tracking reveals size-based spatial pathway of meiotic errors in oocytes. Science. 2024 Jul 19;385(6706):eadn5529.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/39024439/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was supported by RIKEN\nintramural grants and by Japan Society for the Promotion of\nScience (JSPS) KAKENHI grants 18J01017 and 21K15022 (to O.T.)\nand JSPS KAKENHI grants 23H04948, 21H02407, and 18H05549\n(to T.S.K.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "B6D2F1/J",
-      "description": "B6D2F1/J",
+      "name": "B6D2F1/J ~ oocyte",
+      "description": "Mouse oocytes at 5 hours after GVBD (germinal vesicle breakdown), in which H2B-SNAP and chromosome10 were visualized.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "chromosome"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -188,22 +213,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "confocal microscopy"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 670800778328,
-      "description": "670.8 GB",
+      "value": 2405773658108,
+      "description": "2.4 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 32990,
+      "value": 68936,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

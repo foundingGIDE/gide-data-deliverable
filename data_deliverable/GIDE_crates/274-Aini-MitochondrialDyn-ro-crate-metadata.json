@@ -45,30 +45,33 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/274-Aini-MitochondrialDyn/"
+        "@id": "https://ssbd.riken.jp/v3/project/274-Aini-MitochondrialDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/274-Aini-MitochondrialDyn/",
+      "@id": "https://ssbd.riken.jp/v3/project/274-Aini-MitochondrialDyn",
       "@type": "Dataset",
       "identifier": "274-Aini-MitochondrialDyn",
-      "name": "Fluorescence images or time-lapse images of mitochondrial distribution dynamics during the development of rice zygotes ",
-      "description": "274-Aini-MitochondrialDyn",
+      "name": "Observation of dynamic mitochondrial distribution during development\nand asymmetric division of rice zygotes",
+      "description": "Mitochondria are highly dynamic organelles that actively move and change their localization along with actin filaments during the cell cycle. Studies of mitochondrial dynamics and distribution in plant cells have mainly been conducted on somatic cells, and our understanding about these aspects during the formation and development of zygotes remains limited.\nIn this study, mitochondrial nucleoids of rice egg cells and zygotes were successfully stained by using N-aryl pyrido cyanine 3 (PC3), and their intracellular localization and distribution were demonstrated. Mitochondria in rice egg cells were small and coccoid in shape and were primarily distributed around the nucleus. Upon gamete fusion, the resulting zygotes showed mitochondrial dispersion and accumulation equivalent to those in rice egg cells until 8 h after fusion (HAF). Around 12 HAF, the mitochondria started to disperse throughout the cytoplasm of the zygotes, and this dispersive distribution pattern continued until the zygotes entered the mitotic phase. At early prophase, the mitochondria redistributed from dispersive to densely accumulated around the nucleus, and during the metaphase and anaphase, the mitochondria were depleted from possible mitotic spindle region. Thereafter, during cell plate formation between daughter nuclei, the mitochondria distributed along the phragmoplast, where the new cell wall was formed. Finally, relatively equivalent amounts of mitochondria were detected in the apical and basal cells which were produced through asymmetric division of the zygotes. Further observation by treating the egg cell with latrunculin B revealed that the accumulation of mitochondria around the nuclear periphery in egg cells and early zygotes depended on the actin meshwork converging toward the egg or zygote nucleus.",
       "datePublished": "2023-05-29",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Cell Cycle",
-        "Cell Nucleus/metabolism",
-        "Mitosis",
-        "Oryza[major]",
-        "Zygote"
+        "Microscopy, Confocal\nTime-Lapse Imaging",
+        "Zygote",
+        "Mitochondria",
+        "Cell Nucleus",
+        "Embryonic Structures"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-6531-210X"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4096-0343"
         }
       ],
       "seeAlso": [
@@ -76,15 +79,23 @@
           "@id": "https://doi.org/10.1007/s00497-021-00430-3"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1736657"
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0048311"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1736657"
         }
       ],
       "measurementMethod": [
@@ -92,7 +103,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         },
         {
           "@id": "#imaging-protocol-2"
@@ -102,7 +113,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1005"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1005/render_thumbnail/"
       ],
       "size": [
         {
@@ -119,59 +130,109 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-6531-210X",
       "@type": "Person",
       "name": "Takashi Okamoto",
       "email": "okamoto-takashi@tmu.ac.jp",
       "description": "Organization: Tokyo Metropolitan University; Department: Department of Biological Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/00ws30h19"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00ws30h19",
+      "@id": "https://orcid.org/0000-0002-4096-0343",
+      "@type": "Person",
+      "name": "Hanifah Aini",
+      "description": "Organization: Tokyo Metropolitan University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Tokyo Metropolitan University"
     },
     {
       "@id": "https://doi.org/10.1007/s00497-021-00430-3",
       "@type": "ScholarlyArticle",
-      "name": "Dynamics of mitochondrial distribution during development and asymmetric division of rice zygotes.",
-      "datePublished": "2022"
+      "name": "Aini H, Sato Y, Uno K, Higashiyama T, Okamoto T. Dynamics of mitochondrial distribution during development and asymmetric division of rice zygotes. Plant Reprod. 2022 Mar;35(1):47-60.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34633536/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported, in part, by the MEXT KAKENHI\n(Grant-in-Aid for Scientific Research on Innovative Areas, grant\nnos. 19H04868 to T.O., 19H05364, 20H05412 to Y.S., 16H06464,\n16K21727 to T.H.), and JSPS KAKENHI (Grant-in-Aid for Challeng-\ning Exploratory Research, grant no. 20K21317 to T.O.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1736657",
+      "@type": "Taxon",
+      "scientificName": "Oryza sativa temperate japonica subgroup",
+      "name": "Oryza sativa temperate japonica subgroup",
+      "identifier": "NCBITaxon:1736657"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Oryza sativa temperate japonica subgroup",
-      "description": "Oryza sativa temperate japonica subgroup",
+      "name": "Oryza sativa temperate japonica subgroup (NCBI:txid1736657) ~ zygote",
+      "description": "Egg cells and sperm cells were fused, and the resultant zygotes were stained with PC3. Mitochondria were observed after 12 h after fusion (HAF).",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1736657"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1736657"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_1736657",
-      "@type": "Taxon",
-      "scientificName": "Oryza sativa temperate japonica subgroup"
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Oryza sativa temperate japonica subgroup (NCBI:txid1736657) ~ egg cell",
+      "description": "The egg cells were stained with PC3. The mitochondrial nucleoids of egg cells were observed.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1736657"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048311",
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Oryza sativa temperate japonica subgroup (NCBI:txid1736657) ~ zygote\nembryo",
+      "description": "The rice zygotes were stained by PC3. The mitochondria during the two-celled embryo of rice zygotes were observed.",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/1736657"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "mitochondrion distribution"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "fluorescence microscopy",
-      "description": "fluorescence microscopy",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
       "measurementTechnique": [
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-2",
@@ -185,27 +246,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 188145263,
-      "description": "188.1 MB",
+      "value": 251368231,
+      "description": "251.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 215,
+      "value": 249,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,32 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/36-Torisawa-MolDynEg5/"
+        "@id": "https://ssbd.riken.jp/v1/project/36-Torisawa-MolDynEg5"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/36-Torisawa-MolDynEg5/",
+      "@id": "https://ssbd.riken.jp/v1/project/36-Torisawa-MolDynEg5",
       "@type": "Dataset",
       "identifier": "36-Torisawa-MolDynEg5",
       "name": "36-Torisawa-MolDynEg5",
-      "description": "36-Torisawa-MolDynEg5",
+      "description": "See details in Torisawa et al. (2016) Biophysical Journal, 111(2): 373-385.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Actins/metabolism",
-        "Biomechanical Phenomena",
-        "Elasticity",
-        "HEK293 Cells",
-        "Humans",
-        "Kinesins/chemistry",
-        "Kinesins/metabolism[major]",
-        "Mechanical Phenomena[major]",
-        "Microtubules/metabolism[major]",
-        "Models, Biological",
-        "Protein Multimerization",
-        "Protein Structure, Quaternary",
-        "Spindle Apparatus/metabolism"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -90,19 +75,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.bpj.2016.06.010"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27463139"
         }
       ],
       "about": [
         {
-          "@id": "#biosample-1"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005874"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-66"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/66/render_thumbnail/"
       ],
       "size": [
         {
@@ -126,61 +122,107 @@
       "description": "Organization: National Institute of Information and Communications Technology; Department: Advanced ICT Research Institute",
       "affiliation": [
         {
-          "@id": "https://ror.org/016bgq349"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Takayuki Torisawa"
+      "name": "Takayuki Torisawa",
+      "description": "Organization: National Institute of Information and Communications Technology; Department: Advanced ICT Research Institute",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Daisuke Taniguchi"
+      "name": "Daisuke Taniguchi",
+      "description": "Organization: National Institute of Information and Communications Technology; Department: Advanced ICT Research Institute",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Shuji Ishihara"
+      "name": "Shuji Ishihara",
+      "description": "Organization: National Institute of Information and Communications Technology; Department: Advanced ICT Research Institute",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/016bgq349",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "National Institute of Information and Communications Technology"
     },
     {
-      "@id": "https://doi.org/10.1016/j.bpj.2016.06.010",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27463139",
       "@type": "ScholarlyArticle",
-      "name": "Spontaneous Formation of a Globally Connected Contractile Network in a Microtubule-Motor System.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "NA",
-      "description": "NA"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27463139"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005874",
       "@type": "DefinedTerm",
-      "name": "microtubule"
+      "name": "microtubule",
+      "identifier": "GO:0005874"
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 8475536778,
-      "description": "8.5 GB",
+      "value": 13484026277,
+      "description": "13.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 3,
+      "value": 6,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

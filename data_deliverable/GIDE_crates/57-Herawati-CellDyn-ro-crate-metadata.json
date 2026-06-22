@@ -45,48 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/57-Herawati-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/57-Herawati-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/57-Herawati-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/57-Herawati-CellDyn",
       "@type": "Dataset",
       "identifier": "57-Herawati-CellDyn",
       "name": "Images and quantitative data showing the self-organizing mechanism in mouse multiciliated cells (MCCs)",
-      "description": "57-Herawati-CellDyn",
+      "description": "See details in Herawati et al. (2016) J Cell Biol, 214(5): 571-586.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Actins/metabolism",
-        "Animals",
-        "Basal Bodies/drug effects",
-        "Basal Bodies/metabolism[major]",
-        "Basal Bodies/ultrastructure",
-        "Calcium-Binding Proteins/metabolism",
-        "Cell Differentiation/drug effects",
-        "Cell Polarity/drug effects",
-        "Cell Survival/drug effects",
-        "Cell Tracking",
-        "Cilia/drug effects",
-        "Cilia/metabolism[major]",
-        "Cilia/ultrastructure",
-        "Computer Simulation",
-        "Cytoskeleton/drug effects",
-        "Cytoskeleton/metabolism[major]",
-        "Cytoskeleton/ultrastructure",
-        "Epithelial Cells/cytology",
-        "Epithelial Cells/drug effects",
-        "Epithelial Cells/metabolism",
-        "Green Fluorescent Proteins/metabolism",
-        "Imaging, Three-Dimensional",
-        "Mice, Inbred C57BL",
-        "Models, Biological",
-        "Nocodazole/pharmacology",
-        "Polymerization",
-        "Time Factors",
-        "Tomography",
-        "Trachea/cytology"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -112,22 +81,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1083/jcb.201601023"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27573463"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-152"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/152/render_thumbnail/"
       ],
       "size": [
         {
@@ -151,7 +128,7 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -159,38 +136,80 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Shuji Ishihara",
-      "email": "shuji@meiji.ac.jp"
+      "email": "shuji@meiji.ac.jp",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Elisa Herawati"
+      "name": "Elisa Herawati",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Daisuke Taniguchi"
+      "name": "Daisuke Taniguchi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hatsuho Kanoh"
+      "name": "Hatsuho Kanoh",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Kazuhiro Tateishi"
+      "name": "Kazuhiro Tateishi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences and Medicine; Laboratory: Laboratory of Biological Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
-      "@id": "https://doi.org/10.1083/jcb.201601023",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27573463",
       "@type": "ScholarlyArticle",
-      "name": "Multiciliated cell basal bodies align in stereotypical patterns coordinated by the apical cytoskeleton.",
-      "datePublished": "2016"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27573463"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton",
+      "identifier": "GO:0005856"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -199,33 +218,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2628178804,
-      "description": "2.6 GB",
+      "value": 6983580700,
+      "description": "7.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 28,
+      "value": 78,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

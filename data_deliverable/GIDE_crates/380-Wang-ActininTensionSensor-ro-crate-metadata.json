@@ -45,25 +45,22 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/380-Wang-ActininTensionSensor/"
+        "@id": "https://ssbd.riken.jp/v3/project/380-Wang-ActininTensionSensor"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/380-Wang-ActininTensionSensor/",
+      "@id": "https://ssbd.riken.jp/v3/project/380-Wang-ActininTensionSensor",
       "@type": "Dataset",
       "identifier": "380-Wang-ActininTensionSensor",
       "name": "Changes of tension in smooth muscle cell after treatment with water, calyculin A, or Y27632",
-      "description": "380-Wang-ActininTensionSensor",
+      "description": "FRET-based sensors are utilized for real-time measurements of cellular tension. However, transfection of the sensor gene shows low efficacy and is only effective for a short period. Reporter mice expressing such sensors have been developed, but sensor fluorescence has not been measured successfully using conventional confocal microscopy. Therefore, methods for spatiotemporal measurement of cellular tension in vivo or ex vivo are still limited. The authors established a reporter mouse line expressing FRET-based actinin tension sensors consisting of EGFP as the donor and mCherry as the acceptor and whose FRET ratio change is observable with confocal microscopy. Tension-induced changes in FRET signals were monitored in the aorta and tail tendon fascicles, as well as aortic smooth muscle cells isolated from these mice. The pattern of FRET changes was distinctive, depending on tissue type. Indeed, aortic smooth muscle cells exhibit different sensitivity to macroscopic tensile strain in situ and in an isolated state. This mouse strain will enable novel types of biomechanical investigations of cell functions in important physiological events.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Mice",
-        "Animals",
-        "Fluorescence Resonance Energy Transfer/methods[major]",
-        "Actinin/metabolism[major]",
-        "Cell Line",
-        "Transfection",
-        "Microscopy, Confocal"
+        "Muscle, Smooth, Vascular",
+        "Fluorescence Resonance Energy Transfer, \nMicroscopy, Confocal,\nTime-Lapse Imaging",
+        "Osmotic Pressure",
+        "Cytoskeleton"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -82,7 +79,7 @@
           "@id": "#auth-004"
         },
         {
-          "@id": "https://orcid.org/0000-0002-1509-8747"
+          "@id": "#auth-005"
         },
         {
           "@id": "#auth-006"
@@ -93,21 +90,17 @@
           "@id": "https://doi.org/10.1038/s41598-023-50142-z"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0006970"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005856"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0042221"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -131,7 +124,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1361"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1361/render_thumbnail/"
       ],
       "size": [
         {
@@ -152,10 +145,10 @@
       "@type": "Person",
       "name": "Takeo Matsumoto",
       "email": "takeo@nagoya-u.jp",
-      "description": "Organization: Nagoya University; Department: Biomechanics Laboratory; Laboratory: Biomechanics Laboratory",
+      "description": "Organization: Nagoya University; Department: Biomechanics Laboratory, Department of Mechanical Systems Engineering, Graduate School of Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/04chrp450"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -163,88 +156,110 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Junfeng Wang",
-      "description": "Department: Department of Mechanical Systems Engineering; Laboratory: Department of Mechanical Systems Engineering"
+      "description": "Organization: Nagoya University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Yuki Tsujimura",
-      "description": "Department: Graduate School of Engineering; Laboratory: Graduate School of Engineering"
+      "description": "Organization: RIKEN",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
       "name": "Takaya Abe",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Animal Resources and Genetic Engineering",
+      "description": "Organization: RIKEN",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "https://orcid.org/0000-0002-1509-8747",
+      "@id": "#auth-005",
       "@type": "Person",
       "name": "Hiroshi Kiyonari",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Animal Resources and Genetic Engineering",
+      "description": "Organization: RIKEN",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Tetsuya Kitaguchi"
-    },
-    {
-      "@id": "https://ror.org/04chrp450",
-      "@type": "Organization",
-      "name": "Nagoya University"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41598-023-50142-z",
-      "@type": "ScholarlyArticle",
-      "name": "In situ FRET measurement of cellular tension using conventional confocal laser microscopy in newly established reporter mice expressing actinin tension sensor.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "R26R-S2 (Accession No. CDB0055E)",
-      "description": "R26R-S2 (Accession No. CDB0055E)",
-      "taxonomicRange": [
+      "name": "Tetsuya Kitaguchi",
+      "description": "Organization: Tokyo Institute of Technology",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#affiliation-003"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "Nagoya University"
+    },
+    {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "Tokyo Institute of Technology"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-023-50142-z",
+      "@type": "ScholarlyArticle",
+      "name": "Wang J, Maeda E, Tsujimura Y, Abe T, Kiyonari H, Kitaguchi T, Yokota H, Matsumoto T. In situ FRET measurement of cellular tension using conventional confocal laser microscopy in newly established reporter mice expressing actinin tension sensor. Sci Rep. 2023 Dec 20;13(1):22729.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38123655/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10733408/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "AMED-CREST from the Japan Agency for Medical Research and Development (JP19gm0810005), the NAKATANI Foundation, and JSPS KAKENHIs (Nos. 21H04533 and 21K19902)モンダイ"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
       "@type": "Taxon",
       "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006970",
-      "@type": "DefinedTerm",
-      "name": "response to osmotic stress"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "R26R-S2 (Accession No. CDB0055E) ~ vascular associated smooth muscle cell",
+      "description": "Vascular smooth muscle cells isolated from the aorta in R26-S2 mice expressing actinin tension sensor",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
       "@type": "DefinedTerm",
-      "name": "cytoskeleton"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0042221",
-      "@type": "DefinedTerm",
-      "name": "response to chemical"
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -258,6 +273,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -267,6 +288,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -280,32 +307,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "FRET"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3650112522,
-      "description": "3.7 GB",
+      "value": 6295855398,
+      "description": "6.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 7,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

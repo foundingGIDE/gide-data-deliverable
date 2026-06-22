@@ -161,7 +161,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
       "@type": "DefinedTerm",
-      "name": "bright-field microscopy"
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
     },
     {
       "@id": "#total-dataset-size",

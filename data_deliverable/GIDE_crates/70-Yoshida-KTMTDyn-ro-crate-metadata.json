@@ -45,36 +45,47 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/70-Yoshida-KTMTDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/70-Yoshida-KTMTDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/70-Yoshida-KTMTDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/70-Yoshida-KTMTDyn",
       "@type": "Dataset",
       "identifier": "70-Yoshida-KTMTDyn",
       "name": "Timelapse confocal images and BDML files for quantitative information about the kinetochore microtubule dynamics during mouse oocytes meiosis",
-      "description": "70-Yoshida-KTMTDyn",
+      "description": "See details in Yoshida S, et. al. (2015) Dev Cell., 33(5):589-602.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
+        "Aurora Kinase B",
         "Aurora Kinase B/metabolism",
+        "Aurora Kinase C",
         "Aurora Kinase C/metabolism",
+        "CDC2 Protein Kinase",
         "CDC2 Protein Kinase/metabolism",
+        "Cell Cycle Proteins",
         "Cell Cycle Proteins/metabolism",
-        "Chromosome Segregation[major]",
+        "Chromosome Segregation",
         "Female",
         "Fluorescent Antibody Technique",
-        "Image Processing, Computer-Assisted",
-        "Kinetochores/physiology[major]",
-        "Meiosis/physiology[major]",
+        "Image Processing",
+        "Computer-Assisted",
+        "Kinetochores",
+        "Kinetochores/physiology",
+        "Meiosis",
+        "Meiosis/physiology",
         "Mice",
-        "Microtubules/physiology[major]",
+        "Microtubules",
+        "Microtubules/physiology",
+        "Oocytes",
         "Oocytes/cytology",
-        "Oocytes/metabolism[major]",
+        "Oocytes/metabolism",
         "Phosphorylation",
+        "Protein Phosphatase 2",
         "Protein Phosphatase 2/metabolism",
-        "Protein Serine-Threonine Kinases/metabolism"
+        "Protein-Serine-Threonine Kinases",
+        "Protein-Serine-Threonine Kinases/metabolism"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -82,6 +93,15 @@
       "author": [
         {
           "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        },
+        {
+          "@id": "#auth-003"
+        },
+        {
+          "@id": "#auth-004"
         }
       ],
       "seeAlso": [
@@ -90,9 +110,6 @@
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -104,6 +121,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005694"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -111,17 +131,17 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-651"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/651/render_thumbnail/"
       ],
       "size": [
         {
@@ -145,20 +165,82 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Tomoya S. Kitajima",
+      "email": "tomoya.kitajima@riken.jp",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Shuhei Yoshida",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Masako Kaido",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Chromosome Segregation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1016/j.devcel.2015.04.020",
       "@type": "ScholarlyArticle",
-      "name": "Inherent Instability of Correct Kinetochore-Microtubule Attachments during Meiosis I in Oocytes.",
-      "datePublished": "2015"
+      "name": "Yoshida S, Kaido M, and Kitajima Tomoya S (2015) Inherent Instability of Correct Kinetochore-Microtubule Attachments during Meiosis I in Oocytes. Developmental Cell, Volume 33, Issue 5, pages 589-602.",
+      "datePublished": "2015",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/26028219"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007067",
+      "@type": "DefinedTerm",
+      "name": "mitotic cell cycle",
+      "identifier": "GO:0007067"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005828",
+      "@type": "DefinedTerm",
+      "name": "kinetochore microtubule",
+      "identifier": "GO:0005828"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
+      "@type": "DefinedTerm",
+      "name": "chromosome",
+      "identifier": "GO:0005694"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -167,44 +249,18 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007067",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "mitotic cell cycle"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005828",
-      "@type": "DefinedTerm",
-      "name": "kinetochore microtubule"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005694",
-      "@type": "DefinedTerm",
-      "name": "chromosome"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "fluorescence microscopy",
-      "description": "fluorescence microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
       "description": "time lapse microscopy",
@@ -217,25 +273,32 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 398900605634,
-      "description": "398.9 GB",
+      "value": 656995609695,
+      "description": "657.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 73141,
+      "value": 73406,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

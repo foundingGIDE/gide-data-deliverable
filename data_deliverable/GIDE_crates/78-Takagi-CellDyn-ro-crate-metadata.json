@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/78-Takagi-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/78-Takagi-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/78-Takagi-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/78-Takagi-CellDyn",
       "@type": "Dataset",
       "identifier": "78-Takagi-CellDyn",
       "name": "TEM images of the formation of subretinal hyperreflective material and ORTs in the process of pathological changes",
-      "description": "78-Takagi-CellDyn",
+      "description": "See details in Takagi et al. (2017) Clin Ophthalmol, 11: 1219-1225.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -93,22 +93,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.2147/OPTH.S134338"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28721006"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0003406"
+          "@id": "#ontology-term-g0:0003406"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-156"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/156/render_thumbnail/"
       ],
       "size": [
         {
@@ -132,65 +140,131 @@
       "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
       "affiliation": [
         {
-          "@id": "https://ror.org/04j4nak57"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Michiko Mandai"
+      "name": "Michiko Mandai",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Noriko Miyamoto"
+      "name": "Noriko Miyamoto",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Akihiro Nishida"
+      "name": "Akihiro Nishida",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Yasuhiko Hirami"
+      "name": "Yasuhiko Hirami",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Hirofumi Uyama"
+      "name": "Hirofumi Uyama",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Midori Yamamoto"
+      "name": "Midori Yamamoto",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Masayo Takahashi"
+      "name": "Masayo Takahashi",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Goji Tomita"
+      "name": "Goji Tomita",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Yasuo Kurimoto"
+      "name": "Yasuo Kurimoto",
+      "description": "Organization: Kobe City Medical Center general hospital; Department: Department of Ophthalmology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/04j4nak57",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kobe City Medical Center general hospital"
     },
     {
-      "@id": "https://doi.org/10.2147/OPTH.S134338",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28721006",
       "@type": "ScholarlyArticle",
-      "name": "Incidence of outer retinal tubulation in eyes with choroidal neovascularization under intravitreal anti-vascular endothelial growth factor therapy in a Japanese population.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28721006"
+    },
+    {
+      "@id": "#ontology-term-g0:0003406",
+      "@type": "DefinedTerm",
+      "name": "retinal pigment epithelium development",
+      "identifier": "G0:0003406"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -199,35 +273,41 @@
       "description": "Homo sapiens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0003406",
-      "@type": "DefinedTerm",
-      "name": "retinal pigment epithelium development"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 7051065,
-      "description": "7.1 MB",
+      "value": 14061125,
+      "description": "14.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 9,
+      "value": 18,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        }
+      ]
     }
   ]
 }

@@ -45,30 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/91-Konagaya-AMPKactivity/"
+        "@id": "https://ssbd.riken.jp/v1/project/91-Konagaya-AMPKactivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/91-Konagaya-AMPKactivity/",
+      "@id": "https://ssbd.riken.jp/v1/project/91-Konagaya-AMPKactivity",
       "@type": "Dataset",
       "identifier": "91-Konagaya-AMPKactivity",
       "name": "FRET images of AMPK activity in different cells",
-      "description": "91-Konagaya-AMPKactivity",
+      "description": "See details in Konagaya et al. (2017) Cell Rep, 21(9): 2628-2638.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "AMP-Activated Protein Kinases/metabolism[major]",
-        "Animals",
-        "Biosensing Techniques/methods[major]",
-        "Female",
-        "Fluorescence Resonance Energy Transfer/methods[major]",
-        "Liver/metabolism",
-        "Male",
-        "Mice",
-        "Muscle, Skeletal/metabolism",
-        "Signal Transduction/genetics",
-        "Signal Transduction/physiology"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -109,31 +96,39 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.celrep.2017.10.113"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29186696"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-2"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0004679"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0031588"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-164"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/164/render_thumbnail/"
       ],
       "size": [
         {
@@ -157,79 +152,164 @@
       "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yumi Konagaya"
+      "name": "Yumi Konagaya",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yusuke Hirao"
+      "name": "Yusuke Hirao",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Kanako Takakura"
+      "name": "Kanako Takakura",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Masamichi Imajo"
+      "name": "Masamichi Imajo",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Yuji Kamioka"
+      "name": "Yuji Kamioka",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Norio Sasaoka"
+      "name": "Norio Sasaoka",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Akira Kakizuka"
+      "name": "Akira Kakizuka",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Kenta Sumiyama"
+      "name": "Kenta Sumiyama",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Tomoichiro Asano"
+      "name": "Tomoichiro Asano",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Michiyuki Matsuda"
+      "name": "Michiyuki Matsuda",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
-      "@id": "https://doi.org/10.1016/j.celrep.2017.10.113",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29186696",
       "@type": "ScholarlyArticle",
-      "name": "A Highly Sensitive FRET Biosensor for AMPK Exhibits Heterogeneous AMPK Responses among Cells and Organs.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29186696"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004679",
+      "@type": "DefinedTerm",
+      "name": "AMP activated protein kinase activity",
+      "identifier": "GO:0004679"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031588",
+      "@type": "DefinedTerm",
+      "name": "nucleotide activated protein kinase complex",
+      "identifier": "GO:0031588"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "HeLa",
-      "description": "HeLa",
+      "name": "Homo sapiens",
+      "description": "Homo sapiens",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
@@ -240,44 +320,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004679",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
       "@type": "DefinedTerm",
-      "name": "AMP activated protein kinase activity"
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0031588",
-      "@type": "DefinedTerm",
-      "name": "nucleotide activated protein kinase complex"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1578935043,
-      "description": "1.6 GB",
+      "value": 2336135978,
+      "description": "2.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 1996,
+      "value": 2003,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

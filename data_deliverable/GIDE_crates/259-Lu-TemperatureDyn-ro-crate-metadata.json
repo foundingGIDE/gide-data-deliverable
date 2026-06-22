@@ -45,39 +45,35 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/259-Lu-TemperatureDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/259-Lu-TemperatureDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/259-Lu-TemperatureDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/259-Lu-TemperatureDyn",
       "@type": "Dataset",
       "identifier": "259-Lu-TemperatureDyn",
       "name": "Time-series images of temprature dynamics in HeLa cells.",
-      "description": "259-Lu-TemperatureDyn",
+      "description": "Despite improved sensitivity of nanothermometers, direct observation of heat transport inside single cells has remained challenging for the lack of high-speed temperature imaging techniques. Here, we identified insufficient temperature resolution under short signal integration time and slow sensor kinetics as two major bottlenecks. To overcome the limitations, we developed B-gTEMP, a nanothermometer based on the tandem fusion of mNeonGreen and tdTomato fluorescent proteins. We visualized the propagation of heat inside intracellular space by tracking the temporal variation of local temperature at a time resolution of 155 μs and a temperature resolution 0.042 °C. By comparing the fast in situ temperature dynamics with computer-simulated heat diffusion, we estimated the thermal diffusivity of live HeLa cells. The present thermal diffusivity in cells was about 1/5.3 of that of water and much smaller than the values reported for bulk tissues, which may account for observations of heterogeneous intracellular temperature distributions.",
       "datePublished": "2023-03-22",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "HeLa Cells",
-        "Hot Temperature[major]",
-        "Humans",
-        "Temperature",
-        "Water[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0003-2650-9895"
         },
         {
           "@id": "#auth-002"
         },
         {
-          "@id": "#auth-003"
+          "@id": "https://orcid.org/0000-0002-4171-585X"
         },
         {
           "@id": "#auth-004"
+        },
+        {
+          "@id": "#auth-005"
         }
       ],
       "seeAlso": [
@@ -87,16 +83,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0071502"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0071502"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0031653"
@@ -117,7 +113,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-902"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/902/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,42 +130,104 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0003-2650-9895",
       "@type": "Person",
       "name": "Takeharu Nagai",
       "email": "ng1@sanken.osaka-u.ac.jp",
+      "url": "https://www.sanken.osaka-u.ac.jp/labs/bse/index.html",
       "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Department of Biomolecular Science and Engineering",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Kai Lu"
+      "name": "Kai Lu",
+      "email": "ka1@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Department of Biomolecular Science and Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "#auth-003",
+      "@id": "https://orcid.org/0000-0002-4171-585X",
       "@type": "Person",
-      "name": "Tetsuichi WazawaKai Lu"
+      "name": "Tetsuichi Wazawa",
+      "email": "wz8@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Department of Biomolecular Science and Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Tetsuichi Wazawa"
+      "name": "Kai Lu",
+      "email": "ka1@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Department of Biomolecular Science and Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Tetsuichi Wazawa",
+      "email": "wz8@sanken.osaka-u.ac.jp",
+      "description": "Organization: Osaka University; Department: SANKEN; Laboratory: Department of Biomolecular Science and Engineering",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1021/acs.nanolett.2c00608",
       "@type": "ScholarlyArticle",
-      "name": "Intracellular Heat Transfer and Thermal Property Revealed by Kilohertz Temperature Imaging with a Genetically Encoded Nanothermometer.",
-      "datePublished": "2022"
+      "name": "Lu K, Wazawa T, Sakamoto J, Vu CQ, Nakano M, Kamei Y, Nagai T. Intracellular Heat Transfer and Thermal Property Revealed by Kilohertz Temperature Imaging with a Genetically Encoded Nanothermometer. Nano Lett. 2022 Jul 27;22(14):5698-5707. doi: 10.1021/acs.nanolett.2c00608.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35792763/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0071502",
+      "@type": "DefinedTerm",
+      "name": "cellular response to temperature stimulus",
+      "identifier": "GO:0071502"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031653",
+      "@type": "DefinedTerm",
+      "name": "heat dissipation",
+      "identifier": "GO:0031653"
     },
     {
       "@id": "#biosample-1",
@@ -178,7 +236,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -186,25 +244,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0071502",
-      "@type": "DefinedTerm",
-      "name": "cellular response to temperature stimulus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0031653",
-      "@type": "DefinedTerm",
-      "name": "heat dissipation"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -218,6 +261,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -229,27 +278,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 4106668249,
-      "description": "4.1 GB",
+      "value": 6385751217,
+      "description": "6.4 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 5,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/310-Sato-HemocyteMigrate/"
+        "@id": "https://ssbd.riken.jp/v2/project/310-Sato-HemocyteMigrate"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/310-Sato-HemocyteMigrate/",
+      "@id": "https://ssbd.riken.jp/v2/project/310-Sato-HemocyteMigrate",
       "@type": "Dataset",
       "identifier": "310-Sato-HemocyteMigrate",
       "name": "Aquaporin overexpression promotes endothelial-to-hematopoietic transition.",
-      "description": "310-Sato-HemocyteMigrate",
+      "description": "See details in Sato Y, et. al. (2023) Development. Jun 1;150(11):dev201275.",
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Vacuoles",
-        "Cell Adhesion",
-        "Cell Differentiation/genetics",
-        "Hemangioblasts[major]",
-        "Morphogenesis",
-        "Aquaporins/metabolism[major]",
-        "Hematopoiesis/genetics"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,13 +71,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0035099"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/93934"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0035162"
@@ -128,20 +119,42 @@
       "description": "Organization: Kyushu University; Laboratory: Graduate School of Medical Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/00p4k0j84"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00p4k0j84",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyushu University"
     },
     {
       "@id": "https://doi.org/10.1242/dev.201275",
       "@type": "ScholarlyArticle",
-      "name": "Aquaporin regulates cell rounding through vacuole formation during endothelial-to-hematopoietic transition.",
-      "datePublished": "2023"
+      "name": "Sato Y, Shigematsu M, Shibata-Kanno M, Maejima S, Tamura C, Sakamoto H. Aquaporin regulates cell rounding through vacuole formation during endothelial-to-hematopoietic transition. Development. 2023 Jun 1;150(11):dev201275.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/37272531"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0035099",
+      "@type": "DefinedTerm",
+      "name": "hemocyte migration",
+      "identifier": "GO:0035099"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/93934",
+      "@type": "Taxon",
+      "scientificName": "Coturnix japonica",
+      "name": "Coturnix japonica",
+      "identifier": "NCBITaxon:93934"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0035162",
+      "@type": "DefinedTerm",
+      "name": "embryonic hemopoiesis",
+      "identifier": "GO:0035162"
     },
     {
       "@id": "#biosample-1",
@@ -150,24 +163,15 @@
       "description": "Coturnix japonica",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/93934"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_93934",
-      "@type": "Taxon",
-      "scientificName": "Coturnix japonica"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0035099",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "hemocyte migration"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0035162",
-      "@type": "DefinedTerm",
-      "name": "embryonic hemopoiesis"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -181,6 +185,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "confocal microscopy",
@@ -192,27 +202,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 24186352602,
-      "description": "24.2 GB",
+      "value": 39643554454,
+      "description": "39.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 56986,
+      "value": 56993,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

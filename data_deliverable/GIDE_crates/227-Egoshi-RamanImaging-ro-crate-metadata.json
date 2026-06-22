@@ -45,19 +45,20 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/227-Egoshi-RamanImaging/"
+        "@id": "https://ssbd.riken.jp/v2/project/227-Egoshi-RamanImaging"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/227-Egoshi-RamanImaging/",
+      "@id": "https://ssbd.riken.jp/v2/project/227-Egoshi-RamanImaging",
       "@type": "Dataset",
       "identifier": "227-Egoshi-RamanImaging",
       "name": "Raman imaging in HeLa cells treated with D-alkyne-tagged C18FAs",
-      "description": "227-Egoshi-RamanImaging",
+      "description": "See details in Egoshi S, et. al. (2021) Org Biomol Chem, Oct 6;19(38):8232-8236.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Alkynes[major]"
+        "Alkynes",
+        "Oleic acid"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -80,13 +81,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -94,11 +95,11 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "#imaging-technique-1"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-757"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/757/render_thumbnail/"
       ],
       "size": [
         {
@@ -119,10 +120,11 @@
       "@type": "Person",
       "name": "Mikiko Sodeoka",
       "email": "sodeoka@riken.jp",
+      "url": "http://so.riken.jp/",
       "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -134,7 +136,7 @@
       "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -146,20 +148,36 @@
       "description": "Organization: RIKEN; Department: Cluster for Pioneering Research; Laboratory: Synthetic Organic Chemistry Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1039/d1ob01479j",
       "@type": "ScholarlyArticle",
-      "name": "Deuteration of terminal alkynes realizes simultaneous live cell Raman imaging of similar alkyne-tagged biomolecules.",
-      "datePublished": "2021"
+      "name": "Egoshi S, Dodo K, Ohgane K, Sodeoka M. Deuteration of terminal alkynes realizes simultaneous live cell Raman imaging of similar alkyne-tagged biomolecules. Org Biomol Chem. 2021 Oct 6;19(38):8232-8236. doi: 10.1039/d1ob01479j. PMID: 34528645.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34528645/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -168,7 +186,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -176,44 +194,34 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "Raman microscopy",
-      "description": "Raman microscopy",
+      "name": "recorded image",
+      "description": "recorded image",
       "measurementTechnique": [
         {
-          "@id": "#imaging-technique-1"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ]
     },
     {
-      "@id": "#imaging-technique-1",
-      "@type": "DefinedTerm",
-      "name": "Raman microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3861275,
-      "description": "3.9 MB",
+      "value": 13875620,
+      "description": "13.9 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 53,
+      "value": 135,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

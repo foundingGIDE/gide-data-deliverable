@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/285-Tanaka-Covid19Infection/"
+        "@id": "https://ssbd.riken.jp/v2/project/285-Tanaka-Covid19Infection"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/285-Tanaka-Covid19Infection/",
+      "@id": "https://ssbd.riken.jp/v2/project/285-Tanaka-Covid19Infection",
       "@type": "Dataset",
       "identifier": "285-Tanaka-Covid19Infection",
       "name": "Immunofluorescence images or transmission electron images of SARS-CoV-2 infected human induced salivary glands (hiSGs).",
-      "description": "285-Tanaka-Covid19Infection",
+      "description": "See details in Tanaka J, et. al. (2022) Nat Cell Biol. 2022 Nov;24(11):1595-1605.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -74,10 +74,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0016032"
@@ -98,7 +98,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1352"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1352/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,7 +122,7 @@
       "description": "Organization: Showa University School of Dentistry; Department: Department of Oral Diagnostic Sciences; Laboratory: Division of Pathology",
       "affiliation": [
         {
-          "@id": "https://ror.org/04mzk4q39"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -134,20 +134,36 @@
       "description": "Organization: Showa University School of Dentistry; Department: Department of Oral Diagnostic Sciences; Laboratory: Division of Pathology",
       "affiliation": [
         {
-          "@id": "https://ror.org/04mzk4q39"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/04mzk4q39",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Showa University School of Dentistry"
     },
     {
       "@id": "https://doi.org/10.1038/s41556-022-01007-6",
       "@type": "ScholarlyArticle",
-      "name": "Human induced pluripotent stem cell-derived salivary gland organoids model SARS-CoV-2 infection and replication.",
-      "datePublished": "2022"
+      "name": "Tanaka J, Senpuku H, Ogawa M, Yasuhara R, Ohnuma S, Takamatsu K, Watanabe T, Mabuchi Y, Nakamura S, Ishida S, Sadaoka T, Takaki T, Shirota T, Shimane T, Inoue T, Sakai T, Mori M, Tsuji T, Saito I, Mishima K. Human induced pluripotent stem cell-derived salivary gland organoids model SARS-CoV-2 infection and replication. Nat Cell Biol. 2022 Nov;24(11):1595-1605.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36253535/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
+      "@type": "DefinedTerm",
+      "name": "viral process",
+      "identifier": "GO:0016032"
     },
     {
       "@id": "#biosample-1",
@@ -156,21 +172,15 @@
       "description": "Homo sapiens ~ human induced salivary glands (hiSGs)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
-      ],
-      "hasCellLine": "human induced salivary glands (hiSGs)"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016032",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "viral process"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -184,6 +194,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
+      "@type": "DefinedTerm",
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "transmission electron microscopy",
@@ -195,27 +211,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
-      "@type": "DefinedTerm",
-      "name": "transmission electron microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 64033564,
-      "description": "64.0 MB",
+      "value": 119397129,
+      "description": "119.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 21,
+      "value": 37,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

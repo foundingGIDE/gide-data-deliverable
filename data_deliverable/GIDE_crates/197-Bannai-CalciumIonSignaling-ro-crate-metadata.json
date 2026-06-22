@@ -45,28 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/197-Bannai-CalciumIonSignaling/"
+        "@id": "https://ssbd.riken.jp/v2/project/197-Bannai-CalciumIonSignaling"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/197-Bannai-CalciumIonSignaling/",
+      "@id": "https://ssbd.riken.jp/v2/project/197-Bannai-CalciumIonSignaling",
       "@type": "Dataset",
       "identifier": "197-Bannai-CalciumIonSignaling",
       "name": "Time-lapse imaging of local Ca2+ signals in cultured cells by membrane-targeted Ca2+ indicators",
-      "description": "197-Bannai-CalciumIonSignaling",
+      "description": "See details in Bannai H et. al. J Vis Exp. 2019 Mar 22;(145).",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Caenorhabditis elegans/cytology",
-        "Calcium/metabolism[major]",
-        "Calcium Signaling[major]",
-        "Cell Membrane/metabolism[major]",
-        "Cells, Cultured",
-        "Endoplasmic Reticulum/metabolism",
-        "Neurons/cytology",
-        "Rats"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -82,31 +71,31 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          "@id": "#biosample-3"
         },
         {
           "@id": "#biosample-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-3"
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0019722"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -115,10 +104,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-753"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/753/render_thumbnail/"
       ],
       "size": [
         {
@@ -142,20 +137,62 @@
       "description": "Organization: RIKEN; Department: RIKEN Center for Brain Science; Laboratory: Laboratory for Developmental Neurobiology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.3791/59246",
       "@type": "ScholarlyArticle",
-      "name": "Dissection of Local Ca2+ Signals in Cultured Cells by Membrane-targeted Ca2+ Indicators.",
-      "datePublished": "2019"
+      "name": "Bannai H, Hirose M, Niwa F, Mikoshiba K. Dissection of Local Ca2+ Signals in Cultured Cells by Membrane-targeted Ca2+ Indicators. J Vis Exp. 2019 Mar 22;(145).",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/30958464"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
+      "@type": "DefinedTerm",
+      "name": "calcium ion signaling",
+      "identifier": "GO:0019722"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
+      "@type": "DefinedTerm",
+      "name": "plasma membrane",
+      "identifier": "GO:0005886"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "name": "Rattus norvegicus",
+      "identifier": "NCBITaxon:10116"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -164,7 +201,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -178,7 +215,7 @@
       "description": "Wistar rat",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
         }
       ]
     },
@@ -189,42 +226,15 @@
       "description": "C57/BL6J",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
-      "@type": "Taxon",
-      "scientificName": "Rattus norvegicus",
-      "vernacularName": "rat"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0019722",
-      "@type": "DefinedTerm",
-      "name": "calcium ion signaling"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -238,24 +248,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 937428625,
-      "description": "937.4 MB",
+      "value": 1598463798,
+      "description": "1.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 7,
+      "value": 14,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

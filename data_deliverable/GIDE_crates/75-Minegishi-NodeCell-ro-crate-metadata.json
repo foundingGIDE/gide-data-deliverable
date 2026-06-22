@@ -45,34 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/75-Minegishi-NodeCell/"
+        "@id": "https://ssbd.riken.jp/v1/project/75-Minegishi-NodeCell"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/75-Minegishi-NodeCell/",
+      "@id": "https://ssbd.riken.jp/v1/project/75-Minegishi-NodeCell",
       "@type": "Dataset",
       "identifier": "75-Minegishi-NodeCell",
       "name": "The basal body position (ABP) of node cells in mouse embryo",
-      "description": "75-Minegishi-NodeCell",
+      "description": "See details in Minegishi et al. (2017) Dev Cell, 40(5): 439-452.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Adaptor Proteins, Signal Transducing/metabolism",
-        "Animals",
-        "Body Patterning[major]",
-        "Cell Communication",
-        "Cell Polarity[major]",
-        "Intracellular Signaling Peptides and Proteins",
-        "LIM Domain Proteins/metabolism",
-        "Membrane Proteins/metabolism",
-        "Mice",
-        "Mice, Mutant Strains",
-        "Models, Biological",
-        "Proteins/metabolism",
-        "Signal Transduction[major]",
-        "Wnt Proteins/metabolism[major]",
-        "Wnt-5a Protein/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -137,13 +120,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.devcel.2017.02.010"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28292423"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -152,10 +132,33 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0036064"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000156"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-154"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/154/render_thumbnail/"
       ],
       "size": [
         {
@@ -179,110 +182,236 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Katsura Minegishi"
+      "name": "Katsura Minegishi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Masakazu Hashimoto"
+      "name": "Masakazu Hashimoto",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Rieko Ajima"
+      "name": "Rieko Ajima",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Katsuyoshi Takaoka"
+      "name": "Katsuyoshi Takaoka",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Kyosuke Shinohara"
+      "name": "Kyosuke Shinohara",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Yayoi Ikawa"
+      "name": "Yayoi Ikawa",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Hiromi Nishimura"
+      "name": "Hiromi Nishimura",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Andrew P. McMahon"
+      "name": "Andrew P. McMahon",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-010",
       "@type": "Person",
-      "name": "Karl Willert"
+      "name": "Karl Willert",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-011",
       "@type": "Person",
-      "name": "Yasushi Okada"
+      "name": "Yasushi Okada",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-012",
       "@type": "Person",
-      "name": "Hiroshi Sasaki"
+      "name": "Hiroshi Sasaki",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-013",
       "@type": "Person",
-      "name": "Dongbo Shi"
+      "name": "Dongbo Shi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-014",
       "@type": "Person",
-      "name": "Toshihiko Fujimori"
+      "name": "Toshihiko Fujimori",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-015",
       "@type": "Person",
-      "name": "Toshihisa Ohtsuka"
+      "name": "Toshihisa Ohtsuka",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-016",
       "@type": "Person",
-      "name": "Yasunobu Igarashi"
+      "name": "Yasunobu Igarashi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-017",
       "@type": "Person",
-      "name": "Terry P. Yamaguchi"
+      "name": "Terry P. Yamaguchi",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-018",
       "@type": "Person",
-      "name": "Akihiko Shimono"
+      "name": "Akihiko Shimono",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-019",
       "@type": "Person",
-      "name": "Hidetaka Shiratori"
+      "name": "Hidetaka Shiratori",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Developmental Genetics Group",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
-      "@id": "https://doi.org/10.1016/j.devcel.2017.02.010",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28292423",
       "@type": "ScholarlyArticle",
-      "name": "A Wnt5 Activity Asymmetry and Intercellular Signaling via PCP Proteins Polarize Node Cells for Left-Right Symmetry Breaking.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28292423"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030010",
+      "@type": "DefinedTerm",
+      "name": "establishment of cell polarity",
+      "identifier": "GO:0030010"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0036064",
+      "@type": "DefinedTerm",
+      "name": "ciliary basal body",
+      "identifier": "GO:0036064"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -291,40 +420,75 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030010",
-      "@type": "DefinedTerm",
-      "name": "establishment of cell polarity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0036064",
-      "@type": "DefinedTerm",
-      "name": "ciliary basal body"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 5474689,
-      "description": "5.5 MB",
+      "value": 8366578,
+      "description": "8.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 4,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000156",
+      "@type": "DefinedTerm",
+      "name": "primary antibody plus labeled secondary antibody",
+      "identifier": "FBbi:00000156"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "primary antibody plus labeled secondary antibody",
+      "description": "primary antibody plus labeled secondary antibody",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000156"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
     }
   ]
 }

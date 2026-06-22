@@ -45,30 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/77-Aoki-CellDynERK/"
+        "@id": "https://ssbd.riken.jp/v2/project/77-Aoki-CellDynERK"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/77-Aoki-CellDynERK/",
+      "@id": "https://ssbd.riken.jp/v2/project/77-Aoki-CellDynERK",
       "@type": "Dataset",
       "identifier": "77-Aoki-CellDynERK",
       "name": "Time-lapse imgaes and quantitative information of propagating wave of ERK activation orients collective cell migration",
-      "description": "77-Aoki-CellDynERK",
+      "description": "See details in Aoki K, et. al. (2017) Dev Cell, Nov 6;43(3):305-317.e5.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Actomyosin/metabolism",
-        "Animals",
-        "Cell Movement/physiology[major]",
-        "Dogs",
-        "Enzyme Activation",
-        "Epithelial Cells/cytology[major]",
-        "Kidney/metabolism",
-        "MAP Kinase Signaling System/physiology[major]",
-        "Mitogen-Activated Protein Kinases/metabolism[major]",
-        "Phosphorylation",
-        "Wound Healing/physiology"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -78,18 +65,6 @@
         },
         {
           "@id": "#auth-002"
-        },
-        {
-          "@id": "#auth-003"
-        },
-        {
-          "@id": "#auth-004"
-        },
-        {
-          "@id": "#auth-005"
-        },
-        {
-          "@id": "#auth-006"
         }
       ],
       "seeAlso": [
@@ -99,20 +74,40 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0000186"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0000186"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-155"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/155/render_thumbnail/"
       ],
       "size": [
         {
@@ -131,50 +126,59 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Kazuhiro Aoki",
+      "name": "Aoki Kazuhiro",
       "email": "k-aoki@nibb.ac.jp",
       "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/055n47h92"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yohei Kondo"
+      "name": "Aoki Kazuhiro",
+      "email": "k-aoki@nibb.ac.jp",
+      "description": "Organization: National Institutes of Natural Sciences; Department: National Institute for Basic Biology; Laboratory: Division of Quantitative Biology",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Honda Naoki"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Toru Hiratsuka"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Reina E. Itoh"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Michiyuki Matsuda"
-    },
-    {
-      "@id": "https://ror.org/055n47h92",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "National Institutes of Natural Sciences"
     },
     {
       "@id": "https://doi.org/10.1016/j.devcel.2017.10.016",
       "@type": "ScholarlyArticle",
-      "name": "Propagating Wave of ERK Activation Orients Collective Cell Migration.",
-      "datePublished": "2017"
+      "name": "Aoki K, Kondo Y, Naoki H, Hiratsuka T, Itoh RE, Matsuda M. Propagating Wave of ERK Activation Orients Collective Cell Migration. Dev Cell. 2017 Nov 6;43(3):305-317.e5.",
+      "datePublished": "2017",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/29112851"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0000186",
+      "@type": "DefinedTerm",
+      "name": "activation of MAP ERK kinase kinase",
+      "identifier": "GO:0000186"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell",
+      "identifier": "CLO:0007646"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
     },
     {
       "@id": "#biosample-1",
@@ -183,7 +187,7 @@
       "description": "Canis lupus familiaris ~ MDCK cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         }
       ],
       "hasCellLine": {
@@ -191,34 +195,70 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
-      "@type": "DefinedTerm",
-      "name": "MDCK cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0000186",
-      "@type": "DefinedTerm",
-      "name": "activation of MAP ERK kinase kinase"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1472942629,
-      "description": "1.5 GB",
+      "value": 1825823309,
+      "description": "1.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 21,
+      "value": 37,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

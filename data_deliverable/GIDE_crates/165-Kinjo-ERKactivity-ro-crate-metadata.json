@@ -45,26 +45,29 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/165-Kinjo-ERKactivity/"
+        "@id": "https://ssbd.riken.jp/v2/project/165-Kinjo-ERKactivity"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/165-Kinjo-ERKactivity/",
+      "@id": "https://ssbd.riken.jp/v2/project/165-Kinjo-ERKactivity",
       "@type": "Dataset",
       "identifier": "165-Kinjo-ERKactivity",
       "name": "Live imaging data of ERK activity in the MDCK cyte or mouse ear epidermis before or after 2p excitation.",
-      "description": "165-Kinjo-ERKactivity",
+      "description": "See details in Kinjo T, et. al. (2019)  Nat Methods., 16(10):1029-1036.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
         "Enzyme Activation",
+        "Extracellular Signal-Regulated MAP Kinases",
         "Extracellular Signal-Regulated MAP Kinases/metabolism",
-        "Flavoproteins/metabolism[major]",
-        "Fluorescence Resonance Energy Transfer/methods[major]",
+        "Flavoproteins",
+        "Flavoproteins/metabolism",
+        "Fluorescence Resonance Energy Transfer",
+        "Fluorescence Resonance Energy Transfer/methods",
         "Mice",
-        "Optogenetics[major]",
-        "Photons[major]"
+        "Optogenetics",
+        "Photons"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -84,7 +87,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
@@ -93,13 +96,13 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0007646"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0004707"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -117,7 +120,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-658"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/658/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,10 +141,10 @@
       "@type": "Person",
       "name": "Michiyuki Matsuda",
       "email": "matsuda.michiyuki.2c@kyoto-u.ac.jp",
-      "description": "Organization: Graduate School of Biostudies; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "description": "Organization: Graduate School of Biostudies, Kyoto University; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/04tb1ww30"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -150,28 +153,52 @@
       "@type": "Person",
       "name": "Kenta Terai",
       "email": "terai.kenta.5m@kyoto-u.ac.jp",
-      "description": "Organization: Kyoto University; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
+      "description": "Organization: Graduate School of Biostudies, Kyoto University; Department: Research Center for Dynamic Living Systems; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/04tb1ww30",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Graduate School of Biostudies"
-    },
-    {
-      "@id": "https://ror.org/02kpeqv85",
-      "@type": "Organization",
-      "name": "Kyoto University"
+      "name": "Graduate School of Biostudies, Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1038/s41592-019-0541-5",
       "@type": "ScholarlyArticle",
-      "name": "FRET-assisted photoactivation of flavoproteins for in vivo two-photon optogenetics.",
-      "datePublished": "2019"
+      "name": "Kinjo T, Terai K, Horita S, Nomura N, Sumiyama K, Togashi K, Iwata S, and Matsuda M (2019) FRET-assisted photoactivation of flavoproteins for in vivo two-photon optogenetics. Nature Methods, Volume 16, Issue 10, pages 1029-1036.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31501546"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@type": "DefinedTerm",
+      "name": "MDCK cell",
+      "identifier": "CLO:0007646"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@type": "DefinedTerm",
+      "name": "extracellular signal-regulated kinase activity",
+      "identifier": "GO:0004707"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615",
+      "@type": "Taxon",
+      "scientificName": "Canis lupus familiaris",
+      "name": "Canis lupus familiaris",
+      "identifier": "NCBITaxon:9615"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -180,7 +207,7 @@
       "description": "Canis lupus familiaris ~ MDCK cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9615"
         }
       ],
       "hasCellLine": {
@@ -194,30 +221,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
-      "@type": "Taxon",
-      "scientificName": "Canis lupus familiaris"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007646",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "MDCK cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
-      "@type": "DefinedTerm",
-      "name": "extracellular signal-regulated kinase activity"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -231,6 +243,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "FRET",
@@ -242,27 +260,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
-      "@type": "DefinedTerm",
-      "name": "FRET"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1171120852,
-      "description": "1.2 GB",
+      "value": 1726827926,
+      "description": "1.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 20,
+      "value": 40,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

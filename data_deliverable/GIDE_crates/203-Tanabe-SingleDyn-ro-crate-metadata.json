@@ -45,21 +45,23 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/203-Tanabe-SingleDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/203-Tanabe-SingleDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/203-Tanabe-SingleDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/203-Tanabe-SingleDyn",
       "@type": "Dataset",
       "identifier": "203-Tanabe-SingleDyn",
       "name": "Images of signaling molecules dynamic in Dictyostelium discoideum cells.",
-      "description": "203-Tanabe-SingleDyn",
+      "description": "See details in Tanabe Y, et. al. (2018)  J Cell Sci., 131(23):jcs214775.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
+        "Chemotaxis",
         "Chemotaxis/physiology",
-        "Eukaryota/metabolism[major]",
+        "Eukaryota",
+        "Eukaryota/metabolism",
         "Signal Transduction"
       ],
       "publisher": {
@@ -77,16 +79,19 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-2"
+          "@id": "http://purl.obolibrary.org/obo/GO_0030552"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0030552"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/366501"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0006935"
@@ -98,10 +103,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-712"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/712/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,29 +136,57 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Biosciences; Laboratory: Laboratory for Cell Signaling Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1242/jcs.214775",
       "@type": "ScholarlyArticle",
-      "name": "Parallel signaling pathways regulate excitable dynamics differently to mediate pseudopod formation during eukaryotic chemotaxis.",
-      "datePublished": "2018"
+      "name": "Tanabe Y, Kamimura Y, and Ueda M (2018) Parallel signaling pathways regulate excitable dynamics differently to mediate pseudopod formation during eukaryotic chemotaxis. Journal of Cell Science, Volume 131, Issue 23, pages jcs214775.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30404836"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0030552",
+      "@type": "DefinedTerm",
+      "name": "cAMP binding",
+      "identifier": "GO:0030552"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "name": "Dictyostelium discoideum",
+      "identifier": "NCBITaxon:44689"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/366501",
+      "@type": "DefinedTerm",
+      "name": "Dictyostelium discoideum AX2",
+      "identifier": "NCBITaxon:366501"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0006935",
+      "@type": "DefinedTerm",
+      "name": "chemotaxis",
+      "identifier": "GO:0006935"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "Dictyostelium discoideum AX2 (NCBI:txid366501)",
-      "description": "Dictyostelium discoideum AX2 (NCBI:txid366501)",
+      "name": "Dictyostelium discoideum AX2",
+      "description": "Dictyostelium discoideum AX2",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
@@ -158,24 +197,15 @@
       "description": "gcΔ cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030552",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "cAMP binding"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006935",
-      "@type": "DefinedTerm",
-      "name": "chemotaxis"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -189,24 +219,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 266838477,
-      "description": "266.8 MB",
+      "value": 380411957,
+      "description": "380.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 13,
+      "value": 24,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

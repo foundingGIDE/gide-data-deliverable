@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/94-Matsuda-Beetlehorn/"
+        "@id": "https://ssbd.riken.jp/v1/project/94-Matsuda-Beetlehorn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/94-Matsuda-Beetlehorn/",
+      "@id": "https://ssbd.riken.jp/v1/project/94-Matsuda-Beetlehorn",
       "@type": "Dataset",
       "identifier": "94-Matsuda-Beetlehorn",
       "name": "Time lapse images of pupal molt of the Japanese rhinoceros beetle Trypoxylus dichotomus at different time stage",
-      "description": "94-Matsuda-Beetlehorn",
+      "description": "See details in Matsuda et al. (2017) Sci Rep, 7(1): 13939.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Biomechanical Phenomena",
-        "Coleoptera/anatomy & histology[major]",
-        "Coleoptera/cytology[major]",
-        "Coleoptera/growth & development",
-        "Computer Simulation",
-        "Epithelial Cells/cytology[major]",
-        "Metamorphosis, Biological"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -100,25 +90,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/s41598-017-14170-w"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29066748"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016477"
+          "@id": "http://purl.obolibrary.org/obo/GO_0007552"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007552"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/273928"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-272"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/272/render_thumbnail/"
       ],
       "size": [
         {
@@ -142,60 +137,120 @@
       "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/04chrp450"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Keisuke Matsuda"
+      "name": "Keisuke Matsuda",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yuki Tajika"
+      "name": "Yuki Tajika",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Takamichi Sushida"
+      "name": "Takamichi Sushida",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Hitoshi Aonuma"
+      "name": "Hitoshi Aonuma",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Teruyuki Niimi"
+      "name": "Teruyuki Niimi",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Masakazu Akiyama"
+      "name": "Masakazu Akiyama",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Yasuhiro Inoue"
+      "name": "Yasuhiro Inoue",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Shigeru Kondo"
+      "name": "Shigeru Kondo",
+      "description": "Organization: Nagoya University; Department: Graduate School of Bioagricultural Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/04chrp450",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Nagoya University"
     },
     {
-      "@id": "https://doi.org/10.1038/s41598-017-14170-w",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/29066748",
       "@type": "ScholarlyArticle",
-      "name": "Complex furrows in a 2D epithelial sheet code the 3D structure of a beetle horn.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/29066748"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007552",
+      "@type": "DefinedTerm",
+      "name": "metamorphosis",
+      "identifier": "GO:0007552"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/273928",
+      "@type": "Taxon",
+      "scientificName": "Trypoxylus dichotomus",
+      "name": "Trypoxylus dichotomus",
+      "identifier": "NCBITaxon:273928"
     },
     {
       "@id": "#biosample-1",
@@ -204,39 +259,41 @@
       "description": "Trypoxylus dichotomus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/273928"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_273928",
-      "@type": "Taxon",
-      "scientificName": "Trypoxylus dichotomus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016477",
-      "@type": "DefinedTerm",
-      "name": "cell migration"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007552",
-      "@type": "DefinedTerm",
-      "name": "metamorphosis"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 8141686,
-      "description": "8.1 MB",
+      "value": 16284998,
+      "description": "16.3 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 5,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

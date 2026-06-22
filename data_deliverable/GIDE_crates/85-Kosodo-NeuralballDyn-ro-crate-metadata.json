@@ -45,41 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/85-Kosodo-NeuralballDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/85-Kosodo-NeuralballDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/85-Kosodo-NeuralballDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/85-Kosodo-NeuralballDyn",
       "@type": "Dataset",
       "identifier": "85-Kosodo-NeuralballDyn",
       "name": "TimeLapse images of Tbr2-EGFP expression in a neural ball",
-      "description": "85-Kosodo-NeuralballDyn",
+      "description": "See details in Kosodo et al. (2017) Biochem Biophys Res Commun, 483(1): 94-100.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Brain/cytology",
-        "Brain/embryology[major]",
-        "Brain/metabolism",
-        "Cerebral Cortex/cytology",
-        "Cerebral Cortex/embryology",
-        "Cerebral Cortex/metabolism",
-        "Embryonic Stem Cells/cytology",
-        "Embryonic Stem Cells/metabolism",
-        "Green Fluorescent Proteins/genetics",
-        "Green Fluorescent Proteins/metabolism",
-        "Mice",
-        "Mice, Transgenic",
-        "Neural Stem Cells/cytology",
-        "Neural Stem Cells/metabolism",
-        "Neurogenesis/physiology[major]",
-        "Organ Culture Techniques/instrumentation",
-        "Organ Culture Techniques/methods",
-        "Organoids/cytology",
-        "Organoids/embryology[major]",
-        "Organoids/metabolism",
-        "Time-Lapse Imaging"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -99,22 +75,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1016/j.bbrc.2016.12.187"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28063930"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0022008"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-162"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/162/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,35 +122,65 @@
       "description": "Organization: Korea Brain Research Institute; Laboratory: Neural Regeneration Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/055zd7d59"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Taeko Suetsugu"
+      "name": "Taeko Suetsugu",
+      "description": "Organization: Korea Brain Research Institute; Laboratory: Neural Regeneration Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Tetsuya J. Kobayashi"
+      "name": "Tetsuya J. Kobayashi",
+      "description": "Organization: Korea Brain Research Institute; Laboratory: Neural Regeneration Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Fumio Matsuzaki"
+      "name": "Fumio Matsuzaki",
+      "description": "Organization: Korea Brain Research Institute; Laboratory: Neural Regeneration Laboratory",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/055zd7d59",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Korea Brain Research Institute"
     },
     {
-      "@id": "https://doi.org/10.1016/j.bbrc.2016.12.187",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28063930",
       "@type": "ScholarlyArticle",
-      "name": "Systematic time-dependent visualization and quantitation of the neurogenic rate in brain organoids.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28063930"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis",
+      "identifier": "GO:0022008"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -175,33 +189,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
-      "@type": "DefinedTerm",
-      "name": "neurogenesis"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1977439103,
-      "description": "2.0 GB",
+      "value": 2776822231,
+      "description": "2.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 1602,
+      "value": 1606,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

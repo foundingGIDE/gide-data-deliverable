@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/313-Kawano-WormSleep/"
+        "@id": "https://ssbd.riken.jp/v2/project/313-Kawano-WormSleep"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/313-Kawano-WormSleep/",
+      "@id": "https://ssbd.riken.jp/v2/project/313-Kawano-WormSleep",
       "@type": "Dataset",
       "identifier": "313-Kawano-WormSleep",
       "name": "Time-lapse images of C. elegans lethargus dynamics by rapid C. elegans motion imaging (Remi) system",
-      "description": "313-Kawano-WormSleep",
+      "description": "Behavior of four worm genotypes  imaged  by rapid Caenorhabditis elegans motion imaging (Remi) system",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -74,13 +74,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0030431"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ],
       "measurementMethod": [
@@ -89,16 +89,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1262"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1262/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,47 +116,65 @@
       "description": "Organization: University of Tsukuba; Department: International Institute for Integrative Sleep Medicine (WPI-IIIS)",
       "affiliation": [
         {
-          "@id": "https://ror.org/02956yf07"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Taizo Kawano"
+      "name": "Taizo Kawano",
+      "email": "kawano.taizo.ga@u.tsukuba.ac.jp",
+      "description": "Organization: University of Tsukuba; Department: International Institute for Integrative Sleep Medicine (WPI-IIIS)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/02956yf07",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "University of Tsukuba"
     },
     {
       "@id": "https://doi.org/10.1016/j.celrep.2023.112267",
       "@type": "ScholarlyArticle",
-      "name": "ER proteostasis regulators cell-non-autonomously control sleep.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "N2, SLP544, SLP266, SLP808",
-      "description": "N2, SLP544, SLP266, SLP808",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        }
+      "name": "Kawano T, Kashiwagi M, Kanuka M, Chen CK, Yasugaki S, Hatori S, Miyazaki S, Tanaka K, Fujita H, Nakajima T, Yanagisawa M, Nakagawa Y, Hayashi Y. ER proteostasis regulators cell-non-autonomously control sleep. Cell Rep. 2023 Mar 28;42(3):112267",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36924492/"
       ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0030431",
       "@type": "DefinedTerm",
-      "name": "sleep"
+      "name": "sleep",
+      "identifier": "GO:0030431"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "N2",
+      "description": "N2",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -176,38 +188,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "rapid C. elegans motion imaging (Remi) system",
-      "description": "rapid C. elegans motion imaging (Remi) system",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "rapid C. elegans motion imaging (Remi) system"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3848895200,
-      "description": "3.8 GB",
+      "value": 7696387423,
+      "description": "7.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 25000,
+      "value": 25001,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

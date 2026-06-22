@@ -45,38 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/14-Ochiai-MolDynMS2/"
+        "@id": "https://ssbd.riken.jp/v1/project/14-Ochiai-MolDynMS2"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/14-Ochiai-MolDynMS2/",
+      "@id": "https://ssbd.riken.jp/v1/project/14-Ochiai-MolDynMS2",
       "@type": "Dataset",
       "identifier": "14-Ochiai-MolDynMS2",
       "name": "14-Ochiai-MolDynMS2",
-      "description": "14-Ochiai-MolDynMS2",
+      "description": "See details in Ochiai et al. (2015) Nucleic Acids Research, 43(19): e127",
       "datePublished": "2016-10-03",
       "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "keywords": [
-        "Animals",
-        "Capsid Proteins/genetics",
-        "Cell Nucleus/genetics[major]",
-        "Cells, Cultured",
-        "Embryonic Stem Cells/metabolism",
-        "Endonucleases/analysis",
-        "Endonucleases/genetics",
-        "Gene Expression",
-        "Green Fluorescent Proteins/analysis",
-        "Green Fluorescent Proteins/genetics",
-        "Homeodomain Proteins/genetics",
-        "In Situ Hybridization, Fluorescence[major]",
-        "Mice",
-        "Mice, Inbred C57BL",
-        "Nanog Homeobox Protein",
-        "Optical Imaging/methods",
-        "Pluripotent Stem Cells/metabolism",
-        "Recombinant Fusion Proteins/analysis",
-        "Transcription, Genetic[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -93,22 +72,36 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkv624"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26092696"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-12"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/12/render_thumbnail/"
       ],
       "size": [
         {
@@ -132,30 +125,54 @@
       "description": "Organization: Hiroshima University; Department: Research Center for the Mathematics on Chromatin Live Dynamics (RcMcD)",
       "affiliation": [
         {
-          "@id": "https://ror.org/03t78wx29"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Takeshi Sugiwara"
+      "name": "Takeshi Sugiwara",
+      "description": "Organization: Hiroshima University; Department: Research Center for the Mathematics on Chromatin Live Dynamics (RcMcD)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Takashi Yamamoto"
+      "name": "Takashi Yamamoto",
+      "description": "Organization: Hiroshima University; Department: Research Center for the Mathematics on Chromatin Live Dynamics (RcMcD)",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/03t78wx29",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Hiroshima University"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv624",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26092696",
       "@type": "ScholarlyArticle",
-      "name": "Simultaneous live imaging of the transcription and nuclear position of specific genes.",
-      "datePublished": "2015"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26092696"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -164,35 +181,58 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
-      "@type": "DefinedTerm",
-      "name": "cellular protein localization"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 4799592,
-      "description": "4.8 MB",
+      "value": 7095197,
+      "description": "7.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 1,
+      "value": 2,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

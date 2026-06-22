@@ -45,24 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/13-Watabe-MolDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/13-Watabe-MolDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/13-Watabe-MolDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/13-Watabe-MolDyn",
       "@type": "Dataset",
       "identifier": "13-Watabe-MolDyn",
       "name": "13-Watabe-MolDyn",
-      "description": "13-Watabe-MolDyn",
+      "description": "See details in Watabe et al. (2015) PLoS One, 10(7): e0130089",
       "datePublished": "2016-01-18",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Computer Simulation[major]",
-        "Microscopy, Fluorescence/methods",
-        "Models, Biological[major]",
-        "Models, Theoretical[major]",
-        "Photons"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -97,31 +90,42 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1371/journal.pone.0130089"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26147508"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "#biosample-2"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
           "@id": "http://purl.obolibrary.org/obo/GO_0034613"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-2"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/2/render_thumbnail/"
       ],
       "size": [
         {
@@ -145,60 +149,127 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Masaki Watabe"
+      "name": "Masaki Watabe",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Satya N. V. Arjunan"
+      "name": "Satya N. V. Arjunan",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Seiya Fukushima"
+      "name": "Seiya Fukushima",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Kazunari Iwamoto"
+      "name": "Kazunari Iwamoto",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Jun Kozuka"
+      "name": "Jun Kozuka",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-007",
       "@type": "Person",
-      "name": "Satomi Matsuoka"
+      "name": "Satomi Matsuoka",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-008",
       "@type": "Person",
-      "name": "Yuki Shindo"
+      "name": "Yuki Shindo",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-009",
       "@type": "Person",
-      "name": "Masahiro Ueda"
+      "name": "Masahiro Ueda",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Biochemical Simulation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0130089",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/26147508",
       "@type": "ScholarlyArticle",
-      "name": "A Computational Framework for Bioimaging Simulation.",
-      "datePublished": "2015"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/26147508"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
+      "@type": "DefinedTerm",
+      "name": "cellular protein localization",
+      "identifier": "GO:0034613"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689",
+      "@type": "Taxon",
+      "scientificName": "Dictyostelium discoideum",
+      "name": "Dictyostelium discoideum",
+      "identifier": "NCBITaxon:44689"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116",
+      "@type": "Taxon",
+      "scientificName": "Rattus norvegicus",
+      "name": "Rattus norvegicus",
+      "identifier": "NCBITaxon:10116"
     },
     {
       "@id": "#biosample-1",
@@ -207,57 +278,69 @@
       "description": "Dictyostelium discoideum",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/44689"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "NA",
-      "description": "NA"
-    },
-    {
-      "@id": "#biosample-3",
-      "@type": "BioSample",
-      "name": "PC-12",
-      "description": "PC-12",
+      "name": "Rattus norvegicus",
+      "description": "Rattus norvegicus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10116"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
-      "@type": "Taxon",
-      "scientificName": "Dictyostelium discoideum"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10116",
-      "@type": "Taxon",
-      "scientificName": "Rattus norvegicus",
-      "vernacularName": "rat"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0034613",
-      "@type": "DefinedTerm",
-      "name": "cellular protein localization"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 162541121198,
-      "description": "162.5 GB",
+      "value": 185918709896,
+      "description": "185.9 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 103,
+      "value": 111,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
     }
   ]
 }

@@ -45,35 +45,41 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/134-Tanaka-SalivaryglandDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/134-Tanaka-SalivaryglandDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/134-Tanaka-SalivaryglandDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/134-Tanaka-SalivaryglandDev",
       "@type": "Dataset",
       "identifier": "134-Tanaka-SalivaryglandDev",
       "name": "Fluorescence images of mouse embryonic stem cells derived salivary gland at different developmental stage",
-      "description": "134-Tanaka-SalivaryglandDev",
+      "description": "See details in Tanaka J, et. al. (2018)  Nat Commun., 9(1):4216.",
       "datePublished": "2020-12-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Cells, Cultured",
+        "Cells",
+        "Cultured",
+        "Ectoderm",
         "Ectoderm/metabolism",
         "Female",
         "Gene Expression Profiling",
         "HEK293 Cells",
         "Humans",
         "Mice",
-        "Mice, Inbred C57BL",
-        "Mouse Embryonic Stem Cells/cytology[major]",
+        "Inbred C57BL",
+        "Mouse Embryonic Stem Cells",
+        "Mouse Embryonic Stem Cells/cytology",
         "Mouse Embryonic Stem Cells/metabolism",
+        "Mouth Mucosa",
         "Mouth Mucosa/embryology",
         "Mouth Mucosa/metabolism",
+        "Salivary Glands",
         "Salivary Glands/cytology",
-        "Salivary Glands/growth & development[major]",
+        "Salivary Glands/growth & development",
         "Salivary Glands/transplantation",
         "Salivary Glands/ultrastructure",
+        "Transcription Factors",
         "Transcription Factors/metabolism"
       ],
       "publisher": {
@@ -82,60 +88,6 @@
       "author": [
         {
           "@id": "#auth-001"
-        },
-        {
-          "@id": "#auth-002"
-        },
-        {
-          "@id": "#auth-003"
-        },
-        {
-          "@id": "#auth-004"
-        },
-        {
-          "@id": "#auth-005"
-        },
-        {
-          "@id": "#auth-006"
-        },
-        {
-          "@id": "#auth-007"
-        },
-        {
-          "@id": "#auth-008"
-        },
-        {
-          "@id": "#auth-009"
-        },
-        {
-          "@id": "#auth-010"
-        },
-        {
-          "@id": "#auth-011"
-        },
-        {
-          "@id": "#auth-012"
-        },
-        {
-          "@id": "#auth-013"
-        },
-        {
-          "@id": "#auth-014"
-        },
-        {
-          "@id": "#auth-015"
-        },
-        {
-          "@id": "#auth-016"
-        },
-        {
-          "@id": "#auth-017"
-        },
-        {
-          "@id": "#auth-018"
-        },
-        {
-          "@id": "#auth-019"
         }
       ],
       "seeAlso": [
@@ -144,9 +96,6 @@
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -158,10 +107,33 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000246"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-601"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/601/render_thumbnail/"
       ],
       "size": [
         {
@@ -182,114 +154,51 @@
       "@type": "Person",
       "name": "Kenji Mishima",
       "email": "mishima-k@dent.showa-u.ac.jp",
-      "description": "Organization: Showa University; Department: Department of Oral Diagnostic Sciences; Laboratory: Division of Pathology",
+      "description": "Organization: Showa University; Department: Department of Oral Diagnostic Sciences, School of Dentistry; Laboratory: Division of Pathology",
       "affiliation": [
         {
-          "@id": "https://ror.org/04mzk4q39"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
-      "@type": "Person",
-      "name": "Junichi Tanaka",
-      "description": "Department: School of Dentistry"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Miho Ogawa"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Hironori Hojo"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Yusuke Kawashima"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Yo Mabuchi"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Kenji Hata"
-    },
-    {
-      "@id": "#auth-008",
-      "@type": "Person",
-      "name": "Shiro Nakamura"
-    },
-    {
-      "@id": "#auth-009",
-      "@type": "Person",
-      "name": "Rika Yasuhara"
-    },
-    {
-      "@id": "#auth-010",
-      "@type": "Person",
-      "name": "Koki Takamatsu"
-    },
-    {
-      "@id": "#auth-011",
-      "@type": "Person",
-      "name": "Tarou Irié"
-    },
-    {
-      "@id": "#auth-012",
-      "@type": "Person",
-      "name": "Toshiyuki Fukada"
-    },
-    {
-      "@id": "#auth-013",
-      "@type": "Person",
-      "name": "Takayoshi Sakai"
-    },
-    {
-      "@id": "#auth-014",
-      "@type": "Person",
-      "name": "Tomio Inoue"
-    },
-    {
-      "@id": "#auth-015",
-      "@type": "Person",
-      "name": "Riko Nishimura"
-    },
-    {
-      "@id": "#auth-016",
-      "@type": "Person",
-      "name": "Osamu Ohara"
-    },
-    {
-      "@id": "#auth-017",
-      "@type": "Person",
-      "name": "Ichiro Saito"
-    },
-    {
-      "@id": "#auth-018",
-      "@type": "Person",
-      "name": "Shinsuke Ohba"
-    },
-    {
-      "@id": "#auth-019",
-      "@type": "Person",
-      "name": "Takashi Tsuji"
-    },
-    {
-      "@id": "https://ror.org/04mzk4q39",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Showa University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-018-06469-7",
       "@type": "ScholarlyArticle",
-      "name": "Generation of orthotopically functional salivary gland from embryonic stem cells.",
-      "datePublished": "2018"
+      "name": "Tanaka J, Ogawa M, Hojo H, Kawashima Y, Mabuchi Y, Hata K, Nakamura S, Yasuhara R, Takamatsu K, Irié T, Fukada, T Sakai T, Inoue T, Nishimura R, Ohara O, Saito I, Ohba S, Tsuji T, and Mishima K (2018) Generation of orthotopically functional salivary gland from embryonic stem cells. nature communications, Volume 9, Issue 1, pages 4216.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30310071"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007431",
+      "@type": "DefinedTerm",
+      "name": "salivary gland development",
+      "identifier": "GO:0007431"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060661",
+      "@type": "DefinedTerm",
+      "name": "submandibular salivary gland formation",
+      "identifier": "GO:0060661"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -298,43 +207,73 @@
       "description": "ESC",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi: 00000246"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007431",
-      "@type": "DefinedTerm",
-      "name": "salivary gland development"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_ 00000246"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060661",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
       "@type": "DefinedTerm",
-      "name": "submandibular salivary gland formation"
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "transmission electron microscopy",
+      "description": "transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000258"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1129726021,
-      "description": "1.1 GB",
+      "value": 1601834705,
+      "description": "1.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 55,
+      "value": 110,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

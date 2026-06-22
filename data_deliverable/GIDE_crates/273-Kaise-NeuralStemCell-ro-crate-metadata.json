@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/273-Kaise-NeuralStemCell/"
+        "@id": "https://ssbd.riken.jp/v2/project/273-Kaise-NeuralStemCell"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/273-Kaise-NeuralStemCell/",
+      "@id": "https://ssbd.riken.jp/v2/project/273-Kaise-NeuralStemCell",
       "@type": "Dataset",
       "identifier": "273-Kaise-NeuralStemCell",
       "name": "Bioluminescent time-lapse imaging of Ascl1-Luciferse reporter mice's brain slices after iPaD virus injection",
-      "description": "273-Kaise-NeuralStemCell",
+      "description": "Dentate gyrus of 11-month-old luciferase2 - Ascl1 reporter transgenic mice was injected by inducing Plagl2 and anti Dyrk1a (iPaD) - mCherryNLS lentivrus. iPaD - mCherryNLS expressed mainly at adult neural stem cells (NSCs) of dentate gyrus enhancing the proliferation of NSCs where Ascl1 supposed to express in an oscillatory manner. 4 week after iPaD lentivirus injection, brain slices containg dentate gyrus were exracted and placed in a gel supplemented by culture medium. Time-lapse imaging of the bioluminescent signal derived from Luciferse2 - Ascl1 reporter and the mCherry fluorescent signal derived from lentivirus infected cells were detected by Olympus IX-81 with a CCD camera (iKon-M DU934P-BV, Andor) and a 40x objective lens.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Hippocampus",
-        "Mice",
-        "Neural Stem Cells[major]",
-        "Neurogenesis/genetics",
-        "Neurons",
-        "Rejuvenation[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -83,9 +74,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -93,6 +81,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0048863"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -110,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1255"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1255/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,25 +125,58 @@
       "description": "Organization: RIKEN; Department: RIKEN Center for Brain Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Risa Sueda"
+      "name": "Risa Sueda",
+      "description": "Organization: UCL; Department: Sainsbury Wellcome Centre",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
+      "@id": "#affiliation-002",
+      "@type": "Organization",
+      "name": "UCL"
+    },
+    {
       "@id": "https://doi.org/10.1101/gad.349000.121",
       "@type": "ScholarlyArticle",
-      "name": "Functional rejuvenation of aged neural stem cells by Plagl2 and anti-Dyrk1a activity.",
-      "datePublished": "2022"
+      "name": "Kaise T, Fukui M, Sueda R, Piao W, Yamada M, Kobayashi T, Imayoshi I, Kageyama R. Functional rejuvenation of aged neural stem cells by Plagl2 and anti-Dyrk1a activity. Genes Dev. 2022 Jan 1;36(1-2):23-37",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/34916302/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@type": "DefinedTerm",
+      "name": "neurogenesis",
+      "identifier": "GO:0022008"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0048863",
+      "@type": "DefinedTerm",
+      "name": "stem cell differentiation",
+      "identifier": "GO:0048863"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -161,25 +185,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0022008",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "neurogenesis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0048863",
-      "@type": "DefinedTerm",
-      "name": "stem cell differentiation"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -193,6 +207,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -204,27 +224,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 253798157,
-      "description": "253.8 MB",
+      "value": 306126614,
+      "description": "306.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 2,
+      "value": 4,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

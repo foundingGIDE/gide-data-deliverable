@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/237-Jin-CellDynamics/"
+        "@id": "https://ssbd.riken.jp/v2/project/237-Jin-CellDynamics"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/237-Jin-CellDynamics/",
+      "@id": "https://ssbd.riken.jp/v2/project/237-Jin-CellDynamics",
       "@type": "Dataset",
       "identifier": "237-Jin-CellDynamics",
       "name": "Bright-field time-lapse images of live murine immune-related cells defined by scRNA-seq.",
-      "description": "237-Jin-CellDynamics",
+      "description": "See details in Jin J, et. al. (2023) Proc Natl Acad Sci U S A. 120(1):e2210283120.",
       "datePublished": "2023-02-16",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Transcriptome",
-        "Deep Learning[major]",
-        "Robotics[major]",
-        "Image Processing, Computer-Assisted/methods",
-        "Robotic Surgical Procedures[major]",
-        "Gene Expression Profiling",
-        "Phenotype"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,31 +71,34 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-8"
         },
         {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0000084"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "#biosample-4"
-        },
-        {
-          "@id": "#biosample-5"
+          "@id": "#biosample-7"
         },
         {
           "@id": "#biosample-6"
         },
         {
-          "@id": "#biosample-7"
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0000084"
         }
       ],
       "measurementMethod": [
@@ -116,7 +110,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-852"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/852/render_thumbnail/"
       ],
       "size": [
         {
@@ -140,20 +134,36 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Prediction of Cell Systems Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.1073/pnas.2210283120",
       "@type": "ScholarlyArticle",
-      "name": "Robotic data acquisition with deep learning enables cell image-based prediction of transcriptomic phenotypes.",
-      "datePublished": "2023"
+      "name": "Jin J, Ogawa T, Hojo N, Kryukov K, Shimizu K, Ikawa T, Imanishi T, Okazaki T, Shiroguchi K. Robotic data acquisition with deep learning enables cell image-based prediction of transcriptomic phenotypes. Proc Natl Acad Sci U S A. 2023 Jan 3;120(1):e2210283120.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36577074/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0000084",
+      "@type": "DefinedTerm",
+      "name": "T cell",
+      "identifier": "CLO:0000084"
     },
     {
       "@id": "#biosample-1",
@@ -162,36 +172,31 @@
       "description": "Mus musculus ~ hematopoietic progenitor cells (HPCs)",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "hematopoietic progenitor cells (HPCs)"
+      ]
     },
     {
       "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "Mus musculus ~ T cell",
-      "description": "Mus musculus ~ T cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0000084"
-      }
-    },
-    {
-      "@id": "#biosample-3",
       "@type": "BioSample",
       "name": "Mus musculus ~ Leukemia cell",
       "description": "Mus musculus ~ Leukemia cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "Leukemia cell"
+      ]
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ T cell",
+      "description": "Mus musculus ~ T cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
     },
     {
       "@id": "#biosample-4",
@@ -200,21 +205,23 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-5",
       "@type": "BioSample",
-      "name": "Mus musculus ~ CD8+ T cell",
-      "description": "Mus musculus ~ CD8+ T cell",
+      "name": "Mus musculus ~ T cell",
+      "description": "Mus musculus ~ T cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
-      "hasCellLine": "CD8+ T cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0000084"
+      }
     },
     {
       "@id": "#biosample-6",
@@ -223,33 +230,37 @@
       "description": "Mus musculus ~ B cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "B cell"
+      ]
     },
     {
       "@id": "#biosample-7",
+      "@type": "BioSample",
+      "name": "Mus musculus ~ CD8+ T cell",
+      "description": "Mus musculus ~ CD8+ T cell",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "#biosample-8",
       "@type": "BioSample",
       "name": "Mus musculus ~ CD4+ T cell",
       "description": "Mus musculus ~ CD4+ T cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
-      ],
-      "hasCellLine": "CD4+ T cell"
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0000084",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "T cell"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -263,22 +274,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 822958968,
-      "description": "823.0 MB",
+      "value": 2658790370,
+      "description": "2.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 40620,
+      "value": 82599,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

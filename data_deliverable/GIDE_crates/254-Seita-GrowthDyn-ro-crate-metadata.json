@@ -45,42 +45,26 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/254-Seita-GrowthDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/254-Seita-GrowthDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/254-Seita-GrowthDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/254-Seita-GrowthDyn",
       "@type": "Dataset",
       "identifier": "254-Seita-GrowthDyn",
       "name": "Time-lapse images of L1210 cells growth and division in the mammalian mother machine microfluidic device.",
-      "description": "254-Seita-GrowthDyn",
+      "description": "See details in Seita, A et. al. (2021) PLoS One 16, e0236534.",
       "datePublished": "2023-08-29",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Antineoplastic Agents/pharmacology",
-        "Cell Line, Tumor",
-        "Cell Proliferation/drug effects[major]",
-        "Drug Resistance, Neoplasm/genetics",
-        "Drug Resistance, Neoplasm/physiology",
-        "Leukemia/drug therapy[major]",
-        "Leukemia/metabolism[major]",
-        "Leukemia, Lymphoid/metabolism",
-        "Mice",
-        "Microfluidic Analytical Techniques/methods",
-        "Mitomycin/pharmacology",
-        "Neoplasms/metabolism",
-        "Phenotype"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-6233-0844"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0001-8465-5853"
         }
       ],
       "seeAlso": [
@@ -90,13 +74,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/CLO_0007156"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0040007"
@@ -105,7 +83,13 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0051301"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007156"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -117,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1102"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1102/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,44 +118,78 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-6233-0844",
       "@type": "Person",
       "name": "Yuichi Wakamoto",
       "email": "cwaka@mail.ecc.u-tokyo.ac.jp",
       "description": "Organization: The University of Tokyo; Department: Graduate School of Arts and Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0001-8465-5853",
       "@type": "Person",
       "name": "Hidenori Nakaoka",
       "email": "nakaoka.hidenori.6n@kyoto-u.ac.jp",
       "description": "Organization: Kyoto University; Department: Graduate School of Biostudies",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0236534",
       "@type": "ScholarlyArticle",
-      "name": "Intrinsic growth heterogeneity of mouse leukemia cells underlies differential susceptibility to a growth-inhibiting anticancer drug.",
-      "datePublished": "2021"
+      "name": "Seita, A., Nakaoka, H., Okura, R., and Wakamoto, Y. (2021). Intrinsic growth heterogeneity of mouse leukemia cells underlies differential susceptibility to a growth-inhibiting anticancer drug. PLoS One 16, e0236534. 10.1371/journal.pone.0236534.",
+      "datePublished": "2021",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/33524064/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0040007",
+      "@type": "DefinedTerm",
+      "name": "growth",
+      "identifier": "GO:0040007"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division",
+      "identifier": "GO:0051301"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007156",
+      "@type": "DefinedTerm",
+      "name": "L1210 cell",
+      "identifier": "CLO:0007156"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@type": "DefinedTerm",
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -180,7 +198,7 @@
       "description": "Mus musculus ~ L1210 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "hasCellLine": {
@@ -188,30 +206,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007156",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "L1210 cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0040007",
-      "@type": "DefinedTerm",
-      "name": "growth"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
-      "@type": "DefinedTerm",
-      "name": "cell division"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -225,22 +223,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 266728835943,
-      "description": "266.7 GB",
+      "value": 430964020792,
+      "description": "431.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 375024,
+      "value": 375171,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

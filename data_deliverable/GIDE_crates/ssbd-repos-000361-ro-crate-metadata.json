@@ -71,7 +71,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
         },
         {
           "@id": "#biosample-1"
@@ -129,12 +129,12 @@
       "description": "d-rR",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_08033",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_8033",
       "@type": "Taxon",
       "scientificName": "Oryzias latipes",
       "vernacularName": "medaka"
@@ -142,8 +142,8 @@
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "Confocal microscopy",
-      "description": "Confocal microscopy",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
@@ -153,7 +153,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "Confocal microscopy"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#total-dataset-size",

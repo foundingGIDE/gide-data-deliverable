@@ -45,33 +45,32 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/416-Otomo-descSPIM/"
+        "@id": "https://ssbd.riken.jp/v3/project/416-Otomo-descSPIM"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/416-Otomo-descSPIM/",
+      "@id": "https://ssbd.riken.jp/v3/project/416-Otomo-descSPIM",
       "@type": "Dataset",
       "identifier": "416-Otomo-descSPIM",
       "name": "Images of brain and xenograft obtained by descSPIM, the desktop- equipped SPIM",
       "description": "Despite widespread adoption of tissue clearing techniques in recent years, poor access to suitable light-sheet fluorescence microscopes remains a major obstacle for biomedical end-users. Here, we present descSPIM (desktop- equipped SPIM for cleared specimens), a low-cost ($20,000–50,000), low- expertise (one-day installation by a non-expert), yet practical do-it-yourself light-sheet microscope as a solution for this bottleneck. Even the most fundamental configuration of descSPIM enables multi-color imaging of whole mouse brains and a cancer cell line-derived xenograft tumor mass for the visualization of neurocircuitry, assessment of drug distribution, and pathological examination by false-colored hematoxylin and eosin staining in a three- dimensional manner. Academically open-sourced (https://github.com/dbsb- juntendo/descSPIM), descSPIM allows routine three-dimensional imaging of cleared samples in minutes. Thus, the dissemination of descSPIM will accelerate biomedical discoveries driven by tissue clearing technologies.",
-      "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Animals",
-        "Mice",
-        "Brain/diagnostic imaging[major]",
-        "Humans",
-        "Microscopy, Fluorescence/methods[major]",
-        "Microscopy, Fluorescence/instrumentation[major]",
-        "Imaging, Three-Dimensional/methods[major]",
-        "Cell Line, Tumor"
+        "Microscopy, Fluorescence",
+        "Brain",
+        "Cell Nucleus",
+        "Cytoplasm",
+        "Cell Membrane"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-5621-7311"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5322-6295"
         }
       ],
       "seeAlso": [
@@ -79,27 +78,26 @@
           "@id": "https://doi.org/10.1038/s41467-024-49131-1"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0002042"
         },
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         },
         {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005737"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -113,11 +111,11 @@
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "#imaging-technique-2"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000369"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1805"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1805/render_thumbnail/"
       ],
       "size": [
         {
@@ -134,77 +132,91 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-5621-7311",
       "@type": "Person",
       "name": "Etsuo A Susaki",
       "email": "suishess-kyu@umin.ac.jp",
-      "description": "Organization: Juntendo University; Department: Department of Biochemistry and Systems Biomedicine; Laboratory: Department of Biochemistry and Systems Biomedicine",
+      "description": "Organization: Juntendo University; Department: Department of Biochemistry and Systems Biomedicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/01692sz90"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01692sz90",
+      "@id": "https://orcid.org/0000-0002-5322-6295",
+      "@type": "Person",
+      "name": "Kohei Otomo"
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Juntendo University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-024-49131-1",
       "@type": "ScholarlyArticle",
-      "name": "descSPIM: an affordable and easy-to-build light-sheet microscope optimized for tissue clearing techniques.",
-      "datePublished": "2024"
+      "name": "Otomo K, Omura T, Nozawa Y, Edwards SJ, Sato Y, Saito Y, Yagishita S, Uchida H, Watakabe Y, Naitou K, Yanai R, Sahara N, Takagi S, Katayama R, Iwata Y, Shiokawa T, Hayakawa Y, Otsuka K, Watanabe-Takano H, Haneda Y, Fukuhara S, Fujiwara M, Nii T, Meno C, Takeshita N, Yashiro K, Rosales Rocabado JM, Kaku M, Yamada T, Oishi Y, Koike H, Cheng Y, Sekine K, Koga JI, Sugiyama K, Kimura K, Karube F, Kim H, Manabe I, Nemoto T, Tainaka K, Hamada A, Brismar H, Susaki EA. descSPIM: an affordable and easy-to-build light-sheet microscope optimized for tissue clearing techniques. Nat Commun. 2024 Jun 12;15(1):4941.",
+      "datePublished": "2024",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/38866781/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11169475/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This study was supported by the Japan Agency for Medical Research and Development (AMED) PRIME (to E.A.S., grant number JP20gm6210027); AMED Research on Development of New Drugs (to A.H. and E.A.S., grant number JP21ak0101181); AMED Brain/MINDS (to E.A.S. and T.Nemoto, grant number JP21wm0425003, and JP19dm0207078); AMED Project for Promotion of Cancer Research and Therapeutic Evolution (P-PROMOTE) (to E.A.S., grant number JP22ama221517); Japan Science and Technology Agency (JST) CREST (to K.Otomo and E.A.S., grant number JPMJCR20E4 and JPMJCR23B7); Japan Society for the Promotion of Science (JSPS) KAKENHI grant-in-aid for scientific research (B) (to K.Otomo and E.A.S., grant number JP22H02756 and JP22H02824); JSPS KAKENHI grant-in-aid for scientific research (S) (to T.Nemoto and K.Otomo, grant number JP20H05669); JSPS KAKENHI grant-in-aid for challenging research (exploratory) (to K.Otomo, grant number JP21K19346); JSPS KAKENHI grant-in-aid for transformative research areas - platforms for advanced technologies and research resources “Advanced Bioimaging Support” (to T.Nemoto and E.A.S., grant number JP22H04926); JSPS KAKENHI grant-in-aid for fund for the promotion of joint international research (Fostering Joint International Research(B)) (to K.Otomo, grant number JP22KK0100); JSPS KAKENHI for international leading research (to E.A.S., grant number JP23K20044); Operating Costs Subsidies for Private Universities (to E.A.S.);  Grants-in-Aid from UTEC-UTokyo (to E.A.S.); the Takeda Science Foundation (to E.A.S.); Nakatani foundation for advancement of measuring technologies in biomedical engineering (to E.A.S.); The Mochida Memorial Foundation for Medical and Pharmaceutical Research (to E.A.S.), and The Uehara Memorial Foundation (to E.A.S.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0002042",
+      "@type": "DefinedTerm",
+      "name": "BT-474 cell"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "B6.Cg-Tg(Thy1-YFP)HJrs/J",
-      "description": "B6.Cg-Tg(Thy1-YFP)HJrs/J",
+      "name": "B6.Cg-Tg(Thy1-YFP)HJrs/J ~ neuron",
+      "description": "Thy1-YFP-H mouse brain fixed, cleared, and stained with propidium iodide",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "Homo sapiens ~ BT-474 cell",
-      "description": "Homo sapiens ~ BT-474 cell",
+      "name": "Homo sapiens (NCBI:txid9606) ~ BT-474 cell",
+      "description": "BT-474 human breast cancer cells suspended in PBS and equal volume of Matrigel was subcutaneously\ninjected into the flank of the 5 to 6-week-old female SCID-beige mouse. FITC-labeled anti-murine CD31 antibody and the DyLightTM 650-labeled Trastuzumab were\nintravenously administered from the tail vein 24 h before sacrifice. The xenograft was excised, fixed, cleared, and stained.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
-      "hasCellLine": "BT-474 cell"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0002042"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "nucleus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005737",
-      "@type": "DefinedTerm",
-      "name": "cytoplasm"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -218,38 +230,34 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000369",
+      "@type": "DefinedTerm",
+      "name": "selective plane illumination fluorescence microscopy",
+      "identifier": "FBbi:00000369"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
-      "name": "selective plane illumination microscopy (SPIM)",
-      "description": "selective plane illumination microscopy (SPIM)",
+      "name": "selective plane illumination fluorescence microscopy",
+      "description": "selective plane illumination fluorescence microscopy",
       "measurementTechnique": [
         {
-          "@id": "#imaging-technique-2"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000369"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "#imaging-technique-2",
-      "@type": "DefinedTerm",
-      "name": "selective plane illumination microscopy (SPIM)"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 374304974339,
-      "description": "374.3 GB",
+      "value": 824485321417,
+      "description": "824.5 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 50,
+      "value": 125,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

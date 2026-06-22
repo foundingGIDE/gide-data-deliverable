@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/327-Okuzumi-synuclein/"
+        "@id": "https://ssbd.riken.jp/v3/project/327-Okuzumi-synuclein"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/327-Okuzumi-synuclein/",
+      "@id": "https://ssbd.riken.jp/v3/project/327-Okuzumi-synuclein",
       "@type": "Dataset",
       "identifier": "327-Okuzumi-synuclein",
       "name": "TEM images of alpha-synuclein released in serum",
-      "description": "327-Okuzumi-synuclein",
+      "description": "Abnormal alpha-synuclein aggregation is a key pathological feature of a group of neurodegenerative diseases known as synucleinopathies, which include Parkinson’s disease, dementia with Lewy bodies and multiple system atrophy. The pathogenic beta-sheet seed conformation of alpha-synuclein is found in various tissues, suggesting potential as a biomarker, but few studies have been able to reliably detect these seeds in serum samples. In this study, the authors developed a modified assay system, called immunoprecipitation-based real-time quaking-induced conversion (IP/RT-QuIC), which enables the detection of pathogenic α-synuclein seeds in the serum of individuals with synucleinopathies.",
       "datePublished": "2025-01-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -78,13 +78,12 @@
           "@id": "https://doi.org/10.1038/s41591-023-02358-9"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-1"
-        },
         {
           "@id": "#biosample-2"
         },
@@ -92,10 +91,10 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0070841"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0016234"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -119,7 +118,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1507"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1507/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,71 +137,77 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Nobutaka  Hattori",
+      "name": "Nobutaka Hattori",
       "email": "nhattori@juntendo.ac.jp",
-      "description": "Organization: Juntendo University; Department: Department of Neurology; Laboratory: Department of Neurology",
+      "description": "Organization: Juntendo University; Department: Department of Neurology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01692sz90"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Ayami Okuzumi"
+      "name": "Ayami Okuzumi",
+      "email": "aokuzu@juntendo.ac.jp",
+      "description": "Organization: Juntendo University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Soichiro Kakuta"
+      "name": "Soichiro Kakuta",
+      "email": "skakuta@juntendo.ac.jp",
+      "description": "Organization: Juntendo University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Yasuo  Uchiyama"
+      "name": "Yasuo Uchiyama",
+      "email": "y-uchi@juntendo.ac.jp",
+      "description": "Organization: Juntendo University",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01692sz90",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Juntendo University"
     },
     {
       "@id": "https://doi.org/10.1038/s41591-023-02358-9",
       "@type": "ScholarlyArticle",
-      "name": "Propagative alpha-synuclein seeds as serum biomarkers for synucleinopathies.",
-      "datePublished": "2023"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Homo sapiens",
-      "description": "Homo sapiens",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
+      "name": "Okuzumi A, Hatano T, Matsumoto G, Nojiri S, Ueno SI, Imamichi-Tatano Y, Kimura H, Kakuta S, Kondo A, Fukuhara T, Li Y, Funayama M, Saiki S, Taniguchi D, Tsunemi T, McIntyre D, Gerardy JJ, Mittelbronn M, Kruger R, Uchiyama Y, Nukina N, Hattori N. Propagative alpha-synuclein seeds as serum biomarkers for synucleinopathies. Nat Med. 2023 Jun;29(6):1448-1455.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37248302/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10287557/"
       ]
     },
     {
-      "@id": "#biosample-2",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ HEK293",
-      "description": "Homo sapiens ~ HEK293",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
-      }
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the Japan Agency for Medical Research and Development (AMED) (20dm0107156 and 21wm0425015 to T.H. and A.O. and 21ak0101112 to T.H. and N.H.); the Multicenter Alliance for Brain Biomarkers (21dk0207055 to T.H., 21dm0207070 to N.H. and 20dm0107140 to N.N.); Grants-in-Aid for Scientific Research (21H04820 to N.H., 21K07424 to T.H., 19K16928 to A.O. and 20K22693 to S.U.) from the Japan Society for the Promotion of Science; the Visionary Council on the Moonshot Research and Development Program (JPMJMS2024-5 to N.H.); grants-in-aid from the Research Committee of CNS Degenerative Disease, Research on Policy Planning and Evaluation for Rare and Intractable Diseases, Health, Labor, and Welfare Sciences Research Grants; the Ministry of Health, Labour and Welfare, Japan, to N.H.; the Setsuro Fujii Memorial, Osaka Foundation for Promotion of Fundamental Medical Research, to T.H.; grants-in-aid from the Ministry of Education, Culture, Sports, Science and Technology (MEXT) of Japan to G.M. (17K07098 and 20H05333) for Scientific Research on Innovative Areas ‘Multimode autophagy’; the National Centre of Excellence in Research on Parkinson’s Disease (NCER-PD) funded by the Luxembourg National Research Fund (FNR; NCER13/BM/11264123); and the PEARL program (PEARL /P13/6682797 to R.K. and PEARL P16/BM/11192868 to M.M.)."
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
-      "vernacularName": "human"
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/CLO_0001230",
@@ -210,14 +215,35 @@
       "name": "HEK293"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0070841",
-      "@type": "DefinedTerm",
-      "name": "inclusion body assembly"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606)",
+      "description": "Alpha-synuclein fibrils derived from cerebrospinal fluid (CSF) of Parkinson's disease (PD)",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016234",
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HEK293",
+      "description": "Dementia with Lewy bodies (DLB)/PD with dementia (PDD) seed transducted HEK293 cell line stably expressing green fluorescent protein (GFP)-fused human alpha-synuclein with A53T mutation (293-SynG)",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001230"
+      }
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
       "@type": "DefinedTerm",
-      "name": "inclusion body"
+      "name": "transmission electron microscopy",
+      "identifier": "FBbi:00000258"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -231,6 +257,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "fluorescence microscopy",
@@ -242,10 +274,16 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
+      "@type": "DefinedTerm",
+      "name": "structured illumination microscopy (SIM)",
+      "identifier": "FBbi:00000332"
+    },
+    {
       "@id": "#imaging-protocol-3",
       "@type": "LabProtocol",
-      "name": "structured illumination microscopy",
-      "description": "structured illumination microscopy",
+      "name": "structured illumination microscopy (SIM)",
+      "description": "structured illumination microscopy (SIM)",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000332"
@@ -253,32 +291,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000258",
-      "@type": "DefinedTerm",
-      "name": "transmission electron microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000332",
-      "@type": "DefinedTerm",
-      "name": "structured illumination microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 484681712,
-      "description": "484.7 MB",
+      "value": 905675696,
+      "description": "905.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 572,
+      "value": 604,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

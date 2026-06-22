@@ -1,0 +1,248 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+      "bia": "https://bioimage-archive.org/ro-crate/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "dwc": "http://rs.tdwg.org/dwc/terms/",
+      "dwciri": "http://rs.tdwg.org/dwc/iri/",
+      "bao": "http://www.bioassayontology.org/bao#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "vernacularName": {
+        "@id": "dwc:vernacularName"
+      },
+      "scientificName": {
+        "@id": "dwc:scientificName"
+      },
+      "hasCellLine": {
+        "@id": "bao:BAO_0002004"
+      },
+      "measurementMethod": {
+        "@id": "dwciri:measurementMethod"
+      },
+      "taxonomicRange": {
+        "@id": "http://schema.org/taxonomicRange"
+      },
+      "seeAlso": {
+        "@id": "rdf:seeAlso"
+      },
+      "BioSample": {
+        "@id": "http://schema.org/BioSample"
+      },
+      "LabProtocol": {
+        "@id": "http://schema.org/LabProtocol"
+      },
+      "labEquipment": {
+        "@id": "http://schema.org/labEquipment"
+      }
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000484/"
+      }
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository/ssbd-repos-000484/",
+      "@type": "Dataset",
+      "identifier": "ssbd-repos-000484",
+      "name": "Imaging data in the paper, \"Isotonic and minimally invasive optical clearing media for live cell imaging ex vivo and in vivo\" (Inagaki et al., 2025).",
+      "description": "Images of cultured cells, organoids, glia and neurons in brain slices and in the brains of mice.",
+      "datePublished": "2026-03-12",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "publisher": {
+        "@id": "https://ssbd.riken.jp/repository"
+      },
+      "author": [
+        {
+          "@id": "#auth-001"
+        },
+        {
+          "@id": "#auth-002"
+        }
+      ],
+      "seeAlso": [
+        {
+          "@id": "https://doi.org/10.1038/s41592-026-03023-y"
+        }
+      ],
+      "about": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001727"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0037354"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
+      "size": [
+        {
+          "@id": "#total-dataset-size"
+        },
+        {
+          "@id": "#file-count"
+        }
+      ]
+    },
+    {
+      "@id": "https://ssbd.riken.jp/repository",
+      "@type": "Organization",
+      "name": "SSBD:repository"
+    },
+    {
+      "@id": "#auth-001",
+      "@type": "Person",
+      "name": "Takeshi Imai",
+      "email": "imai.takeshi.457@m.kyushu-u.ac.jp",
+      "description": "Organization: Kyushu Univerisity",
+      "affiliation": [
+        {
+          "@id": "https://ror.org/00p4k0j84"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-002",
+      "@type": "Person",
+      "name": "Shigenori Inagaki"
+    },
+    {
+      "@id": "https://ror.org/00p4k0j84",
+      "@type": "Organization",
+      "name": "Kyushu Univerisity"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-026-03023-y",
+      "@type": "ScholarlyArticle",
+      "name": "Isotonic and minimally invasive optical clearing media for live cell imaging ex vivo and in vivo.",
+      "datePublished": "2026"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "brain slice"
+    },
+    {
+      "@id": "#biosample-2",
+      "@type": "BioSample",
+      "name": "Organism",
+      "description": "organoids)"
+    },
+    {
+      "@id": "#biosample-3",
+      "@type": "BioSample",
+      "name": "C57BL/6, ICR (Mus musculus)",
+      "description": "C57BL/6, ICR (Mus musculus)",
+      "taxonomicRange": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+        }
+      ],
+      "hasCellLine": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0001727"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0037354"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "vernacularName": "mouse"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "vernacularName": "human"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cells"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0001727",
+      "@type": "DefinedTerm",
+      "name": "HeLa/Fucci2 cells"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0037354",
+      "@type": "DefinedTerm",
+      "name": "AAVpro 293T cells"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#total-dataset-size",
+      "@type": "QuantitativeValue",
+      "value": 393222467584,
+      "description": "393.2 GB",
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
+      "unitText": "bytes"
+    },
+    {
+      "@id": "#file-count",
+      "@type": "QuantitativeValue",
+      "value": 873,
+      "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
+      "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
+    }
+  ]
+}

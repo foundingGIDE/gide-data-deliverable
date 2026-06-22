@@ -45,26 +45,31 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/373-Tomioka-CaImage/"
+        "@id": "https://ssbd.riken.jp/v3/project/373-Tomioka-CaImage"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/373-Tomioka-CaImage/",
+      "@id": "https://ssbd.riken.jp/v3/project/373-Tomioka-CaImage",
       "@type": "Dataset",
       "identifier": "373-Tomioka-CaImage",
       "name": "Calcium imaging of ASEL gustatory neuron of C. elagans in response to glucose after conditioning",
-      "description": "373-Tomioka-CaImage",
+      "description": "The nematode Caenorhabditis elegans memorizes various external chemicals, such as ions and odorants, during feeding. Here the authors find that C. elegans is attracted to the monosaccharides glucose and fructose after exposure to these monosaccharides in the presence of food; however, it avoids them without conditioning. The attraction to glucose requires a gustatory neuron called ASEL. ASEL activity increases when glucose concentration decreases.",
       "datePublished": "2025-04-10",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Neurons",
+        "Time-Lapse Imaging",
+        "Fluorescence Resonance Energy Transfer"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0002-7537-714X"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0002-0936-2660"
         },
         {
           "@id": "#auth-003"
@@ -75,15 +80,17 @@
           "@id": "https://doi.org/10.1371/journal.pgen.1010637"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0042221"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ],
       "measurementMethod": [
@@ -101,7 +108,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1653"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1653/render_thumbnail/"
       ],
       "size": [
         {
@@ -118,82 +125,82 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0002-7537-714X",
       "@type": "Person",
-      "name": "Masahiro  Tomioka",
+      "name": "Masahiro Tomioka",
       "email": "tomioka-masahiro@h.jniosh.johas.go.jp",
-      "description": "Organization: National Institude of Occupational Safety and Health; Department: Division of Industrial Toxicology; Laboratory: Division of Industrial Toxicology",
+      "description": "Organization: National Institude of Occupational Safety and Health, Japan; Department: Division of Industrial Toxicology",
       "affiliation": [
         {
-          "@id": "https://ror.org/05yadcm11"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0002-0936-2660",
       "@type": "Person",
       "name": "Yuichi Iino",
       "email": "iino@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: Japan; Department: Department of Biological Sciences; Laboratory: Department of Biological Sciences",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/02sfqqf20"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Risshun Chin",
-      "description": "Organization: The University of Tokyo; Department: Graduate School of Science; Laboratory: Graduate School of Science",
-      "affiliation": [
-        {
-          "@id": "https://ror.org/057zh3y96"
-        }
-      ]
+      "name": "Risshun Chin"
     },
     {
-      "@id": "https://ror.org/05yadcm11",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "National Institude of Occupational Safety and Health"
+      "name": "National Institude of Occupational Safety and Health, Japan"
     },
     {
-      "@id": "https://ror.org/02sfqqf20",
-      "@type": "Organization",
-      "name": "Japan"
-    },
-    {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pgen.1010637",
       "@type": "ScholarlyArticle",
-      "name": "Antagonistic regulation of salt and sugar chemotaxis plasticity by a single chemosensory neuron in Caenorhabditis elegans.",
-      "datePublished": "2023"
+      "name": "Tomioka M, Umemura Y, Ueoka Y, Chin R, Katae K, Uchiyama C, Ike Y, Iino Y. Antagonistic regulation of salt and sugar chemotaxis plasticity by a single chemosensory neuron in Caenorhabditis elegans. PLoS Genet. 2023 Sep 5;19(9):e1010637.\nPLoS Genet. 2023 Sep 5;19(9):e1010637.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37669262/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10503759/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "M.T. was supported by Grants-in-Aid for Scientific Research (C) (18K06055) from the Ministry of Education, Culture, Sports, Science and Technology of Japan (MEXT). Y.I. was supported by Grants-in-Aid for Scientific Research (A) (22H00416), for Scientific Research (S) (17H06113), for Scientific Research on Innovative Area (25115010) and for Scientific Research on Innovative Area (20115001) from MEXT."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "JN2103",
-      "description": "JN2103",
+      "name": "JN2103 ~ neuron",
+      "description": "A left-sided ASE gustatory neuron in unc-13 mutant C. elegans that received glucose conditioning to attract glucose.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0042221",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "response to chemical"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -207,6 +214,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -218,27 +231,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 5000553260,
-      "description": "5.0 GB",
+      "value": 8009473562,
+      "description": "8.0 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 39,
+      "value": 78,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

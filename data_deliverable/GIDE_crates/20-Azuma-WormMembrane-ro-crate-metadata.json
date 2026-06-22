@@ -45,29 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/20-Azuma-WormMembrane/"
+        "@id": "https://ssbd.riken.jp/v1/project/20-Azuma-WormMembrane"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/20-Azuma-WormMembrane/",
+      "@id": "https://ssbd.riken.jp/v1/project/20-Azuma-WormMembrane",
       "@type": "Dataset",
       "identifier": "20-Azuma-WormMembrane",
       "name": "A set of BDML file for digitized cellular dynamics of a C. elegans embryo",
-      "description": "20-Azuma-WormMembrane",
+      "description": "See details in Azuma & Onami et al. (2017) BMC Bioinformatics, 18(1): 307.",
       "datePublished": "2017-03-01",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Algorithms[major]",
-        "Animals",
-        "Automation",
-        "Caenorhabditis elegans/growth & development[major]",
-        "Caenorhabditis elegans/physiology",
-        "Cell Membrane/chemistry",
-        "Cell Membrane/metabolism[major]",
-        "Embryo, Nonmammalian/physiology",
-        "Embryonic Development",
-        "Image Processing, Computer-Assisted/methods[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -81,13 +69,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1186/s12859-017-1717-6"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28629355"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
-        },
         {
           "@id": "#biosample-1"
         },
@@ -96,10 +81,27 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0016020"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-101"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/101/render_thumbnail/"
       ],
       "size": [
         {
@@ -120,28 +122,52 @@
       "@type": "Person",
       "name": "Shuichi Onami",
       "email": "sonami@riken.jp",
-      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Developmental Dynamics",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Yusuke Azuma"
+      "name": "Yusuke Azuma",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Developmental Dynamics",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-017-1717-6",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/28629355",
       "@type": "ScholarlyArticle",
-      "name": "Biologically constrained optimization based cell membrane segmentation in C. elegans embryos.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/28629355"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
+      "@type": "DefinedTerm",
+      "name": "embryo development",
+      "identifier": "GO:0009790"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016020",
+      "@type": "DefinedTerm",
+      "name": "membrane",
+      "identifier": "GO:0016020"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239",
+      "@type": "Taxon",
+      "scientificName": "Caenorhabditis elegans",
+      "name": "Caenorhabditis elegans",
+      "identifier": "NCBITaxon:6239"
     },
     {
       "@id": "#biosample-1",
@@ -150,40 +176,58 @@
       "description": "Caenorhabditis elegans",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
-      "@type": "Taxon",
-      "scientificName": "Caenorhabditis elegans",
-      "vernacularName": "nematode"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009790",
-      "@type": "DefinedTerm",
-      "name": "embryo development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016020",
-      "@type": "DefinedTerm",
-      "name": "membrane"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 100578962,
-      "description": "100.6 MB",
+      "value": 113474461,
+      "description": "113.5 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 3,
+      "value": 5,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
     }
   ]
 }

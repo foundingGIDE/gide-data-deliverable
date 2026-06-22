@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/235-Hattori-SmartphoneBioImaging/"
+        "@id": "https://ssbd.riken.jp/v2/project/235-Hattori-SmartphoneBioImaging"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/235-Hattori-SmartphoneBioImaging/",
+      "@id": "https://ssbd.riken.jp/v2/project/235-Hattori-SmartphoneBioImaging",
       "@type": "Dataset",
       "identifier": "235-Hattori-SmartphoneBioImaging",
       "name": "Smartphone-based time-lapse bioluminescence images of GeNL(Ca2+)_520 or CalfluxVTN in HeLa cells.",
-      "description": "235-Hattori-SmartphoneBioImaging",
+      "description": "See details in Hattori M, et. al. (2020)  Sensors (Basel),  Dec 14;20(24):7166.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Biosensing Techniques[major]",
-        "Cell Phone",
-        "Lighting",
-        "Mice",
-        "Organelles[major]",
-        "Smartphone[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,16 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0008218"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0008218"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -98,16 +89,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "#imaging-technique-2"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-759"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/759/render_thumbnail/"
       ],
       "size": [
         {
@@ -126,25 +111,47 @@
     {
       "@id": "#auth-001",
       "@type": "Person",
-      "name": "Takeharu Nagai",
+      "name": "Takeharu  Nagai",
       "email": "ng1@sanken.osaka-u.ac.jp",
       "description": "Organization: Osaka University; Department: The Institute of Scientific and Industrial Research (SANKEN)",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.3390/s20247166",
       "@type": "ScholarlyArticle",
-      "name": "Smartphone-Based Portable Bioluminescence Imaging System Enabling Observation at Various Scales from Whole Mouse Body to Organelle.",
-      "datePublished": "2020"
+      "name": "Hattori M, Shirane S, Matsuda T, Nagayama K, Nagai T. Smartphone-Based Portable Bioluminescence Imaging System Enabling Observation at Various Scales from Whole Mouse Body to Organelle. Sensors (Basel). 2020 Dec 14;20(24):7166. doi: 10.3390/s20247166. PMID: 33327525; PMCID: PMC7764933.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/33327525/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0008218",
+      "@type": "DefinedTerm",
+      "name": "bioluminescence",
+      "identifier": "GO:0008218"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@type": "DefinedTerm",
+      "name": "HeLa cell",
+      "identifier": "CLO:0003684"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -153,7 +160,7 @@
       "description": "Homo sapiens ~ HeLa cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -161,20 +168,10 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "HeLa cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0008218",
-      "@type": "DefinedTerm",
-      "name": "bioluminescence"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -188,38 +185,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "smartphone microscope",
-      "description": "smartphone microscope",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-2"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "#imaging-technique-2",
-      "@type": "DefinedTerm",
-      "name": "smartphone microscope"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 13662529,
-      "description": "13.7 MB",
+      "value": 19670217,
+      "description": "19.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6,
+      "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

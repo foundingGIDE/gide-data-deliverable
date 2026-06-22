@@ -74,7 +74,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         },
         {
           "@id": "#biosample-1"
@@ -94,13 +94,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
         }
       ],
       "size": [
@@ -153,7 +153,7 @@
       "description": "See details in Sugiyama et. al., bioRxiv. 2023",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853"
         }
       ],
       "hasCellLine": {
@@ -161,7 +161,7 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04853",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_4853",
       "@type": "Taxon",
       "scientificName": "Schizosaccharomyces pombe",
       "vernacularName": "fission yeast"
@@ -182,38 +182,6 @@
       "name": "Hela cell"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "spinning disk confocal microscopy",
-      "description": "spinning disk confocal microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "wide-field microscopy",
-      "description": "wide-field microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
-      "@type": "DefinedTerm",
-      "name": "spinning disk confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "wide-field microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 81826627584,
@@ -227,6 +195,40 @@
       "value": 29665,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00100013",
+      "@type": "DefinedTerm",
+      "name": "wide-field fluorescence microscopy",
+      "identifier": "FBbi:00100013"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "wide-field fluorescence microscopy",
+      "description": "wide-field fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100013"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
     }
   ]
 }

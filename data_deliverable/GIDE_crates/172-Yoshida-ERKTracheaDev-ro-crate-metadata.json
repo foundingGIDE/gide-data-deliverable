@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/172-Yoshida-ERKTracheaDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/172-Yoshida-ERKTracheaDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/172-Yoshida-ERKTracheaDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/172-Yoshida-ERKTracheaDev",
       "@type": "Dataset",
       "identifier": "172-Yoshida-ERKTracheaDev",
       "name": "Time-lapse images of ERK activity in embryonic murine trachea under ex vivo culture condition dissected from E12.5.",
-      "description": "172-Yoshida-ERKTracheaDev",
+      "description": "See details in Yoshida T, et. al. (2020) Front Cell Dev Biol., 8:585640.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -61,7 +61,7 @@
       },
       "author": [
         {
-          "@id": "https://orcid.org/0000-0001-7323-9627"
+          "@id": "#auth-001"
         }
       ],
       "seeAlso": [
@@ -71,16 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "http://purl.obolibrary.org/obo/GO_0060438"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0004707"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0060438"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -89,10 +89,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-725"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/725/render_thumbnail/"
       ],
       "size": [
         {
@@ -109,27 +115,49 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "https://orcid.org/0000-0001-7323-9627",
+      "@id": "#auth-001",
       "@type": "Person",
       "name": "Tsuyoshi Hirashima",
       "email": "hirashima.tsuyoshi.2m@kyoto-u.ac.jp",
-      "description": "Organization: Kyoto University; Department: Department of Pathology and Biology of Diseases; Laboratory: Multicellular Biophysics in Development and Reproduction",
+      "description": "Organization: Kyoto University; Department: Department of Pathology and Biology of Diseases, Graduate School of Medicine; Laboratory: Multicellular Biophysics in Development and Reproduction",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.3389/fcell.2020.585640",
       "@type": "ScholarlyArticle",
-      "name": "Incoherent Feedforward Regulation via Sox9 and ERK Underpins Mouse Tracheal Cartilage Development.",
-      "datePublished": "2020"
+      "name": "Yoshida T, Matsuda M, and Hirashima T (2020) Incoherent Feedforward Regulation via Sox9 and ERK Underpins Mouse Tracheal Cartilage Development. Frontiers in Cell and Dvelopmental Biology, Volume 8, pages 585640.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/33195234"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0060438",
+      "@type": "DefinedTerm",
+      "name": "trachea development",
+      "identifier": "GO:0060438"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@type": "DefinedTerm",
+      "name": "MAP kinase activity",
+      "identifier": "GO:0004707"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -138,25 +166,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0004707",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "MAP kinase activity"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060438",
-      "@type": "DefinedTerm",
-      "name": "trachea development"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -170,24 +188,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 66836609058,
-      "description": "66.8 GB",
+      "value": 220787007819,
+      "description": "220.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 324,
+      "value": 654,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
+      "@type": "DefinedTerm",
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
     }
   ]
 }

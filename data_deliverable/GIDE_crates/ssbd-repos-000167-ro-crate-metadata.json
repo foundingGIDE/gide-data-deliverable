@@ -90,19 +90,27 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
         },
         {
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
           "@id": "http://purl.obolibrary.org/obo/GO_1903977"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -143,38 +151,39 @@
       "datePublished": "2021"
     },
     {
-      "@id": "#biosample-2",
+      "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "Organism",
       "description": "Unknown (fish keratocyte)"
     },
     {
-      "@id": "#biosample-1",
+      "@id": "#biosample-2",
       "@type": "BioSample",
       "name": "-",
       "description": "-",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         }
       ],
       "hasCellLine": [
-        "HL-60",
-        "fish keratocyte",
-        "AX-4(Dictyostelium)"
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0003775",
+          "name": "HL-60 cell"
+        }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
       "@type": "Taxon",
       "scientificName": "Dictyostelium discoideum",
       "vernacularName": "social amoeba"
@@ -183,6 +192,12 @@
       "@id": "http://purl.obolibrary.org/obo/GO_1903977",
       "@type": "DefinedTerm",
       "name": "Spontaneous cell migration"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
       "@id": "#total-dataset-size",
@@ -198,6 +213,17 @@
       "value": 608039,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

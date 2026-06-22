@@ -45,11 +45,11 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/367-Tsuboi-DrosophilaWing/"
+        "@id": "https://ssbd.riken.jp/v3/project/367-Tsuboi-DrosophilaWing"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/367-Tsuboi-DrosophilaWing/",
+      "@id": "https://ssbd.riken.jp/v3/project/367-Tsuboi-DrosophilaWing",
       "@type": "Dataset",
       "identifier": "367-Tsuboi-DrosophilaWing",
       "name": "The folding dynamics of Drosophila wing during pupal development",
@@ -57,19 +57,21 @@
       "datePublished": "2025-11-28",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Animals",
-        "Extracellular Matrix[major]",
-        "Epithelium",
-        "Extracellular Matrix Proteins[major]",
-        "Drosophila",
-        "Stereotyped Behavior"
+        "Microscopy, Confocal",
+        "Pupa",
+        "growth & development",
+        "Cell Membrane",
+        "Extracellular Matrix"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-6055-3844"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8127-1141"
         }
       ],
       "seeAlso": [
@@ -77,81 +79,74 @@
           "@id": "https://doi.org/10.1126/sciadv.adh2154"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "#biosample-4"
-        },
-        {
-          "@id": "#biosample-5"
-        },
-        {
-          "@id": "#biosample-6"
-        },
-        {
-          "@id": "#biosample-7"
-        },
-        {
-          "@id": "#biosample-8"
-        },
-        {
-          "@id": "#biosample-9"
-        },
-        {
-          "@id": "#biosample-10"
-        },
-        {
-          "@id": "#biosample-11"
-        },
-        {
-          "@id": "#biosample-12"
-        },
-        {
-          "@id": "#biosample-13"
-        },
-        {
-          "@id": "#biosample-14"
-        },
-        {
-          "@id": "#biosample-15"
-        },
-        {
-          "@id": "#biosample-16"
-        },
-        {
-          "@id": "#biosample-17"
-        },
-        {
-          "@id": "#biosample-18"
+          "@id": "#biosample-20"
         },
         {
           "@id": "#biosample-19"
         },
         {
-          "@id": "#biosample-20"
+          "@id": "#biosample-18"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0035209"
+          "@id": "#biosample-17"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007389"
+          "@id": "#biosample-16"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005886"
+          "@id": "#biosample-15"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0031012"
+          "@id": "#biosample-14"
+        },
+        {
+          "@id": "#biosample-13"
+        },
+        {
+          "@id": "#biosample-12"
+        },
+        {
+          "@id": "#biosample-11"
+        },
+        {
+          "@id": "#biosample-10"
+        },
+        {
+          "@id": "#biosample-9"
+        },
+        {
+          "@id": "#biosample-8"
+        },
+        {
+          "@id": "#biosample-7"
+        },
+        {
+          "@id": "#biosample-6"
+        },
+        {
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ],
       "measurementMethod": [
@@ -189,272 +184,281 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-6055-3844",
       "@type": "Person",
       "name": "Alice Tsuboi",
       "email": "tsuboi.arisu.5s@kyoto-u.ac.jp",
-      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Graduate School of Biostudies",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "https://orcid.org/0000-0001-8127-1141",
+      "@type": "Person",
+      "name": "Takefumi Kondo",
+      "email": "takefumi.kondo@riken.jp",
+      "description": "Organization: Kyoto University; Department: Graduate School of Biostudies",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1126/sciadv.adh2154",
       "@type": "ScholarlyArticle",
-      "name": "Spatiotemporal remodeling of extracellular matrix orients epithelial sheet folding.",
-      "datePublished": "2023"
+      "name": "A. Tsuboi,  K. Fujimoto, T. Kondo. Spatiotemporal remodeling of extracellular matrix orients epithelial sheet folding. Sci Adv. 2023  Sep;9(35):eadh2154",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37656799/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10854429/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by JSPS KAKENHI 19J00764 (to A.T.), 21H05779 (to A.T.), 17H06386 (to K.F.), and 16H06280 “ABiS”; a grant from the NIPPON Genetics (to A.T.); The Keihanshin Consortium for Fostering the Next Generation of Global Leaders in Research (K- CONNEX) established by the program of Building of Consortia for the Development of Human Resources in Science and Technology, MEXT (to T.K.); and Japan Science and Technology Agency JPMJCR2121 (to K.F.)."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215",
+      "@type": "Taxon",
+      "scientificName": "Drosophila",
+      "name": "Drosophila",
+      "identifier": "NCBITaxon:7215"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "ap-GAL4/+; UAS-Dcr2/UAS-DsRed",
-      "description": "ap-GAL4/+; UAS-Dcr2/UAS-DsRed",
+      "name": "sd-Gal4/+; UAS-dpyRNAi/E-Cadher- in::GFP; UAS-mCD8::mCherry/UAS-Dcr2",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and E-Cadherin::GFP. Dumpy (Dpy) was depleted from the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-2",
       "@type": "BioSample",
-      "name": "y, w, hs-flp;  E-Cadherin::GFP; Act > CD2 > GAL4; UAS-mCD8::mCherry",
-      "description": "y, w, hs-flp;  E-Cadherin::GFP; Act > CD2 > GAL4; UAS-mCD8::mCherry",
+      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-NpRNAi/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and E-Cadherin::GFP. Notopleural was depleted from the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/ci-Gal4",
-      "description": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/ci-Gal4",
+      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-SbRNAi/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and E-Cadherin::GFP. Stubble  was depleted from the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-4",
       "@type": "BioSample",
-      "name": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/hh-Gal4",
-      "description": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/hh-Gal4",
+      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and E-Cadherin::GFP.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-5",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/Dpy::YFP",
-      "description": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/Dpy::YFP",
+      "name": "Dpy::YFP, Ubi-GAP43::tdTomato/+; rho^{ve-1}, vn^{1}/+\nウエ",
+      "description": "A control Drosophila pupa expressing Gap43::tdTomato and Dpy::YFP in the wing. tdTomato was fused with N-terminal region of GAP43.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-6",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; Dp::YFP, UAS-mCD8::mCherry/+",
-      "description": "sd-Gal4/+; Dp::YFP, UAS-mCD8::mCherry/+",
+      "name": "Dpy::YFP, Ubi-GAP43:: tdTomato/+;\nrho^{ve-1}, vn^{1}/rho^{ve-1}, vn^{1}",
+      "description": "A mutant Drosophila pupa expressing Gap43::tdTomato and Dpy::YFP in the wing. tdTomato was fused with N-terminal region of  GAP43. The mutant lacked vein in the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-7",
       "@type": "BioSample",
-      "name": "ap-GAL4/UAS-dpyRNAi; UAS-Dcr2/UAS-DsRed",
-      "description": "ap-GAL4/UAS-dpyRNAi; UAS-Dcr2/UAS-DsRed",
+      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-8",
       "@type": "BioSample",
-      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci- Gal4/+",
-      "description": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci- Gal4/+",
+      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/\nUAS-NpRNAi",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP. Notopleural was depleted from the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-9",
       "@type": "BioSample",
-      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci-Gal4/ UAS-3xFLAG.dCas9.VPR",
-      "description": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci-Gal4/ UAS-3xFLAG.dCas9.VPR",
+      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+; UAS-\nSbRNAi/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP. Stubble was depleted from the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-10",
       "@type": "BioSample",
-      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh- Gal4/+",
-      "description": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh- Gal4/+",
+      "name": "ap-GAL4/+; UAS-Dcr2/UAS-DsRed",
+      "description": "A Drosophila pupa expressing DsRed in dorsal cells of its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-11",
       "@type": "BioSample",
-      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh-Gal4/ UAS-3xFLAG.dCas9.VPR",
-      "description": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh-Gal4/ UAS-3xFLAG.dCas9.VPR",
+      "name": "y, w, hs-flp; \nE-Cadherin::GFP;\nAct > CD2 > GAL4;\nUAS-mCD8::mCherry",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and E-Cadherin-GFP in its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-12",
       "@type": "BioSample",
-      "name": "Dpy::YFP, Ubi-GAP43::tdTomato/+; rho^{ve-1}, vn^{1}/+",
-      "description": "Dpy::YFP, Ubi-GAP43::tdTomato/+; rho^{ve-1}, vn^{1}/+",
+      "name": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/ci-Gal4",
+      "description": "A Drosophila pupa that sqh was knocked out at anterior region of the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-13",
       "@type": "BioSample",
-      "name": "Dpy::YFP, Ubi-GAP43:: tdTomato/+; rho^{ve-1}, vn^{1}/rho^{ve-1}, vn^{1}",
-      "description": "Dpy::YFP, Ubi-GAP43:: tdTomato/+; rho^{ve-1}, vn^{1}/rho^{ve-1}, vn^{1}",
+      "name": "y, w, sqh::eGFP/Y; Tub-Gal80ts/+; UAS-Nslmb-vhhGFP4, UAS- mCD8::mCherry/hh-Gal4",
+      "description": "A Drosophila pupa that sqh was knocked out at posterior region of the wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-14",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+",
-      "description": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+",
+      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/Dpy::YFP",
+      "description": "A wing of  Drosophila pupa expressing mCD8::mCherry and Dpy::YFP.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-15",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/ UAS-NpRNAi",
-      "description": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/ UAS-NpRNAi",
+      "name": "sd-Gal4/+; Dp::YFP, UAS-mCD8::mCherry/+",
+      "description": "A wing of Drosophila pupa expressing mCD8::mCherry and Dpy::YFP.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-16",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+; UAS- SbRNAi/+",
-      "description": "sd-Gal4/+; Dpy::YFP, UAS-mCD8::mCherry/+; UAS- SbRNAi/+",
+      "name": "ap-GAL4/UAS-dpyRNAi; UAS-Dcr2/UAS-DsRed",
+      "description": "A Drosophila pupa that DsRed was expressed  in dorsal cells of its wing and Dumpy was depleted from the dorsal wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-17",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP",
-      "description": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP",
+      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci-Gal4/ UAS-3xFLAG.dCas9.VPR",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP in its wing. In addition, Dumpy (Dpy) was overexpressed at the anterior region of its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-18",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; UAS-dpyRNAi/E-Cadher- in::GFP; UAS-mCD8::mCherry/UAS-Dcr2",
-      "description": "sd-Gal4/+; UAS-dpyRNAi/E-Cadher- in::GFP; UAS-mCD8::mCherry/UAS-Dcr2",
+      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; ci- Gal4/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP in its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-19",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-NpRNAi/+",
-      "description": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-NpRNAi/+",
+      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh-Gal4/ UAS-3xFLAG.dCas9.VPR",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP in its wing. In addition, Dumpy (Dpy) was overexpressed at the posterior region of its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
       "@id": "#biosample-20",
       "@type": "BioSample",
-      "name": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-SbRNAi/+",
-      "description": "sd-Gal4/+; UAS-mCD8::mCherry/E- Cadherin::GFP; UAS-SbRNAi/+",
+      "name": "Dpy::YFP, UAS-mCD8::mCherry/dpy-gRNA; hh- Gal4/+",
+      "description": "A Drosophila pupa expressing mCD8::mCherry and Dpy::YFP in its wing.",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7215"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07215",
-      "@type": "Taxon",
-      "scientificName": "drosophila"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0035209",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "pupal development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007389",
-      "@type": "DefinedTerm",
-      "name": "pattern specification process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005886",
-      "@type": "DefinedTerm",
-      "name": "plasma membrane"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0031012",
-      "@type": "DefinedTerm",
-      "name": "extracellular matrix"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -468,6 +472,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -477,6 +487,12 @@
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000255",
+      "@type": "DefinedTerm",
+      "name": "multi-photon microscopy",
+      "identifier": "FBbi:00000255"
     },
     {
       "@id": "#imaging-protocol-3",
@@ -490,32 +506,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000255",
-      "@type": "DefinedTerm",
-      "name": "multi-photon microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 378984811073,
-      "description": "379.0 GB",
+      "value": 658658694224,
+      "description": "658.7 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 16747,
+      "value": 16770,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

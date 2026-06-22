@@ -82,7 +82,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "size": [
@@ -132,29 +132,16 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         }
       ],
-      "hasCellLine": "A549"
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0001601",
+        "name": "A549 cell"
+      }
     },
     {
       "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
       "@type": "Taxon",
       "scientificName": "Mus musculus",
       "vernacularName": "mouse"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Photoacoustic imaging",
-      "description": "Photoacoustic imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "Photoacoustic imaging"
     },
     {
       "@id": "#total-dataset-size",
@@ -170,6 +157,23 @@
       "value": 8498,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     }
   ]
 }

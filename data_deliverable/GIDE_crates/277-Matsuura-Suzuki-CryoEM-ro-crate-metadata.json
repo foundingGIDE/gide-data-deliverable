@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/277-Matsuura-Suzuki-CryoEM/"
+        "@id": "https://ssbd.riken.jp/v2/project/277-Matsuura-Suzuki-CryoEM"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/277-Matsuura-Suzuki-CryoEM/",
+      "@id": "https://ssbd.riken.jp/v2/project/277-Matsuura-Suzuki-CryoEM",
       "@type": "Dataset",
       "identifier": "277-Matsuura-Suzuki-CryoEM",
-      "name": "Cryo-electron microscopy (cryo-EM) microscopy images of human ribosomes isolated from METTL18 KO cells. ",
-      "description": "277-Matsuura-Suzuki-CryoEM",
+      "name": "Cryo-electron microscopy (cryo-EM) microscopy images of human ribosomes isolated from METTL18 KO cells.",
+      "description": "See details in Matsuura-Suzuki E, et. al. Elife. 2022 Jun 8;11:e72780.",
       "datePublished": "2023-08-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Histidine/metabolism[major]",
-        "Humans",
-        "Methylation",
-        "Methyltransferases/metabolism[major]",
-        "Protein Biosynthesis",
-        "Proteostasis[major]",
-        "Ribosomal Protein L3/metabolism[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -89,13 +80,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005840"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -103,11 +94,17 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100014"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1151"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1151/render_thumbnail/"
       ],
       "size": [
         {
@@ -131,7 +128,7 @@
       "description": "Organization: RIKEN; Department: RIKEN Cluster for Pioneering Research; Laboratory: Cellular Memory Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -143,19 +140,19 @@
       "description": "Organization: RIKEN; Department: RIKEN Center for Biosystems Dynamics Research; Laboratory: Laboratory for Translation Structural Biology",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Yoichi Shinkai",
+      "name": "Yoichi  Shinkai",
       "email": "yshinkai@riken.jp",
       "description": "Organization: RIKEN; Department: RIKEN Cluster for Pioneering Research; Laboratory: Cellular Memory Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -167,20 +164,36 @@
       "description": "Organization: RIKEN; Department: RIKEN Cluster for Pioneering Research; Laboratory: RNA Systems Biochemistry Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
       "@id": "https://doi.org/10.7554/eLife.72780",
       "@type": "ScholarlyArticle",
-      "name": "METTL18-mediated histidine methylation of RPL3 modulates translation elongation for proteostasis maintenance.",
-      "datePublished": "2022"
+      "name": "Matsuura-Suzuki E, Shimazu T, Takahashi M, Kotoshiba K, Suzuki T, Kashiwagi K, Sohtome Y, Akakabe M, Sodeoka M, Dohmae N, Ito T, Shinkai Y, Iwasaki S. METTL18-mediated histidine methylation of RPL3 modulates translation elongation for proteostasis maintenance. Elife. 2022 Jun 8;11:e72780.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35674491/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005840",
+      "@type": "DefinedTerm",
+      "name": "ribosome",
+      "identifier": "GO:0005840"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -189,52 +202,58 @@
       "description": "Homo sapiens ~ METTL18 KO cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": "METTL18 KO cell"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005840",
-      "@type": "DefinedTerm",
-      "name": "ribosome"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "cryo-electron microscopy",
-      "description": "cryo-electron microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00100014",
       "@type": "DefinedTerm",
-      "name": "cryo-electron microscopy"
+      "name": "cryogenic transmission electron microscopy",
+      "identifier": "FBbi:00100014"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "cryogenic transmission electron microscopy",
+      "description": "cryogenic transmission electron microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00100014"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 1173317710116,
-      "description": "1.2 TB",
+      "value": 2341922823600,
+      "description": "2.3 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 5517,
+      "value": 5519,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000253",
+      "@type": "DefinedTerm",
+      "name": "spinning disk confocal microscopy",
+      "identifier": "FBbi:00000253"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "spinning disk confocal microscopy",
+      "description": "spinning disk confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000253"
+        }
+      ]
     }
   ]
 }

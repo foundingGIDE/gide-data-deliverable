@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/125-Gessesse-CX3CR1nanodisc/"
+        "@id": "https://ssbd.riken.jp/v1/project/125-Gessesse-CX3CR1nanodisc"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/125-Gessesse-CX3CR1nanodisc/",
+      "@id": "https://ssbd.riken.jp/v1/project/125-Gessesse-CX3CR1nanodisc",
       "@type": "Dataset",
       "identifier": "125-Gessesse-CX3CR1nanodisc",
       "name": "Transmission electron images of homogeneity of CX3CR1-nanodisc complex in a reconstituted cell-free synthesis system",
-      "description": "125-Gessesse-CX3CR1nanodisc",
+      "description": "See details in Gessesse et al. (2018) Life, 8(4): E54.",
       "datePublished": "2019-11-20",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -78,13 +78,10 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.3390/life8040054"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30400226"
         }
       ],
       "about": [
-        {
-          "@id": "#biosample-1"
-        },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0032594"
         },
@@ -95,8 +92,16 @@
           "@id": "http://purl.obolibrary.org/obo/GO_0097648"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-269"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/269/render_thumbnail/"
       ],
       "size": [
         {
@@ -120,74 +125,111 @@
       "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Belay Gessesse"
+      "name": "Belay Gessesse",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Takashi Nagaike"
+      "name": "Takashi Nagaike",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Koji Nagata"
+      "name": "Koji Nagata",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Takuya Ueda"
+      "name": "Takuya Ueda",
+      "description": "Organization: RIKEN; Department: Center for Biosystems Dynamics Research; Laboratory: Laboratory for Cell-Free Protein Synthesis",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.3390/life8040054",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/30400226",
       "@type": "ScholarlyArticle",
-      "name": "G-Protein Coupled Receptor Protein Synthesis on a Lipid Bilayer Using a Reconstituted Cell-Free Protein Synthesis System.",
-      "datePublished": "2018"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "NA",
-      "description": "NA"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/30400226"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0032594",
       "@type": "DefinedTerm",
-      "name": "protein transport within lipid bilayer"
+      "name": "protein transport within lipid bilayer",
+      "identifier": "GO:0032594"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0098796",
       "@type": "DefinedTerm",
-      "name": "membrane protein complex"
+      "name": "membrane protein complex",
+      "identifier": "GO:0098796"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0097648",
       "@type": "DefinedTerm",
-      "name": "G protein coupled receptor complex"
+      "name": "G protein coupled receptor complex",
+      "identifier": "GO:0097648"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 432697260,
-      "description": "432.7 MB",
+      "value": 823487066,
+      "description": "823.5 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 103,
+      "value": 104,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

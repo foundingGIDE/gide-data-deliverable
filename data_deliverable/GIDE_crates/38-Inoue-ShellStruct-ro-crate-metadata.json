@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/38-Inoue-ShellStruct/"
+        "@id": "https://ssbd.riken.jp/v1/project/38-Inoue-ShellStruct"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/38-Inoue-ShellStruct/",
+      "@id": "https://ssbd.riken.jp/v1/project/38-Inoue-ShellStruct",
       "@type": "Dataset",
       "identifier": "38-Inoue-ShellStruct",
       "name": "38-Inoue-ShellStruct",
-      "description": "38-Inoue-ShellStruct",
+      "description": "See details in Inoue and Kondo (2016) Scientific Reports, 6, 33689.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -69,7 +69,7 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/srep33689"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27640361"
         }
       ],
       "about": [
@@ -77,8 +77,16 @@
           "@id": "#biosample-1"
         }
       ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00001002"
+        }
+      ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-68"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/68/render_thumbnail/"
       ],
       "size": [
         {
@@ -102,25 +110,30 @@
       "description": "Organization: Osaka University; Department: Graduate School of Frontier Bioscience; Laboratory: Laboratory of Pattern Formation",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Shinya Inoue"
+      "name": "Shinya Inoue",
+      "description": "Organization: Osaka University; Department: Graduate School of Frontier Bioscience; Laboratory: Laboratory of Pattern Formation",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
-      "@id": "https://doi.org/10.1038/srep33689",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27640361",
       "@type": "ScholarlyArticle",
-      "name": "Suture pattern formation in ammonites and the unknown rear mantle structure.",
-      "datePublished": "2016"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27640361"
     },
     {
       "@id": "#biosample-1",
@@ -131,17 +144,34 @@
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 10124696051,
-      "description": "10.1 GB",
+      "value": 12798833468,
+      "description": "12.8 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 6096,
+      "value": 6103,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00001002",
+      "@type": "DefinedTerm",
+      "name": "X-ray computed tomography",
+      "identifier": "FBbi:00001002"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "X-ray computed tomography",
+      "description": "X-ray computed tomography",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00001002"
+        }
+      ]
     }
   ]
 }

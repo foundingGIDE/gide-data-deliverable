@@ -45,29 +45,36 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/366-Ebata-TERTlocalize/"
+        "@id": "https://ssbd.riken.jp/v3/project/366-Ebata-TERTlocalize"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/366-Ebata-TERTlocalize/",
+      "@id": "https://ssbd.riken.jp/v3/project/366-Ebata-TERTlocalize",
       "@type": "Dataset",
       "identifier": "366-Ebata-TERTlocalize",
       "name": "Time-lapse images showing the role of mitochondrial TERT during apoptosis",
-      "description": "366-Ebata-TERTlocalize",
+      "description": "Telomerase reverse transcriptase (TERT) is a protein that catalyzes the reverse transcription of telomere elongation. TERT is also expected to play a non-canonical role beyond telomere lengthening since it localizes not only in the nucleus but also in mitochondria, where telomeres do not exist. Several studies have reported that mitochondrial TERT regulates apoptosis induced by oxidative stress. However, there is still some controversy as to whether mitochondrial TERT promotes or inhibits apoptosis, mainly due to the lack of information on changes in TERT distribution in individual cells over time. Here, the authors simultaneously detected apoptosis and TERT localization after oxidative stress in individual HeLa cells by live-cell tracking. Single-cell tracking revealed that the stress-induced accumulation of TERT in mitochondria caused apoptosis, but that accumulation increased over time until cell death. The results suggest a new model in which mitochondrial TERT has two opposing effects at different stages of apoptosis: it predetermines apoptosis at the first stage of cell-fate determination, but also delays apoptosis at the second stage. As such, their data support a model that integrates the two opposing hypotheses on mitochondrial TERT’s effect on apoptosis. Furthermore, detailed statistical analysis of TERT mutations, which have been predicted to inhibit TERT transport to mitochondria, revealed that these mutations suppress apoptosis indepen- dent of mitochondrial localization of TERT. Together, these results imply that the non-canonical functions of TERT affect a wide range of mitochondria-dependent and mitochondria-independent apoptosis pathways.",
       "datePublished": "2024-12-24",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "HeLa Cells",
+        "Apoptosis",
+        "Mitochondria",
+        "Telomerase",
+        "Cell Nucleus"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
       "author": [
         {
-          "@id": "#auth-001"
+          "@id": "https://orcid.org/0000-0001-7972-4965"
         },
         {
-          "@id": "#auth-002"
+          "@id": "https://orcid.org/0000-0001-9701-1803"
         },
         {
-          "@id": "#auth-003"
+          "@id": "https://orcid.org/0000-0003-2109-159X"
         }
       ],
       "seeAlso": [
@@ -75,10 +82,12 @@
           "@id": "https://doi.org/10.1002/2211-5463.13682"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
@@ -86,16 +95,7 @@
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0003720"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0042981"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005739"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -113,7 +113,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1451"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1451/render_thumbnail/"
       ],
       "size": [
         {
@@ -130,65 +130,66 @@
       "name": "SSBD:database"
     },
     {
-      "@id": "#auth-001",
+      "@id": "https://orcid.org/0000-0001-7972-4965",
       "@type": "Person",
       "name": "Tomohiro Shima",
       "email": "tomohiro.shima@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences; Laboratory: Department of Biological Sciences",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-002",
+      "@id": "https://orcid.org/0000-0001-9701-1803",
       "@type": "Person",
       "name": "Sotaro Uemura",
       "email": "uemura@bs.s.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Graduate School of Science; Laboratory: Graduate School of Science",
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "#auth-003",
+      "@id": "https://orcid.org/0000-0003-2109-159X",
       "@type": "Person",
       "name": "Hiroshi Ebata",
-      "description": "Department: Department of Biological Sciences; Laboratory: Department of Biological Sciences"
+      "description": "Organization: The University of Tokyo; Department: Department of Biological Sciences, Graduate School of Science",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1002/2211-5463.13682",
       "@type": "ScholarlyArticle",
-      "name": "Accumulation of TERT in mitochondria exerts two opposing effects on apoptosis.",
-      "datePublished": "2023"
+      "name": "Ebata H, Shima T, Iizuka R, Uemura S. Accumulation of TERT in mitochondria exerts two opposing effects on apoptosis. FEBS Open Bio. 2023, Sep;13(9) :1667-1682.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37525387/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10476567/"
+      ]
     },
     {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Homo sapiens ~ HeLa cell",
-      "description": "Homo sapiens ~ HeLa cell",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        }
-      ],
-      "hasCellLine": {
-        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-      }
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This work was supported by the Japan Society for the Promotion of Science Grant-in-Aid for Japan Society for the Promotion of Science (JSPS) Fellows (JP21J10299) to HE and by JSPS KAKENHI (18K06147, 19H05379, and 21H00387) to TS."
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
-      "vernacularName": "human"
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/CLO_0003684",
@@ -196,24 +197,24 @@
       "name": "HeLa cell"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0003720",
-      "@type": "DefinedTerm",
-      "name": "telomerase activity"
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Homo sapiens (NCBI:txid9606) ~ HeLa cell",
+      "description": "Wild-type HeLa cells TERT (Telomerase reverse transcriptase)-transfected HeLa cells, TERT-mutant-transfected HeLa cells (R3E/R6E mutation or Y707F mutation)",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
+        }
+      ],
+      "hasCellLine": {
+        "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
+      }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0042981",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "regulation of apoptotic process"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005739",
-      "@type": "DefinedTerm",
-      "name": "mitochondrion"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005634",
-      "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -227,6 +228,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -238,27 +245,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2141627023967,
-      "description": "2.1 TB",
+      "value": 3540283615773,
+      "description": "3.5 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 12,
+      "value": 18,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

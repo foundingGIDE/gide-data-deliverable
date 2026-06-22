@@ -45,17 +45,22 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/306-Kamei-microglia/"
+        "@id": "https://ssbd.riken.jp/v3/project/306-Kamei-microglia"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/306-Kamei-microglia/",
+      "@id": "https://ssbd.riken.jp/v3/project/306-Kamei-microglia",
       "@type": "Dataset",
       "identifier": "306-Kamei-microglia",
       "name": "In vivo imaging of the phagocytic dynamics underlying efficient clearance of adult-born hippocampal granule cells by ramified microglia",
-      "description": "306-Kamei-microglia",
+      "description": "The phagocytosis of dead cells by microglia is essential in brain development and homeostasis. However, the mechanism underlying the efficient removal of cell corpses by ramified microglia remains poorly understood. Here, the authors investigated the phagocytosis of dead cells by ramified microglia in the hippocampal dentate gyrus, where adult neurogenesis and homeostatic cell clearance occur. Two-color imaging of microglia and apoptotic newborn neurons revealed two important characteristics. Firstly, frequent environmental surveillance and rapid engulfment reduced the time required for dead cell clearance. The motile microglial processes frequently contacted and enwrapped apoptotic neurons at the protrusion tips and completely digested them within 3–6 h of the initial contact. Secondly, while a single microglial process engaged in phagocytosis, the remaining processes continued environmental surveil- lance and initiated the removal of other dead cells. The simultaneous removal of multiple dead cells increases the clearance capacity of a single microglial cell.",
       "datePublished": "2024-12-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Neurons",
+        "Time-Lapse Imaging",
+        "Neuroglia"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -72,18 +77,17 @@
           "@id": "https://doi.org/10.1002/glia.24379"
         }
       ],
-      "about": [
+      "funder": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
+          "@id": "#grant-001"
+        }
+      ],
+      "about": [
         {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0006909"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0006911"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -101,7 +105,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1363"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1363/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,10 +126,10 @@
       "@type": "Person",
       "name": "Shigeo Okabe",
       "email": "okabe@m.u-tokyo.ac.jp",
-      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology; Laboratory: Department of Cellular Neurobiology",
+      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -133,45 +137,55 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Ryosuke Kamei",
-      "description": "Department: Graduate School of Medicine; Laboratory: Graduate School of Medicine"
+      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1002/glia.24379",
       "@type": "ScholarlyArticle",
-      "name": "In vivo imaging of the phagocytic dynamics underlying efficient clearance of adult-born hippocampal granule cells by ramified microglia.",
-      "datePublished": "2023"
+      "name": "Kamei R, Okabe S. In vivo imaging of the phagocytic dynamics underlying efficient clearance of adult-born hippocampal granule cells by ramified microglia. Glia. 2023 Aug;71(8):2005-2023.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37102766/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "Japan Agency for Medical Research and Development. Grant Numbers: JP19gm1310003, JP22jm0210097, Ministry of Education, Culture, Sports, Science and Technology. Grant Numbers: 20H00481, 20H05894, 20H05895"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "CX3CR1^{+/GFP}, Nes-CreER^{T2+/-}, Rosa-CAG-LSL- tdTomato^{+/-}",
-      "description": "CX3CR1^{+/GFP}, Nes-CreER^{T2+/-}, Rosa-CAG-LSL- tdTomato^{+/-}",
+      "name": "CX3CR1^{+/GFP}, Nes-CreER^{T2+/-}, Rosa-CAG-LSL- tdTomato^{+/-} ~ neuron, microglial cell",
+      "description": "CX3CR1^{+/GFP}; Nes-CreER^{T2+/-}; Rosa-CAG-LSL- tdTomato^{+/-} mice, which express GFP in microglia and tdTomato in new-born neurons",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006909",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
       "@type": "DefinedTerm",
-      "name": "phagocytosis"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0006911",
-      "@type": "DefinedTerm",
-      "name": "engulfment"
+      "name": "two-photon laser scanning microscopy",
+      "identifier": "FBbi:00000254"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -185,6 +199,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "time lapse microscopy",
@@ -196,27 +216,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000254",
-      "@type": "DefinedTerm",
-      "name": "two-photon laser scanning microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 75130070779,
-      "description": "75.1 GB",
+      "value": 105328599473,
+      "description": "105.3 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 20,
+      "value": 40,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

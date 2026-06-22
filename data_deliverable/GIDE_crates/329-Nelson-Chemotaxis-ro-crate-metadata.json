@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/329-Nelson-Chemotaxis/"
+        "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/329-Nelson-Chemotaxis/",
+      "@id": "https://ssbd.riken.jp/v3/project/329-Nelson-Chemotaxis",
       "@type": "Dataset",
       "identifier": "329-Nelson-Chemotaxis",
       "name": "Ammonium chemotaxis\nof Chlamydomonas reinhardtii",
-      "description": "329-Nelson-Chemotaxis",
+      "description": "The mechanisms governing chemotaxis in Chlamydomonas reinhardtii are largely unknown compared to those regulating phototaxis despite equal importance on the migratory response in the ciliated microalga. To study chemotaxis, the authors made a simple modification to a conventional Petri dish assay. Using the assay, a novel mechanism governing Chlamydomonas ammonium chemotaxis was revealed. First, they found that light exposure enhances the chemotactic response of wild‐type Chlamydomonas strains, yet phototaxis‐incompetent mutant strains, eye3-2 and ptx1, exhibit normal chemotaxis. This suggests that Chlamydomonas transduces the light signal pathway in chemotaxis differently from that in phototaxis. Second, we found that Chlamydomonas collectively migrate during chemotaxis but not phototaxis. Collective migration during chemotaxis is not clearly observed when the assay\nis conducted in the dark. Third, the Chlamydomonas strain CC‐124 carrying agg1−, the AGGREGATE1 gene (AGG1) null mutation, exhibited a more robust collective migratory response than strains carrying the wild‐type AGG1 gene. The expression of a recombinant AGG1 protein in the CC‐124 strain suppressed this collective migration during chemotaxis.",
       "datePublished": "2025-01-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -75,36 +75,38 @@
           "@id": "https://doi.org/10.1038/s41598-023-36818-6"
         }
       ],
+      "funder": [
+        {
+          "@id": "#grant-001"
+        }
+      ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
-        },
-        {
-          "@id": "#biosample-3"
-        },
-        {
-          "@id": "#biosample-4"
-        },
-        {
-          "@id": "#biosample-5"
-        },
-        {
-          "@id": "#biosample-6"
+          "@id": "#biosample-8"
         },
         {
           "@id": "#biosample-7"
         },
         {
-          "@id": "#biosample-8"
+          "@id": "#biosample-6"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0060326"
+          "@id": "#biosample-5"
+        },
+        {
+          "@id": "#biosample-4"
+        },
+        {
+          "@id": "#biosample-3"
+        },
+        {
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ],
       "measurementMethod": [
@@ -122,7 +124,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1506"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1506/render_thumbnail/"
       ],
       "size": [
         {
@@ -143,42 +145,70 @@
       "@type": "Person",
       "name": "Naohiro Kato",
       "email": "kato@lsu.edu",
-      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences; Laboratory: Department of Biological Sciences",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
       "affiliation": [
         {
-          "@id": "https://ror.org/05ect4e57"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Gabela Nelson"
+      "name": "Gabela Nelson",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Alexis Strain"
+      "name": "Alexis Strain",
+      "description": "Organization: Louisiana State University; Department: Department of Biological Sciences",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/05ect4e57",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Louisiana State University"
     },
     {
       "@id": "https://doi.org/10.1038/s41598-023-36818-6",
       "@type": "ScholarlyArticle",
-      "name": "Cells collectively migrate during ammonium chemotaxis in Chlamydomonas reinhardtii.",
-      "datePublished": "2023"
+      "name": "Nelson G, Strain A, Isu A, Rahnama A, Wakabayashi KI, Melvin AT, Kato N. Cells collectively migrate during ammonium chemotaxis\nin Chlamydomonas reinhardtii. Sci Rep. 2023 Jul 4;13(1):10781",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37402785/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10319813/"
+      ]
+    },
+    {
+      "@id": "#grant-001",
+      "@type": "Grant",
+      "name": "This research was conducted with funds from Louisiana Economic Development Assistantship and LSU LIFT2 Fund for N.K. Japan Society for the Promotion of Science KAKENHI Grants 21H00420, 22H02642 and 22H05674 for K.W."
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055",
+      "@type": "Taxon",
+      "scientificName": "Chlamydomonas reinhardtii",
+      "name": "Chlamydomonas reinhardtii",
+      "identifier": "NCBITaxon:3055"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "CC-124",
-      "description": "CC-124",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
@@ -186,32 +216,32 @@
       "@id": "#biosample-2",
       "@type": "BioSample",
       "name": "CC-124, CC-125",
-      "description": "CC-124, CC-125",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
       "@id": "#biosample-3",
       "@type": "BioSample",
-      "name": "CC-613",
-      "description": "CC-613",
+      "name": "CC-125",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
       "@id": "#biosample-4",
       "@type": "BioSample",
-      "name": "CC-1036",
-      "description": "CC-1036",
+      "name": "CC-4042",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
@@ -219,55 +249,51 @@
       "@id": "#biosample-5",
       "@type": "BioSample",
       "name": "CC-4316",
-      "description": "CC-4316",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
       "@id": "#biosample-6",
       "@type": "BioSample",
-      "name": "CC-2894",
-      "description": "CC-2894",
+      "name": "CC-613",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
       "@id": "#biosample-7",
       "@type": "BioSample",
-      "name": "CC-4042",
-      "description": "CC-4042",
+      "name": "CC-1036",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
       "@id": "#biosample-8",
       "@type": "BioSample",
-      "name": "CC-125",
-      "description": "CC-125",
+      "name": "CC-2894",
+      "description": "Chlamydomonas reinhardtii",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/3055"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_03055",
-      "@type": "Taxon",
-      "scientificName": "Chlamydomonas reinhardtii"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0060326",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
       "@type": "DefinedTerm",
-      "name": "cell chemotaxis"
+      "name": "macroscopy",
+      "identifier": "FBbi:00000240"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -281,6 +307,12 @@
       ]
     },
     {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
+      "@type": "DefinedTerm",
+      "name": "microscopy",
+      "identifier": "FBbi:00000241"
+    },
+    {
       "@id": "#imaging-protocol-2",
       "@type": "LabProtocol",
       "name": "microscopy",
@@ -292,27 +324,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000240",
-      "@type": "DefinedTerm",
-      "name": "macroscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
-      "@type": "DefinedTerm",
-      "name": "microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 486482724,
-      "description": "486.5 MB",
+      "value": 971412736,
+      "description": "971.4 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 153,
+      "value": 186,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

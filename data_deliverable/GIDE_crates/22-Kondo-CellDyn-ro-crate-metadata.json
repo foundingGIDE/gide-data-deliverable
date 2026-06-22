@@ -45,36 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/22-Kondo-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/22-Kondo-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/22-Kondo-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/22-Kondo-CellDyn",
       "@type": "Dataset",
       "identifier": "22-Kondo-CellDyn",
       "name": "22-Kondo-CellDyn",
-      "description": "22-Kondo-CellDyn",
+      "description": "See details in Kondo and Hayashi (2013) Nature, 494, 125-129.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Division",
-        "Cell Shape/physiology[major]",
-        "Drosophila melanogaster/anatomy & histology",
-        "Drosophila melanogaster/cytology[major]",
-        "Drosophila melanogaster/embryology[major]",
-        "Epidermal Growth Factor/metabolism",
-        "Epithelial Cells/cytology[major]",
-        "ErbB Receptors/metabolism",
-        "Female",
-        "Fibroblast Growth Factors/metabolism",
-        "Mitosis[major]",
-        "Myosin Type II/metabolism",
-        "Respiratory System/anatomy & histology",
-        "Respiratory System/cytology",
-        "Respiratory System/embryology",
-        "Signal Transduction"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -88,25 +69,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/nature11792"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23334416"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0035202"
+          "@id": "http://purl.obolibrary.org/obo/GO_0005623"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-52"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/52/render_thumbnail/"
       ],
       "size": [
         {
@@ -130,25 +116,43 @@
       "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Morphogenetic Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Shigeo Hayashi"
+      "name": "Shigeo Hayashi",
+      "description": "Organization: RIKEN; Department: Center for Developmental Biology; Laboratory: Laboratory for Morphogenetic Signaling",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/01sjwvz98",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "RIKEN"
     },
     {
-      "@id": "https://doi.org/10.1038/nature11792",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/23334416",
       "@type": "ScholarlyArticle",
-      "name": "Mitotic cell rounding accelerates epithelial invagination.",
-      "datePublished": "2013"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/23334416"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005623",
+      "@type": "DefinedTerm",
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227",
+      "@type": "Taxon",
+      "scientificName": "Drosophila melanogaster",
+      "name": "Drosophila melanogaster",
+      "identifier": "NCBITaxon:7227"
     },
     {
       "@id": "#biosample-1",
@@ -157,38 +161,39 @@
       "description": "Drosophila melanogaster",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/7227"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
-      "@type": "Taxon",
-      "scientificName": "Drosophila melanogaster",
-      "vernacularName": "fly"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0035202",
-      "@type": "DefinedTerm",
-      "name": "NA (tracheal invagination in Drosophila embryos)"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005623",
-      "@type": "DefinedTerm",
-      "name": "cell"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 54372493016,
-      "description": "54.4 GB",
+      "value": 88649259844,
+      "description": "88.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 906,
+      "value": 922,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

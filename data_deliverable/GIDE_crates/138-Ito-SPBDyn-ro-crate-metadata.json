@@ -45,25 +45,31 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/138-Ito-SPBDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/138-Ito-SPBDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/138-Ito-SPBDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/138-Ito-SPBDyn",
       "@type": "Dataset",
       "identifier": "138-Ito-SPBDyn",
       "name": "Time-lapse images of nucleolus and spindle pole body (SPB) movements in the sid4-mCherry and Cut11-GFP expressing S. pombe cells cultured in different medium",
-      "description": "138-Ito-SPBDyn",
+      "description": "See details in Ito H, et. al. (2019) Biochem Biophys Res Commun., 511(4):820-825.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
+        "Adenosine Triphosphate",
         "Adenosine Triphosphate/metabolism",
-        "Ammonium Chloride/metabolism[major]",
+        "Ammonium Chloride",
+        "Ammonium Chloride/metabolism",
+        "Centromere",
         "Centromere/metabolism",
-        "Glucose/metabolism[major]",
+        "Glucose",
+        "Glucose/metabolism",
+        "Schizosaccharomyces",
         "Schizosaccharomyces/cytology",
-        "Schizosaccharomyces/metabolism[major]",
-        "Spindle Pole Bodies/metabolism[major]"
+        "Schizosaccharomyces/metabolism",
+        "Spindle Pole Bodies",
+        "Spindle Pole Bodies/metabolism"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -80,9 +86,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04896"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -93,6 +96,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0031965"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
         }
       ],
       "measurementMethod": [
@@ -101,10 +107,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-726"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/726/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,23 +137,51 @@
       "@type": "Person",
       "name": "Masaru Ueno",
       "email": "scmueno@hiroshima-u.ac.jp",
-      "description": "Organization: Graduate School of Advanced Sciences of Matter; Department: Department of Molecular Biotechnology; Laboratory: Ueno Laboratory",
+      "description": "Organization: Graduate School of Advanced Sciences of Matter, Hiroshima University; Department: Department of Molecular Biotechnology; Laboratory: Ueno Laboratory",
       "affiliation": [
         {
-          "@id": "https://ror.org/00dztkz65"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00dztkz65",
+      "@id": "#affiliation-001",
       "@type": "Organization",
-      "name": "Graduate School of Advanced Sciences of Matter"
+      "name": "Graduate School of Advanced Sciences of Matter, Hiroshima University"
     },
     {
       "@id": "https://doi.org/10.1016/j.bbrc.2019.02.128",
       "@type": "ScholarlyArticle",
-      "name": "Spindle pole body movement is affected by glucose and ammonium chloride in fission yeast.",
-      "datePublished": "2019"
+      "name": "Ito H, Sugawara T, Shinkai S, Mizukawa S, Kondo A, Senda H, Sawai K, Ito K, Suzuki S, Takaine M, Yoshida S, Imamura H, Kitamura K, Namba T, Tate S, and Ueno M (2019) Spindle pole body movement is affected by glucose and ammonium chloride in fission yeast. Biochemical and Biophysical Research Communications, Volume 511, Issue 4, pages 820-825.",
+      "datePublished": "2019",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30846209"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0014703",
+      "@type": "DefinedTerm",
+      "name": "oscillatory muscle contraction",
+      "identifier": "GO:0014703"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005816",
+      "@type": "DefinedTerm",
+      "name": "spindle pole body",
+      "identifier": "GO:0005816"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0031965",
+      "@type": "DefinedTerm",
+      "name": "nuclear membrane",
+      "identifier": "GO:0031965"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896",
+      "@type": "Taxon",
+      "scientificName": "Schizosaccharomyces pombe",
+      "name": "Schizosaccharomyces pombe",
+      "identifier": "NCBITaxon:4896"
     },
     {
       "@id": "#biosample-1",
@@ -150,29 +190,15 @@
       "description": "Schizosaccharomyces pombe",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04896"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/4896"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_04896",
-      "@type": "Taxon",
-      "scientificName": "Schizosaccharomyces pombe"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0014703",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "oscillatory muscle contraction"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005816",
-      "@type": "DefinedTerm",
-      "name": "spindle pole body"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0031965",
-      "@type": "DefinedTerm",
-      "name": "nuclear membrane"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -186,24 +212,36 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 67444613592,
-      "description": "67.4 GB",
+      "value": 95562158886,
+      "description": "95.6 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 3050,
+      "value": 3055,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
     }
   ]
 }

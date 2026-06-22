@@ -88,7 +88,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
           "@id": "#biosample-1"
@@ -102,7 +102,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
         }
       ],
       "size": [
@@ -154,20 +154,29 @@
       "description": "Cell line sample",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         }
       ],
       "hasCellLine": [
-        "MCF10A cell",
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007599",
+          "name": "MCF 10A cell"
+        },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0007606"
         },
-        "MDA-MB-231 cell",
-        "PC-3 cell"
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0007634",
+          "name": "MDA-MB-231 cell"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/CLO_0008395",
+          "name": "PC-3 cell"
+        }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
@@ -176,22 +185,6 @@
       "@id": "http://purl.obolibrary.org/obo/CLO_0007606",
       "@type": "DefinedTerm",
       "name": "MCF7 cell"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "field emission scanning electron microscopy",
-      "description": "field emission scanning electron microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000256"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000256",
-      "@type": "DefinedTerm",
-      "name": "field emission scanning electron microscopy"
     },
     {
       "@id": "#total-dataset-size",
@@ -207,6 +200,23 @@
       "value": 10,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000257",
+      "@type": "DefinedTerm",
+      "name": "scanning electron microscopy (SEM)",
+      "identifier": "FBbi:00000257"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "scanning electron microscopy (SEM)",
+      "description": "scanning electron microscopy (SEM)",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000257"
+        }
+      ]
     }
   ]
 }

@@ -45,26 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/255-Koganezawa-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/255-Koganezawa-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/255-Koganezawa-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/255-Koganezawa-CellDyn",
       "@type": "Dataset",
       "identifier": "255-Koganezawa-CellDyn",
       "name": "Time-lapse images of cell dynamics in different E. coli strain cells after gene deletion by blue-light illumination.",
-      "description": "255-Koganezawa-CellDyn",
+      "description": "See details in Koganezawa Y, et. al. (2022) Elife, May 10;11:e74486.",
       "datePublished": "2024-01-23",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Adaptation, Physiological/genetics",
-        "Anti-Bacterial Agents/pharmacology[major]",
-        "Chloramphenicol/pharmacology",
-        "Drug Resistance, Bacterial/genetics",
-        "Drug Resistance, Microbial",
-        "Escherichia coli/physiology",
-        "Escherichia coli Proteins/genetics[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -80,19 +71,16 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
-        },
-        {
-          "@id": "#biosample-1"
-        },
-        {
-          "@id": "#biosample-2"
+          "@id": "#biosample-4"
         },
         {
           "@id": "#biosample-3"
         },
         {
-          "@id": "#biosample-4"
+          "@id": "#biosample-2"
+        },
+        {
+          "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0009410"
@@ -102,6 +90,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0051301"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562"
         }
       ],
       "measurementMethod": [
@@ -113,7 +104,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1201"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1201/render_thumbnail/"
       ],
       "size": [
         {
@@ -137,20 +128,48 @@
       "description": "Organization: The University of Tokyo; Department: Graduate School of Arts and Sciences; Laboratory: Department of Basic Science",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.7554/eLife.74486",
       "@type": "ScholarlyArticle",
-      "name": "History-dependent physiological adaptation to lethal genetic modification under antibiotic exposure.",
-      "datePublished": "2022"
+      "name": "Koganezawa Y, Umetani M, Sato M, Wakamoto Y. History-dependent physiological adaptation to lethal genetic modification under antibiotic exposure. Elife. 2022 May 10;11:e74486.",
+      "datePublished": "2022",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/35535492/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0009410",
+      "@type": "DefinedTerm",
+      "name": "response to xenobiotic stimulus",
+      "identifier": "GO:0009410"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0016049",
+      "@type": "DefinedTerm",
+      "name": "cell growth",
+      "identifier": "GO:0016049"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
+      "@type": "DefinedTerm",
+      "name": "cell division",
+      "identifier": "GO:0051301"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562",
+      "@type": "Taxon",
+      "scientificName": "Escherichia coli",
+      "name": "Escherichia coli",
+      "identifier": "NCBITaxon:562"
     },
     {
       "@id": "#biosample-1",
@@ -159,7 +178,7 @@
       "description": "YK0083",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562"
         }
       ]
     },
@@ -170,7 +189,7 @@
       "description": "YK0136",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562"
         }
       ]
     },
@@ -181,7 +200,7 @@
       "description": "YK0085",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562"
         }
       ]
     },
@@ -192,30 +211,15 @@
       "description": "YK0138",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/562"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_00562",
-      "@type": "Taxon",
-      "scientificName": "Escherichia coli",
-      "vernacularName": "e. coli"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0009410",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "response to xenobiotic stimulus"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0016049",
-      "@type": "DefinedTerm",
-      "name": "cell growth"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0051301",
-      "@type": "DefinedTerm",
-      "name": "cell division"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -229,22 +233,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 3407345242952,
-      "description": "3.4 TB",
+      "value": 5093780319618,
+      "description": "5.1 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 1596212,
+      "value": 1596626,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

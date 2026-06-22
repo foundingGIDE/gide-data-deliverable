@@ -66,10 +66,10 @@
       ],
       "about": [
         {
-          "@id": "#biosample-2"
+          "@id": "#biosample-1"
         },
         {
-          "@id": "#biosample-1"
+          "@id": "#biosample-2"
         }
       ],
       "measurementMethod": [
@@ -112,13 +112,13 @@
       "name": "Exploratory Research Center on Life and Living Systems (ExCELLS)"
     },
     {
-      "@id": "#biosample-2",
+      "@id": "#biosample-1",
       "@type": "BioSample",
       "name": "Organism",
       "description": "Marchantia polymorpha"
     },
     {
-      "@id": "#biosample-1",
+      "@id": "#biosample-2",
       "@type": "BioSample",
       "name": "Tak-1 (male accession)/Tak-2 (female accession), Rit-1 (male accession)/Rit-2 (female accession), and Australian/Melbourne (male & female accession)",
       "description": "Tak-1 (male accession)/Tak-2 (female accession), Rit-1 (male accession)/Rit-2 (female accession), and Australian/Melbourne (male & female accession)"
@@ -137,7 +137,8 @@
     {
       "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
       "@type": "DefinedTerm",
-      "name": "bright-field microscopy"
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
     },
     {
       "@id": "#total-dataset-size",

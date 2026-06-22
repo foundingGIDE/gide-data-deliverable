@@ -45,35 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/83-Fumoto-LungDevWnt/"
+        "@id": "https://ssbd.riken.jp/v1/project/83-Fumoto-LungDevWnt"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/83-Fumoto-LungDevWnt/",
+      "@id": "https://ssbd.riken.jp/v1/project/83-Fumoto-LungDevWnt",
       "@type": "Dataset",
       "identifier": "83-Fumoto-LungDevWnt",
       "name": "Modulation of apical constriction by Wnt signaling is required for lung epithelial shape transition",
-      "description": "83-Fumoto-LungDevWnt",
+      "description": "See details in Fumoto et al. (2017) Development, 144(1): 151-162.",
       "datePublished": "2018-11-14",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "Cell Differentiation",
-        "Cell Polarity/physiology",
-        "Cell Shape",
-        "Cytoskeleton/physiology",
-        "Embryo, Mammalian",
-        "Lung/embryology[major]",
-        "Mice",
-        "Mice, Inbred ICR",
-        "Mice, Transgenic",
-        "Models, Theoretical",
-        "Organ Size",
-        "Organogenesis/genetics[major]",
-        "Pulmonary Alveoli/cytology[major]",
-        "Pulmonary Alveoli/embryology[major]",
-        "Wnt Signaling Pathway/physiology[major]"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -96,25 +78,33 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1242/dev.141325"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27913639"
         }
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0030324"
+          "@id": "#ontology-term-g0:0030324"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005856"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-160"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/160/render_thumbnail/"
       ],
       "size": [
         {
@@ -138,7 +128,7 @@
       "description": "Organization: Departments of Molecular Biology and Biochemistry; Department: Graduate School of Medicine; Laboratory: Departments of Molecular Biology and Biochemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/00910ay07"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -146,10 +136,10 @@
       "@id": "#auth-002",
       "@type": "Person",
       "name": "Katsumi Fumoto",
-      "description": "Organization: Graduate School of Medicine",
+      "description": "Organization: Graduate School of Medicine; Department: Graduate School of Medicine; Laboratory: Departments of Molecular Biology and Biochemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/02ets8c94"
+          "@id": "#affiliation-002"
         }
       ]
     },
@@ -157,10 +147,10 @@
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Hisako Takigawa-Imamura",
-      "description": "Organization: Osaka University",
+      "description": "Organization: Osaka University; Department: Graduate School of Medicine; Laboratory: Departments of Molecular Biology and Biochemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-003"
         }
       ]
     },
@@ -168,10 +158,10 @@
       "@id": "#auth-004",
       "@type": "Person",
       "name": "Kenta Sumiyama",
-      "description": "Organization: 2-2 Yamadaoka",
+      "description": "Organization: 2-2 Yamadaoka; Department: Graduate School of Medicine; Laboratory: Departments of Molecular Biology and Biochemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/032j6ge54"
+          "@id": "#affiliation-004"
         }
       ]
     },
@@ -179,43 +169,61 @@
       "@id": "#auth-005",
       "@type": "Person",
       "name": "Tomoyuki Kaneiwa",
-      "description": "Organization: Suita 565-0871",
+      "description": "Organization: Suita 565-0871; Department: Graduate School of Medicine; Laboratory: Departments of Molecular Biology and Biochemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/03ehcbt32"
+          "@id": "#affiliation-005"
         }
       ]
     },
     {
-      "@id": "https://ror.org/00910ay07",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Departments of Molecular Biology and Biochemistry"
     },
     {
-      "@id": "https://ror.org/02ets8c94",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "Graduate School of Medicine"
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-003",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
-      "@id": "https://ror.org/032j6ge54",
+      "@id": "#affiliation-004",
       "@type": "Organization",
       "name": "2-2 Yamadaoka"
     },
     {
-      "@id": "https://ror.org/03ehcbt32",
+      "@id": "#affiliation-005",
       "@type": "Organization",
       "name": "Suita 565-0871"
     },
     {
-      "@id": "https://doi.org/10.1242/dev.141325",
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27913639",
       "@type": "ScholarlyArticle",
-      "name": "Modulation of apical constriction by Wnt signaling is required for lung epithelial shape transition.",
-      "datePublished": "2017"
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27913639"
+    },
+    {
+      "@id": "#ontology-term-g0:0030324",
+      "@type": "DefinedTerm",
+      "name": "lung development",
+      "identifier": "G0:0030324"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
+      "@type": "DefinedTerm",
+      "name": "cytoskeleton",
+      "identifier": "GO:0005856"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -224,38 +232,39 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000265",
+      "@type": "DefinedTerm",
+      "name": "recorded image",
+      "identifier": "FBbi:00000265"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_0030324",
-      "@type": "DefinedTerm",
-      "name": "lung development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0005856",
-      "@type": "DefinedTerm",
-      "name": "cytoskeleton"
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "recorded image",
+      "description": "recorded image",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000265"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 32477656,
-      "description": "32.5 MB",
+      "value": 64688488,
+      "description": "64.7 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 67,
+      "value": 86,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

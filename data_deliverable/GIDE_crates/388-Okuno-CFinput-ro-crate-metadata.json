@@ -45,17 +45,26 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/388-Okuno-CFinput/"
+        "@id": "https://ssbd.riken.jp/v3/project/388-Okuno-CFinput"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/388-Okuno-CFinput/",
+      "@id": "https://ssbd.riken.jp/v3/project/388-Okuno-CFinput",
       "@type": "Dataset",
       "identifier": "388-Okuno-CFinput",
       "name": "Climbing fiber inputs to Purkinje cells in wild type mice and PTPdelta knockout mice",
-      "description": "388-Okuno-CFinput",
+      "description": "Functionally mature neural circuits are shaped during postnatal development\nby eliminating redundant synapses formed during the perinatal period. In the\ncerebellum of neonatal rodents, each Purkinje cell (PC) receives synaptic inputs\nfrom multiple (more than 4) climbing fibers (CFs). During the first 3 postnatal\nweeks, synaptic inputs from a single CF become markedly larger and those from\nthe other CFs are eliminated in each PC, leading to mono-innervation of each PC\nby a strong CF in adulthood. While molecules involved in the strengthening and\nelimination of CF synapses during postnatal development are being elucidated,\nmuch less is known about the molecular mechanisms underlying CF synapse\nformation during the early postnatal period. The authors show experimental evidence\nthat suggests that a synapse organizer, PTPdelta, is required for early postnatal CF\nsynapse formation and the subsequent establishment of CF to PC synaptic wiring.\nThey showed that PTPdelta was localized at CF-PC synapses from postnatal day 0\n(P0) irrespective of the expression of Aldolase C (Aldoc), a major marker of PC\nthat distinguishes the cerebellar compartments. They found that the extension of\na single strong CF along PC dendrites (CF translocation) was impaired in global\nPTPdelta knockout (KO) mice from P12 to P29-31 predominantly in PCs that did\nnot express Aldoc [Aldoc (–) PCs].",
       "datePublished": "2025-11-26",
       "license": "https://creativecommons.org/licenses/by/4.0/",
+      "keywords": [
+        "Neurons",
+        "Microscopy, Confocal",
+        "Brain",
+        "Growth and Development",
+        "Synapses",
+        "Purkinje Cells",
+        "Cell Body"
+      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -77,16 +86,10 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/GO_0007399"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/GO_0045202"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -98,7 +101,7 @@
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-1754"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/1754/render_thumbnail/"
       ],
       "size": [
         {
@@ -119,10 +122,10 @@
       "@type": "Person",
       "name": "Takaki Watanabe",
       "email": "wtakaki@m.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Department of Neurophysiology; Laboratory: Department of Neurophysiology",
+      "description": "Organization: The University of Tokyo; Department: Department of Neurophysiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -131,10 +134,10 @@
       "@type": "Person",
       "name": "Masanobu Kano",
       "email": "mkano-tky@m.u-tokyo.ac.jp",
-      "description": "Organization: The University of Tokyo; Department: Graduate School of Medicine; Laboratory: Graduate School of Medicine",
+      "description": "Organization: The University of Tokyo; Department: Department of Neurophysiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -142,45 +145,52 @@
       "@id": "#auth-003",
       "@type": "Person",
       "name": "Yuto Okuno",
-      "description": "Department: Department of Neurophysiology; Laboratory: Department of Neurophysiology"
+      "email": "yokuno@m.u-tokyo.ac.jp",
+      "description": "Organization: The University of Tokyo; Department: Department of Neurophysiology, Graduate School of Medicine",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.3389/fnmol.2023.1206245",
       "@type": "ScholarlyArticle",
-      "name": "PTPdelta is a presynaptic organizer for the formation and maintenance of climbing fiber to Purkinje cell synapses in the developing cerebellum.",
-      "datePublished": "2023"
+      "name": "Okuno Y, Sakoori K, Matsuyama K, Yamasaki M, Watanabe M, Hashimoto K, Watanabe T, Kano M. PTPdelta is a presynaptic organizer for the formation and maintenance of climbing fiber to Purkinje cell synapses in the developing cerebellum. Front Mol Neurosci. 2023 Jun 22:16:1206245.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/37426069/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10323364/"
+      ]
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
       "@type": "BioSample",
-      "name": "C57BL/6N, C57BL/6J, 129/SvJ",
-      "description": "C57BL/6N, C57BL/6J, 129/SvJ",
+      "name": "C57BL/6N,\nC57BL/6J,\n129/SvJ ~ neuron,\nPurkinje cell",
+      "description": "Fixed brain slice from PTPdelta-knockout P12 mouse",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007399",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
       "@type": "DefinedTerm",
-      "name": "nervous system development"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0045202",
-      "@type": "DefinedTerm",
-      "name": "synapse"
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -194,22 +204,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
-      "@type": "DefinedTerm",
-      "name": "confocal microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 7495358902,
-      "description": "7.5 GB",
+      "value": 28063536729,
+      "description": "28.1 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 85,
+      "value": 260,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

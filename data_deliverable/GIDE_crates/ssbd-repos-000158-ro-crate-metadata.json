@@ -79,7 +79,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239"
         },
         {
           "@id": "#biosample-1"
@@ -90,7 +90,7 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
         }
       ],
       "size": [
@@ -137,31 +137,15 @@
       "description": "Bristol N2 strain",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_06239",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_6239",
       "@type": "Taxon",
       "scientificName": "Caenorhabditis elegans",
       "vernacularName": "nematode"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Nomarski differential interference contrast (DIC) microscopy",
-      "description": "Nomarski differential interference contrast (DIC) microscopy",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
-      "@type": "DefinedTerm",
-      "name": "Nomarski differential interference contrast (DIC) microscopy"
     },
     {
       "@id": "#total-dataset-size",
@@ -177,6 +161,23 @@
       "value": 124,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000245",
+      "@type": "DefinedTerm",
+      "name": "differential interference contrast microscopy",
+      "identifier": "FBbi:00000245"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "differential interference contrast microscopy",
+      "description": "differential interference contrast microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000245"
+        }
+      ]
     }
   ]
 }

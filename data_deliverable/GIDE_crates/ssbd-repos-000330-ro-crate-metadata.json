@@ -82,7 +82,7 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
         },
         {
           "@id": "#biosample-1"
@@ -114,13 +114,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "size": [
@@ -167,12 +167,12 @@
       "description": "w; btl-Gal4, UAS-lifeact::GFP, UAS-lifeact::mScarletx2, etc./ Drosphila melanogaster",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_07227",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_7227",
       "@type": "Taxon",
       "scientificName": "Drosophila melanogaster",
       "vernacularName": "fly"
@@ -203,46 +203,9 @@
       "name": "myosin II complex"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/GO_1904530",
-      "@type": "DefinedTerm",
-      "name": "actin crosslinker"
-    },
-    {
       "@id": "http://purl.obolibrary.org/obo/GO_0090337",
       "@type": "DefinedTerm",
       "name": "formin"
-    },
-    {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "Confocal microscopy with Airyscan detector",
-      "description": "Confocal microscopy with Airyscan detector",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000241"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "time-lapse imaging",
-      "description": "time-lapse imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000241",
-      "@type": "DefinedTerm",
-      "name": "Confocal microscopy with Airyscan detector"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "time-lapse imaging"
     },
     {
       "@id": "#total-dataset-size",
@@ -258,6 +221,40 @@
       "value": 970,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000251",
+      "@type": "DefinedTerm",
+      "name": "confocal microscopy",
+      "identifier": "FBbi:00000251"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "confocal microscopy",
+      "description": "confocal microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000251"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }

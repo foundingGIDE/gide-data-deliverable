@@ -45,27 +45,17 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/53-Ichimura-CellDyn/"
+        "@id": "https://ssbd.riken.jp/v1/project/53-Ichimura-CellDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/53-Ichimura-CellDyn/",
+      "@id": "https://ssbd.riken.jp/v1/project/53-Ichimura-CellDyn",
       "@type": "Dataset",
       "identifier": "53-Ichimura-CellDyn",
       "name": "53-Ichimura-CellDyn",
-      "description": "53-Ichimura-CellDyn",
+      "description": "See details in Ichimura et al. (2016) Scientific Reports, 6: 37562.",
       "datePublished": "2017-10-03",
       "license": "https://creativecommons.org/licenses/by/4.0/",
-      "keywords": [
-        "Animals",
-        "B-Lymphocytes/immunology[major]",
-        "Lymphocyte Activation/immunology",
-        "Mice, Inbred BALB C",
-        "Mice, Transgenic",
-        "Spectrum Analysis, Raman/methods[major]",
-        "T-Lymphocytes/immunology[major]",
-        "Time Factors"
-      ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
       },
@@ -94,22 +84,30 @@
       ],
       "seeAlso": [
         {
-          "@id": "https://doi.org/10.1038/srep37562"
+          "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27876845"
         }
       ],
       "about": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
         {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005623"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ],
+      "measurementMethod": [
+        {
+          "@id": "#imaging-protocol-1"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-103"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/103/render_thumbnail/"
       ],
       "size": [
         {
@@ -133,87 +131,141 @@
       "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
       "affiliation": [
         {
-          "@id": "https://ror.org/01sjwvz98"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Taro Ichimura"
-    },
-    {
-      "@id": "#auth-003",
-      "@type": "Person",
-      "name": "Liang-da Chiu"
-    },
-    {
-      "@id": "#auth-004",
-      "@type": "Person",
-      "name": "Katsumasa Fujita"
-    },
-    {
-      "@id": "#auth-005",
-      "@type": "Person",
-      "name": "Hiroaki Machiyama"
-    },
-    {
-      "@id": "#auth-006",
-      "@type": "Person",
-      "name": "Tomoyuki Yamaguchi"
-    },
-    {
-      "@id": "#auth-007",
-      "@type": "Person",
-      "name": "Tomonobu M. Watanabe"
-    },
-    {
-      "@id": "https://ror.org/01sjwvz98",
-      "@type": "Organization",
-      "name": "RIKEN"
-    },
-    {
-      "@id": "https://doi.org/10.1038/srep37562",
-      "@type": "ScholarlyArticle",
-      "name": "Non-label immune cell state prediction using Raman spectroscopy.",
-      "datePublished": "2016"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "DO11.10",
-      "description": "DO11.10",
-      "taxonomicRange": [
+      "name": "Taro Ichimura",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
+      "@id": "#auth-003",
+      "@type": "Person",
+      "name": "Liang-da Chiu",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-004",
+      "@type": "Person",
+      "name": "Katsumasa Fujita",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-005",
+      "@type": "Person",
+      "name": "Hiroaki Machiyama",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-006",
+      "@type": "Person",
+      "name": "Tomoyuki Yamaguchi",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#auth-007",
+      "@type": "Person",
+      "name": "Tomonobu M. Watanabe",
+      "description": "Organization: RIKEN; Department: Quantitative Biology Center; Laboratory: Laboratory for Comprehensive Bioimaging",
+      "affiliation": [
+        {
+          "@id": "#affiliation-001"
+        }
+      ]
+    },
+    {
+      "@id": "#affiliation-001",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/pubmed/27876845",
+      "@type": "ScholarlyArticle",
+      "name": "https://www.ncbi.nlm.nih.gov/pubmed/27876845"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005623",
       "@type": "DefinedTerm",
-      "name": "cell"
+      "name": "cell",
+      "identifier": "GO:0005623"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus musculus",
+      "description": "Mus musculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 336012787,
-      "description": "336.0 MB",
+      "value": 429143301,
+      "description": "429.1 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 246,
+      "value": 250,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000243",
+      "@type": "DefinedTerm",
+      "name": "bright-field microscopy",
+      "identifier": "FBbi:00000243"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "bright-field microscopy",
+      "description": "bright-field microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000243"
+        }
+      ]
     }
   ]
 }

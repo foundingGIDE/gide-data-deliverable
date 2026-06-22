@@ -45,30 +45,36 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/184-Tanaka-SpineDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/184-Tanaka-SpineDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/184-Tanaka-SpineDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/184-Tanaka-SpineDyn",
       "@type": "Dataset",
       "identifier": "184-Tanaka-SpineDyn",
       "name": "Time-lapse images of spine morphology and dynamics in cultured neurons of WT or cortactin knockout (KO) mice.",
-      "description": "184-Tanaka-SpineDyn",
+      "description": "See details in Tanaka S, et. al. (2020)  Microscopy (Oxf)., 69(1):44-52.",
       "datePublished": "2022-03-31",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
-        "Actins/physiology[major]",
+        "Actins",
+        "Actins/physiology",
         "Animals",
-        "Cells, Cultured",
-        "Cortactin/genetics[major]",
-        "Dendritic Spines/physiology[major]",
+        "Cells",
+        "Cultured",
+        "Cortactin",
+        "Cortactin/genetics",
+        "Dendritic Spines",
+        "Dendritic Spines/physiology",
         "Dendritic Spines/ultrastructure",
         "Hippocampus",
         "Mice",
-        "Mice, Inbred C57BL",
-        "Mice, Knockout",
-        "Nerve Tissue Proteins/genetics[major]",
-        "Neurons/physiology[major]",
+        "Inbred C57BL",
+        "Knockout",
+        "Nerve Tissue Proteins",
+        "Nerve Tissue Proteins/genetics",
+        "Neurons",
+        "Neurons/physiology",
         "Time-Lapse Imaging"
       ],
       "publisher": {
@@ -86,13 +92,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0043197"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -101,10 +107,22 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000387"
+        },
+        {
+          "@id": "#imaging-protocol-3"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000384"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-707"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/707/render_thumbnail/"
       ],
       "size": [
         {
@@ -125,23 +143,39 @@
       "@type": "Person",
       "name": "Shigeo Okabe",
       "email": "okabe@m.u-tokyo.ac.jp",
-      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology",
+      "description": "Organization: University of Tokyo; Department: Department of Cellular Neurobiology, Graduate School of Medicine",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "University of Tokyo"
     },
     {
       "@id": "https://doi.org/10.1093/jmicro/dfaa001",
       "@type": "ScholarlyArticle",
-      "name": "Impaired actin dynamics and suppression of Shank2-mediated spine enlargement in cortactin knockout mice.",
-      "datePublished": "2020"
+      "name": "Tanaka S, Masuda Y, Harada A, and Shigeo Okabe S (2020) Impaired actin dynamics and suppression of Shank2-mediated spine enlargement in cortactin knockout mice. Microscopy, Volume 69, Issue 1, pages 44-52.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/31990031"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
+      "@type": "DefinedTerm",
+      "name": "dendritic spine",
+      "identifier": "GO:0043197"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -150,20 +184,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0043197",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
       "@type": "DefinedTerm",
-      "name": "dendritic spine"
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -177,24 +206,53 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
-      "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 209439308,
-      "description": "209.4 MB",
+      "value": 297804698,
+      "description": "297.8 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 23,
+      "value": 34,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000387",
+      "@type": "DefinedTerm",
+      "name": "photo-activation illumination",
+      "identifier": "FBbi:00000387"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "photo-activation illumination",
+      "description": "photo-activation illumination",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000387"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000384",
+      "@type": "DefinedTerm",
+      "name": "photo-bleaching illumination",
+      "identifier": "FBbi:00000384"
+    },
+    {
+      "@id": "#imaging-protocol-3",
+      "@type": "LabProtocol",
+      "name": "photo-bleaching illumination",
+      "description": "photo-bleaching illumination",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000384"
+        }
+      ]
     }
   ]
 }

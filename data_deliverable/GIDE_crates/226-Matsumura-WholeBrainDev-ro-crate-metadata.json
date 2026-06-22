@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/226-Matsumura-WholeBrainDev/"
+        "@id": "https://ssbd.riken.jp/v2/project/226-Matsumura-WholeBrainDev"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/226-Matsumura-WholeBrainDev/",
+      "@id": "https://ssbd.riken.jp/v2/project/226-Matsumura-WholeBrainDev",
       "@type": "Dataset",
       "identifier": "226-Matsumura-WholeBrainDev",
       "name": "3D whole-brain image showing social-interaction-induced activation of Arc-dVenus fluorescence in adult WT or POGZWT/Q1038R mice.",
-      "description": "226-Matsumura-WholeBrainDev",
+      "description": "See details in Matsumura K, et. al. (2020) Nat Commun, Feb 26;11(1):859.",
       "datePublished": "2022-11-23",
       "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "publisher": {
@@ -74,13 +74,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0007420"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -89,16 +89,10 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
-        },
-        {
-          "@id": "#imaging-protocol-2"
-        },
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-771"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/771/render_thumbnail/"
       ],
       "size": [
         {
@@ -122,7 +116,7 @@
       "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Laboratory of Molecular Neuropharmacology",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
@@ -134,20 +128,36 @@
       "description": "Organization: Osaka University; Department: Graduate School of Pharmaceutical Sciences; Laboratory: Laboratory of Molecular Neuropharmacology",
       "affiliation": [
         {
-          "@id": "https://ror.org/035t8zc32"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/035t8zc32",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Osaka University"
     },
     {
       "@id": "https://doi.org/10.1038/s41467-020-14697-z",
       "@type": "ScholarlyArticle",
-      "name": "Pathogenic POGZ mutation causes impaired cortical development and reversible autism-like phenotypes.",
-      "datePublished": "2020"
+      "name": "Matsumura K, Seiriki K, Okada S, Nagase M, Ayabe S, Yamada I, Furuse T, Shibuya H, Yasuda Y, Yamamori H, Fujimoto M, Nagayasu K, Yamamoto K, Kitagawa K, Miura H, Gotoda-Nishimura N, Igarashi H, Hayashida M, Baba M, Kondo M, Hasebe S, Ueshima K, Kasai A, Ago Y, Hayata-Takano A, Shintani N, Iguchi T, Sato M, Yamaguchi S, Tamura M, Wakana S, Yoshiki A, Watabe AM, Okano H, Takuma K, Hashimoto R, Hashimoto H, Nakazawa T. Pathogenic POGZ mutation causes impaired cortical development and reversible autism-like phenotypes. Nat Commun. 2020 Feb 26;11(1):859. doi: 10.1038/s41467-020-14697-z. PMID: 32103003; PMCID: PMC7044294.",
+      "datePublished": "2020",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/32103003/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/GO_0007420",
+      "@type": "DefinedTerm",
+      "name": "brain development",
+      "identifier": "GO:0007420"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus musculus",
+      "name": "Mus musculus",
+      "identifier": "NCBITaxon:10090"
     },
     {
       "@id": "#biosample-1",
@@ -156,20 +166,15 @@
       "description": "Mus musculus",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/GO_0007420",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
       "@type": "DefinedTerm",
-      "name": "brain development"
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -183,38 +188,17 @@
       ]
     },
     {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "whole-brain imaging",
-      "description": "whole-brain imaging",
-      "measurementTechnique": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/FBbi_00000383"
-        }
-      ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
-      "@type": "DefinedTerm",
-      "name": "fluorescence microscopy"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000383",
-      "@type": "DefinedTerm",
-      "name": "whole-brain imaging"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 2451510031432,
-      "description": "2.5 TB",
+      "value": 3551611775469,
+      "description": "3.6 TB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 68600,
+      "value": 69090,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

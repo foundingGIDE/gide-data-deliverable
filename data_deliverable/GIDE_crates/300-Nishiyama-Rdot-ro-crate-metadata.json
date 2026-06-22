@@ -45,15 +45,15 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/300-Nishiyama-Rdot/"
+        "@id": "https://ssbd.riken.jp/v2/project/300-Nishiyama-Rdot"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/300-Nishiyama-Rdot/",
+      "@id": "https://ssbd.riken.jp/v2/project/300-Nishiyama-Rdot",
       "@type": "Dataset",
       "identifier": "300-Nishiyama-Rdot",
-      "name": "MCF-7 cells stained by 12 different colors of Rdots ",
-      "description": "300-Nishiyama-Rdot",
+      "name": "MCF-7 cells stained by 12 different colors of Rdots",
+      "description": "See details in Nishiyama R et. al., PNAS Nexus. 2023 Jan 14;2(2):pgad001.",
       "datePublished": "2024-11-25",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "publisher": {
@@ -86,13 +86,13 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0007606"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "measurementMethod": [
@@ -125,57 +125,102 @@
       "description": "Organization: Kyusyu University; Department: Faculty of Sciences Department of Chemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/00p4k0j84"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
       "@id": "#auth-002",
       "@type": "Person",
-      "name": "Keisuke Goda",
+      "name": "Keisuke  Goda",
       "email": "goda@chem.s.u-tokyo.ac.jp",
       "description": "Organization: The University of Tokyo; Department: Department of Chemistry",
       "affiliation": [
         {
-          "@id": "https://ror.org/057zh3y96"
+          "@id": "#affiliation-002"
         }
       ]
     },
     {
       "@id": "#auth-003",
       "@type": "Person",
-      "name": "Ryo Nishiyama"
+      "name": "Ryo Nishiyama",
+      "description": "Organization: The University of Tokyo; Department: Department of Chemistry",
+      "affiliation": [
+        {
+          "@id": "#affiliation-002"
+        }
+      ]
     },
     {
       "@id": "#auth-004",
       "@type": "Person",
-      "name": "Shintaro Kawamura"
+      "name": "Shintaro Kawamura",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
     },
     {
       "@id": "#auth-005",
       "@type": "Person",
-      "name": "Kosuke Dodo"
+      "name": "Kosuke Dodo",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
     },
     {
       "@id": "#auth-006",
       "@type": "Person",
-      "name": "Mikiko Sodeoka"
+      "name": "Mikiko Sodeoka",
+      "description": "Organization: RIKEN; Department: Cluster for Pioneering Research",
+      "affiliation": [
+        {
+          "@id": "#affiliation-003"
+        }
+      ]
     },
     {
-      "@id": "https://ror.org/00p4k0j84",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyusyu University"
     },
     {
-      "@id": "https://ror.org/057zh3y96",
+      "@id": "#affiliation-002",
       "@type": "Organization",
       "name": "The University of Tokyo"
     },
     {
+      "@id": "#affiliation-003",
+      "@type": "Organization",
+      "name": "RIKEN"
+    },
+    {
       "@id": "https://doi.org/10.1093/pnasnexus/pgad001",
       "@type": "ScholarlyArticle",
-      "name": "Color-scalable flow cytometry with Raman tags.",
-      "datePublished": "2023"
+      "name": "Nishiyama R, Hiramatsu K, Kawamura S, Dodo K, Furuya K, de Pablo JG, Takizawa S, Min W, Sodeoka M, Goda K. Color-scalable flow cytometry with Raman tags. PNAS Nexus. 2023 Jan 14;2(2):pgad001.",
+      "datePublished": "2023",
+      "sameAs": [
+        "https://pubmed.ncbi.nlm.nih.gov/36845353/"
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/CLO_0007606",
+      "@type": "DefinedTerm",
+      "name": "MCF7 cell",
+      "identifier": "CLO:0007606"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606",
+      "@type": "Taxon",
+      "scientificName": "Homo sapiens",
+      "name": "Homo sapiens",
+      "identifier": "NCBITaxon:9606"
     },
     {
       "@id": "#biosample-1",
@@ -184,7 +229,7 @@
       "description": "Homo sapiens ~ MCF7 cell",
       "taxonomicRange": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606"
         }
       ],
       "hasCellLine": {
@@ -192,21 +237,16 @@
       }
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
-      "@type": "Taxon",
-      "scientificName": "Homo sapiens",
-      "vernacularName": "human"
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/CLO_0007606",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
       "@type": "DefinedTerm",
-      "name": "MCF7 cell"
+      "name": "Raman scattering",
+      "identifier": "FBbi:00000589"
     },
     {
       "@id": "#imaging-protocol-1",
       "@type": "LabProtocol",
-      "name": "inelastic scattering of photons",
-      "description": "inelastic scattering of photons",
+      "name": "Raman scattering",
+      "description": "Raman scattering",
       "measurementTechnique": [
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000589"
@@ -214,22 +254,17 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000589",
-      "@type": "DefinedTerm",
-      "name": "inelastic scattering of photons"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 666225343,
-      "description": "666.2 MB",
+      "value": 960575336,
+      "description": "960.6 MB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 12,
+      "value": 13,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

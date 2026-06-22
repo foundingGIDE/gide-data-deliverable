@@ -45,33 +45,40 @@
         "@id": "https://w3id.org/ro/crate/1.2"
       },
       "about": {
-        "@id": "https://ssbd.riken.jp/database/project/130-Sano-CellMigrationDyn/"
+        "@id": "https://ssbd.riken.jp/v2/project/130-Sano-CellMigrationDyn"
       }
     },
     {
-      "@id": "https://ssbd.riken.jp/database/project/130-Sano-CellMigrationDyn/",
+      "@id": "https://ssbd.riken.jp/v2/project/130-Sano-CellMigrationDyn",
       "@type": "Dataset",
       "identifier": "130-Sano-CellMigrationDyn",
       "name": "Timelapse FRET images data and BDML file for quantitative data about the cell migration in epidermis or urothelial of transgenic mice",
-      "description": "130-Sano-CellMigrationDyn",
+      "description": "See details in Sano T, et. al. (2018) The American J. of Pathol., 188(11): 2564-2573.",
       "datePublished": "2021-09-30",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "keywords": [
         "Animals",
-        "Cell Movement/physiology[major]",
+        "Cell Movement",
+        "Cell Movement/physiology",
         "Cell Proliferation",
-        "Cells, Cultured",
-        "Epidermis/physiology[major]",
+        "Cells",
+        "Cultured",
+        "Epidermis",
+        "Epidermis/physiology",
+        "Extracellular Signal-Regulated MAP Kinases",
         "Extracellular Signal-Regulated MAP Kinases/metabolism",
         "Female",
         "Intravital Microscopy",
+        "MAP Kinase Signaling System",
         "MAP Kinase Signaling System/physiology",
         "Mice",
-        "Mice, Transgenic",
+        "Transgenic",
         "Time-Lapse Imaging",
+        "Urothelium",
         "Urothelium/cytology",
-        "Urothelium/physiology[major]",
-        "Wound Healing/physiology[major]"
+        "Urothelium/physiology",
+        "Wound Healing",
+        "Wound Healing/physiology"
       ],
       "publisher": {
         "@id": "https://ssbd.riken.jp/database"
@@ -88,9 +95,6 @@
       ],
       "about": [
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        },
-        {
           "@id": "#biosample-1"
         },
         {
@@ -101,6 +105,9 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/GO_0005634"
+        },
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
         }
       ],
       "measurementMethod": [
@@ -109,10 +116,16 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        },
+        {
+          "@id": "#imaging-protocol-2"
+        },
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
         }
       ],
       "thumbnailUrl": [
-        "https://ssbd.riken.jp/omero/webclient/?show=project-656"
+        "https://ssbd.riken.jp/ssbd-omero/v1/projects/656/render_thumbnail/"
       ],
       "size": [
         {
@@ -136,52 +149,65 @@
       "description": "Organization: Kyoto University; Department: Graduate School of Biostudies; Laboratory: Laboratory of Bioimaging and Cell Signaling",
       "affiliation": [
         {
-          "@id": "https://ror.org/02kpeqv85"
+          "@id": "#affiliation-001"
         }
       ]
     },
     {
-      "@id": "https://ror.org/02kpeqv85",
+      "@id": "#affiliation-001",
       "@type": "Organization",
       "name": "Kyoto University"
     },
     {
       "@id": "https://doi.org/10.1016/j.ajpath.2018.07.010",
       "@type": "ScholarlyArticle",
-      "name": "Gliding Basal Cell Migration of the Urothelium during Wound Healing.",
-      "datePublished": "2018"
-    },
-    {
-      "@id": "#biosample-1",
-      "@type": "BioSample",
-      "name": "Mus musculus",
-      "description": "Mus musculus",
-      "taxonomicRange": [
-        {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
-        }
+      "name": "Sano T, Kobayashi T, Ogawa O, and Matsuda M (2018) Gliding Basal Cell Migration of the Urothelium during Wound Healing.  The American Journal of Pathology, Volume 188, Issue 11, pages 2564-2573.",
+      "datePublished": "2018",
+      "sameAs": [
+        "https://www.ncbi.nlm.nih.gov/pubmed/30508722"
       ]
-    },
-    {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
-      "@type": "Taxon",
-      "scientificName": "Mus musculus",
-      "vernacularName": "mouse"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0000186",
       "@type": "DefinedTerm",
-      "name": "activation of MAPERK kinase"
+      "name": "activation of MAPERK kinase",
+      "identifier": "GO:0000186"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0016477",
       "@type": "DefinedTerm",
-      "name": "cell migration"
+      "name": "cell migration",
+      "identifier": "GO:0016477"
     },
     {
       "@id": "http://purl.obolibrary.org/obo/GO_0005634",
       "@type": "DefinedTerm",
-      "name": "nucleus"
+      "name": "nucleus",
+      "identifier": "GO:0005634"
+    },
+    {
+      "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090",
+      "@type": "Taxon",
+      "scientificName": "Mus muculus",
+      "name": "Mus muculus",
+      "identifier": "NCBITaxon:10090"
+    },
+    {
+      "@id": "#biosample-1",
+      "@type": "BioSample",
+      "name": "Mus muculus",
+      "description": "Mus muculus",
+      "taxonomicRange": [
+        {
+          "@id": "https://www.ncbi.nlm.nih.gov/datasets/taxonomy/10090"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
     },
     {
       "@id": "#imaging-protocol-1",
@@ -195,22 +221,34 @@
       ]
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000367",
       "@type": "DefinedTerm",
-      "name": "time lapse microscopy"
+      "name": "FRET",
+      "identifier": "FBbi:00000367"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "FRET",
+      "description": "FRET",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000367"
+        }
+      ]
     },
     {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
-      "value": 4818678813,
-      "description": "4.8 GB",
+      "value": 7942920602,
+      "description": "7.9 GB",
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000233",
       "unitText": "bytes"
     },
     {
       "@id": "#file-count",
       "@type": "QuantitativeValue",
-      "value": 26,
+      "value": 52,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
     }

@@ -102,13 +102,13 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         },
         {
           "@id": "#biosample-1"
@@ -137,13 +137,13 @@
           "@id": "#imaging-protocol-1"
         },
         {
-          "@id": "#imaging-technique-1"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
         },
         {
           "@id": "#imaging-protocol-2"
         },
         {
-          "@id": "#imaging-technique-2"
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
         }
       ],
       "size": [
@@ -199,13 +199,13 @@
           "@id": "http://purl.obolibrary.org/obo/NCBITaxon_10090"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606"
         },
         {
-          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689"
+          "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689"
         }
       ],
       "hasCellLine": [
@@ -214,8 +214,7 @@
         },
         {
           "@id": "http://purl.obolibrary.org/obo/CLO_0003684"
-        },
-        "Ax2 cells"
+        }
       ]
     },
     {
@@ -225,19 +224,19 @@
       "vernacularName": "mouse"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09615",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9615",
       "@type": "Taxon",
       "scientificName": "Canis lupus familiaris",
       "vernacularName": "dog"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_09606",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "@type": "Taxon",
       "scientificName": "Homo sapiens",
       "vernacularName": "human"
     },
     {
-      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_044689",
+      "@id": "http://purl.obolibrary.org/obo/NCBITaxon_44689",
       "@type": "Taxon",
       "scientificName": "Dictyostelium discoideum",
       "vernacularName": "social amoeba"
@@ -273,38 +272,6 @@
       "name": "HeLa cell"
     },
     {
-      "@id": "#imaging-protocol-1",
-      "@type": "LabProtocol",
-      "name": "AMATERAS",
-      "description": "AMATERAS",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-1"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-protocol-2",
-      "@type": "LabProtocol",
-      "name": "trans-scale scope",
-      "description": "trans-scale scope",
-      "measurementTechnique": [
-        {
-          "@id": "#imaging-technique-2"
-        }
-      ]
-    },
-    {
-      "@id": "#imaging-technique-1",
-      "@type": "DefinedTerm",
-      "name": "AMATERAS"
-    },
-    {
-      "@id": "#imaging-technique-2",
-      "@type": "DefinedTerm",
-      "name": "trans-scale scope"
-    },
-    {
       "@id": "#total-dataset-size",
       "@type": "QuantitativeValue",
       "value": 646896775168,
@@ -318,6 +285,40 @@
       "value": 4257,
       "unitCode": "http://purl.obolibrary.org/obo/UO_0000189",
       "unitText": "file count"
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000246",
+      "@type": "DefinedTerm",
+      "name": "fluorescence microscopy",
+      "identifier": "FBbi:00000246"
+    },
+    {
+      "@id": "#imaging-protocol-1",
+      "@type": "LabProtocol",
+      "name": "fluorescence microscopy",
+      "description": "fluorescence microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000246"
+        }
+      ]
+    },
+    {
+      "@id": "http://purl.obolibrary.org/obo/FBbi_00000249",
+      "@type": "DefinedTerm",
+      "name": "time lapse microscopy",
+      "identifier": "FBbi:00000249"
+    },
+    {
+      "@id": "#imaging-protocol-2",
+      "@type": "LabProtocol",
+      "name": "time lapse microscopy",
+      "description": "time lapse microscopy",
+      "measurementTechnique": [
+        {
+          "@id": "http://purl.obolibrary.org/obo/FBbi_00000249"
+        }
+      ]
     }
   ]
 }
